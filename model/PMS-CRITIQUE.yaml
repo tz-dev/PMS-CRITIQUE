@@ -1,0 +1,617 @@
+# =============================================================================
+#  PMS-CRITIQUE SPECIFICATION HEADER
+#  Praxeological Meta-Structure – Critique Layer
+#
+#  File:           PMS-CRITIQUE.yaml
+#  Version:        PMS-CRITIQUE_1.0
+#  Last Updated:   2026-01-07
+#
+#  Summary:
+#    This document defines PMS-CRITIQUE as a structural application layer of
+#    the Praxeological Meta-Structure (PMS; Δ–Ψ). It treats "critique" as a
+#    praxeological configuration with strict minimal conditions, reachable
+#    thresholds, and predictable drift forms under load (Ω/Θ/Λ/Α), while
+#    enforcing a non-moral, non-clinical application firewall:
+#      Χ (Distance) + reversibility + D (dignity-in-practice).
+#
+#    PMS-CRITIQUE does NOT redefine or extend the PMS operator set. It maps
+#    Δ–Ψ to critique-relevant functions (irritation, interruption, correction,
+#    follow-up binding) and provides:
+#      - operator mappings (Δ–Ψ → critique roles),
+#      - a vertical reach ladder (irritation → interruption → correction → binding),
+#      - a horizontal scale ladder (a–d) plus a publicness overlay P,
+#      - a compact drift typology (reaction/judgment/narrative reset/etc.),
+#      - modulators (operator weightings, not person-typing),
+#      - an example packet schema for uniform case mappings.
+#
+#  Relationship to PMS:
+#    - DEPENDS on PMS base schema (schema_version: PMS_1.1).
+#    - Δ–Ψ operators are NOT redefined here.
+#    - This is an application grammar for critique and its drift under load.
+#
+#  Repositories:
+#    - PMS (base framework):
+#        https://github.com/tz-dev/Praxeological-Meta-Structure-Theory
+#    - PMS-CRITIQUE (this layer):
+#        https://github.com/tz-dev/PMS-CRITIQUE
+#
+# =============================================================================
+
+schema_version: "PMS-CRITIQUE_1.0"
+
+schema_meta:
+  model_name: "Praxeological Meta-Structure – Critique Layer"
+  model_short: "PMS-CRITIQUE"
+  status: "draft"
+  last_updated: "2026-01-07"
+  doi: "10.5281/zenodo.18175456"
+  repositories:
+    pms_base: "https://github.com/tz-dev/Praxeological-Meta-Structure-Theory"
+    this_repo: "https://github.com/tz-dev/PMS-CRITIQUE"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.2 Thinking)"
+      role: "formalization_assistant"
+  inherits_from:
+    model_name: "Praxeological Meta-Structure"
+    model_short: "PMS"
+    schema_version: "PMS_1.1"
+  description: >
+    PMS-CRITIQUE is a PMS-conform application layer that reconstructs critique as a
+    structurally constrained praxis form: how mismatch becomes interruptible
+    (Χ-stabilization), how critique becomes productive (Φ + Σ), and why durable
+    correction requires non-coercive self-binding (Ψ). The layer provides
+    operator mappings, reach/scale ladders, drift classes, and modulators, while
+    enforcing a strict non-moral, non-clinical application gate:
+    Χ (distance) + reversibility + D (dignity-in-practice).
+
+# -----------------------------------------------------------------------------
+# PMS REFERENCE (NON-REDEFINING)
+# -----------------------------------------------------------------------------
+
+pms_reference:
+  note: >
+    PMS-CRITIQUE assumes the PMS core specification is available and does not
+    redefine any operator (Δ–Ψ) or dependency rule. All elements below are
+    mappings, patterns, and application guardrails expressed at the operator level.
+  operators_ref:
+    source: "PMS.yaml"
+    schema_version: "PMS_1.1"
+    meta_axioms: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+  dependency_hygiene:
+    chi_note: >
+      Χ (Distance) is used as a reduced marker for critique interruptability.
+      In PMS terms it presupposes Φ (Recontextualization) and Θ (Temporality)
+      within a □ (Frame) background; it is not treated as a standalone trait.
+    no_operator_override: >
+      Any operator gloss in this file is an application-facing excerpt only.
+      Canonical operator definitions and dependencies remain in PMS.yaml.
+
+# -----------------------------------------------------------------------------
+# CRITIQUE CORE (STRICT, NON-MORAL)
+# -----------------------------------------------------------------------------
+
+critique_core:
+  scope_note: >
+    PMS-CRITIQUE models structural conditions of critique and its drift under load.
+    It does not adjudicate correctness of opinions and does not provide normative discourse ethics.
+  definitions:
+    - id: "CRITIQUE_MIN"
+      label: "Minimal Critique"
+      formula:
+        required: ["Δ", "□", "Χ"]
+        background_typically_active: ["Ω", "Θ"]
+      gloss: >
+        Minimal critique is χ-stabilized framed differentiation: a mismatch (Δ)
+        becomes legible as relevant inside a frame (□), and the configuration remains
+        interruptible (Χ) rather than collapsing into impulse discharge, frame policing,
+        or paralysis.
+      non_equivalences:
+        - "Reaction (Δ + ∇ without Χ) is not a weaker critique; it is structurally different."
+        - "Judgment (□ + Δ without Φ/Σ) is not 'strong critique'; it is a drift form."
+
+    - id: "CRITIQUE_PROD"
+      label: "Productive Critique"
+      formula:
+        required: ["Δ", "□", "Χ", "Φ", "Σ"]
+        background_typically_active: ["Ω", "Θ"]
+      gloss: >
+        Productive critique crosses from interruption into correction. Φ relocates the mismatch
+        into an actionable context; Σ consolidates a coherent corrective step that is coordinatable
+        rather than merely asserted.
+
+    - id: "CRITIQUE_STABLE"
+      label: "Stable Critique (Follow-up Binding)"
+      formula:
+        required: ["Δ", "□", "Χ", "Φ", "Σ", "Ψ"]
+        background_typically_active: ["Ω", "Θ"]
+      gloss: >
+        Stable critique binds correction into a trajectory without coercing others (Ψ→Self).
+        Follow-up becomes structurally owned over time (Θ) while remaining revisable and
+        restrained by dignity-in-practice (D).
+
+  non_goals:
+    - "No moral ranking of positions, speakers, or outcomes."
+    - "No psychological typing (motives, traits, sincerity) and no diagnostic claims."
+    - "No prescriptive 'how-to' manual, coaching protocol, or therapy method."
+    - "No coercive enforcement: Ψ must not be converted into Ψ→Other demands."
+
+  reach_ladder_note: >
+    The vertical reach ladder is not a virtue ladder. It describes how far a critique chain
+    structurally travels (from mismatch to interruption to correction to binding) before breaking.
+
+# -----------------------------------------------------------------------------
+# OPERATOR-TO-CRITIQUE MAPPING (ONE-TO-MANY)
+# -----------------------------------------------------------------------------
+
+critique_mapping:
+  overview: >
+    Operator-to-critique mappings are one-to-many: each PMS operator may realize
+    multiple critique-relevant functions depending on frame and scale. This mapping
+    is descriptive and does not treat operators as psychological traits.
+
+  operator_roles:
+    - id: "Δ"
+      name: "Difference"
+      critique_role: >
+        Legible mismatch: what becomes nameable as 'off' relative to a standard,
+        promise, or coordination expectation.
+      typical_realizations:
+        - "Error vs. standard (mistake / deviation)."
+        - "Claim vs. evidence mismatch."
+        - "Expectation vs. non-response mismatch (Δ carried by Λ)."
+
+    - id: "∇"
+      name: "Impulse"
+      critique_role: >
+        Directional pressure to respond: urgency, outrage tempo, defensive activation,
+        or demand for immediate closure.
+      typical_realizations:
+        - "Fast-response pressure in publics."
+        - "Defensive countering in evaluative frames."
+        - "Demand for immediate explanation as closure substitute."
+
+    - id: "□"
+      name: "Frame"
+      critique_role: >
+        Relevance and role space: defines what counts as a response, who may interrupt,
+        and what 'correction' would even mean here.
+      typical_realizations:
+        - "Meeting / review frame."
+        - "Training / evaluation frame."
+        - "Platform discourse frame."
+
+    - id: "Λ"
+      name: "Non-Event"
+      critique_role: >
+        Structured absence under expectation: non-response, missing follow-up, or
+        omitted correction that becomes meaningful and accumulates load.
+      typical_realizations:
+        - "Promised follow-up does not occur."
+        - "Repeated silence after raised concerns."
+        - "Ambiguity sustained by not-deciding."
+
+    - id: "Α"
+      name: "Attractor"
+      critique_role: >
+        Stabilized scripts that handle critique pressure without correction:
+        outrage scripts, silence scripts, mockery, policy-as-symbol routines.
+      typical_realizations:
+        - "Repeatable pile-on pattern."
+        - "Default 'we don't raise this' script."
+        - "Endless reframing as the meeting script."
+        - "Routine deflection to 'process talk' without outcome."
+
+    - id: "Ω"
+      name: "Asymmetry"
+      critique_role: >
+        Exposure gradients: who bears risk, reputational cost, retaliation risk,
+        and after-work of critique/correction.
+      typical_realizations:
+        - "Public target vs. diffuse crowd."
+        - "Junior exposed under senior correction."
+        - "Raiser bears cost; manager role bears less cost."
+
+    - id: "Θ"
+      name: "Temporality"
+      critique_role: >
+        Accumulation and irreversibility: residues, time windows, path dependence,
+        and hardening of reputational traces.
+      typical_realizations:
+        - "Two-day outrage episode leaves durable residue."
+        - "Repeated non-follow-up hardens silence norm."
+        - "No review windows → correction never consolidates."
+
+    - id: "Φ"
+      name: "Recontextualization"
+      critique_role: >
+        Reframing that can either bridge toward correction (Φ with Σ) or become a
+        substitute (narrative reset drift) when Σ remains absent.
+      typical_realizations:
+        - "Adding constraint context to make a fix actionable."
+        - "Endless explanation expansion without action plan."
+        - "Reframing mismatch as 'tone issue' (frame policing drift)."
+
+    - id: "Χ"
+      name: "Distance"
+      critique_role: >
+        Stop-capability / interruptability inside the frame: a meta-position that can
+        pause, re-enter, and revise without fusing into reaction, defense, or performance.
+      typical_realizations:
+        - "Legitimate pauses and renegotiations."
+        - "Non-penalized meta-positions ('let's stop and clarify')."
+        - "Protected revision windows in critique episodes."
+
+    - id: "Σ"
+      name: "Integration"
+      critique_role: >
+        Consolidation of a corrective step that is coherent enough to coordinate:
+        an action plan element, a revision, a clear follow-up anchor.
+      typical_realizations:
+        - "Concrete fix, decision, or implementation unit."
+        - "Aligned meaning that becomes actionable."
+        - "Defined correction path with roles and constraints."
+
+    - id: "Ψ"
+      name: "Self-Binding"
+      critique_role: >
+        Non-coercive trajectory ownership: follow-up commitments, review windows,
+        accountability points that bind correction over time without degrading others.
+      typical_realizations:
+        - "Assigned responsibility points + scheduled review."
+        - "Audit loop / feedback loop / explicit follow-up ownership."
+        - "Bounded escalation rules that remain reversible."
+
+# -----------------------------------------------------------------------------
+# AXES: REACH (VERTICAL) AND SCALE (HORIZONTAL) + PUBLICNESS OVERLAY
+# -----------------------------------------------------------------------------
+
+critique_axes:
+  overview: >
+    PMS-CRITIQUE uses two descriptive axes: (1) vertical reach (how far a critique chain
+    goes before it breaks) and (2) horizontal scale (a–d), plus a publicness overlay P
+    that amplifies Ω/Θ/Α without changing operator grammar.
+
+  vertical_reach:
+    note: "Reach is structural, not virtue, status, or moral rank."
+    levels:
+      - id: "V0"
+        name: "Irritation only"
+        signature: ["Δ"]
+        description: "Mismatch is registered but not interruptible or framed into a critique episode."
+      - id: "V1"
+        name: "Reaction / discharge"
+        signature: ["Δ", "∇"]
+        description: "Directional response without Χ; critique-in-strict-sense does not occur."
+      - id: "V2"
+        name: "Minimal critique"
+        signature: ["Δ", "□", "Χ"]
+        description: "Interruption becomes possible inside a frame; episode remains revisable."
+      - id: "V3"
+        name: "Productive critique"
+        signature: ["Δ", "□", "Χ", "Φ", "Σ"]
+        description: "Recontextualization and integration consolidate a corrective step."
+      - id: "V4"
+        name: "Stable critique"
+        signature: ["Δ", "□", "Χ", "Φ", "Σ", "Ψ"]
+        description: "Follow-up binding anchors correction into time without coercion."
+
+  horizontal_scale:
+    note: >
+      Horizontal scale specifies where asymmetry (Ω: exposure gradients) and temporality (Θ: accumulation
+      and irreversibility) stabilize across scene scale. The operator grammar remains the same, but
+      viability conditions (Χ-availability, Σ-costs, Ψ-feasibility) change with scale.
+    systems:
+      paper_tags:
+        note: >
+          Canonical scale system (Chapter 5). These tags are defined by actor-binding and where Ω/Θ stabilize,
+          not by surface size alone.
+        tags:
+          a:
+            label: "a) Generic / Structural Critique (No Actor Binding)"
+            description: >
+              Critique is treated as formal structural possibility (operator movement only).
+              No actor, role, or scene is bound. Ω/Θ appear only as abstract parameters.
+              Analytically clean, practically incomplete: critique exists as grammar, not as risk-bearing praxis.
+            reference: "CRITIQUE_MIN and CRITIQUE_PROD as pure structure, without actor binding."
+          b:
+            label: "b) Single-Subject Critique (Self / Support / Learning)"
+            description: >
+              Critique is inwardly bound: the subject occupies both poles (interrupts and bears consequences).
+              Ω is internalized; Χ must be self-generated unless scaffolded. Ψ is optional but decisive for durable
+              trajectory change.
+            typical_drifts:
+              - "Under-questioning (Δ acknowledged but not framed)."
+              - "Over-framing (context inflation)."
+              - "Φ without Σ (recontextualization inflation)."
+              - "Avoidance of Σ due to anticipated self-exposure costs."
+          c:
+            label: "c) Small Group Critique (Peers / Team / Family)"
+            description: >
+              Critique becomes relational. Ω is distributed across roles; Χ is harder because interruption affects
+              belonging and status. Λ becomes central: non-intervention is legible and accumulates. Repeated Λ stabilizes
+              Α scripts (joking, indirect shaming, 'we don't say things'). Responsibility diffusion is structural, not a
+              character failure.
+            typical_drifts:
+              - "Λ → Α silence script."
+              - "Judgment drift in evaluative micro-hierarchies."
+              - "Diffusion drift via unclear role space."
+          d:
+            label: "d) Public Critique (Street / Media / Online)"
+            description: >
+              Maximal amplification: Ω gradients steep, Θ hardens irreversibility, Α stabilizes quickly.
+              Χ becomes fragile under visibility/performance pressure. Σ is costly (permanent contestability),
+              Ψ is rare and often substituted by performative alignment signals.
+            typical_drifts:
+              - "Reaction drift under time pressure."
+              - "Public pillory (exposure-as-substitute)."
+              - "Bystander paralysis → Λ persistence → silence attractor."
+        chapter_marker_quote_ready: >
+          The operators stay the same, but scale decides the cost: as critique moves into publicness,
+          exposure and irreversibility amplify drift without adding new structure.
+
+      deployment_tags:
+        note: >
+          Optional convenience tags for tooling and repositories. These do not replace paper_tags.
+          They describe common scene families. A case may carry both a deployment_tag and a paper_tag.
+        tags:
+          dyadic_micro:
+            label: "dyadic / micro"
+            description: "Small, direct interaction."
+          small_group_team:
+            label: "small group / team"
+            description: "Teams, meetings, families."
+          org_institution:
+            label: "organization / institution"
+            description: "Governance layers, policies."
+          public_mass:
+            label: "public / mass"
+            description: "Media, online, street publics."
+    interoperability:
+      note: >
+        Backward compatibility: if a case uses a single 'scale_tag: a|b|c|d', it SHOULD be treated as paper_tags by default.
+        Tooling MAY additionally accept deployment_tags via an explicit system selector.
+      defaults:
+        preferred_system: "paper_tags"
+        legacy_scale_tag_interpretation: "paper_tags"
+      allowed_systems: ["paper_tags", "deployment_tags"]
+
+  publicness_overlay:
+    id: "P"
+    type: "overlay_modulator"
+    description: >
+      Publicness is an amplification overlay (not an operator). It amplifies Ω (exposure gradients),
+      hardens Θ (irreversibility), and accelerates Α (script stabilization) without creating critique
+      or correction by itself.
+
+# -----------------------------------------------------------------------------
+# DRIFT TYPOLOGY
+# -----------------------------------------------------------------------------
+
+drift_typology:
+  overview: >
+    Drift names predictable structural mutations of critique chains under load.
+    Drift labels are not accusations; they are operator-readable stabilization forms.
+
+  main_classes:
+    - id: "D1"
+      name: "Reaction masquerading as critique"
+      minimal_signature: "Δ + ∇ present / Χ absent"
+      description: "Impulse discharge replaces interruption; expression is fast and non-interruptible."
+      typical_markers:
+        - "tempo pressure substitutes for framing"
+        - "no stop-capability once launched"
+
+    - id: "D2"
+      name: "Judgment masquerading as critique"
+      minimal_signature: "□ + Δ present / Φ and Σ absent (often Ω leveraged)"
+      description: "Evaluation replaces coordination; labels stabilize clarity at cost of actionability."
+      typical_markers:
+        - "evaluation replaces correction path"
+        - "exposure increases while actionability decreases"
+
+    - id: "D3"
+      name: "Narrative repair masquerading as critique"
+      minimal_signature: "Φ high / Σ absent"
+      description: "Recontextualization becomes endpoint; explanation expands while correction remains unreachable."
+      typical_markers:
+        - "endless reframing"
+        - "no consolidated corrective step"
+
+    - id: "D4"
+      name: "Commentary / analysis paralysis"
+      minimal_signature: "Χ present / Σ absent"
+      description: "Meta-commentary stabilizes; interruption suspends correction indefinitely."
+      typical_markers:
+        - "meta-position replaces integration"
+        - "revision windows exist but never close"
+
+    - id: "D5"
+      name: "Public pillory"
+      minimal_signature: "Ω + Θ + Α under P (restraint collapsed)"
+      description: "Exposure replaces coordination; interruption fuses with degradation."
+      typical_markers:
+        - "visibility-as-sanction"
+        - "irreversible residue fields dominate"
+
+    - id: "D6"
+      name: "Silence attractor"
+      minimal_signature: "Λ persistent (often Λ → Α) under Ω/Θ"
+      description: "Repeated non-intervention stabilizes as default; non-critique becomes the expected script."
+      typical_markers:
+        - "non-event load accumulates"
+        - "raising costs increase over time"
+
+  drift_catalog_compact:
+    - id: "C1"
+      name: "Reaction Drift"
+      minimal_signature: "Δ + ∇ present / Χ absent"
+    - id: "C2"
+      name: "Judgment Drift"
+      minimal_signature: "□ + Δ present / Φ and Σ absent / Ω leveraged"
+    - id: "C3"
+      name: "Moralization Drift"
+      minimal_signature: "Ω high / Χ collapsed"
+    - id: "C4"
+      name: "Narrative Reset Drift"
+      minimal_signature: "Φ high / Σ absent"
+    - id: "C5"
+      name: "Commentary Drift"
+      minimal_signature: "Χ present / Σ absent"
+    - id: "C6"
+      name: "Silence-as-Steering"
+      minimal_signature: "Λ persistent / Ω unacknowledged"
+    - id: "C7"
+      name: "Diffusion Drift"
+      minimal_signature: "Ω distributed / □ unclear / Χ not triggered"
+    - id: "C8"
+      name: "Public Pillory"
+      minimal_signature: "Ω + Θ + Α under P"
+    - id: "C9"
+      name: "Integration Bypass"
+      minimal_signature: "∇ + Φ present / Σ bypassed"
+    - id: "C10"
+      name: "Commitment Evasion"
+      minimal_signature: "Σ partial / Ψ absent"
+
+  typical_drift_chains:
+    - id: "chain_public"
+      description: "High-exposure sequence: Ω salience increases → Χ erodes → reaction stabilizes (Α) → Θ hardens residue."
+    - id: "chain_narrative_to_silence"
+      description: "Reframing loop: Φ inflation delays Σ until attention shifts → Λ repetition → silence stabilizes (Α)."
+
+# -----------------------------------------------------------------------------
+# MODULATORS (OPERATOR WEIGHTINGS; NOT PERSON TYPES)
+# -----------------------------------------------------------------------------
+
+modulators:
+  overview: >
+    Modulators are operator weightings that shift reachability and stabilization without adding new primitives.
+    They are not person types and not prescriptions.
+  items:
+    - id: "M1"
+      name: "Frame clarity"
+      description: "How clearly □ defines who may interrupt, what counts as response, and what correction could be."
+    - id: "M2"
+      name: "Non-event density"
+      description: "How often expected responses fail (Λ) and how much coordination shifts into absence."
+    - id: "M3"
+      name: "Asymmetry visibility"
+      description: "Salience of exposure gradients (Ω) and status/retaliation risk in the scene."
+    - id: "M4"
+      name: "Temporal compression"
+      description: "Degree of time pressure vs. availability of review windows (Θ)."
+    - id: "M5"
+      name: "Recontextualization habituation"
+      description: "Whether Φ is routinely used as bridge or becomes the default substitute (narrative reset drift risk)."
+    - id: "M6"
+      name: "Distance availability"
+      description: "Whether Χ (stop-capability) is practically activatable without penalty inside the frame."
+    - id: "M7"
+      name: "Attractor inertia"
+      description: "Speed with which scripts (Α) harden into default handling (outrage, silence, mockery, judgment)."
+    - id: "M8"
+      name: "Publicness overlay"
+      description: "P overlay amplifying Ω/Θ/Α; increases drift sensitivity without changing primitives."
+
+# -----------------------------------------------------------------------------
+# GUARDRAILS (ENTRY CONDITION + MISUSE FIREWALL)
+# -----------------------------------------------------------------------------
+
+guardrails:
+  application_gate:
+    required:
+      - "The PMS entry condition (Χ + reversibility + D) is a validity constraint on PMS-application, not on critique or rejection."
+      - "Χ (Distance) remains practically activatable (stop-capability is real, not merely formal)."
+      - "Reversibility: readings remain scene-bound and revisable; Θ accumulation is treated as real."
+      - "D (Dignity-in-Practice): no shaming, humiliation, or actor-ranking; critique stays structural."
+    disallowed_uses:
+      - "Person-labeling, motive attribution, psychological diagnosis."
+      - "Verdict logic ('who is right') as an output of the model."
+      - "Coercive binding (Ψ→Other), threats, or exposure-as-punishment."
+      - "Using drift labels as sanctions rather than as structural descriptors."
+  dignity_in_practice:
+    note: >
+      D constrains application mode, not content: analysis must not become a pile-on,
+      and must preserve restraint even when Ω/P are high.
+  misuse_signatures_to_flag:
+    - "Using χ-language to demand compliance (χ as coercion)."
+    - "Treating public exposure as correction (P substituted for Σ/Ψ)."
+    - "Turning drift labels into moral rank tokens."
+    - "Collapsing scene-bounded critique into person-typing."
+    - "Using drift language to justify irreversible binding demands."
+
+# -----------------------------------------------------------------------------
+# EXAMPLE PACKETS (OPTIONAL; INSTANCE-FACING)
+# -----------------------------------------------------------------------------
+
+example_suite:
+  overview: >
+    Example packets are operator-legible vignettes designed to keep critique and drift readable
+    without instruction, diagnosis, or moral ranking. They are optional and illustrative; they do not
+    define critique semantics.
+  packet_schema:
+    required_fields:
+      - "scene_label"
+      - "frame_anchor (□)"
+      - "trigger_mismatch (Δ)"
+      - "operator_signature (reduced; 2–6 operators)"
+      - "guardrail_gate (Χ + reversibility + D reminder)"
+      - "structural_closure (2–5 plain sentences; non-instructional)"
+      - "scale"
+    scale:
+      required:
+        - "system"
+        - "tag"
+      allowed_systems: ["paper_tags", "deployment_tags"]
+      legacy_support:
+        note: "If 'scale_tag: a|b|c|d' is provided, interpret as system=paper_tags unless explicitly overridden."
+        legacy_field: "scale_tag"
+        legacy_system_assumed: "paper_tags"
+    optional_fields:
+      - "impulse_pressure (∇)"
+      - "non_event_candidates (Λ)"
+      - "drift_class (if present)"
+      - "two_drift_markers_max"
+      - "cost_distribution (Ω/Θ; optional)"
+      - "publicness_overlay (P) note"
+      - "reach_level (V0–V4; optional)"
+      - "modulators (M1–M8; optional)"
+    constraints:
+      - "Roles, practices, constraints only; no person-typing or motives."
+      - "Operator mapping is a readability aid, not a proof chain."
+      - "No advice; no 'should'; no enforcement language."
+
+  repository_examples:
+    note: >
+      Repository examples may exist, but PMS-CRITIQUE does not depend on them.
+      They are provided only as optional training material for structural reading discipline.
+    paths:
+      - "examples/Example 1 - The Missing Reply Becomes the Story.md"
+      - "examples/Example 2 - Fast Outrage, No Stop-Capability.md"
+      - "examples/Example 3 - Endless Reframing Meeting.md"
+      - "examples/Example 4 - Policy Without Follow-Up.md"
+      - "examples/Example 5 - Role Asymmetry Turns “Feedback” Into Exposure.md"
+
+# -----------------------------------------------------------------------------
+# LOAD ORDER + META NOTES
+# -----------------------------------------------------------------------------
+
+load_order:
+  note: >
+    PMS-CRITIQUE is designed as an addon layer (mapping + patterns), not a replacement.
+    It should be loaded after the PMS base grammar.
+  order:
+    - "PMS.yaml"
+    - "PMS-CRITIQUE.yaml"
+    - "pms-critique-ext.yaml (optional; paper-specific additions)"
+
+meta_notes:
+  compatibility:
+    - "This layer is PMS_1.1-conform and does not add new operators."
+    - "All constructs are mappable to Δ–Ψ signatures and scene-bound records."
+  extensibility:
+    - "Future versions MAY add optional paper-specific extensions (macros, templates, policies) without overriding this base layer."
+  neutrality:
+    - "All mappings remain structural; no psychologizing, moral ranking, or prescriptive claims are encoded."
