@@ -1,39 +1,107 @@
 # =============================================================================
-#  PMS-CRITIQUE SPECIFICATION HEADER
-#  Praxeological Meta-Structure – Critique Layer
+#  PMS-CRITIQUE — PAPER-SPECIFIC APPLICATION SCHEMA (OVERLAY)
 #
-#  File:           PMS-CRITIQUE.yaml
-#  Version:        PMS-CRITIQUE_1.0
-#  Last Updated:   2026-01-07
+#  Repository:
+#    https://github.com/tz-dev/PMS-CRITIQUE
 #
-#  Summary:
-#    This document defines PMS-CRITIQUE as a structural application layer of
-#    the Praxeological Meta-Structure (PMS; Δ–Ψ). It treats "critique" as a
-#    praxeological configuration with strict minimal conditions, reachable
-#    thresholds, and predictable drift forms under load (Ω/Θ/Λ/Α), while
-#    enforcing a non-moral, non-clinical application firewall:
-#      Χ (Distance) + reversibility + D (dignity-in-practice).
+#  File:
+#    PMS-CRITIQUE.yaml
 #
-#    PMS-CRITIQUE does NOT redefine or extend the PMS operator set. It maps
-#    Δ–Ψ to critique-relevant functions (irritation, interruption, correction,
-#    follow-up binding) and provides:
-#      - operator mappings (Δ–Ψ → critique roles),
-#      - a vertical reach ladder (irritation → interruption → correction → binding),
-#      - a horizontal scale ladder (a–d) plus a publicness overlay P,
-#      - a compact drift typology (reaction/judgment/narrative reset/etc.),
-#      - modulators (operator weightings, not person-typing),
-#      - an example packet schema for uniform case mappings.
+#  Schema Version:
+#    PMS-CRITIQUE_1.0
 #
-#  Relationship to PMS:
-#    - DEPENDS on PMS base schema (schema_version: PMS_1.1).
-#    - Δ–Ψ operators are NOT redefined here.
-#    - This is an application grammar for critique and its drift under load.
+#  Last Updated:
+#    2026-01-07
 #
-#  Repositories:
-#    - PMS (base framework):
-#        https://github.com/tz-dev/Praxeological-Meta-Structure-Theory
-#    - PMS-CRITIQUE (this layer):
-#        https://github.com/tz-dev/PMS-CRITIQUE
+# -----------------------------------------------------------------------------
+#  PURPOSE AND STATUS
+# -----------------------------------------------------------------------------
+#  This document defines a paper-specific APPLICATION SCHEMA for the
+#  Praxeological Meta-Structure (PMS). It operationalizes the theoretical
+#  arguments of the accompanying paper by expressing them in a machine-readable,
+#  structurally constrained form.
+#
+#  PMS-CRITIQUE treats "critique" as a praxeological configuration with strict
+#  minimal conditions, reachable thresholds, and predictable drift forms under
+#  load (Ω/Θ/Λ/Α), while enforcing a non-moral, non-clinical application firewall:
+#    Χ (Distance) + reversibility + D (dignity-in-practice).
+#
+# -----------------------------------------------------------------------------
+#  RELATIONSHIP TO PMS (NON-NEGOTIABLE CONSTRAINTS)
+# -----------------------------------------------------------------------------
+#  - This schema DEPENDS on the canonical PMS base specification
+#    (schema_version: PMS_1.1).
+#
+#  - It does NOT redefine, replace, reinterpret, or extend the eleven PMS
+#    meta-axioms (Δ–Ψ).
+#
+#  - It does NOT introduce new operators, meta-axioms, or dependency relations.
+#
+#  - It does NOT modify canonical operator order, dependency hygiene, or
+#    derived axes (A, C, R, E, D).
+#
+#  - All references to operators (Δ–Ψ) retain their meanings exactly as defined
+#    in PMS.yaml.
+#
+#  - Any apparent deviations (e.g. “reach ladder”, “scale ladder”, “drift types”,
+#    “modulators”, “publicness overlay P”) are overlay-level constructs only and
+#    MUST NOT be read as changes to PMS operator logic.
+#
+# -----------------------------------------------------------------------------
+#  SCOPE OF THE OVERLAY
+# -----------------------------------------------------------------------------
+#  This application schema introduces ONLY overlay-level constructs, including:
+#    - operator mappings (Δ–Ψ → critique roles),
+#    - a vertical reach ladder (irritation → interruption → correction → binding),
+#    - a horizontal scale ladder (a–d) plus a publicness overlay P,
+#    - a compact drift typology (reaction/judgment/narrative reset/etc.),
+#    - modulators (operator weightings; not person-typing),
+#    - an example packet schema for uniform case mappings.
+#
+#  These constructs:
+#    - amplify or organize existing PMS operators,
+#    - remain descriptive, non-diagnostic, and non-prescriptive,
+#    - never convert critique language into sanction, sorting, or coercion,
+#    - preserve operator hygiene (especially Χ, Φ, Σ, Ψ).
+#
+# -----------------------------------------------------------------------------
+#  VALIDITY GATE — PMS ENTRY CONDITION (APPLICATION-ONLY)
+# -----------------------------------------------------------------------------
+#  Any USE of this schema as a PMS APPLICATION presupposes acceptance of the
+#  canonical PMS entry condition:
+#    - Χ (Distance): maintained meta-position and stop-capability; no fusion into verdict.
+#    - Reversibility: scene-bound, revisable readings; no global person labels.
+#    - D (Dignity-in-Practice): no shaming/ranking; structure-only critique.
+#
+#  This gate constrains APPLICATION only.
+#  PMS itself may be criticized, rejected, or ignored without satisfying it.
+#
+# -----------------------------------------------------------------------------
+#  SELF-BINDING AND MODEL HYGIENE (CLARIFICATION)
+# -----------------------------------------------------------------------------
+#  In line with PMS.yaml, any application that suspends Distance (Χ),
+#  Dignity-in-Practice (D), or Self-Binding discipline (Ψ) in order to enforce
+#  truth, clarity, authority, or asymmetry is formally INVALID as PMS
+#  application—even if PMS terminology is retained.
+#
+# -----------------------------------------------------------------------------
+#  CANONICAL OPERATOR SOURCE
+# -----------------------------------------------------------------------------
+#  PMS base specification:
+#    PMS.yaml (schema_version: PMS_1.1)
+#
+#  Canonical source URL:
+#    https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml
+#
+#  PMS-CRITIQUE MUST always be read against this source.
+#
+# -----------------------------------------------------------------------------
+#  REPOSITORIES (REFERENCE)
+# -----------------------------------------------------------------------------
+#  - PMS (base framework):
+#      https://github.com/tz-dev/Praxeological-Meta-Structure-Theory
+#  - PMS-CRITIQUE (this layer):
+#      https://github.com/tz-dev/PMS-CRITIQUE
 #
 # =============================================================================
 
@@ -615,3 +683,4 @@ meta_notes:
     - "Future versions MAY add optional paper-specific extensions (macros, templates, policies) without overriding this base layer."
   neutrality:
     - "All mappings remain structural; no psychologizing, moral ranking, or prescriptive claims are encoded."
+
