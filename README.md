@@ -21,7 +21,7 @@ In this sense, PMS–CRITIQUE should be read as:
 * **strictly overlay-level rather than operator-redefining**, and
 * **focused on structural legibility rather than moral or psychological evaluation**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18175456.svg)](https://doi.org/10.5281/zenodo.18175456)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19443043.svg)](https://doi.org/10.5281/zenodo.19443043)
 
 ---
 
