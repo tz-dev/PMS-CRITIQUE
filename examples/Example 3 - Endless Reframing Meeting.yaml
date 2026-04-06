@@ -1,0 +1,577 @@
+example_id: "PMS-CRITIQUE_EX03"
+example_version: "1.0"
+schema_version: "PMS-CRITIQUE_1.1"
+example_label: "Endless Reframing Meeting"
+example_subtitle: "Narrative Reset Drift: Recontextualization Without Integration"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CRITIQUE_1.1"
+
+case_identity:
+  case_label: "Explanatory Expansion vs. Missing Consolidation"
+  scope_discipline: >
+    Structural mapping only. No evaluation of competence, intent, or
+    sincerity. PMS application validity remains conditional on Χ (Distance),
+    reversibility, and D (Dignity-in-Practice).
+  repository_fit: >
+    This example is designed as a repository training example for reading how
+    critique can remain articulate, reflective, and seemingly sophisticated
+    while repeatedly failing to consolidate into a coordinatable corrective
+    step.
+  example_packet_alignment:
+    scene_label: "Explanatory Expansion vs. Missing Consolidation"
+    frame_anchor: >
+      Institutional / small-group meeting frame in which a shared issue is
+      repeatedly discussed, contextualized, and re-described without durable
+      corrective closure.
+    trigger_mismatch: >
+      A recurring operational, procedural, or coordination problem is raised
+      and recognized as relevant, but each cycle of discussion expands context
+      instead of consolidating a next step.
+    operator_signature:
+      reduced: ["Δ", "□", "Φ", "Χ", "Θ"]
+      note: >
+        This reduced signature is a readability aid only. Canonical PMS
+        dependencies remain fully in force. The decisive structural absence is
+        Σ as consolidated correction.
+    guardrail_gate: >
+      Readings remain scene-bound and revisable. No person labels, no motive
+      attributions, no shaming, and no coercive binding claims are generated.
+    structural_closure: >
+      In this scene, critique does not collapse into open reaction, but neither
+      does it reach correction. Recontextualization remains active and
+      stop-capability is often formally available, yet no coherent corrective
+      step consolidates. The meeting becomes a stable site of explanation
+      without integration.
+    scale:
+      system: "paper_tags"
+      tag: "c"
+
+minimal_vignette:
+  title: "A recurring meeting keeps refining the explanation but never consolidates correction"
+  scene_boundaries:
+    domain: "Institutional / team-based coordination / recurring review meeting"
+    scope: >
+      Structures, role relations, meeting dynamics, recontextualization,
+      coordination drift, critique reach, and failure of integration in a
+      bounded small-group scene.
+    out_of_scope:
+      - "person-level judgment"
+      - "motive attribution"
+      - "competence ranking"
+      - "clinical or psychological interpretation"
+      - "truth-adjudication of all substantive claims raised in the meeting"
+      - "instruction or action prescription"
+  short_scene: >
+    A team or committee meets repeatedly to address an acknowledged recurring
+    problem: a process failure, unclear responsibility, missed deadline,
+    quality gap, or coordination difficulty. The issue is discussed in detail,
+    and each participant adds new contextual factors, constraints, exceptions,
+    and reinterpretations. The conversation remains orderly and often highly
+    reflective, but every possible corrective step is postponed by another
+    layer of explanation. Over time, the meeting becomes known for “good
+    discussion” without durable resolution.
+  structural_focus: >
+    The example examines how critique can remain active at the level of
+    mismatch, framing, and recontextualization while failing to consolidate a
+    coordinatable corrective step. The central drift is not raw reaction but
+    D3: narrative repair masquerading as critique.
+  scenic_elements:
+    actors:
+      - "issue raiser / process owner"
+      - "team members with partial contextual knowledge"
+      - "manager, lead, or facilitator"
+      - "stakeholders indirectly affected by non-resolution"
+    salient_objects:
+      - "the recurring problem"
+      - "meeting agenda items"
+      - "context explanations and exceptions"
+      - "possible action steps"
+      - "deferred follow-up points"
+      - "organizational constraints"
+    trigger_event:
+      label: "recurrent issue enters meeting discussion again"
+      description: >
+        A mismatch already known to the group is brought back into discussion,
+        reactivated as relevant, and expanded by new contextualization.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example is useful because it shows a drift form that often appears
+    more “mature” than reaction, while still failing to reach productive
+    critique. It clarifies why explanation, nuance, and reflective pause do not
+    by themselves count as correction.
+  repo_value:
+    - >
+      Demonstrates the structural distinction between recontextualization and
+      integration.
+    - >
+      Provides a clean case of D3 (Narrative repair masquerading as critique)
+      with partial D4 adjacency when interruption persists without closure.
+    - >
+      Shows how Χ can be formally present without Σ being reached.
+    - >
+      Illustrates why critique may remain below V3 even when the scene is
+      articulate, non-reactive, and procedurally orderly.
+    - >
+      Helps repository users differentiate “good meeting discourse” from
+      productive corrective consolidation.
+  central_repo_question: >
+    How can critique remain reflective and context-sensitive while repeatedly
+    failing to become coordinatable correction?
+  lens_relevance:
+    critique_thresholds: >
+      The example clarifies the gap between CRITIQUE_MIN and CRITIQUE_PROD:
+      interruption and reframing may occur without integration.
+    drift_typology: >
+      The case strongly fits D3 and can border on D4 when meta-commentary and
+      revision windows become permanent substitutes for decision.
+    scale_relevance: >
+      The example belongs to paper tag c because belonging, role sensitivity,
+      and distributed responsibility shape what can be consolidated.
+    guardrail_relevance: >
+      The example invites person-blame (“they just avoid action”), but the
+      structural reading must remain scene-bound, reversible, and
+      dignity-constrained.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Δ", "□", "Φ", "Χ", "Θ"]
+    secondary_possible: ["Ω", "Λ"]
+    note: >
+      The central signature is mismatch within a meeting frame, sustained
+      recontextualization, and repeated stop-capability without integration.
+      Ω appears through role distribution and exposure to decision costs. Λ may
+      appear in deferred follow-up, but it is not the primary operator in the
+      drift itself.
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A recurring mismatch remains clearly nameable: something is not working,
+        remains unresolved, or repeatedly returns as a live problem.
+    "∇":
+      scene_role: >
+        Impulse exists, but it is moderated. Participants feel pressure to
+        address the issue, though not typically through explosive expression.
+    "□":
+      scene_role: >
+        The meeting frame defines what counts as a relevant issue, who may
+        speak, and what would formally count as follow-up or correction.
+    "Λ":
+      scene_role: >
+        Non-events appear in deferred decisions, absent ownership, and missing
+        follow-through after previous rounds of discussion.
+    "Α":
+      scene_role: >
+        A recognizable script begins to stabilize: the group becomes skilled at
+        elaborating the issue without resolving it.
+    "Ω":
+      scene_role: >
+        Role asymmetries matter because some participants bear more exposure if
+        a concrete decision is made, while others can remain in explanatory
+        space at lower cost.
+    "Θ":
+      scene_role: >
+        Time accumulates the pattern. Each meeting adds history, residue, and
+        prior context, which paradoxically makes closure harder.
+    "Φ":
+      scene_role: >
+        Recontextualization is highly active. Every proposed step is reframed by
+        another perspective, exception, dependency, or contextual complication.
+    "Χ":
+      scene_role: >
+        Distance is available in the sense that pauses, reflection, and revision
+        are permitted. The drift emerges because Χ and Φ remain active without
+        transition into Σ.
+    "Σ":
+      scene_role: >
+        Integration is the missing operator. No coherent corrective step
+        consolidates strongly enough to coordinate the next move.
+    "Ψ":
+      scene_role: >
+        Self-binding remains weak or partial. Follow-up ownership is discussed,
+        but durable commitment is repeatedly deferred, diluted, or left open.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness is often high. The group sees many facets of the issue and
+        sustains framed differentiation over time.
+    C:
+      reading: >
+        Coherence may appear strong at the narrative level because the group can
+        explain the problem richly, but this coherence is not yet integrated
+        into action.
+    R:
+      reading: >
+        Responsibility remains diffuse or suspended. Ownership is discussed but
+        not durably bound.
+    E:
+      reading: >
+        Action remains weak. The scene produces explainability more reliably
+        than enactable correction.
+    D:
+      reading: >
+        Dignity-in-Practice can remain comparatively intact because overt
+        degradation is absent, but this does not compensate for structural
+        non-correction.
+  structural_mechanism_summary:
+    sequence:
+      - "A recurring mismatch is raised."
+      - "The meeting frame legitimizes discussion."
+      - "Contextual explanation expands."
+      - "Reframing multiplies constraints and exceptions."
+      - "Pause and revision remain available."
+      - "Integration fails to consolidate."
+      - "The issue returns in a later cycle."
+    concise_formula: >
+      recurring Δ in □ -> active Φ expansion -> available Χ -> weak or absent Σ
+      -> deferred Ψ -> repeated return under Θ
+
+critique_threshold_reading:
+  threshold_assessment:
+    CRITIQUE_MIN:
+      status: "reached"
+      reasoning: >
+        The mismatch is framed and interruptible. The issue is clearly legible
+        inside the meeting, and the scene permits reflective engagement.
+    CRITIQUE_PROD:
+      status: "not_reached"
+      reasoning: >
+        Recontextualization remains active, but integration does not consolidate
+        into a coordinatable corrective step.
+    CRITIQUE_STABLE:
+      status: "not_reached"
+      reasoning: >
+        Without Σ, durable self-binding toward follow-up cannot stabilize
+        reliably. Ownership remains weak, delayed, or distributed.
+  non_equivalence_reading:
+    reaction_check: >
+      This is not primarily a D1 case. The issue is not that impulse outruns
+      interruption, but that interruption and explanation never consolidate into
+      correction.
+    judgment_check: >
+      Judgment may appear locally, but the central problem is not evaluative
+      labeling. It is explanatory expansion without integration.
+    silence_check: >
+      This is not a silence attractor in the primary sense. The scene is active
+      and discursive, yet still structurally non-corrective.
+  threshold_formula_fit:
+    closest_definition: "between CRITIQUE_MIN and CRITIQUE_PROD"
+    note: >
+      The scene repeatedly approaches productive critique by mobilizing Φ, but
+      stalls before Σ.
+
+reach_and_scale_reading:
+  vertical_reach:
+    assessed_level: "V2_with_repeated_failed_transition_toward_V3"
+    justification: >
+      Minimal critique is clearly present. The scene repeatedly attempts to move
+      toward productive critique, but fails to consolidate correction.
+    why_not_V1: >
+      The meeting is not dominated by raw discharge; it is framed, reflective,
+      and interruptible.
+    why_not_V3: >
+      No coherent corrective step becomes durable enough to coordinate action.
+  horizontal_scale:
+    system: "paper_tags"
+    tag: "c"
+    label: "Small Group Critique (Peers / Team / Family)"
+    justification: >
+      The scene is relational, role-distributed, and shaped by belonging,
+      status sensitivity, and distributed responsibility within a bounded group.
+    scale_specific_costs:
+      - "consolidation may threaten belonging or expose role vulnerabilities"
+      - "participants can preserve group smoothness by staying in explanation"
+      - "ownership is harder to fix when roles are interdependent"
+      - "correction may create local asymmetry costs within the group"
+  deployment_scale_note:
+    system: "deployment_tags"
+    tag: "small_group_team"
+    note: >
+      This optional deployment tag is compatible with the primary paper tag and
+      may assist repository tooling.
+  publicness_overlay:
+    status: "inactive"
+    overlay_id: "P"
+    reading: >
+      No publicness overlay is active in this case. The scene is institutionally
+      bounded and small-group based, so amplification through mass visibility is
+      not the main driver.
+
+drift_analysis:
+  main_class_reading:
+    primary:
+      id: "D3"
+      name: "Narrative repair masquerading as critique"
+      fit: "strong"
+      reasoning: >
+        Recontextualization becomes the effective endpoint. Explanation expands,
+        but correction remains unreachable.
+    secondary:
+      id: "D4"
+      name: "Commentary / analysis paralysis"
+      fit: "moderate"
+      reasoning: >
+        Where stop-capability and meta-discussion remain open indefinitely, the
+        scene can slide from D3 into D4-like suspension of correction.
+  drift_catalog_reading:
+    compact_matches:
+      - id: "C4"
+        name: "Narrative Reset Drift"
+        fit: "strong"
+      - id: "C5"
+        name: "Commentary Drift"
+        fit: "moderate"
+      - id: "C10"
+        name: "Commitment Evasion"
+        fit: "moderate"
+        note: >
+          This appears where tentative follow-up is mentioned but never strongly
+          bound.
+  typical_markers_present:
+    - "new context repeatedly displaces consolidation"
+    - "every proposed step is reopened by another exception or perspective"
+    - "discussion quality appears high while correction remains weak"
+    - "revision windows stay open without closure"
+    - "follow-up ownership remains diffuse or postponed"
+  drift_chain_alignment:
+    closest_chain:
+      id: "chain_narrative_to_silence"
+      reading: >
+        The case aligns strongly with the reframing loop: Φ inflation delays Σ,
+        and unresolved issues risk returning later in more muted or deferred
+        form.
+    scene_specific_chain: >
+      recurring issue -> contextual expansion -> reframing loop -> no Σ
+      consolidation -> deferred ownership -> later return of the same mismatch
+
+modulator_profile:
+  overview: >
+    The scene is shaped by modulators that make nuanced explanation easy and
+    integration difficult within a role-sensitive group environment.
+  active_modulators:
+    - id: "M1"
+      name: "Frame clarity"
+      level: "high"
+      reading: >
+        The meeting frame is usually clear enough to sustain discussion. The
+        issue is not frame absence, but frame saturation by explanation.
+    - id: "M2"
+      name: "Non-event density"
+      level: "moderate"
+      reading: >
+        Missing follow-up and deferred ownership matter, though they are
+        downstream symptoms rather than the primary driver.
+    - id: "M3"
+      name: "Asymmetry visibility"
+      level: "moderate"
+      reading: >
+        Role and exposure gradients are present but often muted. Decision costs
+        are unevenly distributed even when the group appears collaborative.
+    - id: "M4"
+      name: "Temporal compression"
+      level: "low_to_moderate"
+      reading: >
+        This scene is not dominated by extreme speed. The problem is more often
+        prolonged cycling than rushed closure.
+    - id: "M5"
+      name: "Recontextualization habituation"
+      level: "very_high"
+      reading: >
+        Φ is the central modulator. Reframing is habitual and repeatedly used as
+        the preferred processing mode.
+    - id: "M6"
+      name: "Distance availability"
+      level: "high"
+      reading: >
+        Χ is comparatively available. Participants can pause, revise, and
+        clarify, but this very availability can become part of the drift when Σ
+        never follows.
+    - id: "M7"
+      name: "Attractor inertia"
+      level: "high"
+      reading: >
+        The group develops a stable explanatory script: it becomes increasingly
+        normal to deepen understanding rather than consolidate correction.
+    - id: "M8"
+      name: "Publicness overlay"
+      level: "inactive"
+      reading: >
+        Public amplification is not materially organizing the scene.
+  modulator_summary: >
+    The strongest drivers are M5, M6, and M7: habitual recontextualization,
+    high distance availability, and attractor stabilization around explanation
+    without integration.
+
+cost_distribution:
+  overview: >
+    Costs in this scene accumulate through delay, diffusion, and unresolved
+    coordination rather than through explosive exposure. These are structural
+    costs, not moral verdicts.
+  interpretive_costs:
+    - "the issue becomes increasingly over-explained without becoming more actionable"
+    - "participants expend effort maintaining nuanced understanding without closure"
+  exposure_costs:
+    - "those proposing concrete steps may bear higher local risk than those staying in explanation"
+    - "issue owners carry ongoing burden when non-resolution repeats"
+  temporal_costs:
+    - "each additional round adds history that makes consolidation harder"
+    - "the recurring issue consumes meeting time without durable correction"
+  coordination_costs:
+    - "shared actionability weakens as contextual complexity expands"
+    - "follow-up becomes diffuse because no step is stabilized strongly enough"
+  dignity_stress_costs:
+    - "overt degradation may stay low, but unresolved burden can accumulate on exposed roles"
+    - "the appearance of civility can mask uneven load distribution"
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must not be confused with endless suspension. Χ names practical
+      interruptibility, not an indefinite right to avoid consolidation.
+    reversibility: >
+      The analysis remains scene-bound and revisable. It does not claim that
+      participants are globally avoidant, incompetent, or insincere.
+    dignity_in_practice: >
+      The example must not be used to shame teams, facilitators, or issue
+      raisers. It maps a recurrent structural drift in bounded meeting praxis.
+  case_specific_validity_test:
+    valid_if:
+      - "reframing is described structurally rather than psychologized"
+      - "the absence of Σ is tracked without blaming individuals as types"
+      - "drift labels remain descriptive, not punitive"
+      - "non-resolution is analyzed without converting the example into advice"
+    formally_invalid_if:
+      - "the example is used to prove that participants are weak or manipulative"
+      - "explanatory care is treated as mere bad faith by default"
+      - "the meeting is reduced to fixed personal deficiencies"
+      - "the analysis becomes a covert performance evaluation"
+
+limits_and_boundedness_check:
+  structural_limits_in_this_case:
+    - "The analysis does not establish whether any proposed solution was substantively correct."
+    - "It does not verify motives, sincerity, or strategic intent."
+    - "It does not decide whether delay was justified in every instance."
+    - "It does not rank the worth, maturity, or dignity of participants."
+  non_capture_check:
+    possible_non_capture: >
+      A critique-structural reading may underrepresent resource scarcity,
+      external dependencies, technical complexity, organizational politics, or
+      legal constraints that also make consolidation difficult.
+    does_not_imply_defect: >
+      Incomplete capture here would not show that the meeting scene is
+      defective; it would show that other framings may illuminate constraints
+      not foregrounded by PMS-CRITIQUE.
+  rival_framing_relevance:
+    - "organizational analysis may better capture governance bottlenecks"
+    - "process design analysis may better capture meeting architecture failures"
+    - "technical management analysis may better capture implementation constraints"
+    - "institutional sociology may better capture role and bureaucracy effects"
+  anti_absorption_note: >
+    The example should not redescribe every nuanced meeting as D3 by default.
+    The fit becomes strong only where reframing persistently substitutes for
+    consolidation.
+
+mip_docking_relevance:
+  status: "optional_and_not_required"
+  critique_side_statement: >
+    This example is structurally complete as a PMS-CRITIQUE reading without any
+    downstream evaluative docking.
+  possible_docking_relevance: >
+    If one later wanted to evaluate responsibility allocation, institutional
+    process quality, or admissibility of decision structures, the critique scene
+    could provide scene-bound projection inputs without itself deciding
+    legitimacy.
+  separation_reminder:
+    - "This example does not itself decide legitimacy."
+    - "It does not generate evaluative scores."
+    - "No back-projection from later evaluation should be read into this mapping."
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    In this case, critique remains active but does not become productive. The
+    group repeatedly recontextualizes the mismatch, adds nuance, and preserves
+    room for reflection, yet no coherent corrective step consolidates. What
+    stabilizes is not correction, but a meeting script in which explanation
+    repeatedly substitutes for integration. The result is a structurally
+    readable drift: narrative expansion without durable actionability.
+
+extended_scene_analysis:
+  frame_anchor_check:
+    operator: "□"
+    reading: >
+      The meeting frame is clear and legitimate enough to sustain recurring
+      issue discussion. The structural problem is not lack of frame, but failure
+      to move within the frame from discussion to coordinated correction.
+  trigger_mismatch_check:
+    operator: "Δ"
+    reading: >
+      The mismatch is repeatedly recognized and returns as a live issue. It is
+      neither invisible nor dismissed outright.
+  non_event_integrity_check:
+    operator: "Λ"
+    reading: >
+      Deferred follow-up, absent ownership, and missed closures accumulate, but
+      they emerge downstream from repeated non-consolidation rather than as the
+      primary engine of the case.
+  attractor_stabilization_check:
+    operator: "Α"
+    reading: >
+      The group develops a familiar loop: the issue is reopened, contextualized,
+      and expanded, but not stabilized into correction. This loop itself
+      becomes an attractor.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "issue raisers who request concrete follow-up"
+      - "role holders who would have to own implementation"
+      - "those affected by repeated unresolved problems"
+    lower_cost_positions:
+      - "participants who can remain at the level of commentary"
+      - "roles less exposed to implementation burden"
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "issue recognized"
+      - "meeting discussion begins"
+      - "context expands"
+      - "possible step appears"
+      - "step is reopened through new framing"
+      - "no Σ consolidation"
+      - "issue returns later"
+    reading: >
+      Θ matters because repeated cycles deepen the explanatory archive while
+      weakening the expectation that this round will actually close differently.
+  distance_availability_check:
+    operator: "Χ"
+    reading: >
+      Distance is available and often valued. Participants can pause, nuance,
+      and revise, but the scene shows that Χ without Σ can become structurally
+      non-productive.
+  integration_check:
+    operator: "Σ"
+    reading: >
+      This is the decisive absence. The meeting fails not because it lacks
+      intelligence or articulation, but because no corrective step becomes
+      coherent enough to coordinate the next move.
+  self_binding_check:
+    operator: "Ψ"
+    reading: >
+      Follow-up ownership remains partial, postponed, or diluted. The scene does
+      not strongly bind itself to a trajectory of correction.
+  critique_displacement_statement:
+    core_claim: >
+      The case is best read not as failed discussion, but as critique displaced
+      into ongoing explanation: the issue is processed repeatedly, yet
+      correction remains structurally unbound.
+
+assistant_test_vectors:
+  promptables:
+    - "Why does this scene fit D3 more strongly than D4?"
+    - "What exactly is present here that allows CRITIQUE_MIN but blocks CRITIQUE_PROD?"
+    - "How can high Χ availability contribute to non-correction in this meeting?"
+    - "Which modulators most strongly stabilize explanatory expansion here?"
+    - "Why is this a scale c case rather than a publicness-driven case?"
+    - "Give a boundedness note explaining what this example does not prove."

@@ -1,0 +1,573 @@
+example_id: "PMS-CRITIQUE_EX02"
+example_version: "1.0"
+schema_version: "PMS-CRITIQUE_1.1"
+example_label: "Fast Outrage, No Stop-Capability"
+example_subtitle: "Reaction Masquerading as Critique"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CRITIQUE_1.1"
+
+case_identity:
+  case_label: "High Expressive Intensity vs. Missing Interruption"
+  scope_discipline: >
+    Structural mapping only. No evaluation of content, no intent attribution,
+    and no moral ranking. PMS application validity remains conditional on Χ
+    (Distance), reversibility, and D (Dignity-in-Practice).
+  repository_fit: >
+    This example is designed as a repository training example for reading how
+    fast expressive escalation can simulate critique while structurally failing
+    to stabilize interruption, re-entry, and revisability.
+  example_packet_alignment:
+    scene_label: "High Expressive Intensity vs. Missing Interruption"
+    frame_anchor: >
+      Public / media-amplified response scene in which a triggering object is
+      rapidly taken up across a networked visibility space.
+    trigger_mismatch: >
+      A publicly circulating statement, clip, or action is encountered as
+      offensive, dangerous, or intolerable and rapidly becomes an object of
+      collective response.
+    operator_signature:
+      reduced: ["Δ", "∇", "Ω", "Θ", "P"]
+      note: >
+        This reduced signature is a readability aid only. Canonical PMS
+        dependencies remain fully in force. P is an overlay amplifier, not an
+        operator.
+    guardrail_gate: >
+      Readings remain scene-bound and revisable. No person labels, no motive
+      attributions, no shaming, and no coercive binding claims are generated.
+    structural_closure: >
+      In this scene, expression reaches high intensity before interruption
+      becomes structurally durable. Publicness amplifies response pressure,
+      exposure gradients, and residue formation, but does not itself produce
+      critique. What stabilizes first is reactive escalation, not corrective
+      coordination.
+    scale:
+      system: "paper_tags"
+      tag: "d"
+
+minimal_vignette:
+  title: "A public trigger becomes rapidly shareable outrage before critique stabilizes"
+  scene_boundaries:
+    domain: "Public discourse / media-amplified reaction / online critique scene"
+    scope: >
+      Structures, roles, visibility dynamics, exposure gradients, temporality,
+      critique reach, and drift stabilization under public amplification.
+    out_of_scope:
+      - "person-level judgment"
+      - "motive attribution"
+      - "clinical or psychological interpretation"
+      - "moral ranking"
+      - "truth-adjudication of the triggering content"
+      - "instruction or action prescription"
+  short_scene: >
+    A clip, post, quote, or public action is circulated and quickly framed as
+    unacceptable by many participants. Shares, reposts, denunciations, and
+    escalating commentary proliferate within hours. The dominant tempo rewards
+    immediate uptake, intensification, and alignment, while pauses, clarifying
+    moves, or frame renegotiations become increasingly costly. The scene
+    acquires strong expressive momentum, but no durable stop-capability or
+    coordinatable corrective step emerges.
+  structural_focus: >
+    The example examines how high expressive intensity can be mistaken for
+    critique even though the configuration remains structurally closer to
+    reaction/discharge: Δ and ∇ are strong, but Χ fails to stabilize, while P
+    amplifies Ω, Θ, and Α.
+  scenic_elements:
+    actors:
+      - "initial poster / public target"
+      - "rapid amplifiers / commenters / sharers"
+      - "bystanders under alignment pressure"
+      - "platform or media visibility structures"
+    salient_objects:
+      - "the circulating trigger object"
+      - "public comments and reposts"
+      - "visibility metrics"
+      - "alignment signals"
+      - "calls for response or sanction"
+      - "durable public traces"
+    trigger_event:
+      label: "rapid public uptake of a provocative object"
+      description: >
+        A mismatch is publicly registered and quickly converted into high-speed
+        directional response across a visibility-amplified scene.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example is useful because it isolates a central PMS-CRITIQUE
+    distinction: not every intense public response counts as critique in the
+    strict sense. The scene clarifies how reaction can masquerade as critique
+    when publicness accelerates expressive alignment faster than interruption
+    can stabilize.
+  repo_value:
+    - >
+      Demonstrates the difference between a legible public mismatch and a
+      structurally critique-capable episode.
+    - >
+      Shows how D1 (Reaction masquerading as critique) becomes especially likely
+      under scale d with active publicness overlay P.
+    - >
+      Makes visible how P amplifies Ω, Θ, and Α without adding new operators or
+      creating correction by itself.
+    - >
+      Helps distinguish visibility-driven escalation from productive critique
+      that would require Χ and later Φ + Σ.
+    - >
+      Serves as a clean example of why stop-capability, re-entry, and revision
+      windows matter under media-amplified pressure.
+  central_repo_question: >
+    How does public reaction become structurally intense without becoming
+    critique in the strict PMS-CRITIQUE sense?
+  lens_relevance:
+    critique_thresholds: >
+      The example directly tests the CRITIQUE_MIN threshold by showing that
+      expressive escalation can remain below minimal critique when Χ does not
+      become practically available.
+    drift_typology: >
+      The scene is a strong D1 case and often borders on D5 tendencies when
+      exposure increasingly replaces coordination.
+    scale_relevance: >
+      The example clearly belongs to paper tag d, where Ω and Θ are amplified,
+      Χ becomes fragile, and durable residue forms quickly.
+    guardrail_relevance: >
+      The example is useful because it invites moralization unless the reading
+      remains strictly structural, reversible, and dignity-constrained.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Δ", "∇", "Ω", "Θ", "P"]
+    secondary_possible: ["□", "Α"]
+    note: >
+      The scene contains framing activity, but frame stabilization is weak and
+      contested. Α may begin to form quickly under repetition, but the decisive
+      structural issue is that reaction outruns interruptible critique. P is an
+      overlay, not an operator.
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A mismatch becomes publicly legible: the trigger object is encountered
+        as offensive, harmful, contradictory, or intolerable.
+    "∇":
+      scene_role: >
+        Directional pressure is extremely strong: users are pulled toward
+        immediate response, condemnation, amplification, and alignment.
+    "□":
+      scene_role: >
+        A provisional public frame emerges around the trigger, but it remains
+        unstable, rapidly compressed, and often subordinated to tempo rather
+        than deliberative relevance.
+    "Λ":
+      scene_role: >
+        Non-event pressure appears in absent clarifications, missing pauses, or
+        unmade distinctions, but Λ is not the dominant organizer of this case.
+    "Α":
+      scene_role: >
+        Repetition begins to harden scripts such as denunciation routines,
+        expected alignment, and formulaic amplification.
+    "Ω":
+      scene_role: >
+        Exposure gradients become steep: the target is highly exposed, while the
+        responding public is diffuse and unevenly accountable.
+    "Θ":
+      scene_role: >
+        Irreversibility and residue intensify quickly. Screenshots, reposts, and
+        indexical traces harden the temporal consequences of the episode.
+    "Φ":
+      scene_role: >
+        Recontextualization remains underdeveloped or arrives late. Public
+        pressure rewards speed more than adaptive reframing.
+    "Χ":
+      scene_role: >
+        Distance is structurally weak. The scene offers little practical
+        stop-capability once escalation gains momentum.
+    "Σ":
+      scene_role: >
+        No coherent corrective step consolidates. The scene organizes exposure
+        and affect more readily than correction.
+    "Ψ":
+      scene_role: >
+        Self-binding toward accountable follow-up is largely absent. Binding
+        pressure is instead often projected outward as demands on the target or
+        on bystanders.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness appears inflated at the level of mismatch salience, but this
+        does not mean structurally stable critique-awareness. Much of the scene
+        runs on accelerated recognition rather than sustained framed
+        differentiation.
+    C:
+      reading: >
+        Coherence often takes the form of fast narrative convergence around a
+        public script, not robust critique coherence under revisability.
+    R:
+      reading: >
+        Responsibility remains weakly bound. Exposure is distributed
+        asymmetrically, while ownership of consequences is diffuse.
+    E:
+      reading: >
+        Action pressure is high, but enactable correction is low. The scene
+        tends toward expressive discharge rather than integrated corrective
+        action.
+    D:
+      reading: >
+        Dignity-in-Practice becomes vulnerable because public exposure rises
+        faster than distance and restraint.
+  structural_mechanism_summary:
+    sequence:
+      - "A public mismatch becomes rapidly visible."
+      - "Response pressure accelerates immediately."
+      - "Visibility and alignment incentives amplify uptake."
+      - "Exposure gradients steepen under publicness."
+      - "Revision windows narrow as traces harden."
+      - "Reaction stabilizes before interruption can consolidate."
+      - "Correction remains underdeveloped or absent."
+    concise_formula: >
+      public Δ -> rapid ∇ escalation -> P amplification -> steepened Ω ->
+      hardened Θ -> weak Χ -> reaction stabilization without correction
+
+critique_threshold_reading:
+  threshold_assessment:
+    CRITIQUE_MIN:
+      status: "not_reached_or_only_momentary"
+      reasoning: >
+        Although a mismatch is strongly legible, practical interruptibility does
+        not stabilize. The scene is dominated by acceleration, not by durable
+        stop-capability.
+    CRITIQUE_PROD:
+      status: "not_reached"
+      reasoning: >
+        Recontextualization and integration do not consolidate into a
+        coordinatable corrective step. Expression outruns correction.
+    CRITIQUE_STABLE:
+      status: "not_reached"
+      reasoning: >
+        No durable self-binding toward accountable follow-up emerges. Binding is
+        weak internally and often displaced outward.
+  non_equivalence_reading:
+    reaction_check: >
+      This is a paradigmatic D1 case. The scene strongly supports the PMS-
+      CRITIQUE claim that Δ + ∇ without Χ is not weak critique but a different
+      structure.
+    judgment_check: >
+      Judgment elements may appear, but the primary problem is not evaluative
+      labeling as such. It is the dominance of high-speed reactive discharge.
+    silence_check: >
+      This is the inverse of a silence attractor case. Here the scene is noisy,
+      but the noise does not by itself produce critique.
+
+reach_and_scale_reading:
+  vertical_reach:
+    assessed_level: "V1"
+    justification: >
+      The scene strongly fits reaction/discharge: mismatch plus directional
+      response are present, but practical stop-capability does not stabilize.
+    why_not_V2: >
+      Minimal critique would require interruptible framed differentiation. Here
+      the scene remains too acceleration-driven and publicly fused for Χ to
+      function reliably.
+    why_not_V3: >
+      There is no durable bridge into actionable correction through Φ + Σ.
+  horizontal_scale:
+    system: "paper_tags"
+    tag: "d"
+    label: "Public Critique (Street / Media / Online)"
+    justification: >
+      The defining features are amplified visibility, steep exposure gradients,
+      hardened residue, and rapid script formation under public conditions.
+    scale_specific_costs:
+      - "pause is read as hesitation, weakness, or misalignment"
+      - "revision is costly once traces circulate widely"
+      - "public target bears concentrated exposure"
+      - "correction is harder to consolidate than denunciation"
+  deployment_scale_note:
+    system: "deployment_tags"
+    tag: "public_mass"
+    note: >
+      This optional deployment tag is compatible with the primary paper tag and
+      may assist repository tooling.
+  publicness_overlay:
+    status: "active"
+    overlay_id: "P"
+    reading: >
+      Publicness amplifies Ω, Θ, and Α. It increases exposure, hardens residue,
+      and speeds script stabilization, but does not itself create critique or
+      correction.
+
+drift_analysis:
+  main_class_reading:
+    primary:
+      id: "D1"
+      name: "Reaction masquerading as critique"
+      fit: "strong"
+      reasoning: >
+        The scene is driven by impulse discharge, high tempo, and missing
+        stop-capability. Expression is intense but not structurally
+        interruptible.
+    secondary:
+      id: "D5"
+      name: "Public pillory"
+      fit: "moderate_to_strong_risk"
+      reasoning: >
+        Where exposure increasingly substitutes for coordination, the scene
+        moves toward D5. Not every such episode fully stabilizes there, but the
+        risk is high under active P.
+  drift_catalog_reading:
+    compact_matches:
+      - id: "C1"
+        name: "Reaction Drift"
+        fit: "strong"
+      - id: "C8"
+        name: "Public Pillory"
+        fit: "moderate_to_strong_risk"
+      - id: "C3"
+        name: "Moralization Drift"
+        fit: "moderate"
+        note: >
+          Moralization often appears as an escalatory carrier, but the core
+          structure remains reaction-first.
+  typical_markers_present:
+    - "tempo pressure substitutes for framing"
+    - "immediate expressive alignment is rewarded"
+    - "stop-capability is weak once uptake accelerates"
+    - "visibility intensifies faster than correction"
+    - "durable residue forms before re-entry stabilizes"
+  drift_chain_alignment:
+    closest_chain:
+      id: "chain_public"
+      reading: >
+        This case closely instantiates the public drift chain: Ω salience rises,
+        Χ erodes, reaction stabilizes, and Θ hardens residue.
+    scene_specific_chain: >
+      trigger visibility -> rapid uptake -> intensified ∇ -> P amplification ->
+      Ω steepening -> Χ erosion -> reactive stabilization -> hardened public
+      trace
+
+modulator_profile:
+  overview: >
+    The scene is shaped by modulators that make reaction easy and interruption
+    difficult under public amplification.
+  active_modulators:
+    - id: "M1"
+      name: "Frame clarity"
+      level: "low_to_mixed"
+      reading: >
+        A public frame forms quickly, but its relevance structure is compressed
+        and unstable. Speed outruns careful framing.
+    - id: "M2"
+      name: "Non-event density"
+      level: "low_to_moderate"
+      reading: >
+        Missing pauses, clarifications, and re-entry points matter, but the
+        scene is primarily driven by overt reaction rather than accumulated
+        absence.
+    - id: "M3"
+      name: "Asymmetry visibility"
+      level: "high"
+      reading: >
+        Exposure gradients are sharp and publicly legible. Targets carry heavy
+        trace burden while responders remain unevenly exposed.
+    - id: "M4"
+      name: "Temporal compression"
+      level: "very_high"
+      reading: >
+        Time pressure is extreme. Compression narrows revision windows and
+        rewards speed over interruptibility.
+    - id: "M5"
+      name: "Recontextualization habituation"
+      level: "low"
+      reading: >
+        The scene does not strongly reward adaptive reframing. Recontextualizing
+        moves often arrive late or are treated as evasive.
+    - id: "M6"
+      name: "Distance availability"
+      level: "very_low"
+      reading: >
+        Practical stop-capability is weak. Public alignment pressure makes pause
+        and reflective re-entry costly.
+    - id: "M7"
+      name: "Attractor inertia"
+      level: "high"
+      reading: >
+        Once the public script stabilizes, it becomes sticky and resistant to
+        interruption.
+    - id: "M8"
+      name: "Publicness overlay"
+      level: "very_high"
+      reading: >
+        P is the dominant amplifier in this case, intensifying exposure,
+        residue, and script stabilization.
+  modulator_summary: >
+    The strongest drivers are M3, M4, M6, M7, and M8: visible asymmetry,
+    extreme temporal compression, low distance availability, rapid attractor
+    hardening, and strong publicness amplification.
+
+cost_distribution:
+  overview: >
+    Costs in this scene are highly uneven and rapidly accumulating. These costs
+    are not moral verdicts; they are structural effects under Ω, Θ, and P.
+  interpretive_costs:
+    - "meaning condenses faster than careful framing can stabilize"
+    - "participants infer urgency from circulation tempo"
+  exposure_costs:
+    - "the public target bears concentrated visibility and residue"
+    - "bystanders face alignment pressure under watchful publics"
+    - "responders are diffusely implicated but unevenly accountable"
+  temporal_costs:
+    - "revision windows close quickly"
+    - "screenshots, reposts, and archives harden traces early"
+  coordination_costs:
+    - "expressive escalation crowds out corrective integration"
+    - "shared actionability is harder to build than denunciatory momentum"
+  dignity_stress_costs:
+    - "public exposure can become a substitute for correction"
+    - "restraint is penalized relative to visible alignment"
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      The reading must not fuse with the scene’s own acceleration. Χ here names
+      the structural question of stop-capability, not whether any side is
+      morally superior.
+    reversibility: >
+      The analysis remains scene-bound and revisable. It does not claim that any
+      participant is globally irresponsible, malicious, or immature.
+    dignity_in_practice: >
+      The example must not be used to shame publics, targets, or bystanders. It
+      maps how a public critique scene can drift structurally under amplification.
+  case_specific_validity_test:
+    valid_if:
+      - "public amplification is analyzed structurally rather than moralized"
+      - "reaction is distinguished from critique without ranking persons"
+      - "drift labels remain descriptive, not punitive"
+      - "public exposure is tracked without reproducing it as sanction"
+    formally_invalid_if:
+      - "the example is used to prove that outraged actors are bad people"
+      - "the public target is reduced to a fixed person-type"
+      - "exposure is treated as deserved correction"
+      - "the analysis becomes a secondary pile-on"
+
+limits_and_boundedness_check:
+  structural_limits_in_this_case:
+    - "The analysis does not establish whether the public content was true or false."
+    - "It does not verify motives of posters, targets, or amplifiers."
+    - "It does not decide whether outrage was substantively justified."
+    - "It does not rank the worth or dignity of any participant."
+  non_capture_check:
+    possible_non_capture: >
+      A critique-structural reading may underrepresent media-economy factors,
+      platform design, legal stakes, historical grievances, or ideological
+      conflict that also shape the episode.
+    does_not_imply_defect: >
+      Incomplete capture here would not show that the scene is defective; it
+      would show that other framings may illuminate dimensions not foregrounded
+      by PMS-CRITIQUE.
+  rival_framing_relevance:
+    - "media studies may better capture platform amplification logics"
+    - "political theory may better assess legitimacy and public contestation"
+    - "discourse analysis may better capture rhetorical escalation forms"
+    - "legal analysis may better assess harm, rights, and liability"
+  anti_absorption_note: >
+    The example should not redescribe every intense public reaction as mere D1
+    by default. The structural fit becomes strong only where acceleration,
+    weak stop-capability, and early residue hardening converge.
+
+mip_docking_relevance:
+  status: "optional_and_not_required"
+  critique_side_statement: >
+    This example is structurally complete as a PMS-CRITIQUE reading without any
+    downstream evaluative docking.
+  possible_docking_relevance: >
+    If one later wanted to evaluate legitimacy of public response regimes,
+    institutional handling, or publicity constraints, the critique scene could
+    provide scene-bound projection inputs without itself deciding legitimacy.
+  separation_reminder:
+    - "This example does not itself decide legitimacy."
+    - "It does not generate evaluative scores."
+    - "No back-projection from later evaluation should be read into this mapping."
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    In this case, public intensity is not enough to count as critique in the
+    strict PMS-CRITIQUE sense. The scene quickly stabilizes as reaction:
+    mismatch becomes visible, response pressure accelerates, and publicness
+    amplifies exposure and residue before interruptibility can take hold. What
+    looks like forceful critique is structurally closer to discharge without
+    stable stop-capability. The result is a high-risk configuration in which
+    expression outpaces correction.
+
+extended_scene_analysis:
+  frame_anchor_check:
+    operator: "□"
+    reading: >
+      A public frame forms around the trigger object, but it remains compressed
+      by speed and visibility incentives. The frame is more reactive than
+      reflectively stabilized.
+  trigger_mismatch_check:
+    operator: "Δ"
+    reading: >
+      The mismatch is highly legible and widely transmissible. Public visibility
+      makes Δ rapidly available for collective uptake.
+  non_event_integrity_check:
+    operator: "Λ"
+    reading: >
+      Missing pauses, absent clarifications, and unmade distinctions matter, but
+      the case is not primarily organized by absent response. It is organized by
+      accelerated overt response.
+  attractor_stabilization_check:
+    operator: "Α"
+    reading: >
+      Repetition quickly hardens expected scripts of amplification, alignment,
+      and denunciation. Once stabilized, these scripts are difficult to slow.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "the public target"
+      - "those who hesitate under alignment pressure"
+      - "participants with less reputational insulation"
+    lower_cost_positions:
+      - "diffuse amplifiers with low individual accountability"
+      - "actors able to align quickly without bearing central residue"
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "trigger visibility"
+      - "rapid uptake"
+      - "expressive intensification"
+      - "public trace hardening"
+      - "narrowed revision window"
+      - "reactive stabilization"
+    reading: >
+      Θ matters because the scene hardens quickly; what is said and circulated
+      early continues to shape the episode after reflective re-entry becomes
+      costly.
+  distance_availability_check:
+    operator: "Χ"
+    reading: >
+      The decisive failure is weak practical distance. The scene offers little
+      room for pause, renegotiation, or revisable re-entry once the public tempo
+      is set.
+  integration_check:
+    operator: "Σ"
+    reading: >
+      No shared corrective step consolidates. The scene is rich in expressive
+      uptake but poor in coordinated integration.
+  self_binding_check:
+    operator: "Ψ"
+    reading: >
+      Durable self-binding toward accountability remains weak. Pressures are
+      projected outward more readily than internally stabilized.
+  critique_displacement_statement:
+    core_claim: >
+      The case is not best read as critique gone too far, but as reaction that
+      never fully became critique in the strict threshold sense.
+
+assistant_test_vectors:
+  promptables:
+    - "Why does this scene fit V1 rather than V2?"
+    - "How does P amplify the case without becoming a new operator?"
+    - "What makes this D1 first and only secondarily D5-risk?"
+    - "Which modulators most strongly suppress practical Χ here?"
+    - "How do Ω and Θ interact in a media-amplified outrage episode?"
+    - "Give a boundedness note explaining what this example does not prove."

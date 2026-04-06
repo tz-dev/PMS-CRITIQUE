@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMS–CRITIQUE — Example 2: Fast Outrage, No Stop-Capability</title>
+    <style type="text/css">
+      :root {
+        --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+        --color-bg: #f5f7fb;
+        --color-surface: #ffffff;
+        --color-surface-soft: #f9fbfd;
+        --color-text: #18202a;
+        --color-muted: #5f6b7a;
+        --color-accent: #1f4b99;
+        --color-accent-soft: #e8f0ff;
+        --color-border: #d9e1ea;
+        --color-border-strong: #bfc9d8;
+        --color-quote: #2f5da8;
+        --color-code-bg: #f3f5f7;
+        --color-table-head: #eef3f8;
+        --color-row-alt: #fbfcfe;
+
+        --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+        --radius-sm: 6px;
+        --radius-md: 10px;
+        --radius-lg: 16px;
+
+        --content-width: 980px;
+        --line-height: 1.7;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px 20px 64px;
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: var(--line-height);
+        color: var(--color-text);
+        background:
+          linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+      }
+
+      .page,
+      body > header,
+      body > section,
+      body > main {
+        width: min(100%, var(--content-width));
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .page {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 40px 42px 56px;
+      }
+
+      /* Header */
+      header {
+        width: min(100%, var(--content-width));
+        margin: 0 auto 28px;
+        padding: 24px 0 18px;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      header h1 {
+        margin: 0 0 10px;
+        font-family: var(--font-heading);
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 500;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: var(--color-text);
+      }
+
+      header h2 {
+        margin: 0 auto 12px;
+        max-width: 48rem;
+        font-size: 1.15rem !important;
+        line-height: 1.45;
+        font-weight: 400;
+        text-align: center;
+        color: var(--color-muted);
+        border: 0;
+        padding: 0;
+      }
+
+      header .subtitle {
+        max-width: 52rem;
+        margin: 0 auto 12px;
+        text-align: center;
+        color: var(--color-muted);
+        font-size: 1rem;
+      }
+
+      header .meta {
+        max-width: 52rem;
+        margin: 14px auto 0;
+        padding: 12px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface-soft);
+        font-size: 0.88rem;
+        line-height: 1.55;
+        color: var(--color-muted);
+      }
+
+      /* Sections */
+      section {
+        margin: 0 0 28px;
+      }
+
+      section#content {
+        width: min(100%, var(--content-width));
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-heading);
+        color: var(--color-text);
+        letter-spacing: -0.01em;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 500;
+      }
+
+      h2,
+      h2 strong {
+        padding-bottom: 8px;
+        font-size: 1.65rem !important;
+        font-weight: 500 !important;
+        line-height: 1.25;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      h3,
+      h3 strong {
+        margin: 22px 0 8px !important;
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      h4,
+      h4 strong {
+        margin: 18px 0 6px !important;
+        font-size: 1.05rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      h5,
+      h5 strong,
+      h6,
+      h6 strong {
+        margin: 16px 0 4px !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      /* Text */
+      p {
+        margin: 0 0 12px;
+      }
+
+      strong {
+        color: #111827;
+      }
+
+      em {
+        color: inherit;
+      }
+
+      .small {
+        font-size: 0.92rem;
+        color: var(--color-muted);
+      }
+
+      /* Links */
+      a {
+        color: var(--color-accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      a:hover,
+      a:focus {
+        border-bottom-color: currentColor;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        margin: 8px 0 14px 1.25rem;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 0 6px;
+        padding-left: 2px;
+      }
+
+      ul ul,
+      ol ol,
+      ul ol,
+      ol ul {
+        margin-top: 6px;
+        margin-bottom: 8px;
+      }
+
+      li > p {
+        margin-bottom: 6px;
+      }
+
+      /* Horizontal rule */
+      hr {
+        display: block;
+        height: 0;
+        border: 0;
+        border-top: 1px solid var(--color-border);
+        margin: 24px 0;
+      }
+
+      /* Quotes */
+      blockquote {
+        margin: 16px 0;
+        padding: 12px 18px;
+        border-left: 4px solid var(--color-quote);
+        background: #f8fbff;
+        color: #324154;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      }
+
+      blockquote p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Code */
+      code,
+      .code-inline {
+        font-family: var(--font-mono);
+        font-size: 0.92em;
+        background: var(--color-code-bg);
+        border: 1px solid #e7ebf0;
+        border-radius: 4px;
+        padding: 0.12em 0.4em;
+        color: #233044;
+      }
+
+      pre {
+        margin: 14px 0 18px;
+        padding: 14px 16px;
+        overflow-x: auto;
+        background: #111827;
+        color: #f3f4f6;
+        border-radius: var(--radius-md);
+        border: 1px solid #0f172a;
+        text-align: left;
+        line-height: 1.55;
+      }
+
+      pre code {
+        background: transparent;
+        border: 0;
+        color: inherit;
+        padding: 0;
+        font-size: 0.92rem;
+      }
+
+      /* Boxes / callouts */
+      .box {
+        margin: 16px 0 18px;
+        padding: 14px 16px;
+        border: 1px solid var(--color-border);
+        border-left: 4px solid var(--color-accent);
+        border-radius: var(--radius-md);
+        background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+        line-height: 1.55;
+      }
+
+      .box-title {
+        margin: 0 0 6px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--color-accent);
+      }
+
+      .box p:last-child,
+      .box ul:last-child,
+      .box ol:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Tables */
+      .table,
+      table {
+        width: 100%;
+        margin: 14px 0 18px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+      }
+
+      .table th,
+      .table td,
+      table th,
+      table td {
+        padding: 10px 12px;
+        vertical-align: top;
+        border: 1px solid var(--color-border);
+        text-align: left;
+      }
+
+      .table th,
+      table th {
+        background: var(--color-table-head);
+        color: #233044;
+        font-weight: 700;
+        font-variant: small-caps;
+        letter-spacing: 0.03em;
+      }
+
+      .table tr:nth-child(even) td,
+      table tr:nth-child(even) td {
+        background: var(--color-row-alt);
+      }
+
+      .table tr:nth-child(odd) td,
+      table tr:nth-child(odd) td {
+        background: #ffffff;
+      }
+
+      /* Tags */
+      .tag {
+        display: inline-block;
+        margin: 0 6px 6px 0;
+        padding: 3px 10px;
+        border: 1px solid var(--color-border-strong);
+        border-radius: 999px;
+        background: #fff;
+        color: var(--color-muted);
+        font-size: 0.78rem;
+        line-height: 1.3;
+      }
+
+      /* Placeholder */
+      .placeholder {
+        color: var(--color-muted);
+        font-style: italic;
+      }
+
+      /* Two-column layouts */
+      .two-column {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 10px 0 16px;
+      }
+
+      .two-column > div {
+        min-width: 0;
+      }
+
+      /* Utility */
+      .pagebreak {
+        page-break-before: always;
+        break-before: page;
+      }
+
+      /* Better spacing for consecutive structural blocks */
+      h2 + p,
+      h3 + p,
+      h4 + p {
+        margin-top: 2px;
+      }
+
+      p + ul,
+      p + ol {
+        margin-top: 6px;
+      }
+
+      ul + p,
+      ol + p {
+        margin-top: 10px;
+      }
+
+      /* Optional content-specific helper classes */
+      .meta-grid {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px 14px;
+        margin: 12px 0 18px;
+      }
+
+      .meta-grid dt {
+        font-weight: 600;
+        color: var(--color-muted);
+      }
+
+      .meta-grid dd {
+        margin: 0;
+      }
+
+      .definition-list {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px 14px;
+      }
+
+      .definition-list dt {
+        font-weight: 600;
+        color: var(--color-accent);
+      }
+
+      .definition-list dd {
+        margin: 0;
+      }
+
+      .callout-warning {
+        border-left-color: #b45309;
+        background: #fffaf2;
+      }
+
+      .callout-success {
+        border-left-color: #0f766e;
+        background: #f4fffd;
+      }
+
+      .callout-danger {
+        border-left-color: #b91c1c;
+        background: #fff8f8;
+      }
+
+      /* Images */
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 14px auto 18px;
+        border-radius: var(--radius-sm);
+      }
+
+      /* Print */
+      @media print {
+        :root {
+          --color-bg: white;
+          --color-surface: white;
+          --color-surface-soft: white;
+          --color-row-alt: #fafafa;
+          --shadow-soft: none;
+        }
+
+        html,
+        body {
+          background: white !important;
+        }
+
+        body {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          font-size: 11pt;
+          line-height: 1.45;
+        }
+
+        .page,
+        body > header,
+        body > section,
+        body > main,
+        section#content {
+          width: 100%;
+          max-width: 100%;
+          margin: 0;
+        }
+
+        .page {
+          border: 0;
+          box-shadow: none;
+          border-radius: 0;
+          padding: 0;
+        }
+
+        header {
+          margin-bottom: 18px;
+          padding: 0 0 12px;
+        }
+
+        h2,
+        h2 strong {
+          page-break-after: avoid;
+        }
+
+        h3,
+        h3 strong,
+        h4,
+        h4 strong {
+          page-break-after: avoid;
+        }
+
+        p,
+        li,
+        blockquote,
+        .box,
+        table,
+        pre {
+          page-break-inside: avoid;
+        }
+
+        a,
+        a:visited {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        a[href]::after {
+          content: "";
+        }
+
+        .box {
+          background: white;
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        body {
+          padding: 20px 14px 44px;
+        }
+
+        .page {
+          padding: 28px 22px 40px;
+        }
+
+        .two-column {
+          grid-template-columns: 1fr;
+        }
+
+        .meta-grid,
+        .definition-list {
+          grid-template-columns: 1fr;
+          gap: 4px 0;
+        }
+
+        header h1 {
+          font-size: 2.2rem;
+        }
+
+        h2,
+        h2 strong {
+          font-size: 1.45rem !important;
+        }
+      }
+
+      @media (max-width: 640px) {
+        body {
+          font-size: 15px;
+        }
+
+        .page {
+          padding: 22px 16px 32px;
+          border-radius: 12px;
+        }
+
+        header .meta {
+          padding: 10px 12px;
+        }
+
+        .table,
+        table {
+          font-size: 0.88rem;
+        }
+
+        .table th,
+        .table td,
+        table th,
+        table td {
+          padding: 8px 9px;
+        }
+
+        pre {
+          padding: 12px 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><strong>PMS–CRITIQUE</strong></h1>
+      <h2><em>Example 2: Fast Outrage, No Stop-Capability</em></h2>
+      <div class="meta">
+        <strong>Example ID:</strong> <code>PMS-CRITIQUE_EX02</code> &middot;
+        <strong>Example Version:</strong> <code>1.0</code> &middot;
+        <strong>Schema Version:</strong> <code>PMS-CRITIQUE_1.1</code><br />
+        <strong>Status:</strong> draft &middot;
+        <strong>Language:</strong> EN &middot;
+        <strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-CRITIQUE_1.1</code>
+      </div>
+    </header>
+
+    <section id="content">
+
+      <h2>0) Example Identity</h2>
+      <p>
+        <strong>Example label:</strong> <em>Fast Outrage, No Stop-Capability</em>
+      </p>
+      <p>
+        <strong>Example subtitle:</strong> <em>Reaction Masquerading as Critique</em>
+      </p>
+      <hr />
+
+      <h2>1) Case Identity</h2>
+      <h3>1.1 Case label</h3>
+      <p><strong>High Expressive Intensity vs. Missing Interruption</strong></p>
+
+      <h3>1.2 Scope discipline</h3>
+      <p>
+        Structural mapping only. No evaluation of content, no intent attribution,
+        and no moral ranking. PMS application validity remains conditional on <strong>Χ</strong>
+        (Distance), reversibility, and <strong>D</strong> (Dignity-in-Practice).
+      </p>
+
+      <h3>1.3 Repository fit</h3>
+      <p>
+        This example is designed as a repository training example for reading how
+        fast expressive escalation can simulate critique while structurally failing
+        to stabilize interruption, re-entry, and revisability.
+      </p>
+
+      <h3>1.4 Example packet alignment</h3>
+      <ul>
+        <li><strong>Scene label:</strong> High Expressive Intensity vs. Missing Interruption</li>
+        <li><strong>Frame anchor:</strong> Public / media-amplified response scene in which a triggering object is rapidly taken up across a networked visibility space.</li>
+        <li><strong>Trigger mismatch:</strong> A publicly circulating statement, clip, or action is encountered as offensive, dangerous, or intolerable and rapidly becomes an object of collective response.</li>
+        <li><strong>Operator signature:</strong>
+          <ul>
+            <li><strong>Reduced:</strong> <code>Δ, ∇, Ω, Θ, P</code></li>
+            <li><strong>Note:</strong> This reduced signature is a readability aid only. Canonical PMS dependencies remain fully in force. <strong>P</strong> is an overlay amplifier, not an operator.</li>
+          </ul>
+        </li>
+        <li><strong>Guardrail gate:</strong> Readings remain scene-bound and revisable. No person labels, no motive attributions, no shaming, and no coercive binding claims are generated.</li>
+        <li><strong>Structural closure:</strong> In this scene, expression reaches high intensity before interruption becomes structurally durable. Publicness amplifies response pressure, exposure gradients, and residue formation, but does not itself produce critique. What stabilizes first is reactive escalation, not corrective coordination.</li>
+        <li><strong>Scale:</strong>
+          <ul>
+            <li><strong>System:</strong> <code>paper_tags</code></li>
+            <li><strong>Tag:</strong> <code>d</code></li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>2) Minimal Vignette</h2>
+      <h3>2.1 Title</h3>
+      <p><strong>A public trigger becomes rapidly shareable outrage before critique stabilizes</strong></p>
+
+      <h3>2.2 Scene boundaries</h3>
+      <ul>
+        <li><strong>Domain:</strong> Public discourse / media-amplified reaction / online critique scene</li>
+        <li><strong>Scope:</strong> Structures, roles, visibility dynamics, exposure gradients, temporality, critique reach, and drift stabilization under public amplification.</li>
+        <li><strong>Out of scope:</strong>
+          <ul>
+            <li>person-level judgment</li>
+            <li>motive attribution</li>
+            <li>clinical or psychological interpretation</li>
+            <li>moral ranking</li>
+            <li>truth-adjudication of the triggering content</li>
+            <li>instruction or action prescription</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>2.3 Short scene</h3>
+      <p>
+        A clip, post, quote, or public action is circulated and quickly framed as
+        unacceptable by many participants. Shares, reposts, denunciations, and
+        escalating commentary proliferate within hours. The dominant tempo rewards
+        immediate uptake, intensification, and alignment, while pauses, clarifying
+        moves, or frame renegotiations become increasingly costly. The scene
+        acquires strong expressive momentum, but no durable stop-capability or
+        coordinatable corrective step emerges.
+      </p>
+
+      <h3>2.4 Structural focus</h3>
+      <p>
+        The example examines how high expressive intensity can be mistaken for
+        critique even though the configuration remains structurally closer to
+        reaction/discharge: <strong>Δ</strong> and <strong>∇</strong> are strong, but <strong>Χ</strong> fails to stabilize, while <strong>P</strong>
+        amplifies <strong>Ω</strong>, <strong>Θ</strong>, and <strong>Α</strong>.
+      </p>
+
+      <h3>2.5 Scenic elements</h3>
+      <ul>
+        <li><strong>Actors:</strong>
+          <ul>
+            <li>initial poster / public target</li>
+            <li>rapid amplifiers / commenters / sharers</li>
+            <li>bystanders under alignment pressure</li>
+            <li>platform or media visibility structures</li>
+          </ul>
+        </li>
+        <li><strong>Salient objects:</strong>
+          <ul>
+            <li>the circulating trigger object</li>
+            <li>public comments and reposts</li>
+            <li>visibility metrics</li>
+            <li>alignment signals</li>
+            <li>calls for response or sanction</li>
+            <li>durable public traces</li>
+          </ul>
+        </li>
+        <li><strong>Trigger event:</strong>
+          <ul>
+            <li><strong>Label:</strong> rapid public uptake of a provocative object</li>
+            <li><strong>Description:</strong> A mismatch is publicly registered and quickly converted into high-speed directional response across a visibility-amplified scene.</li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>3) Why This Is Repo-Useful</h2>
+      <h3>3.1 Structural focus</h3>
+      <p>
+        This example is useful because it isolates a central PMS-CRITIQUE
+        distinction: not every intense public response counts as critique in the
+        strict sense. The scene clarifies how reaction can masquerade as critique
+        when publicness accelerates expressive alignment faster than interruption
+        can stabilize.
+      </p>
+
+      <h3>3.2 Repo value</h3>
+      <ul>
+        <li>Demonstrates the difference between a legible public mismatch and a structurally critique-capable episode.</li>
+        <li>Shows how D1 (Reaction masquerading as critique) becomes especially likely under scale <code>d</code> with active publicness overlay <strong>P</strong>.</li>
+        <li>Makes visible how <strong>P</strong> amplifies <strong>Ω</strong>, <strong>Θ</strong>, and <strong>Α</strong> without adding new operators or creating correction by itself.</li>
+        <li>Helps distinguish visibility-driven escalation from productive critique that would require <strong>Χ</strong> and later <strong>Φ + Σ</strong>.</li>
+        <li>Serves as a clean example of why stop-capability, re-entry, and revision windows matter under media-amplified pressure.</li>
+      </ul>
+
+      <h3>3.3 Central repo question</h3>
+      <blockquote>
+        <p>
+          How does public reaction become structurally intense without becoming
+          critique in the strict PMS-CRITIQUE sense?
+        </p>
+      </blockquote>
+
+      <h3>3.4 Lens relevance</h3>
+      <ul>
+        <li><strong>Critique thresholds:</strong> The example directly tests the <code>CRITIQUE_MIN</code> threshold by showing that expressive escalation can remain below minimal critique when <strong>Χ</strong> does not become practically available.</li>
+        <li><strong>Drift typology:</strong> The scene is a strong D1 case and often borders on D5 tendencies when exposure increasingly replaces coordination.</li>
+        <li><strong>Scale relevance:</strong> The example clearly belongs to paper tag <code>d</code>, where <strong>Ω</strong> and <strong>Θ</strong> are amplified, <strong>Χ</strong> becomes fragile, and durable residue forms quickly.</li>
+        <li><strong>Guardrail relevance:</strong> The example is useful because it invites moralization unless the reading remains strictly structural, reversible, and dignity-constrained.</li>
+      </ul>
+      <hr />
+
+      <h2>4) Operator Mapping</h2>
+      <h3>4.1 Reduced signature</h3>
+      <p>
+        <strong>Primary signature:</strong>
+        <code>Δ, ∇, Ω, Θ, P</code>
+      </p>
+      <p>
+        <strong>Secondary possible:</strong>
+        <code>□, Α</code>
+      </p>
+      <p>
+        The scene contains framing activity, but frame stabilization is weak and
+        contested. <strong>Α</strong> may begin to form quickly under repetition, but the decisive
+        structural issue is that reaction outruns interruptible critique. <strong>P</strong> is an
+        overlay, not an operator.
+      </p>
+
+      <h3>4.2 Operator roles in scene</h3>
+      <ul>
+        <li><strong>Δ:</strong> A mismatch becomes publicly legible: the trigger object is encountered as offensive, harmful, contradictory, or intolerable.</li>
+        <li><strong>∇:</strong> Directional pressure is extremely strong: users are pulled toward immediate response, condemnation, amplification, and alignment.</li>
+        <li><strong>□:</strong> A provisional public frame emerges around the trigger, but it remains unstable, rapidly compressed, and often subordinated to tempo rather than deliberative relevance.</li>
+        <li><strong>Λ:</strong> Non-event pressure appears in absent clarifications, missing pauses, or unmade distinctions, but <strong>Λ</strong> is not the dominant organizer of this case.</li>
+        <li><strong>Α:</strong> Repetition begins to harden scripts such as denunciation routines, expected alignment, and formulaic amplification.</li>
+        <li><strong>Ω:</strong> Exposure gradients become steep: the target is highly exposed, while the responding public is diffuse and unevenly accountable.</li>
+        <li><strong>Θ:</strong> Irreversibility and residue intensify quickly. Screenshots, reposts, and indexical traces harden the temporal consequences of the episode.</li>
+        <li><strong>Φ:</strong> Recontextualization remains underdeveloped or arrives late. Public pressure rewards speed more than adaptive reframing.</li>
+        <li><strong>Χ:</strong> Distance is structurally weak. The scene offers little practical stop-capability once escalation gains momentum.</li>
+        <li><strong>Σ:</strong> No coherent corrective step consolidates. The scene organizes exposure and affect more readily than correction.</li>
+        <li><strong>Ψ:</strong> Self-binding toward accountable follow-up is largely absent. Binding pressure is instead often projected outward as demands on the target or on bystanders.</li>
+      </ul>
+
+      <h3>4.3 Derived axes projection</h3>
+      <ul>
+        <li><strong>A:</strong> Awareness appears inflated at the level of mismatch salience, but this does not mean structurally stable critique-awareness. Much of the scene runs on accelerated recognition rather than sustained framed differentiation.</li>
+        <li><strong>C:</strong> Coherence often takes the form of fast narrative convergence around a public script, not robust critique coherence under revisability.</li>
+        <li><strong>R:</strong> Responsibility remains weakly bound. Exposure is distributed asymmetrically, while ownership of consequences is diffuse.</li>
+        <li><strong>E:</strong> Action pressure is high, but enactable correction is low. The scene tends toward expressive discharge rather than integrated corrective action.</li>
+        <li><strong>D:</strong> Dignity-in-Practice becomes vulnerable because public exposure rises faster than distance and restraint.</li>
+      </ul>
+
+      <h3>4.4 Structural mechanism summary</h3>
+      <ol>
+        <li>A public mismatch becomes rapidly visible.</li>
+        <li>Response pressure accelerates immediately.</li>
+        <li>Visibility and alignment incentives amplify uptake.</li>
+        <li>Exposure gradients steepen under publicness.</li>
+        <li>Revision windows narrow as traces harden.</li>
+        <li>Reaction stabilizes before interruption can consolidate.</li>
+        <li>Correction remains underdeveloped or absent.</li>
+      </ol>
+      <p>
+        <strong>Concise formula:</strong><br />
+        <code>public Δ → rapid ∇ escalation → P amplification → steepened Ω → hardened Θ → weak Χ → reaction stabilization without correction</code>
+      </p>
+      <hr />
+
+      <h2>5) Critique Threshold Reading</h2>
+      <h3>5.1 Threshold assessment</h3>
+      <ul>
+        <li><strong>CRITIQUE_MIN:</strong>
+          <ul>
+            <li><strong>Status:</strong> not_reached_or_only_momentary</li>
+            <li><strong>Reasoning:</strong> Although a mismatch is strongly legible, practical interruptibility does not stabilize. The scene is dominated by acceleration, not by durable stop-capability.</li>
+          </ul>
+        </li>
+        <li><strong>CRITIQUE_PROD:</strong>
+          <ul>
+            <li><strong>Status:</strong> not_reached</li>
+            <li><strong>Reasoning:</strong> Recontextualization and integration do not consolidate into a coordinatable corrective step. Expression outruns correction.</li>
+          </ul>
+        </li>
+        <li><strong>CRITIQUE_STABLE:</strong>
+          <ul>
+            <li><strong>Status:</strong> not_reached</li>
+            <li><strong>Reasoning:</strong> No durable self-binding toward accountable follow-up emerges. Binding is weak internally and often displaced outward.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>5.2 Non-equivalence reading</h3>
+      <ul>
+        <li><strong>Reaction check:</strong> This is a paradigmatic D1 case. The scene strongly supports the PMS-CRITIQUE claim that <strong>Δ + ∇</strong> without <strong>Χ</strong> is not weak critique but a different structure.</li>
+        <li><strong>Judgment check:</strong> Judgment elements may appear, but the primary problem is not evaluative labeling as such. It is the dominance of high-speed reactive discharge.</li>
+        <li><strong>Silence check:</strong> This is the inverse of a silence attractor case. Here the scene is noisy, but the noise does not by itself produce critique.</li>
+      </ul>
+      <hr />
+
+      <h2>6) Reach and Scale Reading</h2>
+      <h3>6.1 Vertical reach</h3>
+      <ul>
+        <li><strong>Assessed level:</strong> <code>V1</code></li>
+        <li><strong>Justification:</strong> The scene strongly fits reaction/discharge: mismatch plus directional response are present, but practical stop-capability does not stabilize.</li>
+        <li><strong>Why not V2:</strong> Minimal critique would require interruptible framed differentiation. Here the scene remains too acceleration-driven and publicly fused for <strong>Χ</strong> to function reliably.</li>
+        <li><strong>Why not V3:</strong> There is no durable bridge into actionable correction through <strong>Φ + Σ</strong>.</li>
+      </ul>
+
+      <h3>6.2 Horizontal scale</h3>
+      <ul>
+        <li><strong>System:</strong> <code>paper_tags</code></li>
+        <li><strong>Tag:</strong> <code>d</code></li>
+        <li><strong>Label:</strong> Public Critique (Street / Media / Online)</li>
+        <li><strong>Justification:</strong> The defining features are amplified visibility, steep exposure gradients, hardened residue, and rapid script formation under public conditions.</li>
+        <li><strong>Scale-specific costs:</strong>
+          <ul>
+            <li>pause is read as hesitation, weakness, or misalignment</li>
+            <li>revision is costly once traces circulate widely</li>
+            <li>public target bears concentrated exposure</li>
+            <li>correction is harder to consolidate than denunciation</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>6.3 Deployment scale note</h3>
+      <ul>
+        <li><strong>System:</strong> <code>deployment_tags</code></li>
+        <li><strong>Tag:</strong> <code>public_mass</code></li>
+        <li><strong>Note:</strong> This optional deployment tag is compatible with the primary paper tag and may assist repository tooling.</li>
+      </ul>
+
+      <h3>6.4 Publicness overlay</h3>
+      <ul>
+        <li><strong>Status:</strong> active</li>
+        <li><strong>Overlay ID:</strong> <code>P</code></li>
+        <li><strong>Reading:</strong> Publicness amplifies <strong>Ω</strong>, <strong>Θ</strong>, and <strong>Α</strong>. It increases exposure, hardens residue, and speeds script stabilization, but does not itself create critique or correction.</li>
+      </ul>
+      <hr />
+
+      <h2>7) Drift Analysis</h2>
+      <h3>7.1 Main class reading</h3>
+      <ul>
+        <li><strong>Primary:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>D1</code></li>
+            <li><strong>Name:</strong> Reaction masquerading as critique</li>
+            <li><strong>Fit:</strong> strong</li>
+            <li><strong>Reasoning:</strong> The scene is driven by impulse discharge, high tempo, and missing stop-capability. Expression is intense but not structurally interruptible.</li>
+          </ul>
+        </li>
+        <li><strong>Secondary:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>D5</code></li>
+            <li><strong>Name:</strong> Public pillory</li>
+            <li><strong>Fit:</strong> moderate_to_strong_risk</li>
+            <li><strong>Reasoning:</strong> Where exposure increasingly substitutes for coordination, the scene moves toward D5. Not every such episode fully stabilizes there, but the risk is high under active <strong>P</strong>.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>7.2 Drift catalogue reading</h3>
+      <ul>
+        <li><strong>C1:</strong> Reaction Drift — <strong>fit:</strong> strong</li>
+        <li><strong>C8:</strong> Public Pillory — <strong>fit:</strong> moderate_to_strong_risk</li>
+        <li><strong>C3:</strong> Moralization Drift — <strong>fit:</strong> moderate
+          <ul>
+            <li><strong>Note:</strong> Moralization often appears as an escalatory carrier, but the core structure remains reaction-first.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>7.3 Typical markers present</h3>
+      <ul>
+        <li>tempo pressure substitutes for framing</li>
+        <li>immediate expressive alignment is rewarded</li>
+        <li>stop-capability is weak once uptake accelerates</li>
+        <li>visibility intensifies faster than correction</li>
+        <li>durable residue forms before re-entry stabilizes</li>
+      </ul>
+
+      <h3>7.4 Drift chain alignment</h3>
+      <ul>
+        <li><strong>Closest chain:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>chain_public</code></li>
+            <li><strong>Reading:</strong> This case closely instantiates the public drift chain: <strong>Ω</strong> salience rises, <strong>Χ</strong> erodes, reaction stabilizes, and <strong>Θ</strong> hardens residue.</li>
+          </ul>
+        </li>
+        <li><strong>Scene-specific chain:</strong> trigger visibility -> rapid uptake -> intensified ∇ -> P amplification -> Ω steepening -> Χ erosion -> reactive stabilization -> hardened public trace</li>
+      </ul>
+      <hr />
+
+      <h2>8) Modulator Profile</h2>
+      <h3>8.1 Overview</h3>
+      <p>
+        The scene is shaped by modulators that make reaction easy and interruption
+        difficult under public amplification.
+      </p>
+
+      <h3>8.2 Active modulators</h3>
+      <ul>
+        <li><strong>M1 — Frame clarity:</strong>
+          <ul>
+            <li><strong>Level:</strong> low_to_mixed</li>
+            <li><strong>Reading:</strong> A public frame forms quickly, but its relevance structure is compressed and unstable. Speed outruns careful framing.</li>
+          </ul>
+        </li>
+        <li><strong>M2 — Non-event density:</strong>
+          <ul>
+            <li><strong>Level:</strong> low_to_moderate</li>
+            <li><strong>Reading:</strong> Missing pauses, clarifications, and re-entry points matter, but the scene is primarily driven by overt reaction rather than accumulated absence.</li>
+          </ul>
+        </li>
+        <li><strong>M3 — Asymmetry visibility:</strong>
+          <ul>
+            <li><strong>Level:</strong> high</li>
+            <li><strong>Reading:</strong> Exposure gradients are sharp and publicly legible. Targets carry heavy trace burden while responders remain unevenly exposed.</li>
+          </ul>
+        </li>
+        <li><strong>M4 — Temporal compression:</strong>
+          <ul>
+            <li><strong>Level:</strong> very_high</li>
+            <li><strong>Reading:</strong> Time pressure is extreme. Compression narrows revision windows and rewards speed over interruptibility.</li>
+          </ul>
+        </li>
+        <li><strong>M5 — Recontextualization habituation:</strong>
+          <ul>
+            <li><strong>Level:</strong> low</li>
+            <li><strong>Reading:</strong> The scene does not strongly reward adaptive reframing. Recontextualizing moves often arrive late or are treated as evasive.</li>
+          </ul>
+        </li>
+        <li><strong>M6 — Distance availability:</strong>
+          <ul>
+            <li><strong>Level:</strong> very_low</li>
+            <li><strong>Reading:</strong> Practical stop-capability is weak. Public alignment pressure makes pause and reflective re-entry costly.</li>
+          </ul>
+        </li>
+        <li><strong>M7 — Attractor inertia:</strong>
+          <ul>
+            <li><strong>Level:</strong> high</li>
+            <li><strong>Reading:</strong> Once the public script stabilizes, it becomes sticky and resistant to interruption.</li>
+          </ul>
+        </li>
+        <li><strong>M8 — Publicness overlay:</strong>
+          <ul>
+            <li><strong>Level:</strong> very_high</li>
+            <li><strong>Reading:</strong> <strong>P</strong> is the dominant amplifier in this case, intensifying exposure, residue, and script stabilization.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>8.3 Modulator summary</h3>
+      <p>
+        The strongest drivers are M3, M4, M6, M7, and M8: visible asymmetry,
+        extreme temporal compression, low distance availability, rapid attractor
+        hardening, and strong publicness amplification.
+      </p>
+      <hr />
+
+      <h2>9) Cost Distribution</h2>
+      <h3>9.1 Overview</h3>
+      <p>
+        Costs in this scene are highly uneven and rapidly accumulating. These costs
+        are not moral verdicts; they are structural effects under <strong>Ω</strong>, <strong>Θ</strong>, and <strong>P</strong>.
+      </p>
+
+      <h3>9.2 Interpretive costs</h3>
+      <ul>
+        <li>meaning condenses faster than careful framing can stabilize</li>
+        <li>participants infer urgency from circulation tempo</li>
+      </ul>
+
+      <h3>9.3 Exposure costs</h3>
+      <ul>
+        <li>the public target bears concentrated visibility and residue</li>
+        <li>bystanders face alignment pressure under watchful publics</li>
+        <li>responders are diffusely implicated but unevenly accountable</li>
+      </ul>
+
+      <h3>9.4 Temporal costs</h3>
+      <ul>
+        <li>revision windows close quickly</li>
+        <li>screenshots, reposts, and archives harden traces early</li>
+      </ul>
+
+      <h3>9.5 Coordination costs</h3>
+      <ul>
+        <li>expressive escalation crowds out corrective integration</li>
+        <li>shared actionability is harder to build than denunciatory momentum</li>
+      </ul>
+
+      <h3>9.6 Dignity stress costs</h3>
+      <ul>
+        <li>public exposure can become a substitute for correction</li>
+        <li>restraint is penalized relative to visible alignment</li>
+      </ul>
+      <hr />
+
+      <h2>10) Validity Gate Reminder</h2>
+      <h3>10.1 PMS entry condition</h3>
+      <ul>
+        <li><strong>Χ (Distance):</strong> The reading must not fuse with the scene’s own acceleration. <strong>Χ</strong> here names the structural question of stop-capability, not whether any side is morally superior.</li>
+        <li><strong>Reversibility:</strong> The analysis remains scene-bound and revisable. It does not claim that any participant is globally irresponsible, malicious, or immature.</li>
+        <li><strong>D (Dignity-in-Practice):</strong> The example must not be used to shame publics, targets, or bystanders. It maps how a public critique scene can drift structurally under amplification.</li>
+      </ul>
+
+      <h3>10.2 Case-specific validity test</h3>
+      <p><strong>Valid if:</strong></p>
+      <ul>
+        <li>public amplification is analyzed structurally rather than moralized</li>
+        <li>reaction is distinguished from critique without ranking persons</li>
+        <li>drift labels remain descriptive, not punitive</li>
+        <li>public exposure is tracked without reproducing it as sanction</li>
+      </ul>
+
+      <p><strong>Formally invalid if:</strong></p>
+      <ul>
+        <li>the example is used to prove that outraged actors are bad people</li>
+        <li>the public target is reduced to a fixed person-type</li>
+        <li>exposure is treated as deserved correction</li>
+        <li>the analysis becomes a secondary pile-on</li>
+      </ul>
+      <hr />
+
+      <h2>11) Limits and Boundedness Check</h2>
+      <h3>11.1 Structural limits in this case</h3>
+      <ul>
+        <li>The analysis does not establish whether the public content was true or false.</li>
+        <li>It does not verify motives of posters, targets, or amplifiers.</li>
+        <li>It does not decide whether outrage was substantively justified.</li>
+        <li>It does not rank the worth or dignity of any participant.</li>
+      </ul>
+
+      <h3>11.2 Non-capture check</h3>
+      <p><strong>Possible non-capture:</strong></p>
+      <p>
+        A critique-structural reading may underrepresent media-economy factors,
+        platform design, legal stakes, historical grievances, or ideological
+        conflict that also shape the episode.
+      </p>
+      <p><strong>Does not imply defect:</strong></p>
+      <p>
+        Incomplete capture here would not show that the scene is defective; it
+        would show that other framings may illuminate dimensions not foregrounded
+        by PMS-CRITIQUE.
+      </p>
+
+      <h3>11.3 Rival framing relevance</h3>
+      <ul>
+        <li>media studies may better capture platform amplification logics</li>
+        <li>political theory may better assess legitimacy and public contestation</li>
+        <li>discourse analysis may better capture rhetorical escalation forms</li>
+        <li>legal analysis may better assess harm, rights, and liability</li>
+      </ul>
+
+      <h3>11.4 Anti-absorption note</h3>
+      <p>
+        The example should not redescribe every intense public reaction as mere D1
+        by default. The structural fit becomes strong only where acceleration,
+        weak stop-capability, and early residue hardening converge.
+      </p>
+      <hr />
+
+      <h2>12) MIP Docking Relevance</h2>
+      <h3>12.1 Status</h3>
+      <p><strong>optional_and_not_required</strong></p>
+
+      <h3>12.2 Critique-side statement</h3>
+      <p>
+        This example is structurally complete as a PMS-CRITIQUE reading without any
+        downstream evaluative docking.
+      </p>
+
+      <h3>12.3 Possible docking relevance</h3>
+      <p>
+        If one later wanted to evaluate legitimacy of public response regimes,
+        institutional handling, or publicity constraints, the critique scene could
+        provide scene-bound projection inputs without itself deciding legitimacy.
+      </p>
+
+      <h3>12.4 Separation reminder</h3>
+      <ul>
+        <li>This example does not itself decide legitimacy.</li>
+        <li>It does not generate evaluative scores.</li>
+        <li>No back-projection from later evaluation should be read into this mapping.</li>
+      </ul>
+      <hr />
+
+      <h2>13) Readable Structural Closure</h2>
+      <p>
+        In this case, public intensity is not enough to count as critique in the
+        strict PMS-CRITIQUE sense. The scene quickly stabilizes as reaction:
+        mismatch becomes visible, response pressure accelerates, and publicness
+        amplifies exposure and residue before interruptibility can take hold. What
+        looks like forceful critique is structurally closer to discharge without
+        stable stop-capability. The result is a high-risk configuration in which
+        expression outpaces correction.
+      </p>
+      <hr />
+
+      <h2>14) Extended Scene Analysis</h2>
+
+      <h3>14.1 Frame anchor check — <strong>□</strong></h3>
+      <p>
+        A public frame forms around the trigger object, but it remains compressed
+        by speed and visibility incentives. The frame is more reactive than
+        reflectively stabilized.
+      </p>
+
+      <h3>14.2 Trigger mismatch check — <strong>Δ</strong></h3>
+      <p>
+        The mismatch is highly legible and widely transmissible. Public visibility
+        makes <strong>Δ</strong> rapidly available for collective uptake.
+      </p>
+
+      <h3>14.3 Non-event integrity check — <strong>Λ</strong></h3>
+      <p>
+        Missing pauses, absent clarifications, and unmade distinctions matter, but
+        the case is not primarily organized by absent response. It is organized by
+        accelerated overt response.
+      </p>
+
+      <h3>14.4 Attractor stabilization check — <strong>Α</strong></h3>
+      <p>
+        Repetition quickly hardens expected scripts of amplification, alignment,
+        and denunciation. Once stabilized, these scripts are difficult to slow.
+      </p>
+
+      <h3>14.5 Asymmetry audit — <strong>Ω</strong></h3>
+      <ul>
+        <li><strong>Exposure bearers:</strong>
+          <ul>
+            <li>the public target</li>
+            <li>those who hesitate under alignment pressure</li>
+            <li>participants with less reputational insulation</li>
+          </ul>
+        </li>
+        <li><strong>Lower-cost positions:</strong>
+          <ul>
+            <li>diffuse amplifiers with low individual accountability</li>
+            <li>actors able to align quickly without bearing central residue</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>14.6 Temporality and trajectory — <strong>Θ</strong></h3>
+      <ol>
+        <li>trigger visibility</li>
+        <li>rapid uptake</li>
+        <li>expressive intensification</li>
+        <li>public trace hardening</li>
+        <li>narrowed revision window</li>
+        <li>reactive stabilization</li>
+      </ol>
+      <p>
+        <strong>Reading:</strong> <strong>Θ</strong> matters because the scene hardens quickly; what is said and circulated
+        early continues to shape the episode after reflective re-entry becomes
+        costly.
+      </p>
+
+      <h3>14.7 Distance availability check — <strong>Χ</strong></h3>
+      <p>
+        The decisive failure is weak practical distance. The scene offers little
+        room for pause, renegotiation, or revisable re-entry once the public tempo
+        is set.
+      </p>
+
+      <h3>14.8 Integration check — <strong>Σ</strong></h3>
+      <p>
+        No shared corrective step consolidates. The scene is rich in expressive
+        uptake but poor in coordinated integration.
+      </p>
+
+      <h3>14.9 Self-binding check — <strong>Ψ</strong></h3>
+      <p>
+        Durable self-binding toward accountability remains weak. Pressures are
+        projected outward more readily than internally stabilized.
+      </p>
+
+      <h3>14.10 Critique displacement statement</h3>
+      <p>
+        <strong>Core claim:</strong> The case is not best read as critique gone too far, but as reaction that
+        never fully became critique in the strict threshold sense.
+      </p>
+      <hr />
+
+      <h2>15) Assistant Test Vectors</h2>
+      <ul>
+        <li>“Why does this scene fit V1 rather than V2?”</li>
+        <li>“How does P amplify the case without becoming a new operator?”</li>
+        <li>“What makes this D1 first and only secondarily D5-risk?”</li>
+        <li>“Which modulators most strongly suppress practical Χ here?”</li>
+        <li>“How do Ω and Θ interact in a media-amplified outrage episode?”</li>
+        <li>“Give a boundedness note explaining what this example does not prove.”</li>
+      </ul>
+
+    </section>
+  </body>
+</html>

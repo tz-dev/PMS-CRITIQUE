@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMS–CRITIQUE — Example 1: The Missing Reply Becomes the Story</title>
+    <style type="text/css">
+      :root {
+        --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+        --color-bg: #f5f7fb;
+        --color-surface: #ffffff;
+        --color-surface-soft: #f9fbfd;
+        --color-text: #18202a;
+        --color-muted: #5f6b7a;
+        --color-accent: #1f4b99;
+        --color-accent-soft: #e8f0ff;
+        --color-border: #d9e1ea;
+        --color-border-strong: #bfc9d8;
+        --color-quote: #2f5da8;
+        --color-code-bg: #f3f5f7;
+        --color-table-head: #eef3f8;
+        --color-row-alt: #fbfcfe;
+
+        --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+        --radius-sm: 6px;
+        --radius-md: 10px;
+        --radius-lg: 16px;
+
+        --content-width: 980px;
+        --line-height: 1.7;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px 20px 64px;
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: var(--line-height);
+        color: var(--color-text);
+        background:
+          linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+      }
+
+      .page,
+      body > header,
+      body > section,
+      body > main {
+        width: min(100%, var(--content-width));
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .page {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 40px 42px 56px;
+      }
+
+      /* Header */
+      header {
+        width: min(100%, var(--content-width));
+        margin: 0 auto 28px;
+        padding: 24px 0 18px;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      header h1 {
+        margin: 0 0 10px;
+        font-family: var(--font-heading);
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 500;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: var(--color-text);
+      }
+
+      header h2 {
+        margin: 0 auto 12px;
+        max-width: 48rem;
+        font-size: 1.15rem !important;
+        line-height: 1.45;
+        font-weight: 400;
+        text-align: center;
+        color: var(--color-muted);
+        border: 0;
+        padding: 0;
+      }
+
+      header .subtitle {
+        max-width: 52rem;
+        margin: 0 auto 12px;
+        text-align: center;
+        color: var(--color-muted);
+        font-size: 1rem;
+      }
+
+      header .meta {
+        max-width: 52rem;
+        margin: 14px auto 0;
+        padding: 12px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface-soft);
+        font-size: 0.88rem;
+        line-height: 1.55;
+        color: var(--color-muted);
+      }
+
+      /* Sections */
+      section {
+        margin: 0 0 28px;
+      }
+
+      section#content {
+        width: min(100%, var(--content-width));
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-heading);
+        color: var(--color-text);
+        letter-spacing: -0.01em;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 500;
+      }
+
+      h2,
+      h2 strong {
+        padding-bottom: 8px;
+        font-size: 1.65rem !important;
+        font-weight: 500 !important;
+        line-height: 1.25;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      h3,
+      h3 strong {
+        margin: 22px 0 8px !important;
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      h4,
+      h4 strong {
+        margin: 18px 0 6px !important;
+        font-size: 1.05rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      h5,
+      h5 strong,
+      h6,
+      h6 strong {
+        margin: 16px 0 4px !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      /* Text */
+      p {
+        margin: 0 0 12px;
+      }
+
+      strong {
+        color: #111827;
+      }
+
+      em {
+        color: inherit;
+      }
+
+      .small {
+        font-size: 0.92rem;
+        color: var(--color-muted);
+      }
+
+      /* Links */
+      a {
+        color: var(--color-accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      a:hover,
+      a:focus {
+        border-bottom-color: currentColor;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        margin: 8px 0 14px 1.25rem;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 0 6px;
+        padding-left: 2px;
+      }
+
+      ul ul,
+      ol ol,
+      ul ol,
+      ol ul {
+        margin-top: 6px;
+        margin-bottom: 8px;
+      }
+
+      li > p {
+        margin-bottom: 6px;
+      }
+
+      /* Horizontal rule */
+      hr {
+        display: block;
+        height: 0;
+        border: 0;
+        border-top: 1px solid var(--color-border);
+        margin: 24px 0;
+      }
+
+      /* Quotes */
+      blockquote {
+        margin: 16px 0;
+        padding: 12px 18px;
+        border-left: 4px solid var(--color-quote);
+        background: #f8fbff;
+        color: #324154;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      }
+
+      blockquote p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Code */
+      code,
+      .code-inline {
+        font-family: var(--font-mono);
+        font-size: 0.92em;
+        background: var(--color-code-bg);
+        border: 1px solid #e7ebf0;
+        border-radius: 4px;
+        padding: 0.12em 0.4em;
+        color: #233044;
+      }
+
+      pre {
+        margin: 14px 0 18px;
+        padding: 14px 16px;
+        overflow-x: auto;
+        background: #111827;
+        color: #f3f4f6;
+        border-radius: var(--radius-md);
+        border: 1px solid #0f172a;
+        text-align: left;
+        line-height: 1.55;
+      }
+
+      pre code {
+        background: transparent;
+        border: 0;
+        color: inherit;
+        padding: 0;
+        font-size: 0.92rem;
+      }
+
+      /* Boxes / callouts */
+      .box {
+        margin: 16px 0 18px;
+        padding: 14px 16px;
+        border: 1px solid var(--color-border);
+        border-left: 4px solid var(--color-accent);
+        border-radius: var(--radius-md);
+        background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+        line-height: 1.55;
+      }
+
+      .box-title {
+        margin: 0 0 6px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--color-accent);
+      }
+
+      .box p:last-child,
+      .box ul:last-child,
+      .box ol:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Tables */
+      .table,
+      table {
+        width: 100%;
+        margin: 14px 0 18px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+      }
+
+      .table th,
+      .table td,
+      table th,
+      table td {
+        padding: 10px 12px;
+        vertical-align: top;
+        border: 1px solid var(--color-border);
+        text-align: left;
+      }
+
+      .table th,
+      table th {
+        background: var(--color-table-head);
+        color: #233044;
+        font-weight: 700;
+        font-variant: small-caps;
+        letter-spacing: 0.03em;
+      }
+
+      .table tr:nth-child(even) td,
+      table tr:nth-child(even) td {
+        background: var(--color-row-alt);
+      }
+
+      .table tr:nth-child(odd) td,
+      table tr:nth-child(odd) td {
+        background: #ffffff;
+      }
+
+      /* Tags */
+      .tag {
+        display: inline-block;
+        margin: 0 6px 6px 0;
+        padding: 3px 10px;
+        border: 1px solid var(--color-border-strong);
+        border-radius: 999px;
+        background: #fff;
+        color: var(--color-muted);
+        font-size: 0.78rem;
+        line-height: 1.3;
+      }
+
+      /* Placeholder */
+      .placeholder {
+        color: var(--color-muted);
+        font-style: italic;
+      }
+
+      /* Two-column layouts */
+      .two-column {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 10px 0 16px;
+      }
+
+      .two-column > div {
+        min-width: 0;
+      }
+
+      /* Utility */
+      .pagebreak {
+        page-break-before: always;
+        break-before: page;
+      }
+
+      /* Better spacing for consecutive structural blocks */
+      h2 + p,
+      h3 + p,
+      h4 + p {
+        margin-top: 2px;
+      }
+
+      p + ul,
+      p + ol {
+        margin-top: 6px;
+      }
+
+      ul + p,
+      ol + p {
+        margin-top: 10px;
+      }
+
+      /* Optional content-specific helper classes */
+      .meta-grid {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px 14px;
+        margin: 12px 0 18px;
+      }
+
+      .meta-grid dt {
+        font-weight: 600;
+        color: var(--color-muted);
+      }
+
+      .meta-grid dd {
+        margin: 0;
+      }
+
+      .definition-list {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px 14px;
+      }
+
+      .definition-list dt {
+        font-weight: 600;
+        color: var(--color-accent);
+      }
+
+      .definition-list dd {
+        margin: 0;
+      }
+
+      .callout-warning {
+        border-left-color: #b45309;
+        background: #fffaf2;
+      }
+
+      .callout-success {
+        border-left-color: #0f766e;
+        background: #f4fffd;
+      }
+
+      .callout-danger {
+        border-left-color: #b91c1c;
+        background: #fff8f8;
+      }
+
+      /* Images */
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 14px auto 18px;
+        border-radius: var(--radius-sm);
+      }
+
+      /* Print */
+      @media print {
+        :root {
+          --color-bg: white;
+          --color-surface: white;
+          --color-surface-soft: white;
+          --color-row-alt: #fafafa;
+          --shadow-soft: none;
+        }
+
+        html,
+        body {
+          background: white !important;
+        }
+
+        body {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          font-size: 11pt;
+          line-height: 1.45;
+        }
+
+        .page,
+        body > header,
+        body > section,
+        body > main,
+        section#content {
+          width: 100%;
+          max-width: 100%;
+          margin: 0;
+        }
+
+        .page {
+          border: 0;
+          box-shadow: none;
+          border-radius: 0;
+          padding: 0;
+        }
+
+        header {
+          margin-bottom: 18px;
+          padding: 0 0 12px;
+        }
+
+        h2,
+        h2 strong {
+          page-break-after: avoid;
+        }
+
+        h3,
+        h3 strong,
+        h4,
+        h4 strong {
+          page-break-after: avoid;
+        }
+
+        p,
+        li,
+        blockquote,
+        .box,
+        table,
+        pre {
+          page-break-inside: avoid;
+        }
+
+        a,
+        a:visited {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        a[href]::after {
+          content: "";
+        }
+
+        .box {
+          background: white;
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        body {
+          padding: 20px 14px 44px;
+        }
+
+        .page {
+          padding: 28px 22px 40px;
+        }
+
+        .two-column {
+          grid-template-columns: 1fr;
+        }
+
+        .meta-grid,
+        .definition-list {
+          grid-template-columns: 1fr;
+          gap: 4px 0;
+        }
+
+        header h1 {
+          font-size: 2.2rem;
+        }
+
+        h2,
+        h2 strong {
+          font-size: 1.45rem !important;
+        }
+      }
+
+      @media (max-width: 640px) {
+        body {
+          font-size: 15px;
+        }
+
+        .page {
+          padding: 22px 16px 32px;
+          border-radius: 12px;
+        }
+
+        header .meta {
+          padding: 10px 12px;
+        }
+
+        .table,
+        table {
+          font-size: 0.88rem;
+        }
+
+        .table th,
+        .table td,
+        table th,
+        table td {
+          padding: 8px 9px;
+        }
+
+        pre {
+          padding: 12px 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><strong>PMS–CRITIQUE</strong></h1>
+      <h2><em>Example 1: The Missing Reply Becomes the Story</em></h2>
+      <div class="meta">
+        <strong>Example ID:</strong> <code>PMS-CRITIQUE_EX01</code> &middot;
+        <strong>Example Version:</strong> <code>1.0</code> &middot;
+        <strong>Schema Version:</strong> <code>PMS-CRITIQUE_1.1</code><br />
+        <strong>Status:</strong> draft &middot;
+        <strong>Language:</strong> EN &middot;
+        <strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-CRITIQUE_1.1</code>
+      </div>
+    </header>
+
+    <section id="content">
+
+      <h2>0) Example Identity</h2>
+      <p><strong>Example label:</strong> <em>The Missing Reply Becomes the Story</em></p>
+      <p><strong>Example subtitle:</strong> <em>Non-Event Load -&gt; Silence Attractor</em></p>
+
+      <h3>0.1 Case identity</h3>
+      <ul>
+        <li><strong>Case label:</strong> Deferred Response vs. Stabilized Non-Intervention</li>
+        <li><strong>Scope discipline:</strong> Structural mapping only. No diagnosis, no moral ranking, and no attribution of intent. PMS application remains valid only under <strong>Χ</strong> (Distance), reversibility, and <strong>D</strong> (Dignity-in-Practice).</li>
+        <li><strong>Repository fit:</strong> This example is designed as a repository training example for reading how non-events (<strong>Λ</strong>) can accumulate into a silence attractor under asymmetry (<strong>Ω</strong>) and temporality (<strong>Θ</strong>), without requiring overt prohibition or explicit coercion.</li>
+      </ul>
+
+      <h3>0.2 Example packet alignment</h3>
+      <ul>
+        <li><strong>Scene label:</strong> Deferred Response vs. Stabilized Non-Intervention</li>
+        <li><strong>Frame anchor:</strong> Recurring team coordination meeting with an explicit follow-up path.</li>
+        <li><strong>Trigger mismatch:</strong> Raised safety concern remains unanswered despite stated uptake.</li>
+        <li><strong>Operator signature:</strong>
+          <ul>
+            <li><strong>Reduced:</strong> <code>Δ, □, Λ, Α, Ω, Θ</code></li>
+            <li><strong>Note:</strong> This reduced signature is a readability aid only. Canonical PMS dependencies remain fully in force.</li>
+          </ul>
+        </li>
+        <li><strong>Guardrail gate:</strong> Readings remain scene-bound and revisable. No person labels, no motive attributions, no shaming, and no coercive binding claims are generated.</li>
+        <li><strong>Structural closure:</strong> In this scene, critique does not disappear; it is displaced into absence. Repeated non-response turns <strong>Λ</strong> into an organizing force, and over time the cost of renewed interruption rises. What stabilizes is not correction but a silence attractor under <strong>Ω</strong> and <strong>Θ</strong>.</li>
+        <li><strong>Scale:</strong>
+          <ul>
+            <li><strong>System:</strong> <code>paper_tags</code></li>
+            <li><strong>Tag:</strong> <code>c</code></li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>1) Minimal Vignette</h2>
+      <h3>1.1 Title</h3>
+      <p><strong>A concern is raised, acknowledged, and then structurally absorbed by silence</strong></p>
+
+      <h3>1.2 Scene boundaries</h3>
+      <ul>
+        <li><strong>Domain:</strong> Small-team coordination / internal organizational critique</li>
+        <li><strong>Scope:</strong> Structures, roles, asymmetries, non-events, temporality, critique reach, and drift stabilization.</li>
+        <li><strong>Out of scope:</strong>
+          <ul>
+            <li>person-level judgment</li>
+            <li>motive attribution</li>
+            <li>clinical or psychological interpretation</li>
+            <li>moral ranking</li>
+            <li>truth-adjudication of the safety concern itself</li>
+            <li>instruction or action prescription</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>1.3 Short scene</h3>
+      <p>
+        In a recurring team meeting, one participant raises a safety-related
+        concern. A manager acknowledges the issue and asks for a follow-up message,
+        which is sent. No reply comes for two weeks. In subsequent meetings the
+        issue is not reopened, no explicit closure is given, and a joking remark
+        later frames the situation as one in which nothing really changes. Over
+        time, similar concerns cease to be raised.
+      </p>
+
+      <h3>1.4 Structural focus</h3>
+      <p>
+        The example examines how critique can fail not through explicit rejection
+        but through the accumulation of meaningful absences (<strong>Λ</strong>), eventually
+        stabilizing a silence attractor (<strong>Α</strong>) under exposure asymmetry
+        (<strong>Ω</strong>) and temporal hardening (<strong>Θ</strong>).
+      </p>
+
+      <h3>1.5 Scenic elements</h3>
+      <ul>
+        <li><strong>Actors:</strong>
+          <ul>
+            <li>team member raising a concern</li>
+            <li>manager controlling the follow-up channel</li>
+            <li>other meeting participants observing the handling</li>
+          </ul>
+        </li>
+        <li><strong>Salient objects:</strong>
+          <ul>
+            <li>the safety concern</li>
+            <li>the follow-up message</li>
+            <li>the meeting frame</li>
+            <li>the absent response</li>
+            <li>later joking reference to futility</li>
+          </ul>
+        </li>
+        <li><strong>Trigger event:</strong>
+          <ul>
+            <li><strong>Label:</strong> acknowledged concern without follow-up</li>
+            <li><strong>Description:</strong> A relevant mismatch is raised and superficially received, but the expected follow-up does not occur.</li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>2) Why This Is Repo-Useful</h2>
+      <h3>2.1 Structural focus</h3>
+      <p>
+        This example is useful because it shows a drift form in which critique is
+        neither openly forbidden nor integrated. Instead, meaningful absence
+        gradually becomes the dominant coordination mode.
+      </p>
+
+      <h3>2.2 Repo value</h3>
+      <ul>
+        <li>Demonstrates how <strong>Λ</strong> (Non-Event) can become structurally decisive without needing explicit conflict or sanction.</li>
+        <li>Makes visible how repetition converts absence into a stabilized script (<strong>Α</strong>), rather than leaving it as an isolated communication failure.</li>
+        <li>Shows how <strong>Ω</strong> can concentrate exposure on the raiser while allowing others to remain comparatively insulated.</li>
+        <li>Illustrates why temporality (<strong>Θ</strong>) matters: delayed non-response alters the future cost of renewed interruption.</li>
+        <li>Serves as a clean example of drift toward D6 (Silence Attractor) without collapsing into person-typing or blame language.</li>
+      </ul>
+
+      <h3>2.3 Central repo question</h3>
+      <blockquote>
+        <p>
+          How does critique become structurally displaced when absence begins to
+          coordinate more strongly than explicit response?
+        </p>
+      </blockquote>
+
+      <h3>2.4 Lens relevance</h3>
+      <ul>
+        <li><strong>Critique thresholds:</strong> The example helps distinguish a raised mismatch from productive critique. A concern may be legible and even briefly framed without reaching <strong>Σ</strong> or <strong>Ψ</strong>.</li>
+        <li><strong>Drift typology:</strong> The scene instantiates a strong D6 tendency and also shows how silence can coexist with diffusion and commentary residues.</li>
+        <li><strong>Scale relevance:</strong> The example sits clearly in paper tag c (small group critique), where belonging, role distribution, and repeated non-intervention matter more than public spectacle.</li>
+        <li><strong>Guardrail relevance:</strong> The example is especially useful for training structurally careful readings because it invites overinterpretation if reversibility and <strong>D</strong> are not actively preserved.</li>
+      </ul>
+      <hr />
+
+      <h2>3) Operator Mapping</h2>
+      <h3>3.1 Reduced signature</h3>
+      <p><strong>Primary signature:</strong> <code>Δ, □, Λ, Α, Ω, Θ</code></p>
+      <p><strong>Secondary possible:</strong> <code>Χ</code></p>
+      <p>
+        <strong>Note:</strong> <strong>Χ</strong> is not absent as a human capacity claim; rather, the scene shows weak
+        practical availability of interruption once costs rise. The signature is
+        reduced for readability and does not override PMS dependency hygiene.
+      </p>
+
+      <h3>3.2 Operator roles in scene</h3>
+      <ul>
+        <li><strong>Δ:</strong> A mismatch becomes legible between the stated safety concern and the current practice.</li>
+        <li><strong>∇:</strong> Directional pressure initially appears in the impulse to raise the concern and seek correction, but does not stabilize as productive critique.</li>
+        <li><strong>□:</strong> The recurring team meeting defines what counts as raising, acknowledging, and following up on an issue.</li>
+        <li><strong>Λ:</strong> The decisive structural fact is the missing reply and missing closure. The absence itself becomes meaningful.</li>
+        <li><strong>Α:</strong> Repeated non-response and non-reopening harden into a recognizable script: concerns go nowhere, and silence becomes normal.</li>
+        <li><strong>Ω:</strong> Exposure is concentrated on the person who raises the concern, while the role controlling follow-up bears lower immediate exposure cost.</li>
+        <li><strong>Θ:</strong> Delay accumulates. Each missed opportunity to respond raises the cost of reopening the issue later.</li>
+        <li><strong>Φ:</strong> Recontextualization remains weak and underdeveloped. The scene does not move toward a new actionable understanding; later humor instead helps normalize futility.</li>
+        <li><strong>Χ:</strong> Distance is formally possible in the scene but becomes practically hard to activate. Re-entry into the issue becomes costlier over time.</li>
+        <li><strong>Σ:</strong> No integrative corrective step consolidates. The concern is neither meaningfully absorbed nor converted into coordinated follow-up.</li>
+        <li><strong>Ψ:</strong> No stable self-binding toward correction appears. Follow-up is not bound into a durable review or ownership trajectory.</li>
+      </ul>
+
+      <h3>3.3 Derived axes projection</h3>
+      <ul>
+        <li><strong>A:</strong> Awareness is present at the level of mismatch recognition. The concern is legible and framed, but this awareness does not remain strongly actionable across time.</li>
+        <li><strong>C:</strong> Coherence gradually shifts toward narrative stability of silence: the expectation becomes that concern-raising will not generate follow-up.</li>
+        <li><strong>R:</strong> Responsibility does not consolidate into owned follow-up. Instead, responsibility becomes diffuse while exposure remains concentrated.</li>
+        <li><strong>E:</strong> Action remains weak. The scene does not reach enactable correction and drifts away from integration.</li>
+        <li><strong>D:</strong> Dignity-in-Practice is stressed because the scene preserves formal civility while structurally increasing the cost of speaking.</li>
+      </ul>
+
+      <h3>3.4 Structural mechanism summary</h3>
+      <ol>
+        <li>A relevant mismatch is raised.</li>
+        <li>The frame initially appears to accept interruption.</li>
+        <li>Expected follow-up does not occur.</li>
+        <li>Absence becomes increasingly meaningful.</li>
+        <li>Repetition stabilizes a silence script.</li>
+        <li>Exposure remains concentrated on the potential re-raiser.</li>
+        <li>Renewed interruption becomes costlier over time.</li>
+      </ol>
+      <p>
+        <strong>Concise formula:</strong><br />
+        <code>raised Δ in □ → persistent Λ → Α stabilization → Ω concentration → Θ hardening → critique displacement</code>
+      </p>
+      <hr />
+
+      <h2>4) Critique Threshold Reading</h2>
+      <h3>4.1 Threshold assessment</h3>
+      <ul>
+        <li><strong>CRITIQUE_MIN:</strong> <em>partial and unstable</em><br />
+          A framed mismatch clearly appears, and interruption is momentarily
+          possible, but practical interruptibility does not remain stable once the
+          follow-up channel goes silent.
+        </li>
+        <li><strong>CRITIQUE_PROD:</strong> <em>not reached</em><br />
+          The scene never consolidates <strong>Φ + Σ</strong> into an actionable corrective step.
+          The concern remains acknowledged but unintegrated.
+        </li>
+        <li><strong>CRITIQUE_STABLE:</strong> <em>not reached</em><br />
+          No durable follow-up binding or review discipline emerges. <strong>Ψ</strong> does not
+          stabilize as self-binding toward correction.
+        </li>
+      </ul>
+
+      <h3>4.2 Non-equivalence reading</h3>
+      <ul>
+        <li><strong>Reaction check:</strong> This is not primarily a D1 reaction case. The issue is not impulsive discharge but the structural accumulation of absence after a legitimate raising.</li>
+        <li><strong>Judgment check:</strong> This is not mainly a D2 judgment case either. The scene does not revolve around harsh evaluative labeling; it revolves around deferred and then normalized non-response.</li>
+        <li><strong>Silence check:</strong> The example strongly supports the PMS-CRITIQUE distinction that silence or paralysis under mismatch are not low-grade critique but distinct stabilizations.</li>
+      </ul>
+      <hr />
+
+      <h2>5) Reach and Scale Reading</h2>
+      <h3>5.1 Vertical reach</h3>
+      <ul>
+        <li><strong>Assessed level:</strong> <code>V2_fragile</code></li>
+        <li><strong>Justification:</strong> The scene briefly reaches minimal critique because a mismatch is framed and raised within an intelligible role space. However, the episode does not travel onward toward productive critique.</li>
+        <li><strong>Why not V3:</strong> No recontextualized corrective path becomes actionable; <strong>Σ</strong> is absent.</li>
+        <li><strong>Why not V1 only:</strong> The scene is more than mere discharge because the mismatch is clearly framed and initially introduced into a legitimate coordination structure.</li>
+      </ul>
+
+      <h3>5.2 Horizontal scale</h3>
+      <ul>
+        <li><strong>System:</strong> <code>paper_tags</code></li>
+        <li><strong>Tag:</strong> <code>c</code></li>
+        <li><strong>Label:</strong> Small Group Critique (Peers / Team / Family)</li>
+        <li><strong>Justification:</strong> The decisive dynamics are relational: status, belonging, repeated interaction, unclear responsibility, and non-event accumulation within a small-group setting.</li>
+        <li><strong>Scale-specific costs:</strong>
+          <ul>
+            <li>renewed interruption risks social friction</li>
+            <li>silence can become a belonging-preserving adaptation</li>
+            <li>role ambiguity enables responsibility diffusion</li>
+            <li>repetition hardens the local norm faster than formal correction</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>5.3 Deployment scale note</h3>
+      <ul>
+        <li><strong>System:</strong> <code>deployment_tags</code></li>
+        <li><strong>Tag:</strong> <code>small_group_team</code></li>
+        <li><strong>Note:</strong> This optional deployment tag is compatible with the primary paper tag and may assist repository tooling.</li>
+      </ul>
+      <hr />
+
+      <h2>6) Drift Analysis</h2>
+      <h3>6.1 Main class reading</h3>
+      <ul>
+        <li><strong>Primary:</strong> <code>D6</code> — <em>Silence attractor</em> (<strong>fit:</strong> strong)<br />
+          Repeated non-intervention becomes expected, and raising costs increase
+          over time. The scene shows <strong>Λ</strong> persistence tending toward <strong>Α</strong> stabilization.
+        </li>
+        <li><strong>Secondary:</strong> <code>C7</code> — <em>Diffusion Drift</em> (<strong>fit:</strong> moderate)<br />
+          Responsibility is not openly refused, but role space and follow-up
+          ownership remain insufficiently consolidated.
+        </li>
+      </ul>
+
+      <h3>6.2 Drift catalog reading</h3>
+      <ul>
+        <li><code>C6</code> — <strong>Silence-as-Steering</strong> (<strong>fit:</strong> strong)</li>
+        <li><code>C7</code> — <strong>Diffusion Drift</strong> (<strong>fit:</strong> moderate)</li>
+        <li><code>C5</code> — <strong>Commentary Drift</strong> (<strong>fit:</strong> weak to moderate)<br />
+          The later joking remark does not create full meta-commentary paralysis,
+          but it helps stabilize the sense that correction is no longer expected.
+        </li>
+      </ul>
+
+      <h3>6.3 Typical markers present</h3>
+      <ul>
+        <li>promised follow-up does not occur</li>
+        <li>issue is not explicitly reopened</li>
+        <li>later humor normalizes futility</li>
+        <li>future raising becomes less likely</li>
+      </ul>
+
+      <h3>6.4 Drift chain alignment</h3>
+      <p><strong>Closest chain:</strong> <code>chain_narrative_to_silence</code></p>
+      <p>
+        <strong>Modified reading:</strong> In this case the drift does not require strong
+        <strong>Φ</strong> inflation. Instead, delayed response and normalization of absence allow
+        attention to shift, after which silence stabilizes as the operative script.
+      </p>
+      <p>
+        <strong>Scene-specific chain:</strong><br />
+        <code>raised concern → absent reply (Λ) → no explicit re-entry → local normalization → Α silence script → heightened future cost of speaking</code>
+      </p>
+      <hr />
+
+      <h2>7) Modulator Profile</h2>
+      <h3>7.1 Overview</h3>
+      <p>
+        The scene is especially shaped by modulators that increase the practical
+        cost of renewed interruption without requiring explicit suppression.
+      </p>
+
+      <h3>7.2 Active modulators</h3>
+      <ul>
+        <li><strong>M1 — Frame clarity:</strong> <em>mixed</em><br />
+          The formal frame appears clear enough to raise a concern, but the
+          effective follow-up rules are insufficiently consolidated.
+        </li>
+        <li><strong>M2 — Non-event density:</strong> <em>high</em><br />
+          The case turns on exactly this modulator: expected response is replaced
+          by structurally meaningful absence.
+        </li>
+        <li><strong>M3 — Asymmetry visibility:</strong> <em>moderate</em><br />
+          The exposure gradient is visible enough to shape future participation,
+          even without explicit punitive action.
+        </li>
+        <li><strong>M4 — Temporal compression:</strong> <em>moderate</em><br />
+          The issue is not instantaneous urgency but the slow compression created
+          by delay and missed windows for low-cost re-entry.
+        </li>
+        <li><strong>M5 — Recontextualization habituation:</strong> <em>low to moderate</em><br />
+          Strong reframing is not the main drift driver here, though later humor
+          lightly recontextualizes futility into a normalized team story.
+        </li>
+        <li><strong>M6 — Distance availability:</strong> <em>low in practice</em><br />
+          In principle the frame allows re-entry, but in practice stop-capable
+          re-interruption becomes increasingly costly.
+        </li>
+        <li><strong>M7 — Attractor inertia:</strong> <em>high</em><br />
+          Once non-response repeats, the silence script becomes sticky and
+          self-reinforcing.
+        </li>
+        <li><strong>M8 — Publicness overlay:</strong> <em>low</em><br />
+          This is not a public case. <strong>P</strong> is not the relevant amplifier here.
+        </li>
+      </ul>
+
+      <h3>7.3 Modulator summary</h3>
+      <p>
+        The strongest drivers are M2, M6, and M7: repeated absence, weakening
+        practical interruptibility, and the hardening of silence into default
+        handling.
+      </p>
+      <hr />
+
+      <h2>8) Cost Distribution</h2>
+      <h3>8.1 Overview</h3>
+      <p>
+        Costs in this scene are structurally uneven and accumulate over time.
+        These costs are not moral verdicts; they are scene effects under
+        <strong>Ω</strong> and <strong>Θ</strong>.
+      </p>
+
+      <h3>8.2 Cost types</h3>
+      <ul>
+        <li><strong>Interpretive costs:</strong>
+          <ul>
+            <li>participants must infer meaning from absence</li>
+            <li>ambiguity shifts from explicit process into silent expectation</li>
+          </ul>
+        </li>
+        <li><strong>Exposure costs:</strong>
+          <ul>
+            <li>renewed raising concentrates reputational and relational risk on the raiser</li>
+            <li>those controlling the follow-up channel face lower immediate exposure</li>
+          </ul>
+        </li>
+        <li><strong>Temporal costs:</strong>
+          <ul>
+            <li>reopening later appears increasingly disruptive</li>
+            <li>delay transforms a local issue into a historical one</li>
+          </ul>
+        </li>
+        <li><strong>Coordination costs:</strong>
+          <ul>
+            <li>issue resolution is displaced</li>
+            <li>future issue-raising becomes less likely</li>
+          </ul>
+        </li>
+        <li><strong>Dignity stress costs:</strong>
+          <ul>
+            <li>formal civility conceals rising expressive burden</li>
+            <li>protection of the exposable position weakens without overt conflict</li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>9) Validity Gate Reminder</h2>
+      <h3>9.1 PMS entry condition</h3>
+      <ul>
+        <li><strong>Χ (Distance):</strong> The reading must not collapse into blame. <strong>Χ</strong> is used here as a structural question of practical interruptibility, not as a personal virtue test.</li>
+        <li><strong>Reversibility:</strong> The analysis remains scene-bound and revisable. It does not claim that any actor is globally avoidant, cowardly, negligent, or malicious.</li>
+        <li><strong>D (Dignity-in-Practice):</strong> The example must not be used to shame managers, teams, or concern-raisers. It tracks how a critique scene drifts structurally under asymmetry and temporality.</li>
+      </ul>
+
+      <h3>9.2 Case-specific validity test</h3>
+      <p><strong>Valid if:</strong></p>
+      <ul>
+        <li>the analysis remains tied to this specific meeting ecology</li>
+        <li>non-response is read structurally rather than psychologically</li>
+        <li>drift labels are used descriptively, not as sanctions</li>
+        <li>responsibility gradients are discussed without person-ranking</li>
+      </ul>
+
+      <p><strong>Formally invalid if:</strong></p>
+      <ul>
+        <li>silence is converted into proof of bad character</li>
+        <li>the manager role is moralized as inherently suppressive</li>
+        <li>the raiser is recoded as globally powerless or globally virtuous</li>
+        <li>the example is used to justify coercive binding on others</li>
+      </ul>
+      <hr />
+
+      <h2>10) Limits and Boundedness Check</h2>
+      <h3>10.1 Structural limits in this case</h3>
+      <ul>
+        <li>The analysis does not establish whether the safety concern was correct.</li>
+        <li>It does not verify intent behind the missing reply.</li>
+        <li>It does not prove institutional failure beyond the mapped scene.</li>
+        <li>It does not rank the dignity or worth of any participant.</li>
+      </ul>
+
+      <h3>10.2 Non-capture check</h3>
+      <p><strong>Possible non-capture:</strong></p>
+      <p>
+        A purely critique-structural reading may underrepresent technical,
+        legal, or workload-related factors that also shaped the missing reply.
+      </p>
+      <p><strong>Does not imply defect:</strong></p>
+      <p>
+        Incomplete capture here would not show that the scene is defective; it
+        would show that other framings may illuminate dimensions not foregrounded
+        by PMS-CRITIQUE.
+      </p>
+
+      <h3>10.3 Rival framing relevance</h3>
+      <ul>
+        <li>organizational process analysis may better capture workflow bottlenecks</li>
+        <li>safety engineering may better assess substantive validity of the concern</li>
+        <li>ethnographic or discourse analysis may better capture team culture nuance</li>
+      </ul>
+
+      <h3>10.4 Anti-absorption note</h3>
+      <p>
+        The example should not redescribe every delayed reply as a silence
+        attractor by default. The structural reading becomes strong only because
+        repetition, normalization, and rising re-entry cost are all present.
+      </p>
+      <hr />
+
+      <h2>11) MIP Docking Relevance</h2>
+      <ul>
+        <li><strong>Status:</strong> <code>optional_and_not_required</code></li>
+        <li><strong>Critique-side statement:</strong> This example is structurally complete as a PMS-CRITIQUE reading without any downstream evaluative docking.</li>
+        <li><strong>Possible docking relevance:</strong> If one later wanted to evaluate legitimacy of follow-up design, accountability allocation, or organizational handling norms, the critique scene could provide scene-bound projection inputs without itself deciding legitimacy.</li>
+        <li><strong>Separation reminder:</strong>
+          <ul>
+            <li>This example does not itself decide legitimacy.</li>
+            <li>It does not generate evaluative scores.</li>
+            <li>No back-projection from later evaluation should be read into this mapping.</li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>12) Readable Structural Closure</h2>
+      <p>
+        In this case, critique does not vanish because the issue becomes irrelevant;
+        it is displaced because absence begins to coordinate more strongly than
+        explicit response. The missing reply accumulates as <strong>Λ</strong>, then stabilizes into
+        a local script in which renewed interruption becomes increasingly costly.
+        What looks superficially like simple delay becomes, over time, a silence
+        attractor under <strong>Ω</strong> and <strong>Θ</strong>. The structural outcome is not
+        correction, but the normalization of non-intervention.
+      </p>
+      <hr />
+
+      <h2>13) Extended Scene Analysis</h2>
+
+      <h3>13.1 Frame anchor check — <strong>□</strong></h3>
+      <p>
+        The meeting frame formally supports issue-raising and follow-up, but its
+        practical enforcement is weak. This gap is crucial to the drift.
+      </p>
+
+      <h3>13.2 Trigger mismatch check — <strong>Δ</strong></h3>
+      <p>
+        The concern is clear enough to count as a relevant mismatch within the
+        existing coordination structure.
+      </p>
+
+      <h3>13.3 Non-event integrity check — <strong>Λ</strong></h3>
+      <p>
+        The absent reply is not a neutral blank. It becomes a meaningful
+        structural event in negative form because response was expected.
+      </p>
+
+      <h3>13.4 Attractor stabilization check — <strong>Α</strong></h3>
+      <p>
+        The later joke is significant not because it proves intention, but because
+        it signals that futility has become socially legible and repeatable.
+      </p>
+
+      <h3>13.5 Asymmetry audit — <strong>Ω</strong></h3>
+      <ul>
+        <li><strong>Exposure bearers:</strong>
+          <ul>
+            <li>the person who might raise the issue again</li>
+            <li>future concern-raisers in comparable situations</li>
+          </ul>
+        </li>
+        <li><strong>Lower-cost positions:</strong>
+          <ul>
+            <li>the role controlling whether follow-up occurs</li>
+            <li>bystanders who can preserve belonging through silence</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>13.6 Temporality and trajectory — <strong>Θ</strong></h3>
+      <ol>
+        <li>concern raised</li>
+        <li>acknowledgment given</li>
+        <li>reply absent</li>
+        <li>non-reopening</li>
+        <li>humorous normalization</li>
+        <li>reduced future raising</li>
+      </ol>
+      <p>
+        <strong>Reading:</strong> <strong>Θ</strong> matters because each additional silent interval transforms renewed
+        interruption from ordinary follow-up into conspicuous escalation.
+      </p>
+
+      <h3>13.7 Distance availability check — <strong>Χ</strong></h3>
+      <p>
+        The scene does not forbid re-entry, but it weakens its practical
+        availability. This is exactly how formal openness can coexist with
+        structural drift.
+      </p>
+
+      <h3>13.8 Integration check — <strong>Σ</strong></h3>
+      <p>
+        No coherent corrective step emerges. The issue never becomes a shared
+        actionable object with owned follow-up.
+      </p>
+
+      <h3>13.9 Self-binding check — <strong>Ψ</strong></h3>
+      <p>
+        No review loop, ownership point, or bounded follow-up commitment is
+        stabilized. Without <strong>Ψ</strong>, the concern remains exposed to dissipation.
+      </p>
+
+      <h3>13.10 Critique displacement statement</h3>
+      <p>
+        <strong>Core claim:</strong> The case is not best read as failed speech alone, but as critique
+        displaced into structured absence.
+      </p>
+      <hr />
+
+      <h2>14) Assistant Test Vectors</h2>
+      <ul>
+        <li>“Map how Λ becomes structurally meaningful in this team scene.”</li>
+        <li>“Why is this better read as a silence attractor than as simple apathy?”</li>
+        <li>“Which modulators make renewed interruption costly here?”</li>
+        <li>“Why does the scene reach fragile V2 but not V3?”</li>
+        <li>“How do Ω and Θ interact without any overt publicness overlay?”</li>
+        <li>“Give a boundedness note explaining what this example does not prove.”</li>
+      </ul>
+
+    </section>
+  </body>
+</html>

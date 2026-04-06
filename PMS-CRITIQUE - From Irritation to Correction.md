@@ -12,38 +12,38 @@ MIP.yaml (raw): [https://raw.githubusercontent.com/tz-dev/Maturity-in-Practice/r
 
 ## 0. Scope & Methodology (v0.1, work-immanent)
 
-*(PMS_1.1-compliant; structural; non-diagnostic; structurable / extensible)*
+*(PMS_1.3-compliant; structural; non-diagnostic; structurable / extensible)*
 
-### Operator Orientation (PMS_1.1, critique lens)
+### Operator Orientation (PMS_1.3, critique lens)
 
-This paper uses the eleven PMS meta-axioms (Δ–Ψ) as a fixed operator set.  
-The table below provides a **functional orientation** for how each operator appears *in critique-related configurations*.  
+This paper uses the eleven PMS meta-axioms (Δ–Ψ) as a fixed operator set.
+The table below provides a **functional orientation** for how each operator appears *in critique-related configurations*.
 It is not a re-definition of PMS and does not replace the full PMS specification.
 
-| Symbol | Operator | Core function (general) | Function in PMS-CRITIQUE (scene-bound) | Depends on |
-|:----:|----------|-------------------------|----------------------------------------|------------|
-| Δ | Difference | Enables minimal distinction | A mismatch becomes legible as “something is off” | — |
-| ∇ | Impulse | Directional activation | Pressure to react, respond, or correct emerges | Δ |
-| □ | Frame | Structures relevance and roles | Defines *what would count* as a response or correction | Δ, ∇ |
-| Λ | Non-Event | Meaningful absence under expectation | Absence of critique becomes consequential and load-bearing | □ |
-| Α | Attractor | Stabilized repetition | Recurrent critique or non-critique scripts harden over time | Δ, ∇, □, Λ |
-| Ω | Asymmetry | Directional imbalance | Exposure, power, and cost gradients shape who can critique whom | Α |
-| Θ | Temporality | Trajectories and accumulation | Delays, irreversibility, and follow-up windows determine viability | Ω, Α |
-| Φ | Recontextualization | Frame transformation | Makes critique bearable and actionable rather than merely oppositional | Θ, Ω, □ |
-| Χ | Distance | Reflective interruption | Enables critique as interruption rather than reaction or judgment | Φ, Θ, □ |
-| Σ | Integration | Coherent synthesis | Turns interruption into a corrective step instead of commentary | Χ, Φ |
-| Ψ | Self-Binding | Commitment across time | Binds critique to follow-up, accountability, and trajectory ownership | Σ, Θ, Χ |
+| Symbol | Operator            | Core function (general)              | Function in PMS-CRITIQUE (scene-bound)                                 | Depends on |
+| :----: | ------------------- | ------------------------------------ | ---------------------------------------------------------------------- | ---------- |
+|    Δ   | Difference          | Enables minimal distinction          | A mismatch becomes legible as “something is off”                       | —          |
+|    ∇   | Impulse             | Directional activation               | Pressure to react, respond, or correct emerges                         | Δ          |
+|    □   | Frame               | Structures relevance and roles       | Defines *what would count* as a response or correction                 | Δ, ∇       |
+|    Λ   | Non-Event           | Meaningful absence under expectation | Absence of critique becomes consequential and load-bearing             | □          |
+|    Α   | Attractor           | Stabilized repetition                | Recurrent critique or non-critique scripts harden over time            | Δ, ∇, □, Λ |
+|    Ω   | Asymmetry           | Directional imbalance                | Exposure, power, and cost gradients shape who can critique whom        | Α          |
+|    Θ   | Temporality         | Trajectories and accumulation        | Delays, irreversibility, and follow-up windows determine viability     | Ω, Α       |
+|    Φ   | Recontextualization | Frame transformation                 | Makes critique bearable and actionable rather than merely oppositional | Θ, Ω, □    |
+|    Χ   | Distance            | Reflective interruption              | Enables critique as interruption rather than reaction or judgment      | Φ, Θ, □    |
+|    Σ   | Integration         | Coherent synthesis                   | Turns interruption into a corrective step instead of commentary        | Χ, Φ       |
+|    Ψ   | Self-Binding        | Commitment across time               | Binds critique to follow-up, accountability, and trajectory ownership  | Σ, Θ, Χ    |
 
-*Reading note:*  
-Operators are used **compositionally**. Breaks, substitutions, or overloads in these chains explain critique drift, diffusion, escalation, or paralysis without invoking motives, traits, or moral rankings.
+*Reading note:*
+Operators are used **compositionally**. Breaks, substitutions, or overloads in these chains render critique drift, diffusion, escalation, or paralysis structurally legible without invoking motives, traits, or moral rankings.
 
 ### 0.1 Purpose & Object
 
-PMS-CRITIQUE treats critique as a praxeological operation rather than as a moral attitude, a psychological trait, or a truth-claim by itself. The object of the paper is the structure of critique episodes as they occur in situated practice: a mismatch becomes legible, an interruption becomes possible, the situation is re-framed, a coherent correction becomes reachable, and (optionally) follow-up becomes bound into a trajectory. This object is deliberately defined as an operatoric grammar of enactment: the paper tracks how critique arises, how it fails to arise, and how it mutates into recognizable drifts such as escalation, ridicule, paralysis, diffusion, or pillory dynamics.
+PMS-CRITIQUE treats critique as a praxeological operation rather than as a moral attitude, a psychological trait, or a truth-claim by itself. The object of the paper is a structural reconstruction of critique episodes as they occur in situated practice: a mismatch becomes legible, an interruption becomes possible, the situation is re-framed, a coherent correction becomes reachable, and (optionally) follow-up becomes bound into a trajectory. This object is deliberately defined as an operatoric grammar of enactment: the paper tracks how critique can arise, how it can fail to arise, and how it can mutate into recognizable drift forms such as escalation, ridicule, paralysis, diffusion, or pillory dynamics within this grammar.
 
 The aim is to render the operator grammar visible in a way that remains scene-bound and non-personal: which constellations produce critique as correction, which produce merely reaction, which stabilize silence, which generate “commentary without correction,” and which structures make critique drift-prone at scale. The paper therefore treats critique as a chain that can break at specific structural points, rather than as a question of “good will” or “bad character.” It also treats non-critique not as “nothing” but as a stable path that can accumulate costs over time and can become script-like in groups and publics.
 
-The non-aims are strict and central to the paper’s validity. PMS-CRITIQUE is not life advice, not a guide for “how to critique,” not a normative education program, and not a ranking mechanism for people, groups, or institutions. It is not a clinical tool and does not provide therapeutic interpretation. It does not diagnose motives, competence, intelligence, pathology, or “maturity,” and it does not claim authority over a person’s inner life. It also does not serve as a rhetorical shield for anyone: the paper does not provide moral exculpation through structural description, and it does not provide moral condemnation through structural labeling. It offers a grammar for describing what happens in critique scenes, how costs arise, and why certain drifts are predictable under specific loads.
+The non-aims are strict and central to the paper’s validity. PMS-CRITIQUE is not life advice, not a guide for “how to critique,” not a normative education program, and not a ranking mechanism for people, groups, or institutions. It is not a clinical tool and does not provide therapeutic interpretation. It is not a clinical tool and does not provide therapeutic interpretation. It does not diagnose motives, competence, intelligence, pathology, or “maturity,” and it does not claim authority over a person’s inner life. It also does not serve as a rhetorical shield for anyone: the paper does not provide moral exculpation through structural description, and it does not provide moral condemnation through structural labeling. It offers a grammar for describing what happens in critique scenes, how costs arise, and why certain drifts are predictable under specific loads.
 
 ### 0.2 PMS Entry Condition (Gating)
 
@@ -57,27 +57,29 @@ PMS-CRITIQUE is valid as a PMS application only if the following conditions are 
 
 **Application vs. critique.** These conditions apply to PMS-CRITIQUE as an application. Critique of PMS, rejection of PMS, or non-use of PMS remains unrestricted. The gating therefore functions as a validity constraint for the paper’s own method, not as an attempt to regulate discourse outside the paper.
 
+These constraints define valid PMS-CRITIQUE application within this paper’s grammar. They are not claimed as universal conditions of critique as such.
+
 ### 0.3 Method Mode: Structure Instead of Inner States
 
 PMS-CRITIQUE operates in a structural mode. The object of analysis is not “what people feel” but what configurations do: roles, frames, cost layouts, scripts, stabilization paths, review windows, exposure gradients, and publicity dynamics. The paper treats critique as a praxeological chain that becomes possible under specific structural conditions and becomes drift-prone under identifiable loads. It therefore models how interruption, re-framing, integration, and follow-up arise or fail as elements of practice grammar, not as consequences of personality.
 
 Accordingly, the paper rejects inner causality as an explanatory shortcut. It does not infer motives, traits, trauma, intelligence, deficits, or moral qualities. It does not diagnose “why someone is like that.” It describes what is structurally present in the scene and what stabilizes over time. When the paper uses words that are commonly psychologized (for example “outrage,” “cynicism,” “paralysis”), these are treated as names for configuration outcomes and stabilization forms, not as claims about inner states.
 
-The evidence mode is work-immanent and generative. The paper derives claims from PMS operator dependencies and constellation logic. It does not use empirical data as justificatory anchor for the operator grammar. Where illustrative scenes are used elsewhere in the overall PMS ecosystem, they function as test vectors rather than as empirical claims; in this paper, the paper itself will not contain example vignettes and will not refer the reader to them. The repository may contain separate examples, but the paper remains self-contained as a structural grammar.
+The evidence mode is primarily work-immanent and generative. The paper derives claims from PMS operator dependencies and constellation logic. It does not use empirical data as justificatory anchor for the operator grammar. Where illustrative scenes are used elsewhere in the overall PMS ecosystem, they function as test vectors rather than as empirical claims; in this paper, the paper itself will not contain example vignettes and will not refer the reader to them. The repository may contain separate examples, but the paper remains self-contained as a structural grammar.
 
 ### 0.4 Scene Binding & Language Level
 
 PMS-CRITIQUE enforces a global guard: no person labels. Every statement in the paper is bound to a praxeological scene or configuration and must specify, at least implicitly, the relevant role-space, frame conditions, timing, and degree of publicity. The preferred language is “in this configuration …” or “in this scene …” rather than “X is …” or “they are …”. This is not cosmetic; it is how the paper preserves reversibility and avoids converting structural description into personal fixation.
 
-Statements are therefore constrained to roles, frames, and trajectories. The paper is permitted to use structural markers such as drift, risk, and viability, but only as constellation statements: drift is named as a mutation of the critique chain under specific operator load, not as a property of persons; risk is named as drift sensitivity under specific modulators, not as a moral suspicion; viability is named as a corridor in which the chain remains governable, not as a ranking of worth or character.
+Statements are therefore constrained to roles, frames, and trajectories. The paper is permitted to use structural markers such as drift, risk, and viability, but only as constellation statements: drift is treated here as a mutation of the critique chain under specific operator load, not as a property of persons; risk is named as drift sensitivity under specific modulators, not as a moral suspicion; viability is named as a corridor in which the chain remains governable, not as a ranking of worth or character.
 
 ### 0.5 Core Thesis (Operatorial)
 
-The core thesis is a re-positioning of what critique is structurally. Critique is not primarily truth, not primarily morality, and not primarily opposition. Truth-claims and moral claims may be present in critique scenes, but PMS-CRITIQUE treats them as content layers that are carried by a deeper practice grammar. The decisive structural question is whether a mismatch becomes interruptible, re-frameable, integrable, and follow-up capable under time and asymmetry.
+The core thesis is a re-positioning of what critique is structurally. In this paper, critique is treated not primarily as truth, not primarily as morality, and not primarily as opposition. Truth-claims and moral claims may be present in critique scenes, but PMS-CRITIQUE treats them as content layers that are carried by a deeper practice grammar. The decisive structural question is whether a mismatch becomes interruptible, re-frameable, integrable, and follow-up capable under time and asymmetry.
 
-In PMS terms, critique begins as a structural interruption: distance becomes available in response to a framed difference. Critique becomes productive only if it can be recontextualized in a way that renders the mismatch bearable and actionable, and if it can be integrated into a coherent corrective step rather than remaining at the level of commentary or judgment. Critique becomes stable only if some form of binding exists across time: follow-up, accountability, review, and repair require temporal extension and, at higher reach, self-binding. Without these, critique episodes may occur as momentary performances but will not consolidate into correction trajectories.
+In PMS terms, critique begins as a structural interruption: distance becomes available in response to a framed difference. Within this grammar, critique becomes productive only if it can be recontextualized in a way that renders the mismatch bearable and actionable, and if it can be integrated into a coherent corrective step rather than remaining at the level of commentary or judgment. Critique becomes stable only if some form of binding exists across time: follow-up, accountability, review, and repair require temporal extension and, at higher reach, self-binding. Without these, critique episodes may occur as momentary performances but will not consolidate into correction trajectories.
 
-This thesis also implies a negative claim: many phenomena commonly called critique are structurally different. Reaction, judgment, shaming, outrage performance, and paralysis may co-occur with the same content, but they are not critique in the strict praxeological sense if the interruption, re-framing, integration, and follow-up chain does not become reachable.
+This thesis also implies a negative claim: many phenomena commonly called critique are structurally different. Reaction, judgment, shaming, outrage performance, and paralysis may co-occur with the same content, but they do not count as critique in the strict praxeological sense used here if the interruption, re-framing, integration, and follow-up chain does not become reachable.
 
 ### 0.6 Conceptual Discipline (Operational Definitions)
 
@@ -105,6 +107,14 @@ Third, critique without moralism is a structural stance: critique is routed thro
 
 Fifth, the paper includes a no-retroactive-closure guard: structural explanation after the fact does not retroactively secure distance or dignity in the original scene. The paper therefore refuses a common misuse of meta-analysis: the idea that better understanding later cancels harm earlier. Interpretations remain revisable; consequences under temporality remain real.
 
+### 0.8a Methodological Restraint
+
+PMS-CRITIQUE does not claim monopoly on critique analysis. Its narrower claim is that critique can be rendered with unusual structural clarity as a chain of differentiation, interruption, recontextualization, integration, and binding under asymmetry and temporality.
+
+Other frameworks may remain stronger where the central issue is discourse normativity, institutional legitimacy, rhetorical force, lived experience, or explicit moral justification. The point of this paper is not to eliminate those framings, but to make visible a structural dimension they may leave implicit or treat only secondarily.
+
+Its strength therefore lies in disciplined structural legibility, not in final authority over critique as such.
+
 ### 0.9 Docking Points (Optional, Separation Rule)
 
 PMS-CRITIQUE can optionally dock to MIP (Maturity in Practice) when the question is not how critique operates but whether critique is legitimate, attributable, or regime-relevant under complex asymmetry and publicity conditions. The docking is explicitly optional and is governed by a separation rule: PMS-CRITIQUE remains operatorial and descriptive; MIP remains evaluative and regime-focused. The paper must not mix these layers.
@@ -113,7 +123,7 @@ The separation rule has two functions. It prevents PMS-CRITIQUE from becoming a 
 
 ---
 
-## 1. Critique as an Unavoidable Praxis Tension (Δ–Λ axis)
+## 1. Critique as a Structurally Recurrent Praxis Tension (Δ–Λ axis)
 
 ### 1.1 Thesis (Assertion Without Morality)
 
@@ -127,7 +137,7 @@ The minimal operator sequence that establishes critique as a structural possibil
 
 Δ → ∇ → □ → Λ
 
-A difference becomes perceptible, this difference activates directional tension, the frame structures that tension into relevance, and the absence of an expected response becomes a structured non-event. This sequence does not yet produce critique. It produces the condition under which critique, non-critique, or drift can emerge as stabilizations of the same tension.
+A difference becomes perceptible, this difference activates directional tension, the frame structures that tension into relevance, and the absence of an expected response becomes a structured non-event. This sequence does not yet produce critique in the strict sense used here. It produces the condition under which critique, non-critique, or drift can emerge as stabilizations of the same tension.
 
 ### 1.3 Why “Not Criticizing” Is Also Praxis
 
@@ -143,10 +153,10 @@ This chapter establishes critique as a structural possibility that arises wherev
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (temporality):** repeated non-critique accumulates over time, turning momentary omissions into durable trajectories that are increasingly costly to reverse.
-- **Λ (non-event load):** absence under expectation generates interpretive pressure that does not dissipate on its own and tends to seek stabilization.
-- **Α (script costs):** recurring non-critique stabilizes scripts such as avoidance or ridicule, narrowing future response options and increasing inertia.
-- **Ω (exposure gradients):** where asymmetry is present, costs of non-critique distribute unevenly, often externalizing burden toward less protected positions.
+* **Θ (temporality):** repeated non-critique accumulates over time, turning momentary omissions into durable trajectories that are increasingly costly to reverse.
+* **Λ (non-event load):** absence under expectation generates interpretive pressure that does not dissipate on its own and tends to seek stabilization.
+* **Α (script costs):** recurring non-critique stabilizes scripts such as avoidance or ridicule, narrowing future response options and increasing inertia.
+* **Ω (exposure gradients):** where asymmetry is present, costs of non-critique distribute unevenly, often externalizing burden toward less protected positions.
 
 #### (3) Structural Viability Corridor
 
@@ -154,9 +164,9 @@ Structurally viable configurations acknowledge that expectation makes non-events
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** maintained by treating critique and non-critique as structural paths rather than as personal virtues or failures.
-- **Reversibility:** interpretations remain scene-bound and revisable; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by describing costs and trajectories without shaming or ranking actors.
+* **Χ (Distance):** maintained by treating critique and non-critique as structural paths rather than as personal virtues or failures.
+* **Reversibility:** interpretations remain scene-bound and revisable; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by describing costs and trajectories without shaming or ranking actors.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -172,25 +182,23 @@ Where frames create expectation, absence becomes structure: critique and non-cri
 
 ### 2.1 Thesis
 
-This chapter establishes a strict structural minimum for what counts as critique in PMS-CRITIQUE. Critique, in the praxeological sense used here, requires **Χ (Distance)**. Without distance, a configuration may still produce strong responses, evaluations, or withdrawal, but it does not produce critique. Reaction, judgment, escalation, and paralysis are therefore not weaker forms of critique; they are structurally different outcomes.
+This chapter proposes a strict structural minimum for what counts as critique in PMS-CRITIQUE. Critique, in the praxeological sense used here, requires **Χ (Distance)**. Without distance, a configuration may still produce strong responses, evaluations, or withdrawal, but it does not produce critique in the strict sense used here. Reaction, judgment, escalation, and paralysis are therefore not weaker forms of critique; they are structurally different outcomes.
 
 The decisive clarification is that distance is not a matter of tone, politeness, or interpersonal softness. Χ (Distance) names interruptability and meta-position under pressure. It is the structural capacity to suspend immediate impulse long enough for a mismatch to be handled as a problem of coordination rather than as a trigger for discharge or avoidance. Where this capacity is absent, the system cannot interrupt itself, and critique as such cannot occur, regardless of how justified, accurate, or intense the content may be.
 
-Minimal critique is therefore defined negatively as much as positively. It is not defined by courage, truthfulness, or moral resolve, but by the presence of an interruptible configuration in which a mismatch can be held at a distance from immediate enactment. This minimum does not yet guarantee correction, learning, or improvement. It merely establishes the condition under which critique becomes possible at all.
+Minimal critique is therefore defined negatively as much as positively. It is not defined by courage, truthfulness, or moral resolve, but by the presence of an interruptible configuration in which a mismatch can be held at a distance from immediate enactment. This minimum does not yet guarantee correction, learning, or improvement. It merely establishes the condition under which critique becomes possible at all within PMS-CRITIQUE.
 
 ### 2.2 Minimal Formula (PMS-strict)
 
-The minimal operator composition that defines critique in the strict sense is:
+The minimal operator composition that defines critique in the strict sense used here is:
 
 ```
-
 CRITIQUE_min := Χ ∘ (□ ∘ Δ)
-
 ```
 
 A difference (Δ) becomes legible as a mismatch, the frame (□) renders this mismatch relevant within a practice grammar, and distance (Χ) enables interruption from immediate impulse.
 
-This expression is a **reduced signature**, not a denial of operator dependencies. In PMS terms, **Χ (Distance) presupposes Φ (Recontextualization), Θ (Temporality), and □ (Frame)**. These prerequisites are structurally implicit in the configuration and are not claimed to be absent or bypassed. The formula marks the **threshold at which critique becomes structurally possible**, not a claim that distance can exist independently of its generative background.
+This expression is a **reduced signature**, not a denial of operator dependencies. In PMS terms, **Χ (Distance) presupposes Φ (Recontextualization), Θ (Temporality), and □ (Frame)**. These prerequisites are structurally implicit in the configuration and are not claimed to be absent or bypassed. The formula marks the **threshold at which critique becomes structurally possible within this paper**, not a claim that distance can exist independently of its generative background.
 
 The composition is intentionally minimal. It does not include integration (Σ), recontextualization (Φ), or self-binding (Ψ). It therefore marks a threshold, not an achievement: the point at which critique becomes possible, but not yet productive, corrective, or trajectory-shaping.
 
@@ -206,14 +214,14 @@ These are not failures of character, intention, or awareness. They are predictab
 
 #### (1) Structural Result (Condensation)
 
-This chapter establishes the strict minimum for critique as χ-stabilized framed differentiation. The decisive point is that critique requires distance as interruptability, not as politeness or restraint of expression. Without distance, responses may still occur, but they take the form of reaction, judgment, or paralysis rather than critique. Minimal critique marks a threshold condition: a mismatch can be held apart from immediate enactment and treated as a coordination problem. This minimum does not yet imply correction or learning; it only makes them structurally possible.
+This chapter establishes the strict minimum for critique as χ-stabilized framed differentiation. The decisive point is that critique requires distance as interruptability, not as politeness or restraint of expression. Without distance, responses may still occur, but they take the form of reaction, judgment, or paralysis rather than critique in the strict sense used here. Minimal critique marks a threshold condition: a mismatch can be held apart from immediate enactment and treated as a coordination problem. This minimum does not yet imply correction or learning; it only makes them structurally possible.
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (Temporality):** repeated absence of distance accumulates into trajectories of reactivity or withdrawal that become harder to interrupt over time.
-- **Λ (Non-event load):** where interruption is expected but does not occur, absence itself becomes pressure-bearing and seeks stabilization.
-- **Α (Script costs):** configurations without Χ (Distance) tend to stabilize scripts of escalation, cynicism, or silence, narrowing future response options.
-- **Ω (Asymmetry):** in asymmetric settings, lack of distance shifts costs unevenly, often amplifying exposure at the more vulnerable pole.
+* **Θ (Temporality):** repeated absence of distance accumulates into trajectories of reactivity or withdrawal that become harder to interrupt over time.
+* **Λ (Non-event load):** where interruption is expected but does not occur, absence itself becomes pressure-bearing and seeks stabilization.
+* **Α (Script costs):** configurations without Χ (Distance) tend to stabilize scripts of escalation, cynicism, or silence, narrowing future response options.
+* **Ω (Asymmetry):** in asymmetric settings, lack of distance shifts costs unevenly, often amplifying exposure at the more vulnerable pole.
 
 #### (3) Structural Viability Corridor
 
@@ -221,9 +229,9 @@ Critique remains viable where distance can be stabilized as interruptability wit
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** secured by treating distance as a structural interrupt-capacity rather than as a personal virtue or attitude.
-- **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by differentiating critique from reaction without shaming, ranking, or person-labeling.
+* **Χ (Distance):** secured by treating distance as a structural interrupt-capacity rather than as a personal virtue or attitude.
+* **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by differentiating critique from reaction without shaming, ranking, or person-labeling.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -239,25 +247,25 @@ Critique begins where a mismatch becomes interruptible: without distance, there 
 
 ### 3.1 Thesis
 
-This chapter establishes that critique becomes *productive* only when it moves beyond interruption and stabilizes as correction. Interruption creates distance and suspends immediate reaction, but it does not by itself alter trajectories. Productivity begins only where the configuration can **recontextualize (Φ: embed the mismatch into a new or adjusted frame)** and **integrate (Σ: synthesize the relevant elements into a coherent corrective step)**.
+This chapter establishes that, within this grammar, critique becomes *productive* only when it moves beyond interruption and stabilizes as correction. Interruption creates distance and suspends immediate reaction, but it does not by itself alter trajectories. Productivity begins only where the configuration can **recontextualize (Φ: embed the mismatch into a new or adjusted frame)** and **integrate (Σ: synthesize the relevant elements into a coherent corrective step)**.
 
 The decisive distinction is therefore not between *true* and *false* critique, nor between *polite* and *harsh* critique, but between critique that merely *articulates* a mismatch and critique that *changes coordination*. Productive critique alters what becomes possible next. It reduces ambiguity about how to proceed, redistributes attention from commentary to correction, and creates a step that can be carried forward under time and asymmetry.
 
 Importantly, this does not imply consensus, harmony, or success. Productive critique may still fail, be rejected, or generate new conflict. What makes it productive is not acceptance, but structural reach: the ability to transform interruption into a coherent action possibility rather than leaving the configuration suspended in reaction, explanation, or exposure dynamics.
 
+This claim concerns structural productivity, not the full value of critique as such. Critique may still matter politically, ethically, or existentially even where it does not reach productive integration in the sense defined here.
+
 ### 3.2 Productive Formula (Operatorial)
 
 The operator composition that characterizes productive critique is:
 
-```
-
+```text
 CRITIQUE_prod := Σ ∘ Χ ∘ Φ ∘ (Θ, Ω, □, Δ)
-
 ```
 
 A mismatch becomes legible within a frame, interruption creates distance, recontextualization shifts or refines the frame so that the mismatch becomes bearable and actionable, and integration consolidates a coherent corrective step. Temporality (Θ: accumulation, timing, review windows) and asymmetry (Ω: exposure and cost gradients) are not optional modifiers; they shape whether recontextualization can remain actionable and whether integration can be sustained.
 
-This composition specifies a *structural possibility*, not a guarantee. Even where all elements are present, correction can still be blocked by later breaks, refusals, or external shocks. Conversely, where any element is missing, critique may still appear forceful or convincing, but it will not consolidate into correction.
+This composition specifies a *structural possibility within PMS-CRITIQUE*, not a guarantee. Even where all elements are present, correction can still be blocked by later breaks, refusals, or external shocks. Conversely, where any element is missing, critique may still appear forceful or convincing, but it will not consolidate into correction in the strict sense used here.
 
 ### 3.3 Recontextualization (Φ): Making Mismatch Bearable and Actionable
 
@@ -281,20 +289,20 @@ When integration does not occur, configurations often stabilize substitutes that
 
 Narrative inflation arises when recontextualization expands without consolidation. The situation is repeatedly reframed, historicized, or theorized, but no corrective step emerges. Repetition replaces clarification when attractor dynamics dominate: the same critique is voiced again and again, producing familiarity rather than resolution. Power substitution occurs when asymmetry is used to force outcomes, bypassing coordination and producing compliance without integration. Withdrawal and silence occur when the costs of exposure or commitment are externalized, leaving the mismatch acknowledged but unaddressed.
 
-These substitutes are structurally intelligible responses to high costs, unclear roles, or compressed time windows. They are not moral defects, but they do explain why critique so often fails to become correction even when content is accurate.
+These substitutes are structurally intelligible responses to high costs, unclear roles, or compressed time windows. They are not moral defects, but they render visible why critique so often fails to become correction even when content is accurate.
 
 ### Chapter-Closure
 
 #### (1) Structural Result (Condensation)
 
-This chapter establishes that critique becomes productive only when interruption is followed by recontextualization and integration. The decisive point is that interruption alone suspends reaction but does not alter trajectories. Productivity arises when a mismatch is embedded into a frame that makes action possible and then consolidated into a coherent corrective step (Φ: recontextualization; Σ: integration). Strong opinions, accurate observations, or elaborate explanations are insufficient if they do not change coordination. Productive critique is therefore a chain property under time and asymmetry, not a function of conviction or force.
+This chapter establishes that, within this grammar, critique becomes productive only when interruption is followed by recontextualization and integration. The decisive point is that interruption alone suspends reaction but does not alter trajectories. Productivity arises when a mismatch is embedded into a frame that makes action possible and then consolidated into a coherent corrective step (Φ: recontextualization; Σ: integration). Strong opinions, accurate observations, or elaborate explanations are insufficient if they do not change coordination. Productive critique is therefore a chain property under time and asymmetry, not a function of conviction or force.
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (temporality):** missing or compressed review windows increase the likelihood that commentary replaces correction and that unresolved tension accumulates.
-- **Λ (non-event load):** acknowledged mismatches without integrated steps generate persistent pressure that seeks stabilization.
-- **Α (script costs):** repeated reframing or repetition stabilizes scripts that consume attention while narrowing future options.
-- **Ω (exposure gradients):** unequal exposure raises the cost of integration and incentivizes power or silence as cheaper substitutes.
+* **Θ (temporality):** missing or compressed review windows increase the likelihood that commentary replaces correction and that unresolved tension accumulates.
+* **Λ (non-event load):** acknowledged mismatches without integrated steps generate persistent pressure that seeks stabilization.
+* **Α (script costs):** repeated reframing or repetition stabilizes scripts that consume attention while narrowing future options.
+* **Ω (exposure gradients):** unequal exposure raises the cost of integration and incentivizes power or silence as cheaper substitutes.
 
 #### (3) Structural Viability Corridor
 
@@ -302,9 +310,9 @@ Productive critique remains viable where recontextualization stays oriented towa
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** secured by maintaining interruption as a meta-position rather than converting critique into performance or enforcement.
-- **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by routing critique through structure, costs, and viability rather than shaming or ranking.
+* **Χ (Distance):** secured by maintaining interruption as a meta-position rather than converting critique into performance or enforcement.
+* **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by routing critique through structure, costs, and viability rather than shaming or ranking.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -326,7 +334,7 @@ This chapter introduces a vertical reading of critique episodes based on **how f
 
 At the lowest level, **difference (Δ: differentiation)** alone produces irritation. Something feels off or noticeable, but there is no shared relevance and no interruption. When a **frame (□: relevance structure)** is added, the irritation becomes nameable inside a practice grammar: something can be pointed out as “out of place,” “wrong,” or “problematic,” yet without critique proper.
 
-The introduction of **distance (Χ: interruption / meta-position)** marks the threshold of critique in the strict sense. At this level, reaction is suspended and the configuration gains the ability to pause, question, or hold open alternatives. Critique exists here as interruption, but it is still fragile and easily collapses back into reaction or drift.
+The introduction of **distance (Χ: interruption / meta-position)** marks the threshold of critique in the strict sense used here. At this level, reaction is suspended and the configuration gains the ability to pause, question, or hold open alternatives. Critique exists here as interruption, but it is still fragile and easily collapses back into reaction or drift.
 
 With **recontextualization (Φ: frame shift)**, critique gains reach. The mismatch is no longer only interrupted but embedded into a revised or expanded frame that makes it bearable and situable. The critique now has a target that can be worked with rather than merely opposed.
 
@@ -356,10 +364,10 @@ This chapter establishes depth as a structural measure of how far a critique epi
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (temporality):** shallow reach accumulates costs over time, as unresolved episodes repeat without trajectory change.
-- **Λ (non-event load):** missing steps in the chain generate persistent pressure that seeks stabilization elsewhere.
-- **Α (script costs):** repeated breakpoints harden into predictable patterns such as commentary, outrage, or episodic insight.
-- **Ω (exposure gradients):** deeper reach increases exposure and commitment costs, making early breakpoints structurally cheaper.
+* **Θ (temporality):** shallow reach accumulates costs over time, as unresolved episodes repeat without trajectory change.
+* **Λ (non-event load):** missing steps in the chain generate persistent pressure that seeks stabilization elsewhere.
+* **Α (script costs):** repeated breakpoints harden into predictable patterns such as commentary, outrage, or episodic insight.
+* **Ω (exposure gradients):** deeper reach increases exposure and commitment costs, making early breakpoints structurally cheaper.
 
 #### (3) Structural Viability Corridor
 
@@ -367,9 +375,9 @@ Structurally viable configurations make it possible to extend critique beyond in
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** secured by treating depth as an analytic dimension rather than as a personal achievement.
-- **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by avoiding depth-based shaming or ranking and by describing reach without degradation.
+* **Χ (Distance):** secured by treating depth as an analytic dimension rather than as a personal achievement.
+* **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by avoiding depth-based shaming or ranking and by describing reach without degradation.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -391,7 +399,7 @@ At the most abstract level, critique is treated as a **formal structural possibi
 
 This scale is used for modeling, comparison, and architectural clarity. It allows critique to be described independently of personal exposure, responsibility attribution, or follow-up commitments. Asymmetry and temporality are present only as abstract parameters, not as lived gradients. Nothing is at stake for anyone in particular, which makes this scale analytically clean but practically incomplete.
 
-At this level, critique exists as grammar, not as risk-bearing praxis. It clarifies *what critique is structurally*, but it does not yet explain why critique so often fails in real configurations.
+At this level, critique exists as grammar, not as risk-bearing praxis. It clarifies *what critique is structurally within this paper*, but it does not yet explain why critique so often fails in real configurations.
 
 **Reference:** CRITIQUE_min and CRITIQUE_prod as pure structure, without actor binding.
 
@@ -417,13 +425,13 @@ Where critique does occur, integration is often negotiated and fragile. Binding 
 
 ### 5.4 d) Public Critique (Street / Media / Online)
 
-At the public scale, critique operates under maximal amplification. Exposure gradients (Ω) are steep, temporality (Θ) hardens into irreversibility, and stabilization speed (Α) increases dramatically. Distance (Χ) becomes fragile because interruption is immediately entangled with visibility, performance, and audience dynamics.
+At the public scale, critique often operates under maximal amplification within the conditions modeled here. Exposure gradients (Ω) are steep, temporality (Θ) hardens into irreversibility, and stabilization speed (Α) increases dramatically. Distance (Χ) becomes fragile because interruption is immediately entangled with visibility, performance, and audience dynamics.
 
 Integration (Σ) is costly, because any articulated step is exposed to contestation, misinterpretation, and permanent record. Self-binding (Ψ) is rare and often replaced by performative signals of alignment or opposition. As a result, critique frequently mutates into shaming, outrage cycles, or silence driven by bystander paralysis.
 
 A crucial clarification is the **publicness overlay (P)**. Publicness is not an operator and does not generate critique by itself. It is a structurally neutral amplification layer that increases exposure, accelerates stabilization, and hardens temporal consequences when critique chains break early. Publicness therefore increases drift sensitivity without implying that publicity or digital media are inherently problematic.
 
-Understanding public critique requires separating operator grammar from amplification effects. Many failures attributed to “bad discourse” are structurally explainable as early chain breaks under extreme Ω/Θ/Α amplification.
+Understanding public critique requires separating operator grammar from amplification effects. Many failures often attributed to “bad discourse” become structurally legible here as early chain breaks under extreme Ω/Θ/Α amplification.
 
 ### Chapter-Closure
 
@@ -433,10 +441,10 @@ This chapter establishes scale as a horizontal axis that determines where costs,
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (temporality):** larger scales harden consequences faster, reducing opportunities for revision and repair.
-- **Λ (non-event load):** in groups and publics, silence and non-intervention accumulate pressure that is widely perceived.
-- **Α (script costs):** repetition under scale stabilizes recognizable patterns such as joking cultures, outrage cycles, or chronic silence.
-- **Ω (exposure gradients):** exposure increases with scale, externalizing costs unevenly and discouraging integration.
+* **Θ (temporality):** larger scales harden consequences faster, reducing opportunities for revision and repair.
+* **Λ (non-event load):** in groups and publics, silence and non-intervention accumulate pressure that is widely perceived.
+* **Α (script costs):** repetition under scale stabilizes recognizable patterns such as joking cultures, outrage cycles, or chronic silence.
+* **Ω (exposure gradients):** exposure increases with scale, externalizing costs unevenly and discouraging integration.
 
 #### (3) Structural Viability Corridor
 
@@ -444,9 +452,9 @@ Critique remains viable where scale-appropriate support exists for interruption,
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** secured by analyzing scale effects without turning them into personal blame or media critique.
-- **Reversibility:** interpretations remain scene- and scale-bound; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by refusing scale-based shaming and by treating exposure as a structural gradient, not a moral verdict.
+* **Χ (Distance):** secured by analyzing scale effects without turning them into personal blame or media critique.
+* **Reversibility:** interpretations remain scene- and scale-bound; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by refusing scale-based shaming and by treating exposure as a structural gradient, not a moral verdict.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -465,6 +473,8 @@ The operators stay the same, but scale decides the cost: as critique moves into 
 This chapter introduces the derived axes A/C/R/E/D as **readable projections** of the operator grammar already established. These axes do not add primitives, do not introduce evaluative scales, and do not function as diagnostics. Their sole function is to make complex operator chains legible at a glance, especially when comparing configurations across scale and depth.
 
 Each axis answers a specific structural question that routinely arises in critique scenes. Importantly, none of these questions can be answered by a single operator. Each axis is therefore defined as a **composition**, not as a trait or capacity. The axes are projections: they collapse operator movement into a readable dimension without replacing the underlying grammar.
+
+These projections increase readability within this framework. They do not establish that critique can be exhaustively represented through these axes in every case.
 
 ### 6.1 Awareness (A) in Critique
 
@@ -514,10 +524,10 @@ This chapter establishes A/C/R/E/D as readable projections of the operator gramm
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (temporality):** projections become legible only through accumulation; missing action or binding increases long-term costs.
-- **Λ (non-event load):** absent critique stabilizes coherence without correction, increasing interpretive pressure.
-- **Α (script costs):** repeated projection patterns harden into expectations about “how critique works here.”
-- **Ω (exposure gradients):** uneven exposure distorts responsibility and threatens dignity-in-practice.
+* **Θ (temporality):** projections become legible only through accumulation; missing action or binding increases long-term costs.
+* **Λ (non-event load):** absent critique stabilizes coherence without correction, increasing interpretive pressure.
+* **Α (script costs):** repeated projection patterns harden into expectations about “how critique works here.”
+* **Ω (exposure gradients):** uneven exposure distorts responsibility and threatens dignity-in-practice.
 
 #### (3) Structural Viability Corridor
 
@@ -525,9 +535,9 @@ Configurations remain viable where projections are read as indicators rather tha
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** secured by treating axes as analytic views, not as labels of persons or groups.
-- **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by refusing axis-based shaming or competence hierarchies.
+* **Χ (Distance):** secured by treating axes as analytic views, not as labels of persons or groups.
+* **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by refusing axis-based shaming or competence hierarchies.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -541,9 +551,9 @@ A/C/R/E/D do not add dimensions to critique; they project how the same operator 
 
 ## 7. Core Phenomena: Bystander, Diffusion, and “Non-Critique Attractors”
 
-This chapter consolidates several frequently moralized phenomena—bystander behavior, silence, mockery, and diffusion—into a single structural field. The aim is not to normalize these outcomes, but to explain why they stabilize so reliably in critique-relevant configurations. What is commonly attributed to weakness, cowardice, or apathy is here treated as the result of operator interactions under asymmetry and time.
+This chapter consolidates several frequently moralized phenomena—bystander behavior, silence, mockery, and diffusion—into a single structural field. The aim is not to normalize these outcomes, but to render visible why they stabilize so reliably in critique-relevant configurations. What is commonly attributed to weakness, cowardice, or apathy is better treated here as the result of operator interactions under asymmetry and time.
 
-The chapter therefore reframes bystander dynamics as **outcomes of configuration**, not as failures of character. It shows how critique pressure can be present and widely recognized, yet fail to trigger interruption or correction because the structural conditions required for critique-in-strict-sense never consolidate.
+The chapter therefore reframes bystander dynamics as **outcomes of configuration** rather than as failures of character. It shows how critique pressure can be present and widely recognized, yet fail to trigger interruption or correction because the structural conditions required for critique-in-strict-sense never consolidate.
 
 ### 7.1 Thesis
 
@@ -552,6 +562,8 @@ Bystander effects emerge when critique-relevant pressure encounters asymmetry gr
 Structurally, three elements interact. **Asymmetry (Ω)** distributes exposure and cost unevenly. **Non-events (Λ)** encode the absence of intervention as meaningful within the frame. **Attractors (Α)** stabilize repeated responses—such as silence, joking, or deflection—into scripts. Under **temporality (Θ)**, these scripts harden, making future interruption increasingly costly.
 
 The decisive point is that none of this requires lack of awareness or lack of concern. Bystander configurations often exhibit high awareness and high coherence, while still producing no critique and no correction.
+
+This structural explanation does not dissolve questions of accountability. It only blocks premature moralization by showing that accountability and diffusion do not occupy the same analytical level.
 
 ### 7.2 Minimal Drift Formulae (illustrative)
 
@@ -577,7 +589,7 @@ Third, **lack of review windows (Θ)** removes opportunities for delayed or stag
 
 Fourth, **repetition of non-intervention (Λ → Α)** stabilizes silence itself as the expected response. Over time, the configuration no longer waits for critique; it expects non-critique, and deviations from silence become the anomaly.
 
-Together, these blocks explain why diffusion is not fragile. It is often the most stable outcome available to the configuration.
+Together, these blocks render diffusion structurally intelligible as more than a fragile accident. It is often the most stable outcome available to the configuration.
 
 ### Chapter-Closure
 
@@ -587,10 +599,10 @@ This chapter establishes bystander behavior and responsibility diffusion as pred
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (temporality):** short-term risk avoidance accumulates into long-term rigidity, making later intervention increasingly costly.
-- **Λ (non-event load):** repeated silence carries interpretive pressure that seeks stabilization rather than resolution.
-- **Α (script costs):** stabilized non-critique scripts narrow future options and normalize inaction.
-- **Ω (exposure gradients):** costs of intervention concentrate on a few positions, while costs of non-intervention diffuse.
+* **Θ (temporality):** short-term risk avoidance accumulates into long-term rigidity, making later intervention increasingly costly.
+* **Λ (non-event load):** repeated silence carries interpretive pressure that seeks stabilization rather than resolution.
+* **Α (script costs):** stabilized non-critique scripts narrow future options and normalize inaction.
+* **Ω (exposure gradients):** costs of intervention concentrate on a few positions, while costs of non-intervention diffuse.
 
 #### (3) Structural Viability Corridor
 
@@ -598,9 +610,9 @@ Configurations remain viable where role space allows interruption to become legi
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** secured by analyzing silence and diffusion as structural paths, not as personal deficits.
-- **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by refusing to shame bystanders or moralize diffusion.
+* **Χ (Distance):** secured by analyzing silence and diffusion as structural paths, not as personal deficits.
+* **Reversibility:** readings remain scene-bound and revisable; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by refusing to shame bystanders or moralize diffusion.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -608,7 +620,7 @@ Responsibility diffusion is structurally governable where interruption can becom
 
 #### (6) One-line Marker (quote-ready)
 
-Bystander effects are not failures of character but stable outcomes of asymmetry, non-events, and time managing critique pressure without interruption.
+Bystander effects are better treated here as stable outcomes of asymmetry, non-events, and time managing critique pressure without interruption.
 
 ---
 
@@ -618,26 +630,26 @@ This chapter introduces a compact typology of critique drift. Its purpose is not
 
 The typology is operator-strict and constellation-based. It does not rely on intent, attitude, or inner state, and it does not presuppose low awareness or bad faith. Drift often emerges precisely in configurations with high awareness and strong expressive capacity, but where interruption, recontextualization, or integration are structurally blocked or replaced.
 
-Whenever distance (Χ) is referenced in the following typology, it is treated as a reduced signature that presupposes its PMS dependencies—recontextualization (Φ), temporality (Θ), and framing (□)—rather than as a standalone capacity or trait.  
+Whenever distance (Χ) is referenced in the following typology, it is treated as a reduced signature that presupposes its PMS dependencies—recontextualization (Φ), temporality (Θ), and framing (□)—rather than as a standalone capacity or trait.
 
 ### 8.1 Main Drift Classes
 
-**1. Reaction masquerading as critique (impulse without distance).**  
+**1. Reaction masquerading as critique (impulse without distance).**
 In this configuration, mismatch triggers immediate directional response, but no meta-position becomes available. Expression is fast, affect-loaded, and often loud, yet structurally indistinguishable from reaction. What looks like critique is in fact impulse discharge stabilized by repetition. The absence of distance prevents interruption from becoming critique-in-strict-sense, even if the content overlaps.
 
-**2. Judgment masquerading as critique (frame plus differentiation without integration).**  
+**2. Judgment masquerading as critique (frame plus differentiation without integration).**
 Here, a mismatch is named within a frame, but the chain does not move toward recontextualization or integration. Evaluation replaces coordination. Asymmetry is often leveraged to fix meaning rather than to manage correction. The result is categorical judgment that stabilizes clarity at the cost of actionability.
 
-**3. Narrative repair masquerading as critique (recontextualization without integration).**  
+**3. Narrative repair masquerading as critique (recontextualization without integration).**
 In this drift, critique pressure is handled by continuous reframing. The situation is repeatedly explained, contextualized, or interpreted in new ways, but no coherent corrective step consolidates. Recontextualization becomes an end in itself. Over time, narrative density increases while correction remains unreachable.
 
-**4. Commentary or analysis paralysis (distance without integration).**  
+**4. Commentary or analysis paralysis (distance without integration).**
 Here, distance is present and often explicitly valued, but it does not connect to integration. The configuration stabilizes reflective observation, meta-commentary, or critique-about-critique. While this can reduce immediate escalation, it also suspends correction indefinitely. Distance becomes a holding pattern rather than a bridge.
 
-**5. Public pillory (exposure amplification with collapsed restraint).**  
+**5. Public pillory (exposure amplification with collapsed restraint).**
 This drift emerges where exposure gradients intensify, stabilization accelerates, and irreversibility hardens. Critique pressure is redirected into public degradation. Once stabilized, the configuration no longer distinguishes between interruption and punishment. Dignity-in-practice collapses, not because content is false, but because exposure replaces coordination.
 
-**6. Silence attractor (non-event stabilization).**  
+**6. Silence attractor (non-event stabilization).**
 In this form, repeated non-intervention becomes the dominant script. Silence manages risk and exposure in the short term, but stabilizes into an attractor that forecloses later interruption. The configuration no longer expects critique; it expects non-critique, and deviations from silence become costly.
 
 These classes are not mutually exclusive. Configurations often move through several drift forms as load increases or as substitution cascades occur.
@@ -646,20 +658,28 @@ These classes are not mutually exclusive. Configurations often move through seve
 
 Drift rarely appears as a single failure point. More commonly, it unfolds as a chain. A frequent sequence in high-exposure configurations begins with rising asymmetry, which erodes distance under pressure. Reaction then hardens into a pattern through repetition, and temporal accumulation makes reversal increasingly costly. In other contexts, prolonged narrative repair delays integration until attention shifts, at which point silence stabilizes as the default outcome.
 
-Such chains explain why critique episodes can begin with recognizable concern and end in forms that appear unrelated to correction. The mutation is structural, not intentional.
+Such chains make structurally legible why critique episodes can begin with recognizable concern and end in forms that appear unrelated to correction. The mutation is structural, not intentional.
+
+### 8.x Drift Typology as Open Structural Index
+
+The drift typology developed in this paper is not offered as an exhaustive classification of all critique failures. It is a compact index of recurrent mutation paths that become especially legible within the PMS-CRITIQUE grammar.
+
+This matters methodologically. A highly productive structural grammar can become tempting to overextend precisely where it classifies well. The typology is therefore strongest where it preserves distinction, not where it absorbs every resistant case into a familiar drift label.
+
+Some critique configurations may resist clean classification without this constituting mere deficiency. Such resistance may indicate a limit of the typology rather than a flaw in the scene.
 
 ### Chapter-Closure
 
 #### (1) Structural Result (Condensation)
 
-This chapter establishes drift as a family of predictable critique mutations that arise when specific capacities fail to consolidate or are replaced. The decisive point is that drift does not require bad intent, ignorance, or moral failure. Each drift class corresponds to a recognizable substitution within the critique chain, where reaction, judgment, narrative handling, observation, exposure, or silence take the place of correction. Drift names how critique pressure is stabilized without integration or binding. Structural naming makes these mutations legible without personalizing them.
+This chapter establishes drift as a family of predictable critique mutations that arise when specific capacities fail to consolidate or are replaced. The decisive point is that drift does not require bad intent, ignorance, or moral failure. Each drift class corresponds to a recognizable substitution within the critique chain, where reaction, judgment, narrative handling, observation, exposure, or silence take the place of correction. Drift is treated here as the way critique pressure is stabilized without integration or binding. Structural naming makes these mutations legible without personalizing them.
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (temporality):** early substitutions accumulate into rigid trajectories that are increasingly difficult to reverse.
-- **Λ (non-event load):** delayed or suspended correction builds interpretive pressure that seeks alternative stabilization.
-- **Α (script costs):** once a drift form stabilizes, it narrows future response options and normalizes deviation.
-- **Ω (exposure gradients):** higher exposure amplifies the cost of interruption and accelerates drift stabilization.
+* **Θ (temporality):** early substitutions accumulate into rigid trajectories that are increasingly difficult to reverse.
+* **Λ (non-event load):** delayed or suspended correction builds interpretive pressure that seeks alternative stabilization.
+* **Α (script costs):** once a drift form stabilizes, it narrows future response options and normalizes deviation.
+* **Ω (exposure gradients):** higher exposure amplifies the cost of interruption and accelerates drift stabilization.
 
 #### (3) Structural Viability Corridor
 
@@ -667,9 +687,9 @@ Configurations remain viable where interruption can still transition into recont
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** maintained by treating drift classes as structural mutations rather than personal defects.
-- **Reversibility:** classifications remain scene-bound and revisable; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by refusing to use drift labels as instruments of shaming or ranking.
+* **Χ (Distance):** maintained by treating drift classes as structural mutations rather than personal defects.
+* **Reversibility:** classifications remain scene-bound and revisable; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by refusing to use drift labels as instruments of shaming or ranking.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -697,29 +717,31 @@ The decisive point is that modulators can make drift look “inevitable” even 
 
 ### 9.2 Critique-Relevant Modulators (Structural Examples)
 
-**Frame clarity (□ clarity: role-space and speakability).**  
+**Frame clarity (□ clarity: role-space and speakability).**
 Frame clarity modulates whether a mismatch can be named as relevant without immediately triggering conflict about the frame itself. Where role-space is legible, interruption can be targeted rather than diffuse: it is clearer *who may speak, in what register, and with what implied obligations*. Where frame clarity is low, critique pressure often mutates into meta-conflict (“what are we even doing here?”), policing, or silence. Low clarity increases drift sensitivity because the chain spends its energy stabilizing the frame instead of moving toward correction.
 
-**Non-event density (Λ density: non-response cultures).**  
+**Non-event density (Λ density: non-response cultures).**
 Non-event density modulates how much interpretive pressure is produced by absence. In high-density configurations, non-response is frequent and meaningful: delays, omissions, and “nothing happened” become the dominant steering medium. This increases load on critique because interruption becomes risky and costly while absence is already doing coordination work. High Λ density often produces attractor-like stabilization of silence, deferral, or indirectness, not because critique is morally rejected but because the configuration’s default coordination grammar runs through non-events.
 
-**Asymmetry visibility (Ω visibility: exposure gradients and status).**  
+**Asymmetry visibility (Ω visibility: exposure gradients and status).**
 Asymmetry visibility modulates whether critique costs are experienced as localized or as publicly consequential. When exposure gradients are salient, interruption is not only about content; it is about who becomes exposed, who carries reputational or relational cost, and who can safely retract. High visibility increases the probability that critique is displaced into judgment, performance, or silence, because integration becomes expensive and reversibility shrinks. This modulator is descriptive: it does not declare asymmetry “bad,” it makes cost layouts explicit.
 
-**Temporal compression (Θ compression: time pressure vs. review windows).**  
+**Temporal compression (Θ compression: time pressure vs. review windows).**
 Temporal compression modulates whether critique can move beyond interruption within available time. When review windows are narrow or absent, critique tends to stabilize as reaction (“fast signal”) or as deferral (“later”), with integration becoming structurally unreachable. Conversely, where review windows exist, critique chains can tolerate complexity without collapsing into escalation or paralysis. The point is not virtue but feasibility: timing shapes whether correction can consolidate.
 
-**Recontextualization habituation (Φ habituation: reframing as default).**  
+**Recontextualization habituation (Φ habituation: reframing as default).**
 Recontextualization habituation modulates whether reframing functions as a bridge or as a substitute. In some configurations, reframing is routinely used to keep situations bearable and coordinated; in others, it becomes the dominant coping mechanism that prevents integration from ever consolidating. High habituation can therefore produce the drift form “narrative repair,” where meaning work expands while correction remains suspended. This is not a psychological claim; it is a stability pattern of how critique pressure is managed.
 
-**Distance availability (Χ availability: stop-capacity inside the frame).**  
+**Distance availability (Χ availability: stop-capacity inside the frame).**
 Distance availability modulates whether interruption can occur without immediate fusion into reaction or performance. Some frames structurally support stop-capability—pauses, turn-taking, and meta-positions are legible. Other frames penalize them, treating interruption as weakness, betrayal, or loss of momentum. Low Χ availability increases drift sensitivity because the chain cannot reliably cross the threshold from impulse to critique-in-strict-sense. This is a configuration feature: the same actor may exhibit high distance in one frame and low distance in another.
 
-**Attractor inertia (Α inertia: stabilization speed of scripts).**  
+**Attractor inertia (Α inertia: stabilization speed of scripts).**
 Attractor inertia modulates how quickly repeated handling becomes a default script. High inertia means scripts harden rapidly and become self-reinforcing; deviation becomes costly. In critique scenes, this often means that one drift form—mockery, silence, judgment, or outrage—becomes the easiest repeatable outcome. Once stabilized, the configuration “remembers” the script more strongly than it remembers the initial mismatch, and critique is processed through the script rather than through the operator chain toward correction.
 
-**Publicness overlay (P: explicit amplification modulator; non-operatorial).**  
+**Publicness overlay (P: explicit amplification modulator; non-operatorial).**
 Publicness is treated here as an overlay, not as a source of critique and not as an operator. It modulates critique by amplifying exposure gradients (Ω), hardening irreversibility (Θ), and accelerating stabilization speed (Α) under publicity gradients. The overlay is structurally neutral: it does not imply that public critique is inherently illegitimate or that a medium is “bad.” It names a load pattern: when a chain breaks early, publicness tends to make the break harder to reverse and the resulting drift more quickly stabilized. The critical consequence is increased drift sensitivity without any change in the underlying primitives.
+
+The set of modulators developed here is intentionally selective. It identifies recurrent weighting conditions that become especially legible in critique configurations, not a complete inventory of all possible scene-load variables.
 
 ### Chapter-Closure
 
@@ -729,10 +751,10 @@ This chapter establishes modulators as structural weightings that explain why id
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (temporality):** where timing is compressed or review windows are absent, correction becomes structurally expensive and drift stabilizes as a trajectory.
-- **Λ (non-event load):** high non-event density shifts coordination into absence, increasing interpretive pressure and making interruption costlier.
-- **Α (script costs):** high attractor inertia hardens default scripts, narrowing future response options and accelerating stabilization of drift.
-- **Ω (exposure gradients):** high visibility of asymmetry increases the cost of interruption and reduces practical reversibility, especially under publicness overlays.
+* **Θ (temporality):** where timing is compressed or review windows are absent, correction becomes structurally expensive and drift stabilizes as a trajectory.
+* **Λ (non-event load):** high non-event density shifts coordination into absence, increasing interpretive pressure and making interruption costlier.
+* **Α (script costs):** high attractor inertia hardens default scripts, narrowing future response options and accelerating stabilization of drift.
+* **Ω (exposure gradients):** high visibility of asymmetry increases the cost of interruption and reduces practical reversibility, especially under publicness overlays.
 
 #### (3) Structural Viability Corridor
 
@@ -740,9 +762,9 @@ Configurations remain viable where modulators leave a corridor in which interrup
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** maintained by treating modulators as scene conditions that shift reachability, not as personal deficits or virtues.
-- **Reversibility:** modulator readings remain configuration-bound and revisable; accumulated effects under temporality remain real.
-- **D (Dignity-in-Practice):** preserved by refusing to use modulator labels as instruments of shaming, ranking, or delegitimization.
+* **Χ (Distance):** maintained by treating modulators as scene conditions that shift reachability, not as personal deficits or virtues.
+* **Reversibility:** modulator readings remain configuration-bound and revisable; accumulated effects under temporality remain real.
+* **D (Dignity-in-Practice):** preserved by refusing to use modulator labels as instruments of shaming, ranking, or delegitimization.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -756,7 +778,7 @@ Modulators do not change the critique grammar; they change what the chain can re
 
 ## 10. Dignity-in-Practice (D) in Critique (Protection Module, Non-Moralizing)
 
-This chapter specifies dignity-in-practice as a **structural protection condition** for critique under asymmetry. The point is not to introduce a moral doctrine and not to assert ontological worth. Dignity-in-practice is treated as an *enacted restraint* that keeps critique from mutating into degradation when power, exposure, and irreversibility are present. In this paper’s scope, D functions like a boundary condition: it marks when critique remains critique as a praxeological operation and when it becomes structurally invalid as a critique practice because it has switched to a different operation (public punishment, humiliation, reputational annihilation, or coercive steering through exposure).
+This chapter specifies dignity-in-practice as a **structural protection condition** for critique under asymmetry. The point is not to introduce a moral doctrine and not to assert ontological worth. Dignity-in-practice is treated as an *enacted restraint* that keeps critique from mutating into degradation when power, exposure, and irreversibility are present. In this paper’s scope, D functions like a boundary condition: it marks when critique remains critique as a praxeological operation and when it becomes structurally invalid as a PMS-CRITIQUE enactment because it has switched to a different operation (public punishment, humiliation, reputational annihilation, or coercive steering through exposure).
 
 The need for this module follows from the earlier chapters. Critique is defined as an interruption that becomes productive only when recontextualization and integration can occur and can become stable only when follow-up can be bound into a trajectory. Under asymmetry, these transitions are fragile: exposure costs can dominate, review windows can collapse, and scripts can harden quickly. In such conditions, a critique episode can preserve its *content* while losing its *structure*: it can be factually correct yet function as pillory dynamics rather than correction. This chapter therefore treats D as a structural minimum that protects the possibility of critique-as-correction under high load.
 
@@ -780,7 +802,7 @@ Applied scenically, this means: dignity-in-practice is evaluated only as a prope
 
 ### 10.3 Where Critique Becomes Structurally Invalid (D Collapse)
 
-Critique becomes structurally invalid—invalid as critique, not invalid as “speech”—when the configuration switches from correction to degradation. The canonical collapse pattern is pillory dynamics: asymmetry is converted into exposure steering, irreversibility hardens consequences, and amplification stabilizes scripts that reward humiliation over integration. In such scenes, critique does not primarily function to make a mismatch bearable and actionable; it functions to fix the target as an object of public handling.
+Critique becomes structurally invalid as a PMS-CRITIQUE enactment—invalid as critique, not invalid as “speech”—when the configuration switches from correction to degradation. The canonical collapse pattern is pillory dynamics: asymmetry is converted into exposure steering, irreversibility hardens consequences, and amplification stabilizes scripts that reward humiliation over integration. In such scenes, critique does not primarily function to make a mismatch bearable and actionable; it functions to fix the target as an object of public handling.
 
 A D collapse can be recognized structurally by the substitution pattern: integration is no longer the reachable endpoint, because the configuration has moved toward reputational fixation as the operative “resolution.” Where this happens, the critique chain may still contain framed difference and even moments of distance in the speaker, but distance is no longer serving interruption toward correction; it becomes strategic detachment that protects the acting pole while escalating exposure of the exposed pole.
 
@@ -790,7 +812,7 @@ The hard guard is therefore explicit and non-negotiable within this application:
 
 In this paper, “required” is used in a strictly structural sense: certain configurations make dignity-in-practice necessary to preserve the possibility of critique as a corrective operation. This is not moral praise and not a demand addressed to individuals. It is a statement about what must be present for the chain not to mutate under predictable load.
 
-D becomes structurally required when **asymmetry is used as a steering variable against stop-capability**. In such scenes, exposure and positional power are mobilized to prevent interruption from becoming a genuine meta-position. The critique episode is forced into a corridor where the exposed pole cannot respond, cannot recontextualize, and cannot participate in integration. Without dignity-in-practice, critique becomes indistinguishable from asymmetric control.
+Within this paper, D becomes structurally required when **asymmetry is used as a steering variable against stop-capability**. In such scenes, exposure and positional power are mobilized to prevent interruption from becoming a genuine meta-position. The critique episode is forced into a corridor where the exposed pole cannot respond, cannot recontextualize, and cannot participate in integration. Without dignity-in-practice, critique becomes indistinguishable from asymmetric control.
 
 D also becomes structurally required when **non-events are used as leverage**. Silence, delay, withholding, and ambiguity can become steering tools: the absence itself pressures compliance, confession, or collapse. In those configurations, critique is no longer a structured interruption aimed at correction; it becomes a game of interpretive pressure where the target is forced to move without a legible pathway to integration. D protects against this by refusing to convert non-event pressure into degradation or forced self-incrimination as a substitute for structural clarification.
 
@@ -804,10 +826,10 @@ This chapter establishes dignity-in-practice as a protection condition that keep
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Ω (exposure gradients):** when asymmetry is salient, critique can shift from coordination to exposure steering, distributing costs unevenly and locking the exposed pole into a vulnerable position.
-- **Θ (irreversibility):** once critique becomes public fixation, consequences persist beyond the episode, and later reinterpretation cannot undo accumulated costs.
-- **Α (amplification scripts):** when audiences reward degradation, scripts harden quickly and make humiliation the repeatable “resolution,” crowding out corrective integration.
-- **Λ (non-event leverage):** withholding and silence can become steering tools that increase interpretive pressure and replace explicit structural clarification.
+* **Ω (exposure gradients):** when asymmetry is salient, critique can shift from coordination to exposure steering, distributing costs unevenly and locking the exposed pole into a vulnerable position.
+* **Θ (irreversibility):** once critique becomes public fixation, consequences persist beyond the episode, and later reinterpretation cannot undo accumulated costs.
+* **Α (amplification scripts):** when audiences reward degradation, scripts harden quickly and make humiliation the repeatable “resolution,” crowding out corrective integration.
+* **Λ (non-event leverage):** withholding and silence can become steering tools that increase interpretive pressure and replace explicit structural clarification.
 
 #### (3) Structural Viability Corridor
 
@@ -815,9 +837,9 @@ Configurations remain viable where critique can remain firm on content while sta
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** maintained by treating dignity-in-practice as a structural boundary on critique enactment, not as a demand for politeness or a judgement of character.
-- **Reversibility:** interpretations remain scene-bound and revisable; accumulated harms and costs under temporality remain real and are not erased by later analysis.
-- **D (Dignity-in-Practice):** preserved by refusing shaming and ranking as critique methods and by separating correctness of content from legitimacy of degrading operations.
+* **Χ (Distance):** maintained by treating dignity-in-practice as a structural boundary on critique enactment, not as a demand for politeness or a judgement of character.
+* **Reversibility:** interpretations remain scene-bound and revisable; accumulated harms and costs under temporality remain real and are not erased by later analysis.
+* **D (Dignity-in-Practice):** preserved by refusing shaming and ranking as critique methods and by separating correctness of content from legitimacy of degrading operations.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -837,9 +859,11 @@ Dignity-in-practice keeps critique corrective under asymmetry by preventing expo
 
 This optional interface clarifies what becomes possible when PMS-CRITIQUE is docked to the *Maturity in Practice* (MIP) model. In this paper, PMS-CRITIQUE explains **how critique operates** as a praxeological chain: how a mismatch becomes legible, how interruption becomes possible, how drift forms stabilize, and how correction trajectories can (or cannot) emerge. That description remains structural and operatorial.
 
-MIP enters at a different question-level. Where a reader needs to assess **legitimacy, attribution, and regime conditions**—especially in complex public settings where asymmetry and irreversibility are high—MIP provides an evaluative system lens without collapsing into moral shortcuts. It does so by making the evaluation criteria explicit (A/C/R/P bands, IA-box checks, optional scenic dignity-in-practice) and by requiring documentation of information basis and bias risks. The docking is therefore a controlled handoff: PMS gives the grammar of emergence and mutation; MIP supplies a regulated evaluation frame when evaluation is the explicit aim.
+MIP enters at a different question-level. Where a reader needs to assess **legitimacy, attribution, and regime conditions**—especially in complex public settings where asymmetry and irreversibility are high—MIP provides an evaluative system lens without collapsing into moral shortcuts. It does so by making evaluation criteria explicit, keeping documentation of information basis and bias risks visible, and preserving critique-readiness of its own judgments. The docking is therefore a controlled handoff: PMS gives the grammar of emergence and mutation; MIP supplies a regulated evaluation frame when evaluation is the explicit aim.
 
 This chapter is optional because many uses of PMS-CRITIQUE do not require legitimacy judgments. Structural explanation often suffices to clarify why critique drifts or stalls. Docking becomes relevant where a configuration calls for *accountability distinctions* that cannot be responsibly made by PMS alone—because PMS is deliberately non-normative with respect to legitimacy, and because legitimacy claims carry their own power risks in public regimes.
+
+The interface does not imply that PMS-CRITIQUE naturally culminates in evaluation. It remains fully complete as a structural grammar without downstream docking.
 
 ### 11.2 Separation Rule (Mandatory)
 
@@ -847,9 +871,9 @@ The separation rule is the core of the interface and is treated as a validity co
 
 **PMS-CRITIQUE remains an operatorial grammar.** It describes structural dependencies, typical breakpoints, cost layouts, drift sensitivities, and viability corridors in critique episodes. It does not decide who is right, who deserves sanction, or how blame should be distributed. It stays in the mode of describing configurations.
 
-**MIP remains an evaluative system lens.** It provides structured evaluation via A/C/R/P bands, the IA-box (transparency, justification, time-boundedness, reversibility), and—only when activated under guardrails—scenic dignity-in-practice modules. It is designed to make evaluation criteria explicit and critique-ready, not to turn evaluation into hidden moral intuition.
+**MIP remains an evaluative system lens.** It provides structured evaluation through explicit bands, application zones, and documented information conditions. It is designed to make evaluation criteria explicit and critique-ready, not to turn evaluation into hidden moral intuition.
 
-**No back-projection.** PMS descriptions are not retrofitted into MIP scores as if the operator grammar were itself an evaluative metric. Conversely, MIP scores and IA labels are not smuggled back into PMS as if they were causal explanations of why critique emerged or mutated. The two models can be connected, but they cannot be used to replace each other’s function without producing category errors.
+**No back-projection.** PMS descriptions are not retrofitted into MIP assessments as if the operator grammar were itself an evaluative metric. Conversely, MIP bands and regime labels are not smuggled back into PMS as if they were causal explanations of why critique emerged or mutated. The two models can be connected, but they cannot be used to replace each other’s function without producing category errors.
 
 **Explicit non-substitution clause.** PMS-CRITIQUE never answers whether critique is *legitimate*; it only explains how critique chains form, break, and drift. MIP never explains how critique *emerges or mutates*; it only evaluates enactments and asymmetries under explicit criteria and guardrails. If PMS is used to decide legitimacy, it becomes a hidden court. If MIP is used to explain emergence, it becomes a pseudo-causal narrative. Both moves break the discipline of the combined system.
 
@@ -861,18 +885,18 @@ Docking is performed through a small set of controlled translation points. The a
 
 **(a) Projections from PMS into A/C/R/P/E/D readings.** PMS-CRITIQUE already introduces derived-axis projections as readable summaries of operator chains. These can be used as *inputs* for MIP-style descriptions, with the strict rule that the projection remains scene-bound and does not become a trait claim.
 
-- **Awareness (A)** can be informed by whether framed differentiation across time is present (what is known, by whom, when, and in which role-space). In docking terms: PMS descriptions of legibility and framing can be translated into MIP’s “awareness profile” language without assuming inner-state access.
-- **Coherence (C)** can be informed by whether expectation structures and narratives remain legible under non-events. PMS descriptions of non-event pressure and frame stability can be expressed as coherence conditions in MIP without turning coherence into “truth.”
-- **Responsibility (R)** can be informed by whether follow-up ownership is structurally available and whether commitments can be carried across time under asymmetry. PMS descriptions of trajectory binding and cost externalization can be translated into MIP’s responsibility language without collapsing into blame.
-- **Power/Agency (P)** can be informed by exposure gradients, alternatives, and the use or withholding of stop-capability in the frame. PMS descriptions of asymmetry (who can interrupt whom, and with which costs) can be translated into MIP’s power profile without implying moral guilt.
-- **Action/Enactment reach (E)**—while not a core MIP parameter—can function as a bridging descriptor: whether critique reaches integrated correction (integration) or stalls in commentary. In docking, this can appear as a “correction reach” note inside the MIP case narrative rather than as a scored parameter.
-- **Dignity-in-practice (D)** is the most sensitive docking point. PMS treats D as a structural protection condition for critique enactment under asymmetry. MIP can evaluate dignity-in-practice scenically only if its guardrails and application zones are met and only if the D module is explicitly activated. Docking must keep D non-ontological and strictly context-bound.
+* **Awareness (A)** can be informed by whether framed differentiation across time is present (what is known, by whom, when, and in which role-space). In docking terms: PMS descriptions of legibility and framing can be translated into MIP’s awareness language without assuming inner-state access.
+* **Coherence (C)** can be informed by whether expectation structures and narratives remain legible under non-events. PMS descriptions of non-event pressure and frame stability can be expressed as coherence conditions in MIP without turning coherence into truth.
+* **Responsibility (R)** can be informed by whether follow-up ownership is structurally available and whether commitments can be carried across time under asymmetry. PMS descriptions of trajectory binding and cost externalization can be translated into MIP’s responsibility language without collapsing into blame.
+* **Power/Agency (P)** can be informed by exposure gradients, alternatives, and the use or withholding of stop-capability in the frame. PMS descriptions of asymmetry—who can interrupt whom, and with which costs—can be translated into MIP’s power profile without implying moral guilt.
+* **Action/Enactment reach (E)**—while not necessarily a scored MIP parameter—can function as a bridging descriptor: whether critique reaches integrated correction or stalls in commentary. In docking, this can appear as a correction-reach note inside the MIP case narrative rather than as a fixed metric.
+* **Dignity-in-practice (D)** is the most sensitive docking point. PMS treats D as a structural protection condition for critique enactment under asymmetry. MIP can evaluate dignity-in-practice scenically only if its guardrails and application zones are met and only if the D module is explicitly activated. Docking must keep D non-ontological and strictly context-bound.
 
-**(b) IA-box as a formal grid for asymmetry critique.** PMS-CRITIQUE describes how asymmetry (cost/exposure gradients) can replace integration and how publicness overlays can harden irreversibility. MIP’s IA-box provides a **formal evaluation grid** for such asymmetries where evaluation is required: transparency, justification, time-boundedness, and reversibility. In docking terms, PMS can supply the structural description of the asymmetry; MIP can then evaluate whether that asymmetry meets IA criteria, given an explicit information basis and bias awareness.
+**(b) Evaluative grid for asymmetry critique.** PMS-CRITIQUE describes how asymmetry (cost/exposure gradients) can replace integration and how publicness overlays can harden irreversibility. Where evaluation is required, MIP supplies a **formal evaluative grid** for asking whether those asymmetries are explicitly documented, bounded, revisable, and non-weaponized. In docking terms, PMS can supply the structural description of the asymmetry; MIP can then evaluate the enactment under its own explicit criteria, given a stated information basis and bias awareness.
 
-**(c) Regime and publicity conditions as explicit inputs.** PMS-CRITIQUE treats publicness as an amplification modulator that increases drift sensitivity. MIP operationalizes regime considerations via publicity levels, transmission checks, and red/yellow/green application zones. Docking therefore treats publicity not as a moral argument but as an explicit constraint on what kinds of evaluation are even admissible and how far results may be transmitted.
+**(c) Regime and publicity conditions as explicit inputs.** PMS-CRITIQUE treats publicness as an amplification modulator that increases drift sensitivity. MIP operationalizes regime considerations via publicity levels, transmission constraints, and application zones. Docking therefore treats publicity not as a moral argument but as an explicit constraint on what kinds of evaluation are even admissible and how far results may be transmitted.
 
-**(d) Documentation and critique-readiness as a shared constraint.** PMS insists on scene binding and reversibility; MIP requires explicit information basis, bias risks, and bands instead of hard scores. Docking is permitted only when both sides remain critique-ready: the structural explanation stays revisable, and the evaluation stays time-bounded, transparent, and non-weaponizable.
+**(d) Documentation and critique-readiness as a shared constraint.** PMS insists on scene binding and reversibility; MIP requires explicit information basis, bias risks, and bounded judgments rather than hidden verdicts. Docking is permitted only when both sides remain critique-ready: the structural explanation stays revisable, and the evaluation stays time-bounded, transparent, and non-weaponizable.
 
 ### Chapter-Closure
 
@@ -882,10 +906,10 @@ This chapter establishes a controlled interface between PMS-CRITIQUE and MIP by 
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Ω (exposure gradients):** docking increases power sensitivity because evaluative language can amplify asymmetry if used as a steering tool rather than as a bounded assessment.
-- **Θ (irreversibility):** once legitimacy or attribution claims are transmitted beyond the scene, revision becomes socially costly and corrections may not undo accumulated consequences.
-- **Α (script costs):** repeated docking without strict separation can stabilize scripts where evaluation substitutes for explanation (“score-first” culture) or explanation substitutes for accountability (“structure-first” deflection).
-- **Λ (interpretive pressure):** in contested regimes, non-events and informational gaps increase pressure to decide; docking can become a shortcut unless the information basis is explicitly bounded.
+* **Ω (exposure gradients):** docking increases power sensitivity because evaluative language can amplify asymmetry if used as a steering tool rather than as a bounded assessment.
+* **Θ (irreversibility):** once legitimacy or attribution claims are transmitted beyond the scene, revision becomes socially costly and corrections may not undo accumulated consequences.
+* **Α (script costs):** repeated docking without strict separation can stabilize scripts where evaluation substitutes for explanation (“score-first” culture) or explanation substitutes for accountability (“structure-first” deflection).
+* **Λ (interpretive pressure):** in contested regimes, non-events and informational gaps increase pressure to decide; docking can become a shortcut unless the information basis is explicitly bounded.
 
 #### (3) Structural Viability Corridor
 
@@ -893,9 +917,9 @@ Docking remains viable where explanation and evaluation stay explicitly separate
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** maintained by enforcing the separation rule so that neither model is used as a rhetorical weapon or as a substitute for the other’s function.
-- **Reversibility:** both structural readings and evaluative bands remain revisable and scene-bound; nevertheless, consequences under temporality remain real once findings are transmitted.
-- **D (Dignity-in-Practice):** protected by keeping dignity assessments non-ontological, context-bound, and—on the MIP side—optional under strict guardrails and application-zone limits.
+* **Χ (Distance):** maintained by enforcing the separation rule so that neither model is used as a rhetorical weapon or as a substitute for the other’s function.
+* **Reversibility:** both structural readings and evaluative bands remain revisable and scene-bound; nevertheless, consequences under temporality remain real once findings are transmitted.
+* **D (Dignity-in-Practice):** protected by keeping dignity assessments non-ontological, context-bound, and—on the MIP side—optional under strict guardrails and application-zone limits.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -911,7 +935,7 @@ Docking works only when PMS explains critique’s grammar and MIP evaluates legi
 
 ### 12.1 Structural Limits
 
-This framework deliberately restricts its own claims. PMS-CRITIQUE does not establish truth, verify motives, or adjudicate moral rightness. It offers no ranking of persons, no typing of “critique competence,” and no conversion of structural description into personal evaluation. The model is not designed for clinical, forensic, human-resources, compliance, or sanctioning contexts, and any attempt to repurpose it for such uses constitutes a misuse rather than an extension.
+This framework deliberately restricts its own claims. PMS-CRITIQUE does not establish truth, verify motives, or adjudicate moral rightness. It offers no ranking of persons, no typing of critique competence, and no conversion of structural description into personal evaluation. The model is not designed for clinical, forensic, human-resources, compliance, or sanctioning contexts, and any attempt to repurpose it for such uses constitutes a misuse rather than an extension.
 
 Equally important, PMS-CRITIQUE cannot be used as a delegitimization shortcut. Structural explanation does not suspend accountability by dissolving agency into “just structure.” Describing asymmetry, drift, or stabilization patterns clarifies how configurations operate; it does not dissolve the question of responsibility where responsibility was structurally available. The model therefore places limits on both inflationary moralization and deflationary structuralism.
 
@@ -925,6 +949,16 @@ A second extension concerns AI architecture and safety. PMS operators can be use
 
 All extensions remain subject to the same entry conditions: distance, reversibility, and dignity-in-practice apply to application, not to agreement. Where these conditions cannot be maintained, extension must stop.
 
+### 12.3 Genuine Non-Capture and Rival Critique Grammars
+
+PMS-CRITIQUE does not assume that every critique-relevant phenomenon can be adequately rendered within its own chain logic. Genuine non-capture remains possible where the grammar produces a coherent reading but weakens what is structurally decisive in the case.
+
+This may occur where critique functions less as correction-oriented interruption and more as symbolic refusal, public rupture, ethical contestation, or forms of resistance whose force is not well captured by integration-oriented legibility.
+
+Such cases should not be prematurely redescribed as drift, calibration noise, or mere incomplete application. They may indicate that another grammar preserves the conflictual or normative core of the case more effectively than PMS-CRITIQUE does.
+
+The epistemic question therefore remains open: does PMS-CRITIQUE succeed here by sharper structural discrimination, or by translating resistant critique forms into its own terms with unusual power?
+
 ### Chapter-Closure
 
 #### (1) Structural Result (Condensation)
@@ -933,10 +967,10 @@ This chapter establishes the non-promissory boundary of PMS-CRITIQUE. The decisi
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (accumulation):** ignoring stated limits allows incremental drift toward normative or evaluative use that becomes difficult to reverse once institutionalized.
-- **Ω (exposure gradients):** misuse as a delegitimization tool shifts costs onto less powerful actors by masking responsibility behind structural language.
-- **Α (script costs):** repeated overextension can stabilize scripts in which the model is expected to answer questions it explicitly brackets.
-- **Λ (non-event load):** unaddressed expectations that the model will “decide” correctness generate interpretive pressure and disappointment over time.
+* **Θ (accumulation):** ignoring stated limits allows incremental drift toward normative or evaluative use that becomes difficult to reverse once institutionalized.
+* **Ω (exposure gradients):** misuse as a delegitimization tool shifts costs onto less powerful actors by masking responsibility behind structural language.
+* **Α (script costs):** repeated overextension can stabilize scripts in which the model is expected to answer questions it explicitly brackets.
+* **Λ (non-event load):** unaddressed expectations that the model will “decide” correctness generate interpretive pressure and disappointment over time.
 
 #### (3) Structural Viability Corridor
 
@@ -944,9 +978,9 @@ The framework remains viable where its non-promises are respected and extensions
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** secured by refusing to let the model collapse into verdicts or personal labels, maintaining a meta-position toward its own outputs.
-- **Reversibility:** readings remain scene-bound and revisable, while acknowledging that accumulated consequences under temporality cannot be undone by later disclaimers.
-- **D (Dignity-in-Practice):** maintained by excluding shaming, ranking, or ontological claims and by restricting application in high-risk zones.
+* **Χ (Distance):** secured by refusing to let the model collapse into verdicts or personal labels, maintaining a meta-position toward its own outputs.
+* **Reversibility:** readings remain scene-bound and revisable, while acknowledging that accumulated consequences under temporality cannot be undone by later disclaimers.
+* **D (Dignity-in-Practice):** maintained by excluding shaming, ranking, or ontological claims and by restricting application in high-risk zones.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
@@ -966,15 +1000,15 @@ This paper has treated critique as a praxeological configuration rather than as 
 
 First, critique in the strict sense is defined minimally as **χ-stabilized framed differentiation**. A mismatch must become legible as a mismatch within a frame (difference framed as relevant), and the episode must remain interruptable rather than collapsing into impulse escalation, frame policing, or aimless irritation. In this minimal configuration, **Χ (Distance)** is not decorum and not softness; it is the structural capacity for a meta-position that can stop, re-enter, and revise the reading without fusing with the impulse or the frame. Without that distance, what appears as critique tends to be reaction, judgment, or paralysis—configurations that may be socially common but are structurally distinct.
 
-Second, productive critique is defined by a different threshold: it is not “stronger critique” but critique that reaches a corrective step. Productive critique requires **Φ (Recontextualization)** and **Σ (Integration)** on top of the minimal configuration. Recontextualization makes the mismatch bearable and actionable by shifting how it is embedded in a frame; integration consolidates what is in tension into a coherent corrective step that can be coordinated rather than merely asserted. This is where temporality and asymmetry become decisive: under **Θ (Temporality)**, consequences accumulate and review windows may close; under **Ω (Asymmetry)**, exposure and vulnerability are unevenly distributed. In such conditions, correction becomes costly, and critique often substitutes corrective integration with narrative inflation, repetition, power moves, or silence.
+Second, productive critique is defined by a different threshold: it is not “stronger critique” but critique that reaches a corrective step. Within this grammar, productive critique requires **Φ (Recontextualization)** and **Σ (Integration)** on top of the minimal configuration. Recontextualization makes the mismatch bearable and actionable by shifting how it is embedded in a frame; integration consolidates what is in tension into a coherent corrective step that can be coordinated rather than merely asserted. This is where temporality and asymmetry become decisive: under **Θ (Temporality)**, consequences accumulate and review windows may close; under **Ω (Asymmetry)**, exposure and vulnerability are unevenly distributed. In such conditions, correction becomes costly, and critique often substitutes corrective integration with narrative inflation, repetition, power moves, or silence.
 
-Third, drift is not a scandal category. Drift is the predictable mutation of critique chains under load. The paper has described typical drift classes in operator terms: reaction without distance, judgment without corrective integration, narrative repair without consolidation, commentary without correction, public pillory under amplified exposure and irreversibility, and silence stabilized as a script. Drift does not require “bad actors”; it requires configurations in which costs are redistributed in ways that make interruption fragile, recontextualization performative, and integration prohibitively expensive. In groups and publics, drift becomes especially stable because structured non-events and repeated non-intervention can harden into attractors, while publicity overlays increase exposure and accelerate stabilization without adding any new primitive capacity for correction.
+Third, drift is not a scandal category. Drift is the predictable mutation of critique chains under load. The paper has described typical drift classes in operator terms: reaction without distance, judgment without corrective integration, narrative repair without consolidation, commentary without correction, public pillory under amplified exposure and irreversibility, and silence stabilized as a script. Drift does not require bad faith or moral failure; it arises where costs are redistributed in ways that make interruption fragile, recontextualization performative, and integration prohibitively expensive. In groups and publics, drift becomes especially stable because structured non-events and repeated non-intervention can harden into attractors, while publicity overlays increase exposure and accelerate stabilization without adding any new primitive capacity for correction.
 
 Fourth, the paper has made explicit that critique has both a **vertical** and a **horizontal** dimension. Vertically, critique has reach: from mere irritation up to binding follow-up. This reach is not virtue and not status; it is a structural description of how far a chain goes before it breaks. Horizontally, critique has scale: the same operators play differently in generic structural critique, self-directed critique, small-group critique, and public critique. Publicness does not generate critique; it amplifies cost gradients and irreversibility and speeds up stabilization when critique chains break early. That amplification is structurally neutral, but it increases drift sensitivity and raises the threshold for integrated correction.
 
-Fifth, the paper has used projections to keep the model readable without introducing new primitives. Awareness, coherence, responsibility, action, and dignity-in-practice can be treated as projections of operator chains rather than independent faculties. This mapping matters because it allows interoperability with evaluative lenses—while keeping category boundaries explicit. The point is not to “score” critique as a person attribute, but to understand which structural dimensions are being carried, which are missing, and which are being substituted.
+Fifth, the paper has used projections to keep the model readable without introducing new primitives. Awareness, coherence, responsibility, action, and dignity-in-practice are treated here as projections of operator chains rather than as independent faculties. This mapping matters because it allows interoperability with evaluative lenses—while keeping category boundaries explicit. The point is not to score critique as a person attribute, but to understand which structural dimensions are being carried, which are missing, and which are being substituted. These projections increase readability within this framework; they do not establish that critique can be exhaustively represented through them in every case.
 
-Sixth, the paper has insisted on validity conditions for application. PMS-CRITIQUE can be discussed, criticized, rejected, or ignored without accepting its entry condition; but any *application* of its language is only valid as PMS if it presupposes **distance (Χ)**, **reversibility**, and **dignity-in-practice (D)**. This is not moral policing; it is a formal constraint to prevent the model from becoming an instrument for fusion, ranking, or humiliation. The same constraint also blocks “structural cynicism”: using structure-talk to dissolve accountability or to hide power moves behind neutral vocabulary.
+Sixth, the paper has insisted on validity conditions for application. PMS-CRITIQUE can be discussed, criticized, rejected, or ignored without accepting its entry condition; but any *application* of its language is only valid as PMS if it presupposes **distance (Χ)**, **reversibility**, and **dignity-in-practice (D)**. This is not moral policing; it is a formal constraint to prevent the model from becoming an instrument for fusion, ranking, or humiliation. The same constraint also blocks structural cynicism: using structure-talk to dissolve accountability or to hide power moves behind neutral vocabulary.
 
 In sum, PMS-CRITIQUE has offered a grammar: a way to make critique episodes structurally legible. It does not decide whose view is correct. It clarifies when interruption is structurally possible, when it becomes correction, and when it mutates into drift under the pressures of asymmetry, temporality, stabilization, and publicity.
 
@@ -982,18 +1016,20 @@ In sum, PMS-CRITIQUE has offered a grammar: a way to make critique episodes stru
 
 > PMS-CRITIQUE does not justify opinions. It makes visible where critique becomes possible, where it mutates into drift, and why asymmetry and temporality decide whether interruption becomes correction.
 
+Nothing in this paper requires PMS-CRITIQUE to be treated as final, exhaustive, or uniquely sufficient. What it offers is a disciplined structural grammar for rendering critique episodes legible under asymmetry and temporality. Its strength remains most credible where its own limits, rival framings, and possible non-capture cases are kept explicit rather than silently absorbed.
+
 ### Chapter-Closure
 
 #### (1) Structural Result (Condensation)
 
-This chapter closes the paper by restating the structural claims in their most compact and non-promissory form. It establishes critique as a configuration defined by minimal conditions of framed differentiation and distance (Distance), rather than by rhetorical force or moral posture. It also fixes the decisive distinction between critique that remains interruptable and critique that becomes productive: productivity is treated as a structural reach toward correction rather than as intensity. Finally, the chapter consolidates the drift thesis: drift is the predictable mutation of critique chains under temporality and asymmetry, especially when repeated non-events stabilize scripts and publicness amplifies exposure without adding corrective capacity.
+This chapter closes the paper by restating the structural claims in their most compact and non-promissory form. It establishes critique as a configuration defined by minimal conditions of framed differentiation and distance, rather than by rhetorical force or moral posture. It also fixes the decisive distinction between critique that remains interruptable and critique that becomes productive: productivity is treated as a structural reach toward correction rather than as intensity. Finally, the chapter consolidates the drift thesis: drift is the predictable mutation of critique chains under temporality and asymmetry, especially when repeated non-events stabilize scripts and publicness amplifies exposure without adding corrective capacity.
 
 #### (2) Cost Distribution (Ω / Θ)
 
-- **Θ (accumulation / irreversibility):** even “one-off” critique episodes create trajectories when their consequences accumulate; late corrections often cannot fully undo earlier effects once review windows have closed.
-- **Ω (cost / exposure gradients):** critique redistributes risk unevenly; the exposed pole carries higher loss potential, which shifts what is speakable and what becomes silently absorbed.
-- **Λ (non-event load / interpretive pressure):** when critique is not enacted—or is repeatedly postponed—the absence itself becomes meaningful and loads the frame with counterfactuals, suspicion, and unresolved expectation.
-- **Α (script costs / narrowing):** repeated patterns of reaction, silence, or public shaming harden into scripts that narrow future options and increase drift sensitivity in subsequent episodes.
+* **Θ (accumulation / irreversibility):** even one-off critique episodes create trajectories when their consequences accumulate; late corrections often cannot fully undo earlier effects once review windows have closed.
+* **Ω (cost / exposure gradients):** critique redistributes risk unevenly; the exposed pole carries higher loss potential, which shifts what is speakable and what becomes silently absorbed.
+* **Λ (non-event load / interpretive pressure):** when critique is not enacted—or is repeatedly postponed—the absence itself becomes meaningful and loads the frame with counterfactuals, suspicion, and unresolved expectation.
+* **Α (script costs / narrowing):** repeated patterns of reaction, silence, or public shaming harden into scripts that narrow future options and increase drift sensitivity in subsequent episodes.
 
 #### (3) Structural Viability Corridor
 
@@ -1001,27 +1037,27 @@ The model remains viable where critique is kept scene-bound and interruptable an
 
 #### (4) Entry Guard (formal trace, explained)
 
-- **Χ (Distance):** secured by maintaining a meta-position toward the episode—stop-capability, re-entry, and the refusal to fuse critique with impulse, identity, or frame supremacy.
-- **Reversibility:** readings remain revisable and tied to specific scenes and roles, while acknowledging that accumulated costs under temporality remain real even when interpretations change.
-- **D (Dignity-in-Practice):** maintained by excluding shaming, ranking, and humiliation as critique substitutes and by treating persons as out of scope for ontological evaluation.
+* **Χ (Distance):** secured by maintaining a meta-position toward the episode—stop-capability, re-entry, and the refusal to fuse critique with impulse, identity, or frame supremacy.
+* **Reversibility:** readings remain revisable and tied to specific scenes and roles, while acknowledging that accumulated costs under temporality remain real even when interpretations change.
+* **D (Dignity-in-Practice):** maintained by excluding shaming, ranking, and humiliation as critique substitutes and by treating persons as out of scope for ontological evaluation.
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
-The paper’s structure is governable where PMS-CRITIQUE is used as a grammar and not as a tribunal: it clarifies conditions, costs, and drift tendencies without turning into a correctness machine. Instability arises where the framework is used to moralize, to rank persons, or to dissolve accountability into “just structure.” This verdict evaluates structure, not persons.
+The paper’s structure is governable where PMS-CRITIQUE is used as a grammar and not as a tribunal: it clarifies conditions, costs, and drift tendencies without turning into a correctness machine. Instability arises where the framework is used to moralize, to rank persons, or to dissolve accountability into just structure. This verdict evaluates structure, not persons.
 
 #### (6) One-line Marker (quote-ready)
 
-Critique is structurally minimal where interruption remains possible (Distance), and structurally productive only where that interruption can reach coordinated correction under asymmetry and time.
+Critique is structurally minimal where interruption remains possible through distance, and structurally productive only where that interruption can reach coordinated correction under asymmetry and time.
 
 ---
 
 ## Appendix A: Positioning Note (Misreading Firewall)
 
-This appendix functions as a **misreading firewall**. Its purpose is to pre-emptively block predictable misinterpretations of PMS-CRITIQUE by making explicit what the model **does**, **does not**, and **cannot** claim. It is clarificatory, not justificatory.
+This appendix functions as a **misreading firewall**. Its purpose is to pre-emptively block predictable misinterpretations of PMS-CRITIQUE by making explicit what the model is designed **to do**, **not do**, and **not claim**. It is *clarificatory*, not justificatory.
 
 ### 1. Clarification: “Critique without moralism”
 
-“Critique without moralism” does **not** mean critique without responsibility, consequences, or normative relevance. It means that PMS-CRITIQUE operates at the level of **structural legibility**, not moral adjudication. The framework makes visible how critique emerges, stabilizes, mutates, or collapses under specific operator configurations (Δ–Ψ), especially under asymmetry (Ω) and temporality (Θ).
+“Critique without moralism” does **not** mean critique without responsibility, consequences, or normative relevance. It means that PMS-CRITIQUE operates at the level of **structural legibility**, not moral adjudication. The framework renders visible how critique emerges, stabilizes, mutates, or collapses under specific operator configurations (Δ–Ψ), especially under asymmetry (Ω) and temporality (Θ).
 
 What is deliberately excluded is the move from structural description to moral verdicts about persons, intentions, or worth. PMS-CRITIQUE does not excuse harmful critique, nor does it neutralize accountability. It simply refuses to ground accountability in moralized person-labels or psychological attributions. Responsibility remains structurally real, but it is traced through positions, roles, trajectories, and follow-up bindings (Ψ), not through moral character claims.
 
@@ -1035,19 +1071,21 @@ PMS-CRITIQUE may appear adjacent to other critique-related practices. The follow
 PMS-CRITIQUE does not take a position on whether cancel practices are justified or unjustified. It describes how publicness overlays (P) amplify exposure (Ω), accelerate irreversibility (Θ), and harden attractors (Α), often before distance (Χ), integration (Σ), or binding follow-up (Ψ) can stabilize correction. The framework neither condemns nor legitimizes cancellation; it renders its structural dynamics explicit.
 
 **Therapy critique**
-Unlike therapeutic critique, PMS-CRITIQUE makes no claims about inner states, motives, trauma, or psychological health. Where therapy critique often aims at personal insight or healing, PMS-CRITIQUE remains strictly praxeological: it analyzes enacted patterns, frames, and asymmetries. Similar vocabulary (e.g., reflection, interruption) does not imply shared goals or domains.
+Unlike therapeutic critique, PMS-CRITIQUE makes no claims about inner states, motives, trauma, or psychological health. Where therapy critique often aims at personal insight or healing, PMS-CRITIQUE remains strictly praxeological: it analyzes enacted patterns, frames, and asymmetries. Similar vocabulary (for example reflection or interruption) does not imply shared goals or domains.
 
 **Peer review**
-Scientific peer review can be described as a highly formalized critique configuration with explicit frames (□), delayed temporality (Θ), and strong integration requirements (Σ). PMS-CRITIQUE does not assess whether peer review works well; it shows why certain failure modes (e.g., gatekeeping, silence, endless revision loops) are structurally predictable under specific operator loads.
+Scientific peer review can be described as a highly formalized critique configuration with explicit frames (□), delayed temporality (Θ), and strong integration requirements (Σ). PMS-CRITIQUE does not assess whether peer review works well; it shows why certain failure modes, such as gatekeeping, silence, or endless revision loops, become structurally predictable under specific operator loads.
 
 Across all three cases, the comparison is structural, not normative.
+
+These comparisons do not establish PMS-CRITIQUE as the superior framework in all respects. They indicate differences of analytical focus. Other frameworks may remain stronger where legitimacy, discourse normativity, rhetorical force, or lived experience are the primary object.
 
 ### 3. Anti-mixing note: PMS-CRITIQUE ≠ MIP
 
 PMS-CRITIQUE and MIP (Maturity-in-Practice) are **strictly separated systems**, even where they can be docked.
 
 * **PMS-CRITIQUE** explains *how critique emerges, stabilizes, and drifts* using the operator grammar Δ–Ψ. It is generative, non-evaluative, and non-diagnostic.
-* **MIP** evaluates *legitimacy, attribution, and responsibility* using parameters such as A–C–R–P, the IA-box, and (optionally) scenic dignity-in-practice (D).
+* **MIP** evaluates *legitimacy, attribution, and responsibility* through explicit evaluative parameters and guarded application conditions.
 
 There is **no back-projection**:
 
@@ -1064,7 +1102,7 @@ PMS-CRITIQUE intentionally does **not** provide:
 * assessments of motives, sincerity, or inner states,
 * rankings of critique quality or competence,
 * moral authorization or delegitimization of positions,
-* prescriptions for “how to critique correctly.”
+* prescriptions for how to critique correctly.
 
 These absences are not limitations to be fixed but **design boundaries**. The model’s function is to keep critique structurally intelligible under conditions of asymmetry, time, and public exposure—without collapsing into moralism, psychology, or instruction manuals.
 
@@ -1075,8 +1113,8 @@ What PMS-CRITIQUE offers is a grammar, not a verdict engine. Its negative capabi
 ## Appendix B: Operator Reference Table (Critique Lens)
 
 **Internal purpose:**
-Quick structural reference for *how* each PMS operator (Δ–Ψ) minimally functions **in the context of critique**, without re-deriving PMS or inflating operators ontologically.
-The table is **diagnostic-structural**, not normative: it indicates *where critique structurally fails or drifts*, not *who is right*.
+Quick structural reference for how each PMS operator (Δ–Ψ) minimally functions **in the context of critique**, without re-deriving PMS or inflating operators ontologically.
+The table is **diagnostic-structural**, not normative: it indicates where critique structurally fails or drifts, not who is right.
 
 | Operator                    | Depends on | Minimal function in critique                                                        | Typical drift markers                                                                              |
 | --------------------------- | ---------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -1093,7 +1131,7 @@ The table is **diagnostic-structural**, not normative: it indicates *where criti
 | **Ψ (Self-Binding)**        | Σ, Θ, Χ    | Binds critique to follow-up, ownership, and continuity over time                    | One-off critique with no accountability; withdrawal after exposure                                 |
 
 **Note:**
-This table answers *“what structurally drops out or mutates”* when critique drifts.
+This table answers what structurally drops out or mutates when critique drifts.
 It does **not** evaluate legitimacy, correctness, intention, or moral standing.
 
 ---
@@ -1101,10 +1139,10 @@ It does **not** evaluate legitimacy, correctness, intention, or moral standing.
 ## Appendix C: Horizontal × Vertical Matrix
 
 **Internal purpose:**
-A compact **orientation grid** that shows *where* critique typically fails or drifts when a given **operator depth** is activated at a given **scale of reach**, **without** introducing new categories, norms, or evaluative criteria.
+A compact **orientation grid** that shows where critique typically fails or drifts when a given **operator depth** is activated at a given **scale of reach**, **without** introducing new categories, norms, or evaluative criteria.
 
 The matrix is **purely descriptive**.
-It explains *why configurations tip*, not *whether they are legitimate*.
+It explains why configurations tip, not whether they are legitimate.
 
 ### Axes (fixed)
 
@@ -1141,13 +1179,13 @@ It explains *why configurations tip*, not *whether they are legitimate*.
   Tends toward symbolic action, emotional amplification, and rapid polarization without correction paths.
 
 * **Missing Χ (Distance) at c / d:**
-  “Defending a position” replaces interruption; critique fuses with identity or mandate.
+  Position defense replaces interruption; critique fuses with identity or mandate.
 
 * **Φ (Recontextualization) without Σ (Integration) at b / c:**
   Continuous reframing stabilizes drift rather than producing correction.
 
 * **Ψ (Self-Binding) at d:**
-  High irreversibility and extreme Θ (temporality) costs; follow-up becomes structurally hard even when intentions were provisional.
+  High irreversibility and extreme Θ costs; follow-up becomes structurally hard even when intentions were provisional.
 
 **Reminder:**
 This matrix does **not** rank actors, positions, or opinions.
@@ -1158,12 +1196,14 @@ It maps *structural failure points* that recur when certain operator–scale com
 ## Appendix D: Drift Catalogue (Compact)
 
 **Internal purpose:**
-A **compact index** of recurring drift forms already described in the paper.
-Each entry names a *predictable structural mutation* of critique under operator load.
+A **compact and non-exhaustive index** of recurring drift forms already described in the paper.
+Each entry names a predictable structural mutation of critique under operator load.
 
 **Rule reminder:**
 No drift = no accusation.
 Drift = **foreseeable structural mutation**, not a character judgment.
+
+This catalogue is intentionally compact and non-exhaustive. It collects recurrent mutation paths that become especially legible under the PMS-CRITIQUE grammar.
 
 ### 1. Reaction Drift
 
@@ -1237,7 +1277,7 @@ Drift = **foreseeable structural mutation**, not a character judgment.
 
 **Orientation note:**
 This catalogue is **diagnostic-structural**, not normative.
-It identifies *how critique mutates*, not *who is right*.
+It identifies how critique mutates, not who is right.
 
 ---
 
@@ -1253,7 +1293,7 @@ The map displays the full **operator field** used in PMS-CRITIQUE as a single st
 **Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ**
 
 This sequence represents **logical dependency**, not temporal order.
-Operators do not “fire” one after another; they **co-structure** critique configurations.
+Operators do not fire one after another; they **co-structure** critique configurations.
 
 ### Conceptual Emphasis (foreground operators)
 
@@ -1263,22 +1303,22 @@ The map explicitly highlights four operators as **structural pivots** for critiq
   Marks the difference between interruption and reaction. Without Χ, critique collapses into impulse discharge or judgment.
 
 * **Φ (Recontextualization):**
-  Enables critique to shift frames without denial or erasure. Φ makes critique *bearable* rather than merely oppositional.
+  Enables critique to shift frames without denial or erasure. Φ makes critique bearable rather than merely oppositional.
 
 * **Σ (Integration):**
   Turns interruption and reframing into a corrective step. Without Σ, critique remains commentary or narrative movement.
 
 * **Ψ (Self-Binding):**
-  Anchors critique across time. Ψ distinguishes critique that “lands” from critique that evaporates after expression.
+  Anchors critique across time. Ψ distinguishes critique that lands from critique that evaporates after expression.
 
-These operators are not “higher” in value, but **higher in structural leverage** for avoiding drift.
+These operators are not higher in value, but carry greater structural leverage for avoiding drift.
 
 ### Structural Overlays (non-operatorial)
 
 The map includes three **transparent overlays** that modulate the entire field:
 
 * **Ω (Asymmetry):**
-  Cuts across the structure as exposure, power, or responsibility gradients. Ω shapes *who* can interrupt whom and at what cost.
+  Cuts across the structure as exposure, power, or responsibility gradients. Ω shapes who can interrupt whom and at what cost.
 
 * **Θ (Temporality):**
   Extends configurations into trajectories. Θ determines accumulation, irreversibility, and delayed consequences of critique or non-critique.
@@ -1298,11 +1338,11 @@ Publicness increases **drift sensitivity** without implying that publicity is in
 * This map is **not a flowchart**.
 * It does **not** imply:
 
-  * “first Δ, then ∇, then …”
+  * first Δ, then ∇, then …
   * developmental stages,
   * competence ladders.
 * Any subset of operators may dominate a given scene.
-* Absence, overload, or collapse of a single operator is sufficient to explain many critique failures.
+* Absence, overload, or collapse of a single operator is sufficient to render many critique failures structurally legible.
 
 ### Function of the Map
 
@@ -1310,7 +1350,6 @@ The one-page structural map serves as:
 
 * a **navigation aid**, not an explanation,
 * a **memory scaffold** for the paper’s logic,
-* a **drift-orientation tool**: readers can locate *where* a configuration collapses without assigning blame.
+* a **drift-orientation tool**: readers can locate where a configuration collapses without assigning blame.
 
 It visualizes PMS-CRITIQUE as a **structural field**, not as a method, manual, or moral theory.
-

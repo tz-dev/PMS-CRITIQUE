@@ -195,14 +195,14 @@
       <header>
         <h1>PMS-CRITIQUE – Model Specification</h1>
         <div class="subtitle">
-          A PMS-conform application layer for critique: reach, scale, drift, and non-coercive correction
+          A PMS-conform application layer for critique: thresholds, reach, scale, drift, boundedness, and non-coercive correction
         </div>
         <div class="meta">
-          Version: PMS-CRITIQUE_1.0 &middot;
+          Version: PMS-CRITIQUE_1.1 &middot;
           Spec basis: <span class="code-inline">PMS-CRITIQUE.yaml</span><br />
-          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.2 Thinking)<br />
-          Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "draft"</span>)<br />
-          Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.1"</span>)
+          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.4 Thinking)<br />
+          Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "repository_overlay_draft"</span>)<br />
+          Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.3"</span>)
         </div>
       </header>
 
@@ -213,28 +213,37 @@
         <p>
           This document specifies the <em>PMS-CRITIQUE</em> layer in a concise, technical form. It is
           based on the YAML file <span class="code-inline">PMS-CRITIQUE.yaml</span> (with
-          <span class="code-inline">schema_version = "PMS-CRITIQUE_1.0"</span>) and makes its structure,
-          concepts and guardrails transparent for human readers and software systems.
+          <span class="code-inline">schema_version = "PMS-CRITIQUE_1.1"</span>) and makes its structure,
+          concepts, constraints, and guardrails transparent for human readers and software systems.
         </p>
 
         <p>
-          PMS-CRITIQUE is an <strong>application layer</strong> (profile/overlay) of the Praxeological Meta-Structure
-          (PMS; Δ–Ψ). It does <strong>not</strong> redefine operators, dependencies, or derived structures of PMS.
+          PMS-CRITIQUE is an <strong>application layer</strong> (overlay) of the Praxeological Meta-Structure 
+          (PMS; Δ–Ψ). It does <strong>not</strong> redefine PMS operators, dependency relations, or derived structures.
           Instead, it provides a <strong>critique grammar</strong>: strict minimal conditions for critique,
-          thresholds for productive correction, scale effects, and predictable drift forms under load
-          (<span class="code-inline">Ω/Θ/Λ/Α</span>), while enforcing a non-moral, non-clinical application firewall:
+          thresholds for productive and stable correction, scale effects, predictable drift forms under load
+          (<span class="code-inline">Ω/Θ/Λ/Α</span>), critique-facing reuse of the base PMS derived axes
+          (<span class="code-inline">A/C/R/E/D</span>), and an optional MIP docking interface under strict separation,
+          while enforcing a non-moral, non-clinical application firewall:
           <span class="code-inline">Χ (Distance) + reversibility + D (dignity-in-practice)</span>.
+        </p>
+
+        <p>
+          The specification is <strong>strong but bounded</strong>. It does not claim that PMS-CRITIQUE is
+          final, exhaustive, uniquely sufficient, or superior to all rival critique grammars. It records the
+          current overlay representation for this repository version and remains open to revision, rival framing,
+          and genuine non-capture.
         </p>
 
         <p>The specification covers, in particular:</p>
         <ul>
           <li>
-            the <strong>schema_meta</strong> block (model identity, status, authors, repositories, inheritance
-            reference, and description);
+            the <strong>schema_meta</strong> block (model identity, status, maturity, repositories, authors,
+            inheritance reference, and epistemic boundedness);
           </li>
           <li>
             the <strong>PMS reference block</strong> (<span class="code-inline">pms_reference</span>) as an explicit
-            non-redefining dependency statement (what is assumed and what is not modified);
+            non-redefining dependency statement, including methodological restraint;
           </li>
           <li>
             the <strong>core critique definitions</strong> (<span class="code-inline">CRITIQUE_MIN</span>,
@@ -242,14 +251,26 @@
             operator-readable thresholds;
           </li>
           <li>
+            the <strong>critique-facing projection block</strong>
+            (<span class="code-inline">critique_projections</span>) as overlay-level reuse of the base PMS
+            derived axes <span class="code-inline">A/C/R/E/D</span>;
+          </li>
+          <li>
             the <strong>axes of analysis</strong>: vertical reach (V0–V4), horizontal scale (paper tags a–d plus optional
             deployment tags), and the publicness overlay <span class="code-inline">P</span>;
           </li>
           <li>
-            a <strong>drift typology</strong> (D1–D6 and compact catalogue) and typical drift chains;
+            a <strong>drift typology</strong> treated as an open structural index (D1–D6 and compact catalogue),
+            plus typical drift chains;
           </li>
           <li>
             <strong>modulators</strong> (operator weightings, not person-typing) that shift reachability and stabilization;
+          </li>
+          <li>
+            an <strong>optional MIP docking interface</strong> with strict non-substitution and no back-projection;
+          </li>
+          <li>
+            <strong>limits and boundedness</strong>, including structural limits, genuine non-capture, and rival openness;
           </li>
           <li>
             <strong>guardrails</strong> (validity gate + misuse firewall) and an optional
@@ -260,10 +281,11 @@
         <div class="box">
           <div class="box-title">Core idea</div>
           <p class="small">
-            PMS-CRITIQUE turns “critique” into an operator-readable configuration with explicit thresholds
-            and drift forms. It does not judge who is right, does not diagnose persons, and does not prescribe
-            discourse ethics. It models <strong>structural viability</strong> and <strong>structural drift</strong>
-            of critique under asymmetry and temporality.
+            PMS-CRITIQUE turns “critique” into an operator-readable configuration with explicit thresholds,
+            scale conditions, and drift sensitivities. It does not judge who is right, does not diagnose
+            persons, and does not prescribe discourse ethics. It models <strong>structural viability</strong>,
+            <strong>structural drift</strong>, and <strong>bounded structural legibility</strong> of critique
+            under asymmetry and temporality.
           </p>
         </div>
       </section>
@@ -287,24 +309,24 @@
             <tr>
               <td><span class="code-inline">schema_version</span></td>
               <td>
-                Version string identifying the release of the critique-layer schema
-                (<span class="code-inline">"PMS-CRITIQUE_1.0"</span>).
+                Version string identifying the current release of the critique-layer schema
+                (<span class="code-inline">"PMS-CRITIQUE_1.1"</span>).
               </td>
               <td>Versioning / compatibility / citation</td>
             </tr>
             <tr>
               <td><span class="code-inline">schema_meta</span></td>
               <td>
-                Model identity, status, date, DOI, repositories, authors, and explicit dependency
-                (<span class="code-inline">inherits_from</span> referencing PMS_1.1).
+                Model identity, status, maturity, date, DOI, repositories, authors, explicit dependency
+                (<span class="code-inline">inherits_from</span> referencing PMS_1.3), and bounded epistemic status.
               </td>
-              <td>Meta-information / dependency statement</td>
+              <td>Meta-information / dependency statement / boundedness note</td>
             </tr>
             <tr>
               <td><span class="code-inline">pms_reference</span></td>
               <td>
-                Non-redefining linkage to PMS: operator symbols referenced, plus dependency hygiene notes
-                (e.g., <span class="code-inline">Χ</span> used as a reduced marker).
+                Non-redefining linkage to PMS: operator symbols referenced, dependency hygiene notes,
+                overlay discipline, and methodological restraint.
               </td>
               <td>Compatibility + “no override” firewall</td>
             </tr>
@@ -312,7 +334,7 @@
               <td><span class="code-inline">critique_core</span></td>
               <td>
                 Strict critique thresholds (<span class="code-inline">CRITIQUE_MIN/PROD/STABLE</span>),
-                non-goals, and reach-ladder note.
+                non-goals, reach-ladder note, and boundedness note.
               </td>
               <td>Core semantics (thresholds) + scope control</td>
             </tr>
@@ -325,6 +347,14 @@
               <td>Interpretation bridge for cases</td>
             </tr>
             <tr>
+              <td><span class="code-inline">critique_projections</span></td>
+              <td>
+                Critique-facing reuse of the PMS derived axes (A/C/R/E/D), with explicit reuse status and
+                anti-override clarification.
+              </td>
+              <td>Readability aid / overlay-level projection layer</td>
+            </tr>
+            <tr>
               <td><span class="code-inline">critique_axes</span></td>
               <td>
                 Vertical reach (V0–V4), horizontal scale (paper tags a–d + optional deployment tags),
@@ -335,21 +365,38 @@
             <tr>
               <td><span class="code-inline">drift_typology</span></td>
               <td>
-                Drift classes (D1–D6), compact catalogue, and typical drift chains.
+                Drift classes (D1–D6), compact catalogue, typical drift chains, and explicit non-exhaustiveness.
               </td>
               <td>Predictable mutation library under load</td>
             </tr>
             <tr>
               <td><span class="code-inline">modulators</span></td>
               <td>
-                Operator weightings (M1–M8) shifting reachability/stabilization without new primitives.
+                Operator weightings (M1–M8) shifting reachability/stabilization without new primitives;
+                intentionally selective, not exhaustive.
               </td>
               <td>Scene-sensitive tuning lens (non-typing)</td>
             </tr>
             <tr>
+              <td><span class="code-inline">mip_docking_interface</span></td>
+              <td>
+                Optional controlled interface from structural explanation to explicit evaluation,
+                governed by strict separation and non-substitution.
+              </td>
+              <td>Optional downstream docking under guardrails</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">limits_and_boundedness</span></td>
+              <td>
+                Structural limits, genuine non-capture, rival framing openness, and final boundedness statement.
+              </td>
+              <td>Anti-totalization / methodological accountability</td>
+            </tr>
+            <tr>
               <td><span class="code-inline">guardrails</span></td>
               <td>
-                Validity gate and misuse firewall: entry condition note, reversibility, D-in-practice, and disallowed uses.
+                Validity gate and misuse firewall: entry condition note, reversibility, D-in-practice,
+                disallowed uses, invalidity clause, and misuse signatures.
               </td>
               <td>Governance and safe application constraints</td>
             </tr>
@@ -364,40 +411,43 @@
             <tr>
               <td><span class="code-inline">load_order</span>, <span class="code-inline">meta_notes</span></td>
               <td>
-                Recommended load order (PMS then PMS-CRITIQUE), and compatibility/extensibility notes.
+                Recommended load order (PMS then PMS-CRITIQUE), plus compatibility, extensibility,
+                neutrality, and boundedness notes.
               </td>
               <td>Integration guidance + future-proofing</td>
             </tr>
           </tbody>
         </table>
-
+        <div class="pagebreak"></div>
         <h3>2.2 Conceptual separation</h3>
         <div class="two-column">
           <div class="box">
             <div class="box-title"><span class="code-inline">PMS (base)</span></div>
             <p class="small">
               PMS defines the operator system (Δ–Ψ), its dependency graph, layers, and derived structures.
-              PMS is the canonical source of operator definitions.
+              PMS is the canonical source of operator definitions and derived-axis formulas.
             </p>
             <ul class="small">
               <li>Operators and dependencies: Δ–Ψ</li>
               <li>Layering L1–L4</li>
-              <li>Derived axes (A, C, R, E, D), IA patterns, self-model (if present)</li>
+              <li>Derived axes (A, C, R, E, D) and other derived PMS structures</li>
             </ul>
           </div>
 
           <div class="box">
             <div class="box-title"><span class="code-inline">PMS-CRITIQUE (overlay)</span></div>
             <p class="small">
-              PMS-CRITIQUE defines critique as a <strong>reachable chain</strong> and a <strong>drift-sensitive configuration</strong>
-              under Ω/Θ/Λ/Α. It adds no new operators; it adds <em>thresholds</em>, <em>axes</em>, <em>drift types</em>, and
+              PMS-CRITIQUE defines critique as a <strong>reachable chain</strong>, a <strong>scale-sensitive formation</strong>,
+              and a <strong>drift-sensitive configuration</strong> under Ω/Θ/Λ/Α. It adds no new operators; it adds
+              overlay-level <em>thresholds</em>, <em>axes</em>, <em>drift types</em>, <em>boundedness clauses</em>, and
               an optional case schema.
             </p>
             <ul class="small">
               <li>Strict minimal critique threshold: Δ + □ + Χ</li>
               <li>Reach ladder V0–V4</li>
               <li>Scale ladder a–d + overlay P</li>
-              <li>Drift typology D1–D6</li>
+              <li>Drift typology D1–D6 as open structural index</li>
+              <li>Optional MIP docking under strict separation</li>
             </ul>
           </div>
         </div>
@@ -405,9 +455,9 @@
         <div class="box">
           <div class="box-title">Non-redefinition rule</div>
           <p class="small">
-            PMS-CRITIQUE may provide application-facing glosses (e.g., “Χ as stop-capability”), but it must not
-            modify PMS operator definitions, dependency rules, or derived structures. Canonical meaning remains in
-            <span class="code-inline">PMS.yaml</span>.
+            PMS-CRITIQUE may provide application-facing glosses (for example, “Χ as stop-capability” or
+            “E as correction reach descriptor”), but it must not modify PMS operator definitions, dependency
+            rules, or derived-axis formulas. Canonical meaning remains in <span class="code-inline">PMS.yaml</span>.
           </p>
         </div>
       </section>
@@ -420,8 +470,8 @@
 
         <h3>3.1 Validity gate (application firewall)</h3>
         <p>
-          PMS-CRITIQUE enforces a strict application gate. This gate constrains <em>use of the model</em>, not critique or rejection
-          of the model:
+          PMS-CRITIQUE enforces a strict application gate. This gate constrains <em>use of the model</em>, not critique,
+          refusal, revision, or rejection of the model:
         </p>
         <ul>
           <li><strong>Χ (Distance):</strong> stop-capability must be practically activatable (not merely asserted).</li>
@@ -435,16 +485,25 @@
         </p>
         <ul>
           <li>person-labeling, motive attribution, diagnosis, or mental-state inference;</li>
-          <li>verdict outputs (“who is right” or “who is bad”) as a model product;</li>
+          <li>verdict outputs (“who is right”) as a model product;</li>
           <li>coercive binding (Ψ→Other), threats, or exposure-as-punishment;</li>
+          <li>legitimacy tribunal logic or sanctioning logic;</li>
           <li>using drift labels as sanctions rather than as structural descriptors.</li>
         </ul>
+
+        <h3>3.3 Application invalidity</h3>
+        <p>
+          The YAML now makes explicit that critique becomes <strong>structurally invalid as a PMS-CRITIQUE enactment</strong>
+          when degradation, humiliation, or exposure steering replaces correction. This invalidity applies to model use,
+          not to the ontological status of the scene or the persons involved.
+        </p>
 
         <div class="box">
           <div class="box-title">Misuse hint</div>
           <p class="small">
-            Drift language is descriptive, not punitive. Turning “D2 judgment drift” into a moral badge or enforcement tool
-            violates the layer’s own validity conditions (Χ + reversibility + D).
+            Drift language is descriptive, not punitive. Turning “judgment drift” or “public pillory” into a moral badge,
+            ranking token, or enforcement tool violates the layer’s own validity conditions
+            (<span class="code-inline">Χ + reversibility + D</span>).
           </p>
         </div>
       </section>
@@ -456,8 +515,9 @@
         <h2>4. Critique core: strict thresholds (CRITIQUE_MIN / PROD / STABLE)</h2>
 
         <p>
-          PMS-CRITIQUE defines critique via <strong>operator thresholds</strong> rather than rhetorical style or speaker intent.
-          The three core definitions form a ladder from interruption to durable correction:
+          PMS-CRITIQUE defines critique via <strong>operator thresholds</strong> rather than rhetorical style,
+          speaker prestige, or speaker intent. The three core definitions form a ladder from interruption to
+          durable correction:
         </p>
 
         <table class="table">
@@ -473,7 +533,7 @@
               <td><strong>Minimal critique</strong><br /><span class="code-inline">CRITIQUE_MIN</span></td>
               <td><span class="code-inline">["Δ","□","Χ"]</span></td>
               <td>
-                A mismatch becomes legible inside a frame and remains interruptible (stop-capable). This is critique in strict sense.
+                A mismatch becomes legible inside a frame and remains interruptible (stop-capable). This is critique in the strict sense used here.
               </td>
             </tr>
             <tr>
@@ -493,13 +553,21 @@
           </tbody>
         </table>
 
-        <h3>4.1 Non-equivalences</h3>
+        <h3>4.1 Threshold notes</h3>
+        <ul>
+          <li><strong>CRITIQUE_MIN</strong> is a strict structural minimum <em>within PMS-CRITIQUE</em>, not a universal ontology of critique.</li>
+          <li><strong>CRITIQUE_PROD</strong> marks structural reach toward correction, not the full ethical or political value of critique as such.</li>
+          <li><strong>CRITIQUE_STABLE</strong> marks trajectory binding, not certainty, closure, or guaranteed success.</li>
+        </ul>
+
+        <h3>4.2 Non-equivalences</h3>
         <p>
-          PMS-CRITIQUE explicitly distinguishes critique from two common masquerades:
+          PMS-CRITIQUE explicitly distinguishes critique from common masquerades:
         </p>
         <ul>
           <li><strong>Reaction:</strong> <span class="code-inline">Δ + ∇</span> without <span class="code-inline">Χ</span> is not “weak critique” but a different structure.</li>
-          <li><strong>Judgment:</strong> <span class="code-inline">□ + Δ</span> without <span class="code-inline">Φ/Σ</span> is not “strong critique” but a drift form.</li>
+          <li><strong>Judgment:</strong> <span class="code-inline">□ + Δ</span> without <span class="code-inline">Φ/Σ</span> does not count as critique in the strict sense used here.</li>
+          <li><strong>Silence/paralysis:</strong> mismatch without interruptible framing is not low-grade critique but a distinct stabilization.</li>
         </ul>
 
         <div class="box">
@@ -519,7 +587,8 @@
 
         <p>
           The block <span class="code-inline">critique_mapping.operator_roles</span> maps PMS operators to critique-relevant functions.
-          These mappings are <strong>one-to-many</strong> and depend on frame and scale. They are descriptive and non-psychological.
+          These mappings are <strong>one-to-many</strong> and depend on frame and scale. They are descriptive, scene-bound,
+          and non-psychological.
         </p>
 
         <h3>5.1 Mapping logic</h3>
@@ -528,7 +597,7 @@
           <li><strong>∇</strong> introduces response pressure (tempo, urgency, defense).</li>
           <li><strong>□</strong> determines what counts as relevant, interruptible, and correctable.</li>
           <li><strong>Λ</strong> encodes meaningful absence (missing replies, omitted follow-ups) and accumulates load.</li>
-          <li><strong>Α</strong> stabilizes scripts (outrage, silence, deflection) that handle pressure without correction.</li>
+          <li><strong>Α</strong> stabilizes scripts (outrage, silence, deflection, mockery) that handle pressure without correction.</li>
           <li><strong>Ω</strong> distributes exposure and cost (who risks retaliation, shame, or residue).</li>
           <li><strong>Θ</strong> hardens consequences and narrows revision windows.</li>
           <li><strong>Φ</strong> can bridge to actionability or become narrative substitute when Σ is absent.</li>
@@ -548,11 +617,90 @@
 
       <div class="pagebreak"></div>
 
-      <!-- 6. Axes: Reach, Scale, Publicness overlay -->
-      <section id="axes">
-        <h2>6. Axes of analysis: reach (V0–V4), scale (a–d), and overlay P</h2>
+      <!-- 6. Critique-facing projections -->
+      <section id="projections">
+        <h2>6. Critique-facing projections (reuse of PMS derived axes)</h2>
 
-        <h3>6.1 Vertical axis: reach ladder (V0–V4)</h3>
+        <p>
+          The block <span class="code-inline">critique_projections</span> reuses the base PMS derived axes
+          <span class="code-inline">A/C/R/E/D</span> as <strong>readability aids</strong> for critique scenes.
+          These projections do not add new primitives and do not override PMS-derived formulas.
+        </p>
+
+        <h3>6.1 Reuse status</h3>
+        <p>
+          The YAML now explicitly states that these items are <strong>overlay-level reuse of the derived axes
+          specified in PMS.yaml</strong>. This means:
+        </p>
+        <ul>
+          <li>the formulas remain the base PMS formulas;</li>
+          <li>the projection block is interpretive, not constitutive;</li>
+          <li>critique-facing reuse does not convert the derived axes into new critique primitives;</li>
+          <li>overlay usage does not override base PMS derivation.</li>
+        </ul>
+
+        <h3>6.2 Projection table</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Projection</th>
+              <th>Formula</th>
+              <th>Critique-facing use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A</strong> Awareness</td>
+              <td><span class="code-inline">["Θ","□","Δ"]</span></td>
+              <td>Sustained, framed differentiation across time.</td>
+            </tr>
+            <tr>
+              <td><strong>C</strong> Coherence</td>
+              <td><span class="code-inline">["Θ","Λ","□","∇"]</span></td>
+              <td>Narrative and expectation stability under time, framing, and non-events.</td>
+            </tr>
+            <tr>
+              <td><strong>R</strong> Responsibility</td>
+              <td><span class="code-inline">["Ψ","Φ","Θ","Ω"]</span></td>
+              <td>Bound follow-up ownership under asymmetry over time.</td>
+            </tr>
+            <tr>
+              <td><strong>E</strong> Action</td>
+              <td><span class="code-inline">["Σ","Θ","∇"]</span></td>
+              <td>Enactable correction rather than commentary.</td>
+            </tr>
+            <tr>
+              <td><strong>D</strong> Dignity-in-Practice</td>
+              <td><span class="code-inline">["Ψ","Χ","Ω"]</span></td>
+              <td>Restrained handling of asymmetry under self-binding.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>6.3 Special note on E</h3>
+        <p>
+          The current YAML adds a specific docking note for <span class="code-inline">E</span>:
+          within PMS-CRITIQUE, E can function as a <strong>critique-internal bridging descriptor for correction reach</strong>.
+          It is not thereby elevated into a separate MIP core parameter.
+        </p>
+
+        <div class="box">
+          <div class="box-title">Projection note</div>
+          <p class="small">
+            These projections increase readability within this framework. They reuse the base PMS derived axes
+            for critique-facing interpretation, but do not establish that critique can be exhaustively represented
+            through them in every case.
+          </p>
+        </div>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 7. Axes: Reach, Scale, Publicness overlay -->
+      <section id="axes">
+        <h2>7. Axes of analysis: reach (V0–V4), scale (a–d), and overlay P</h2>
+
+        <h3>7.1 Vertical axis: reach ladder (V0–V4)</h3>
         <p>
           Reach measures how far critique structurally travels before breaking:
           from mismatch registration to interruption, correction, and follow-up binding.
@@ -572,13 +720,13 @@
               <td><span class="code-inline">V0</span></td>
               <td>Irritation only</td>
               <td><span class="code-inline">["Δ"]</span></td>
-              <td>Mismatch registered; no structured episode.</td>
+              <td>Mismatch is registered; no structured critique episode emerges yet.</td>
             </tr>
             <tr>
               <td><span class="code-inline">V1</span></td>
               <td>Reaction / discharge</td>
               <td><span class="code-inline">["Δ","∇"]</span></td>
-              <td>Directional response without stop-capability; critique-in-strict-sense does not occur.</td>
+              <td>Directional response without stop-capability; critique in the strict sense used here does not occur.</td>
             </tr>
             <tr>
               <td><span class="code-inline">V2</span></td>
@@ -601,12 +749,19 @@
           </tbody>
         </table>
 
-        <h3>6.2 Horizontal axis: scale of critique (paper tags a–d)</h3>
+        <h3>7.2 Horizontal axis: scale of critique (paper tags a–d)</h3>
         <p>
           Scale specifies where asymmetry (Ω: exposure gradients) and temporality (Θ: accumulation and irreversibility)
           stabilize across scenes. The operator grammar remains the same, but viability conditions change with scale
           (Χ-availability, Σ-cost, Ψ-feasibility).
         </p>
+
+        <ul>
+          <li><strong>a</strong> = generic / structural critique (no actor binding)</li>
+          <li><strong>b</strong> = single-subject critique (self / support / learning)</li>
+          <li><strong>c</strong> = small-group critique (peers / team / family)</li>
+          <li><strong>d</strong> = public critique (street / media / online)</li>
+        </ul>
 
         <div class="box">
           <div class="box-title">Chapter marker (quote-ready)</div>
@@ -616,7 +771,7 @@
           </p>
         </div>
 
-        <h3>6.3 Publicness overlay P</h3>
+        <h3>7.3 Publicness overlay P</h3>
         <p>
           PMS-CRITIQUE defines <span class="code-inline">P</span> as an amplification overlay (not an operator).
           It amplifies:
@@ -633,9 +788,9 @@
 
       <div class="pagebreak"></div>
 
-      <!-- 7. Drift typology -->
+      <!-- 8. Drift typology -->
       <section id="drift">
-        <h2>7. Drift typology: predictable mutations under load</h2>
+        <h2>8. Drift typology: predictable mutations under load</h2>
 
         <p>
           Drift labels describe structural mutations of critique chains under load (Ω/Θ/Λ/Α and overlay P).
@@ -643,7 +798,19 @@
           common failure modes.
         </p>
 
-        <h3>7.1 Primary drift classes (D1–D6)</h3>
+        <h3>8.1 Methodological status</h3>
+        <p>
+          The current YAML now states explicitly that the drift typology is an <strong>open structural index</strong>.
+          This means:
+        </p>
+        <ul>
+          <li>it is not offered as an exhaustive classification of all critique failures;</li>
+          <li>it indexes recurrent mutation paths that become especially legible in PMS-CRITIQUE terms;</li>
+          <li>some cases may resist clean classification without this constituting mere deficiency;</li>
+          <li>resistant cases may indicate a limit of the typology rather than a flaw in the scene.</li>
+        </ul>
+
+        <h3>8.2 Primary drift classes (D1–D6)</h3>
         <table class="table">
           <thead>
             <tr>
@@ -693,7 +860,14 @@
           </tbody>
         </table>
 
-        <h3>7.2 Typical drift chains</h3>
+        <h3>8.3 Compact catalogue and drift chains</h3>
+        <p>
+          In addition to D1–D6, the schema contains a compact non-exhaustive catalogue
+          (<span class="code-inline">C1–C10</span>) including reaction drift, judgment drift, moralization drift,
+          narrative reset, commentary drift, silence-as-steering, diffusion drift, public pillory,
+          integration bypass, and commitment evasion.
+        </p>
+
         <ul>
           <li>
             <strong>Public chain:</strong> Ω salience increases → Χ erodes → reaction stabilizes (Α) → Θ hardens residue.
@@ -706,13 +880,19 @@
 
       <div class="pagebreak"></div>
 
-      <!-- 8. Modulators -->
+      <!-- 9. Modulators -->
       <section id="modulators">
-        <h2>8. Modulators (operator weightings; not person types)</h2>
+        <h2>9. Modulators (operator weightings; not person types)</h2>
 
         <p>
           Modulators (M1–M8) are scene parameters that shift reachability and stabilization without adding new primitives.
           They are not prescriptions and not psychological typing.
+        </p>
+
+        <p>
+          The current YAML also makes explicit that the modulator set is <strong>intentionally selective</strong>:
+          it identifies recurrent weighting conditions that become especially legible in critique configurations,
+          not a complete inventory of all possible scene-load variables.
         </p>
 
         <table class="table">
@@ -770,16 +950,124 @@
 
       <div class="pagebreak"></div>
 
-      <!-- 9. Example packets -->
-      <section id="example-packets">
-        <h2>9. Example packets: optional case schema for uniform mappings</h2>
+      <!-- 10. MIP docking -->
+      <section id="mip-docking">
+        <h2>10. Optional MIP docking interface</h2>
 
         <p>
-          PMS-CRITIQUE optionally defines an instance-facing case schema (<span class="code-inline">example_suite.packet_schema</span>)
-          to keep case mappings comparable across analysts and tools. Example packets are illustrative; they do not define semantics.
+          The current PMS-CRITIQUE schema contains an <strong>optional MIP docking interface</strong>. This is not
+          a merger of models. It is a controlled handoff from structural explanation to explicit evaluation when
+          legitimacy, attribution, or regime conditions are the stated object.
         </p>
 
-        <h3>9.1 Required fields</h3>
+        <h3>10.1 Non-implication</h3>
+        <p>
+          Docking does <strong>not</strong> imply that PMS-CRITIQUE naturally culminates in evaluation.
+          PMS-CRITIQUE remains complete as a structural grammar without downstream docking.
+        </p>
+
+        <h3>10.2 Separation rule</h3>
+        <div class="two-column">
+          <div class="box">
+            <div class="box-title">PMS-CRITIQUE role</div>
+            <p class="small">
+              Explains how critique emerges, stabilizes, drifts, and binds at the level of operator grammar.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="box-title">MIP role</div>
+            <p class="small">
+              Evaluates enactments, attribution, and regime conditions under explicit criteria, documented information conditions, and guardrails.
+            </p>
+          </div>
+        </div>
+
+        <p>The separation rule blocks:</p>
+        <ul>
+          <li>PMS-CRITIQUE being used to decide legitimacy;</li>
+          <li>MIP being used to explain critique emergence or mutation;</li>
+          <li>back-projection of MIP verdicts into PMS causal language;</li>
+          <li>retrofitting PMS structures into evaluative scores.</li>
+        </ul>
+
+        <h3>10.3 Docking points</h3>
+        <ul>
+          <li><strong>Projection input:</strong> critique-facing projections (A/C/R/E/D) may inform MIP-style case description without becoming trait claims.</li>
+          <li><strong>Asymmetry evaluation:</strong> PMS may describe asymmetry structurally; MIP may evaluate enactment under its own criteria.</li>
+          <li><strong>Regime/publicity constraint:</strong> publicness and transmission conditions may act as admissibility constraints for evaluation.</li>
+          <li><strong>Shared critique-readiness:</strong> docking is valid only when both explanation and evaluation remain documented, reversible, bounded, and non-weaponizable.</li>
+        </ul>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 11. Limits and boundedness -->
+      <section id="boundedness">
+        <h2>11. Limits, non-capture, and rival openness</h2>
+
+        <h3>11.1 Structural limits</h3>
+        <p>
+          PMS-CRITIQUE explicitly does not:
+        </p>
+        <ul>
+          <li>establish truth;</li>
+          <li>verify motives, sincerity, or inner states;</li>
+          <li>adjudicate moral rightness;</li>
+          <li>rank persons, roles, or groups;</li>
+          <li>function as a clinical, forensic, HR, compliance, or sanctioning tool;</li>
+          <li>dissolve accountability into “just structure”;</li>
+          <li>promise exhaustive capture of lived experience, normative disagreement, or social reality.</li>
+        </ul>
+
+        <h3>11.2 Genuine non-capture</h3>
+        <p>
+          PMS-CRITIQUE does not assume that every critique-relevant phenomenon can be adequately rendered within its own chain logic.
+          Genuine non-capture remains possible where:
+        </p>
+        <ul>
+          <li>the grammar yields a coherent reading but weakens what is structurally decisive in the case;</li>
+          <li>critique functions more as symbolic refusal, public rupture, ethical contestation, or resistance than as correction-oriented coordination;</li>
+          <li>rival framings preserve dimensions that PMS-CRITIQUE backgrounds by design.</li>
+        </ul>
+
+        <p>
+          The anti-absorption rule blocks three common overextensions:
+        </p>
+        <ul>
+          <li>do not prematurely redescribe resistant cases as mere drift;</li>
+          <li>do not treat resistant cases as calibration noise by default;</li>
+          <li>do not treat incomplete capture as proof that the scene is defective.</li>
+        </ul>
+
+        <h3>11.3 Rival openness</h3>
+        <p>
+          Rival critique grammars remain methodologically open. PMS-CRITIQUE may be more structurally legible in some cases
+          without thereby being superior in all respects.
+        </p>
+
+        <div class="box">
+          <div class="box-title">Final boundedness statement</div>
+          <p class="small">
+            Nothing in this schema requires PMS-CRITIQUE to be treated as final, exhaustive, or uniquely sufficient.
+            Its strength remains most credible where its own limits, rival framings, and possible non-capture cases are kept explicit.
+          </p>
+        </div>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 12. Example packets -->
+      <section id="example-packets">
+        <h2>12. Example packets: optional case schema for uniform mappings</h2>
+
+        <p>
+          PMS-CRITIQUE optionally defines an instance-facing case schema
+          (<span class="code-inline">example_suite.packet_schema</span>) to keep case mappings comparable across analysts
+          and tools. Example packets are illustrative; they do not define semantics.
+        </p>
+
+        <h3>12.1 Required fields</h3>
         <ul>
           <li><span class="code-inline">scene_label</span></li>
           <li><span class="code-inline">frame_anchor (□)</span></li>
@@ -790,61 +1078,71 @@
           <li><span class="code-inline">scale</span> (system + tag; legacy <span class="code-inline">scale_tag</span> supported)</li>
         </ul>
 
-        <h3>9.2 Optional fields</h3>
+        <h3>12.2 Optional fields</h3>
         <ul>
-          <li><span class="code-inline">reach_level</span> (V0–V4)</li>
-          <li><span class="code-inline">drift_class</span> (D*) and up to two drift markers</li>
+          <li><span class="code-inline">impulse_pressure (∇)</span></li>
           <li><span class="code-inline">non_event_candidates (Λ)</span></li>
+          <li><span class="code-inline">drift_class</span> (D*) and up to two drift markers</li>
+          <li><span class="code-inline">cost_distribution (Ω/Θ)</span></li>
+          <li><span class="code-inline">publicness_overlay (P) note</span></li>
+          <li><span class="code-inline">reach_level</span> (V0–V4)</li>
           <li><span class="code-inline">modulators</span> (M1–M8)</li>
-          <li><span class="code-inline">publicness_overlay note</span> (P)</li>
+          <li><span class="code-inline">projection_notes</span> (A/C/R/E/D)</li>
+          <li><span class="code-inline">non_capture_flag</span></li>
         </ul>
 
         <div class="box">
           <div class="box-title">Constraint</div>
           <p class="small">
             Packets must remain role/scene/constraint focused. No motives, no traits, no diagnosis, no “should”.
-            This preserves reversibility and dignity-in-practice.
+            Non-capture flags must not be used as dismissal tokens.
           </p>
         </div>
       </section>
 
       <div class="pagebreak"></div>
 
-      <!-- 10. Implementation notes & citation -->
+      <!-- 13. Implementation notes & citation -->
       <section id="implementation">
-        <h2>10. Implementation notes, integration, and citation</h2>
+        <h2>13. Implementation notes, integration, and citation</h2>
 
-        <h3>10.1 YAML and integration</h3>
+        <h3>13.1 YAML and integration</h3>
         <p>
           The official PMS-CRITIQUE YAML specification is provided as
           <span class="code-inline">PMS-CRITIQUE.yaml</span>. It is intended to be loaded as an addon layer after the PMS base grammar.
         </p>
 
-        <h4>10.1.1 Recommended load order (non-normative)</h4>
+        <h4>13.1.1 Recommended load order (non-normative)</h4>
         <div class="box small">
-          <span class="code-inline">PMS.yaml</span> → <span class="code-inline">PMS-CRITIQUE.yaml</span>
+          <span class="code-inline">PMS.yaml</span> → <span class="code-inline">PMS-CRITIQUE.yaml</span> → <span class="code-inline">pms-critique-ext.yaml</span> (optional)
         </div>
 
-        <h4>10.1.2 What an agent/tool can do with PMS-CRITIQUE (beyond PMS alone)</h4>
+        <h4>13.1.2 What an agent/tool can do with PMS-CRITIQUE (beyond PMS alone)</h4>
         <ul>
           <li>classify episodes along <strong>reach</strong> (V0–V4) using strict operator thresholds;</li>
           <li>map scenes along <strong>scale</strong> (paper tags a–d) and annotate viability shifts under Ω/Θ;</li>
-          <li>identify <strong>drift forms</strong> (D1–D6) as operator-readable mutations;</li>
+          <li>identify <strong>drift forms</strong> (D1–D6 and compact catalogue) as operator-readable mutations;</li>
+          <li>reuse <strong>A/C/R/E/D</strong> as critique-facing projections without overriding PMS base formulas;</li>
           <li>record <strong>modulators</strong> (M1–M8) as non-typing scene parameters;</li>
-          <li>produce comparable outputs via optional <strong>example packets</strong>.</li>
+          <li>represent <strong>boundedness</strong>, non-capture, and rival openness explicitly;</li>
+          <li>produce comparable outputs via optional <strong>example packets</strong>;</li>
+          <li>optionally dock to <strong>MIP</strong> under strict separation.</li>
         </ul>
 
-        <h4>10.1.3 Recommended bootstrap for LLM-based agents (non-normative)</h4>
+        <h4>13.1.3 Recommended bootstrap for LLM-based agents (non-normative)</h4>
         <p>
           After loading the YAML, an agent SHOULD:
         </p>
         <ul>
-          <li>activate the guardrails (Χ + reversibility + D) as interaction constraints;</li>
+          <li>activate the guardrails (<span class="code-inline">Χ + reversibility + D</span>) as interaction constraints;</li>
           <li>require scene-bounded inputs and refuse person-typing outputs;</li>
-          <li>output (when requested) reach level, scale tag/system, operator signature, drift class (if any), and modulators.</li>
+          <li>when useful, output reach level, scale tag/system, operator signature, drift class (if any), modulators, and boundedness-related notes grounded in the schema;</li>
+          <li>treat critique-facing projections as <strong>reuse of PMS derived axes</strong>, not as newly defined primitives;</li>
+          <li>avoid treating structural fit as proof of exhaustive capture;</li>
+          <li>treat MIP docking as optional and non-substitutive.</li>
         </ul>
 
-        <h3>10.2 Citation and license</h3>
+        <h3>13.2 Citation and license</h3>
         <p class="small">
           <strong>Technical reference:</strong><br />
           <em>PMS-CRITIQUE.yaml – Critique Layer Specification</em><br />
@@ -853,8 +1151,8 @@
 
         <p class="small">
           <strong>Base dependency:</strong><br />
-          <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.1)</em><br />
-          (canonical operator definitions and dependencies)
+          <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.3)</em><br />
+          (canonical operator definitions, dependency path, and derived-axis formulas)
         </p>
 
         <p>

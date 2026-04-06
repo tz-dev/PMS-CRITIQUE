@@ -1,0 +1,546 @@
+example_id: "PMS-CRITIQUE_EX01"
+example_version: "1.0"
+schema_version: "PMS-CRITIQUE_1.1"
+example_label: "The Missing Reply Becomes the Story"
+example_subtitle: "Non-Event Load -> Silence Attractor"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CRITIQUE_1.1"
+
+case_identity:
+  case_label: "Deferred Response vs. Stabilized Non-Intervention"
+  scope_discipline: >
+    Structural mapping only. No diagnosis, no moral ranking, and no
+    attribution of intent. PMS application remains valid only under Χ
+    (Distance), reversibility, and D (Dignity-in-Practice).
+  repository_fit: >
+    This example is designed as a repository training example for reading how
+    non-events (Λ) can accumulate into a silence attractor under asymmetry (Ω)
+    and temporality (Θ), without requiring overt prohibition or explicit
+    coercion.
+  example_packet_alignment:
+    scene_label: "Deferred Response vs. Stabilized Non-Intervention"
+    frame_anchor: "Recurring team coordination meeting with an explicit follow-up path."
+    trigger_mismatch: "Raised safety concern remains unanswered despite stated uptake."
+    operator_signature:
+      reduced: ["Δ", "□", "Λ", "Α", "Ω", "Θ"]
+      note: >
+        This reduced signature is a readability aid only. Canonical PMS
+        dependencies remain fully in force.
+    guardrail_gate: >
+      Readings remain scene-bound and revisable. No person labels, no motive
+      attributions, no shaming, and no coercive binding claims are generated.
+    structural_closure: >
+      In this scene, critique does not disappear; it is displaced into absence.
+      Repeated non-response turns Λ into an organizing force, and over time the
+      cost of renewed interruption rises. What stabilizes is not correction but
+      a silence attractor under Ω and Θ.
+    scale:
+      system: "paper_tags"
+      tag: "c"
+
+minimal_vignette:
+  title: "A concern is raised, acknowledged, and then structurally absorbed by silence"
+  scene_boundaries:
+    domain: "Small-team coordination / internal organizational critique"
+    scope: >
+      Structures, roles, asymmetries, non-events, temporality, critique reach,
+      and drift stabilization.
+    out_of_scope:
+      - "person-level judgment"
+      - "motive attribution"
+      - "clinical or psychological interpretation"
+      - "moral ranking"
+      - "truth-adjudication of the safety concern itself"
+      - "instruction or action prescription"
+  short_scene: >
+    In a recurring team meeting, one participant raises a safety-related
+    concern. A manager acknowledges the issue and asks for a follow-up message,
+    which is sent. No reply comes for two weeks. In subsequent meetings the
+    issue is not reopened, no explicit closure is given, and a joking remark
+    later frames the situation as one in which nothing really changes. Over
+    time, similar concerns cease to be raised.
+  structural_focus: >
+    The example examines how critique can fail not through explicit rejection
+    but through the accumulation of meaningful absences (Λ), eventually
+    stabilizing a silence attractor (Α) under exposure asymmetry (Ω) and
+    temporal hardening (Θ).
+  scenic_elements:
+    actors:
+      - "team member raising a concern"
+      - "manager controlling the follow-up channel"
+      - "other meeting participants observing the handling"
+    salient_objects:
+      - "the safety concern"
+      - "the follow-up message"
+      - "the meeting frame"
+      - "the absent response"
+      - "later joking reference to futility"
+    trigger_event:
+      label: "acknowledged concern without follow-up"
+      description: >
+        A relevant mismatch is raised and superficially received, but the
+        expected follow-up does not occur.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example is useful because it shows a drift form in which critique is
+    neither openly forbidden nor integrated. Instead, meaningful absence
+    gradually becomes the dominant coordination mode.
+  repo_value:
+    - >
+      Demonstrates how Λ (Non-Event) can become structurally decisive without
+      needing explicit conflict or sanction.
+    - >
+      Makes visible how repetition converts absence into a stabilized script
+      (Α), rather than leaving it as an isolated communication failure.
+    - >
+      Shows how Ω can concentrate exposure on the raiser while allowing others
+      to remain comparatively insulated.
+    - >
+      Illustrates why temporality (Θ) matters: delayed non-response alters the
+      future cost of renewed interruption.
+    - >
+      Serves as a clean example of drift toward D6 (Silence Attractor) without
+      collapsing into person-typing or blame language.
+  central_repo_question: >
+    How does critique become structurally displaced when absence begins to
+    coordinate more strongly than explicit response?
+  lens_relevance:
+    critique_thresholds: >
+      The example helps distinguish a raised mismatch from productive critique.
+      A concern may be legible and even briefly framed without reaching Σ or Ψ.
+    drift_typology: >
+      The scene instantiates a strong D6 tendency and also shows how silence
+      can coexist with diffusion and commentary residues.
+    scale_relevance: >
+      The example sits clearly in paper tag c (small group critique), where
+      belonging, role distribution, and repeated non-intervention matter more
+      than public spectacle.
+    guardrail_relevance: >
+      The example is especially useful for training structurally careful
+      readings because it invites overinterpretation if reversibility and D are
+      not actively preserved.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Δ", "□", "Λ", "Α", "Ω", "Θ"]
+    secondary_possible: ["Χ"]
+    note: >
+      Χ is not absent as a human capacity claim; rather, the scene shows weak
+      practical availability of interruption once costs rise. The signature is
+      reduced for readability and does not override PMS dependency hygiene.
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A mismatch becomes legible between the stated safety concern and the
+        current practice.
+    "∇":
+      scene_role: >
+        Directional pressure initially appears in the impulse to raise the
+        concern and seek correction, but does not stabilize as productive
+        critique.
+    "□":
+      scene_role: >
+        The recurring team meeting defines what counts as raising, acknowledging,
+        and following up on an issue.
+    "Λ":
+      scene_role: >
+        The decisive structural fact is the missing reply and missing closure.
+        The absence itself becomes meaningful.
+    "Α":
+      scene_role: >
+        Repeated non-response and non-reopening harden into a recognizable
+        script: concerns go nowhere, and silence becomes normal.
+    "Ω":
+      scene_role: >
+        Exposure is concentrated on the person who raises the concern, while the
+        role controlling follow-up bears lower immediate exposure cost.
+    "Θ":
+      scene_role: >
+        Delay accumulates. Each missed opportunity to respond raises the cost of
+        reopening the issue later.
+    "Φ":
+      scene_role: >
+        Recontextualization remains weak and underdeveloped. The scene does not
+        move toward a new actionable understanding; later humor instead helps
+        normalize futility.
+    "Χ":
+      scene_role: >
+        Distance is formally possible in the scene but becomes practically hard
+        to activate. Re-entry into the issue becomes costlier over time.
+    "Σ":
+      scene_role: >
+        No integrative corrective step consolidates. The concern is neither
+        meaningfully absorbed nor converted into coordinated follow-up.
+    "Ψ":
+      scene_role: >
+        No stable self-binding toward correction appears. Follow-up is not bound
+        into a durable review or ownership trajectory.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness is present at the level of mismatch recognition. The concern
+        is legible and framed, but this awareness does not remain strongly
+        actionable across time.
+    C:
+      reading: >
+        Coherence gradually shifts toward narrative stability of silence: the
+        expectation becomes that concern-raising will not generate follow-up.
+    R:
+      reading: >
+        Responsibility does not consolidate into owned follow-up. Instead,
+        responsibility becomes diffuse while exposure remains concentrated.
+    E:
+      reading: >
+        Action remains weak. The scene does not reach enactable correction and
+        drifts away from integration.
+    D:
+      reading: >
+        Dignity-in-Practice is stressed because the scene preserves formal
+        civility while structurally increasing the cost of speaking.
+  structural_mechanism_summary:
+    sequence:
+      - "A relevant mismatch is raised."
+      - "The frame initially appears to accept interruption."
+      - "Expected follow-up does not occur."
+      - "Absence becomes increasingly meaningful."
+      - "Repetition stabilizes a silence script."
+      - "Exposure remains concentrated on the potential re-raiser."
+      - "Renewed interruption becomes costlier over time."
+    concise_formula: >
+      raised Δ in □ -> persistent Λ -> Α stabilization -> Ω concentration ->
+      Θ hardening -> critique displacement
+
+critique_threshold_reading:
+  threshold_assessment:
+    CRITIQUE_MIN:
+      status: "partial_and_unstable"
+      reasoning: >
+        A framed mismatch clearly appears, and interruption is momentarily
+        possible, but practical interruptibility does not remain stable once the
+        follow-up channel goes silent.
+    CRITIQUE_PROD:
+      status: "not_reached"
+      reasoning: >
+        The scene never consolidates Φ + Σ into an actionable corrective step.
+        The concern remains acknowledged but unintegrated.
+    CRITIQUE_STABLE:
+      status: "not_reached"
+      reasoning: >
+        No durable follow-up binding or review discipline emerges. Ψ does not
+        stabilize as self-binding toward correction.
+  non_equivalence_reading:
+    reaction_check: >
+      This is not primarily a D1 reaction case. The issue is not impulsive
+      discharge but the structural accumulation of absence after a legitimate
+      raising.
+    judgment_check: >
+      This is not mainly a D2 judgment case either. The scene does not revolve
+      around harsh evaluative labeling; it revolves around deferred and then
+      normalized non-response.
+    silence_check: >
+      The example strongly supports the PMS-CRITIQUE distinction that silence or
+      paralysis under mismatch are not low-grade critique but distinct
+      stabilizations.
+
+reach_and_scale_reading:
+  vertical_reach:
+    assessed_level: "V2_fragile"
+    justification: >
+      The scene briefly reaches minimal critique because a mismatch is framed and
+      raised within an intelligible role space. However, the episode does not
+      travel onward toward productive critique.
+    why_not_V3: >
+      No recontextualized corrective path becomes actionable; Σ is absent.
+    why_not_V1_only: >
+      The scene is more than mere discharge because the mismatch is clearly
+      framed and initially introduced into a legitimate coordination structure.
+  horizontal_scale:
+    system: "paper_tags"
+    tag: "c"
+    label: "Small Group Critique (Peers / Team / Family)"
+    justification: >
+      The decisive dynamics are relational: status, belonging, repeated
+      interaction, unclear responsibility, and non-event accumulation within a
+      small-group setting.
+    scale_specific_costs:
+      - "renewed interruption risks social friction"
+      - "silence can become a belonging-preserving adaptation"
+      - "role ambiguity enables responsibility diffusion"
+      - "repetition hardens the local norm faster than formal correction"
+  deployment_scale_note:
+    system: "deployment_tags"
+    tag: "small_group_team"
+    note: >
+      This optional deployment tag is compatible with the primary paper tag and
+      may assist repository tooling.
+
+drift_analysis:
+  main_class_reading:
+    primary:
+      id: "D6"
+      name: "Silence attractor"
+      fit: "strong"
+      reasoning: >
+        Repeated non-intervention becomes expected, and raising costs increase
+        over time. The scene shows Λ persistence tending toward Α stabilization.
+    secondary:
+      id: "C7"
+      name: "Diffusion Drift"
+      fit: "moderate"
+      reasoning: >
+        Responsibility is not openly refused, but role space and follow-up
+        ownership remain insufficiently consolidated.
+  drift_catalog_reading:
+    compact_matches:
+      - id: "C6"
+        name: "Silence-as-Steering"
+        fit: "strong"
+      - id: "C7"
+        name: "Diffusion Drift"
+        fit: "moderate"
+      - id: "C5"
+        name: "Commentary Drift"
+        fit: "weak_to_moderate"
+        note: >
+          The later joking remark does not create full meta-commentary
+          paralysis, but it helps stabilize the sense that correction is no
+          longer expected.
+  typical_markers_present:
+    - "promised follow-up does not occur"
+    - "issue is not explicitly reopened"
+    - "later humor normalizes futility"
+    - "future raising becomes less likely"
+  drift_chain_alignment:
+    closest_chain:
+      id: "chain_narrative_to_silence"
+      modified_reading: >
+        In this case the drift does not require strong Φ inflation. Instead,
+        delayed response and normalization of absence allow attention to shift,
+        after which silence stabilizes as the operative script.
+    scene_specific_chain: >
+      raised concern -> absent reply (Λ) -> no explicit re-entry -> local
+      normalization -> Α silence script -> heightened future cost of speaking
+
+modulator_profile:
+  overview: >
+    The scene is especially shaped by modulators that increase the practical
+    cost of renewed interruption without requiring explicit suppression.
+  active_modulators:
+    - id: "M1"
+      name: "Frame clarity"
+      level: "mixed"
+      reading: >
+        The formal frame appears clear enough to raise a concern, but the
+        effective follow-up rules are insufficiently consolidated.
+    - id: "M2"
+      name: "Non-event density"
+      level: "high"
+      reading: >
+        The case turns on exactly this modulator: expected response is replaced
+        by structurally meaningful absence.
+    - id: "M3"
+      name: "Asymmetry visibility"
+      level: "moderate"
+      reading: >
+        The exposure gradient is visible enough to shape future participation,
+        even without explicit punitive action.
+    - id: "M4"
+      name: "Temporal compression"
+      level: "moderate"
+      reading: >
+        The issue is not instantaneous urgency but the slow compression created
+        by delay and missed windows for low-cost re-entry.
+    - id: "M5"
+      name: "Recontextualization habituation"
+      level: "low_to_moderate"
+      reading: >
+        Strong reframing is not the main drift driver here, though later humor
+        lightly recontextualizes futility into a normalized team story.
+    - id: "M6"
+      name: "Distance availability"
+      level: "low_in_practice"
+      reading: >
+        In principle the frame allows re-entry, but in practice stop-capable
+        re-interruption becomes increasingly costly.
+    - id: "M7"
+      name: "Attractor inertia"
+      level: "high"
+      reading: >
+        Once non-response repeats, the silence script becomes sticky and
+        self-reinforcing.
+    - id: "M8"
+      name: "Publicness overlay"
+      level: "low"
+      reading: >
+        This is not a public case. P is not the relevant amplifier here.
+  modulator_summary: >
+    The strongest drivers are M2, M6, and M7: repeated absence, weakening
+    practical interruptibility, and the hardening of silence into default
+    handling.
+
+cost_distribution:
+  overview: >
+    Costs in this scene are structurally uneven and accumulate over time.
+    These costs are not moral verdicts; they are scene effects under Ω and Θ.
+  interpretive_costs:
+    - "participants must infer meaning from absence"
+    - "ambiguity shifts from explicit process into silent expectation"
+  exposure_costs:
+    - "renewed raising concentrates reputational and relational risk on the raiser"
+    - "those controlling the follow-up channel face lower immediate exposure"
+  temporal_costs:
+    - "reopening later appears increasingly disruptive"
+    - "delay transforms a local issue into a historical one"
+  coordination_costs:
+    - "issue resolution is displaced"
+    - "future issue-raising becomes less likely"
+  dignity_stress_costs:
+    - "formal civility conceals rising expressive burden"
+    - "protection of the exposable position weakens without overt conflict"
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      The reading must not collapse into blame. Χ is used here as a structural
+      question of practical interruptibility, not as a personal virtue test.
+    reversibility: >
+      The analysis remains scene-bound and revisable. It does not claim that any
+      actor is globally avoidant, cowardly, negligent, or malicious.
+    dignity_in_practice: >
+      The example must not be used to shame managers, teams, or concern-raisers.
+      It tracks how a critique scene drifts structurally under asymmetry and
+      temporality.
+  case_specific_validity_test:
+    valid_if:
+      - "the analysis remains tied to this specific meeting ecology"
+      - "non-response is read structurally rather than psychologically"
+      - "drift labels are used descriptively, not as sanctions"
+      - "responsibility gradients are discussed without person-ranking"
+    formally_invalid_if:
+      - "silence is converted into proof of bad character"
+      - "the manager role is moralized as inherently suppressive"
+      - "the raiser is recoded as globally powerless or globally virtuous"
+      - "the example is used to justify coercive binding on others"
+
+limits_and_boundedness_check:
+  structural_limits_in_this_case:
+    - "The analysis does not establish whether the safety concern was correct."
+    - "It does not verify intent behind the missing reply."
+    - "It does not prove institutional failure beyond the mapped scene."
+    - "It does not rank the dignity or worth of any participant."
+  non_capture_check:
+    possible_non_capture: >
+      A purely critique-structural reading may underrepresent technical,
+      legal, or workload-related factors that also shaped the missing reply.
+    does_not_imply_defect: >
+      Incomplete capture here would not show that the scene is defective; it
+      would show that other framings may illuminate dimensions not foregrounded
+      by PMS-CRITIQUE.
+  rival_framing_relevance:
+    - "organizational process analysis may better capture workflow bottlenecks"
+    - "safety engineering may better assess substantive validity of the concern"
+    - "ethnographic or discourse analysis may better capture team culture nuance"
+  anti_absorption_note: >
+    The example should not redescribe every delayed reply as a silence
+    attractor by default. The structural reading becomes strong only because
+    repetition, normalization, and rising re-entry cost are all present.
+
+mip_docking_relevance:
+  status: "optional_and_not_required"
+  critique_side_statement: >
+    This example is structurally complete as a PMS-CRITIQUE reading without any
+    downstream evaluative docking.
+  possible_docking_relevance: >
+    If one later wanted to evaluate legitimacy of follow-up design,
+    accountability allocation, or organizational handling norms, the critique
+    scene could provide scene-bound projection inputs without itself deciding
+    legitimacy.
+  separation_reminder:
+    - "This example does not itself decide legitimacy."
+    - "It does not generate evaluative scores."
+    - "No back-projection from later evaluation should be read into this mapping."
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    In this case, critique does not vanish because the issue becomes irrelevant;
+    it is displaced because absence begins to coordinate more strongly than
+    explicit response. The missing reply accumulates as Λ, then stabilizes into
+    a local script in which renewed interruption becomes increasingly costly.
+    What looks superficially like simple delay becomes, over time, a silence
+    attractor under Ω and Θ. The structural outcome is not correction, but the
+    normalization of non-intervention.
+
+extended_scene_analysis:
+  frame_anchor_check:
+    operator: "□"
+    reading: >
+      The meeting frame formally supports issue-raising and follow-up, but its
+      practical enforcement is weak. This gap is crucial to the drift.
+  trigger_mismatch_check:
+    operator: "Δ"
+    reading: >
+      The concern is clear enough to count as a relevant mismatch within the
+      existing coordination structure.
+  non_event_integrity_check:
+    operator: "Λ"
+    reading: >
+      The absent reply is not a neutral blank. It becomes a meaningful
+      structural event in negative form because response was expected.
+  attractor_stabilization_check:
+    operator: "Α"
+    reading: >
+      The later joke is significant not because it proves intention, but because
+      it signals that futility has become socially legible and repeatable.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "the person who might raise the issue again"
+      - "future concern-raisers in comparable situations"
+    lower_cost_positions:
+      - "the role controlling whether follow-up occurs"
+      - "bystanders who can preserve belonging through silence"
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "concern raised"
+      - "acknowledgment given"
+      - "reply absent"
+      - "non-reopening"
+      - "humorous normalization"
+      - "reduced future raising"
+    reading: >
+      Θ matters because each additional silent interval transforms renewed
+      interruption from ordinary follow-up into conspicuous escalation.
+  distance_availability_check:
+    operator: "Χ"
+    reading: >
+      The scene does not forbid re-entry, but it weakens its practical
+      availability. This is exactly how formal openness can coexist with
+      structural drift.
+  integration_check:
+    operator: "Σ"
+    reading: >
+      No coherent corrective step emerges. The issue never becomes a shared
+      actionable object with owned follow-up.
+  self_binding_check:
+    operator: "Ψ"
+    reading: >
+      No review loop, ownership point, or bounded follow-up commitment is
+      stabilized. Without Ψ, the concern remains exposed to dissipation.
+  critique_displacement_statement:
+    core_claim: >
+      The case is not best read as failed speech alone, but as critique
+      displaced into structured absence.
+
+assistant_test_vectors:
+  promptables:
+    - "Map how Λ becomes structurally meaningful in this team scene."
+    - "Why is this better read as a silence attractor than as simple apathy?"
+    - "Which modulators make renewed interruption costly here?"
+    - "Why does the scene reach fragile V2 but not V3?"
+    - "How do Ω and Θ interact without any overt publicness overlay?"
+    - "Give a boundedness note explaining what this example does not prove."

@@ -1,0 +1,609 @@
+example_id: "PMS-CRITIQUE_EX05"
+example_version: "1.0"
+schema_version: "PMS-CRITIQUE_1.1"
+example_label: "Role Asymmetry Turns Feedback Into Exposure"
+example_subtitle: "Judgment Drift Under Asymmetry"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CRITIQUE_1.1"
+
+case_identity:
+  case_label: "Evaluative Correction Without Coordination"
+  scope_discipline: >
+    Structural mapping only. No claims about intent, competence, or character.
+    PMS application validity remains conditional on Χ (Distance),
+    reversibility, and D (Dignity-in-Practice).
+  repository_fit: >
+    This example is designed as a repository training example for reading how a
+    scene formally presented as feedback or correction can drift into exposure-
+    weighted judgment when asymmetry is strong and coordinative integration
+    remains weak.
+  example_packet_alignment:
+    scene_label: "Evaluative Correction Without Coordination"
+    frame_anchor: >
+      A bounded training, supervision, onboarding, or institutional learning
+      frame in which one role evaluates another under conditions of unequal
+      authority, visibility, or reputational consequence.
+    trigger_mismatch: >
+      A perceived performance, communication, or procedural mismatch is raised
+      as feedback, but the handling shifts toward evaluative clarity and local
+      exposure rather than toward coordinatable correction.
+    operator_signature:
+      reduced: ["Δ", "□", "Ω", "Θ", "Χ"]
+      note: >
+        This reduced signature is a readability aid only. Canonical PMS
+        dependencies remain fully in force. The decisive structural issue is a
+        feedback scene in which asymmetry becomes salient and judgment overtakes
+        integration.
+    guardrail_gate: >
+      Readings remain scene-bound and revisable. No person labels, no motive
+      attributions, no shaming, and no coercive conclusions are generated.
+    structural_closure: >
+      In this scene, critique appears to occur because mismatch is named inside
+      a legitimate frame. Yet the episode does not consolidate a coordinatable
+      corrective path. Instead, evaluative exposure becomes the dominant
+      function, and feedback drifts toward judgment under asymmetry.
+    scale:
+      system: "paper_tags"
+      tag: "c"
+
+minimal_vignette:
+  title: "A training feedback scene becomes reputationally exposing rather than coordinative"
+  scene_boundaries:
+    domain: "Institutional training / onboarding / supervision / evaluative learning setting"
+    scope: >
+      Structures, role asymmetries, local exposure, evaluative framing,
+      correction attempts, coordination gaps, critique reach, and judgment
+      drift in a bounded institutional or small-group scene.
+    out_of_scope:
+      - "person-level judgment"
+      - "motive attribution"
+      - "competence ranking"
+      - "clinical or psychological interpretation"
+      - "substantive verdict on whether the criticism was objectively correct"
+      - "instruction or action prescription"
+  short_scene: >
+    In a training session, onboarding meeting, classroom-like supervision
+    space, or institutional feedback setting, a senior role comments on the
+    conduct, output, or communication style of a junior or evaluated role. The
+    mismatch is named as if it were part of developmental correction. Yet the
+    way it is delivered makes the evaluative status difference more salient than
+    the path toward change. Others witness the exchange, the target role bears
+    disproportionate exposure, and the result is less a coordinated correction
+    than a local reputational marking.
+  structural_focus: >
+    The example examines how critique can drift from framed mismatch into
+    judgment when Ω is salient and Σ remains weak. The central issue is not
+    whether the mismatch exists, but whether feedback remains interruptible and
+    coordinative rather than becoming exposure-weighted evaluation.
+  scenic_elements:
+    actors:
+      - "trainer, supervisor, or evaluator"
+      - "junior participant, trainee, or supervised role"
+      - "peer group, cohort, or observing team members"
+      - "institutional host or training frame owner"
+    salient_objects:
+      - "the evaluated performance or behavior"
+      - "feedback episode"
+      - "group witnessing context"
+      - "authority gradient"
+      - "possible corrective next step"
+      - "reputational residue inside the local scene"
+    trigger_event:
+      label: "feedback episode under asymmetry"
+      description: >
+        A perceived mismatch is raised in a development or training frame, but
+        the interaction begins to mark the person-position more strongly than it
+        organizes a shared corrective path.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example is useful because it distinguishes productive correction from
+    evaluative exposure. It shows how feedback can remain formally legitimate at
+    the frame level while still drifting toward judgment when asymmetry becomes
+    structurally dominant.
+  repo_value:
+    - >
+      Demonstrates a clean D2-type case in which evaluation replaces
+      coordination.
+    - >
+      Shows how Ω can transform a seemingly ordinary feedback scene into a
+      locally exposing event without any publicness overlay.
+    - >
+      Clarifies that feedback language alone does not guarantee critique in the
+      strict PMS-CRITIQUE sense.
+    - >
+      Helps distinguish framed mismatch from actual coordinatable correction.
+    - >
+      Provides a strong repository example for how D can come under stress even
+      in non-public, non-mass scenes.
+  central_repo_question: >
+    When does “feedback” remain critique, and when does it become judgment under
+    asymmetry?
+  lens_relevance:
+    critique_thresholds: >
+      The scene clarifies the difference between naming a mismatch inside a
+      frame and actually reaching productive critique. It often remains below
+      CRITIQUE_PROD because Σ is weak or absent.
+    drift_typology: >
+      The case most strongly fits D2/C2: judgment masquerading as critique. It
+      can also touch C3 where Ω rises and Χ collapses further into moralized
+      evaluation.
+    scale_relevance: >
+      The example sits between b and c: it is not fully public, but it is more
+      than purely inward critique because asymmetry and witnessed exposure are
+      relationally distributed in a small institutional setting.
+    guardrail_relevance: >
+      The example invites overreading into personal failure or abusive intent,
+      but the structural analysis must remain bounded to exposure, frame,
+      coordination, and asymmetry.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Δ", "□", "Ω", "Θ", "Χ"]
+    secondary_possible: ["∇", "Σ", "Φ"]
+    note: >
+      The central signature is framed mismatch under strong role asymmetry and
+      temporal residue. The decisive issue is whether the scene stays
+      interruptible and coordinative or slides into exposure-weighted judgment.
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A mismatch is clearly named: the trainee or junior role allegedly did
+        something insufficient, off-standard, unclear, or inappropriate within
+        the learning frame.
+    "∇":
+      scene_role: >
+        Impulse may appear as urgency, embarrassment, defensive activation, or
+        the evaluator’s push for immediate clarity and closure.
+    "□":
+      scene_role: >
+        The training or feedback frame authorizes interruption and evaluation,
+        and defines what counts as teachable correction or acceptable response.
+    "Λ":
+      scene_role: >
+        Non-events may appear if no concrete next step, repair path, or later
+        follow-up is given after the evaluative moment.
+    "Α":
+      scene_role: >
+        A recurrent script can stabilize in which “feedback” functions mainly as
+        local role marking: authority speaks, junior role absorbs exposure.
+    "Ω":
+      scene_role: >
+        This is the decisive pressure point. The evaluator controls meaning,
+        visibility, and status consequences more than the recipient does, so the
+        same feedback content carries unequal exposure.
+    "Θ":
+      scene_role: >
+        The episode leaves residue. Even in a local setting, one evaluative
+        moment can harden into remembered status, hesitancy, or reputational
+        trace.
+    "Φ":
+      scene_role: >
+        Recontextualization would be present if the mismatch were translated
+        into a concrete, scene-appropriate learning path. In this drift case,
+        Φ is weak, partial, or subordinated to evaluation.
+    "Χ":
+      scene_role: >
+        Distance is structurally at risk. The recipient may have limited
+        stop-capability, and the evaluator may not reopen the scene for revision
+        once the judgmental tone is set.
+    "Σ":
+      scene_role: >
+        Integration is the missing or weak element. The scene often fails to
+        consolidate a coordinatable corrective step that both roles can inhabit.
+    "Ψ":
+      scene_role: >
+        Stable follow-up binding is usually absent or underdeveloped. The scene
+        marks rather than durably supports correction.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness is present insofar as a difference is noticed and sustained in
+        frame, but awareness alone does not protect against evaluative drift.
+    C:
+      reading: >
+        Coherence may appear superficially strong because the evaluator produces
+        a clear narrative of what was wrong, but that narrative may be more
+        stabilizing than corrective.
+    R:
+      reading: >
+        Responsibility becomes skewed when the junior role bears the full burden
+        of correction while the evaluator bears little of the relational cost of
+        exposure.
+    E:
+      reading: >
+        Action remains weak if no coordinatable next step is integrated and the
+        scene stops at evaluative marking.
+    D:
+      reading: >
+        Dignity-in-Practice is structurally stressed when asymmetry turns
+        feedback into local exposure rather than protected correction.
+  structural_mechanism_summary:
+    sequence:
+      - "A mismatch is identified inside a legitimate learning frame."
+      - "Authority gradient becomes salient during feedback delivery."
+      - "Exposure concentrates on the evaluated role."
+      - "Clarity is produced evaluatively rather than coordinatively."
+      - "Corrective integration remains weak or absent."
+      - "The scene leaves local residue and role marking."
+    concise_formula: >
+      framed Δ in □ -> Ω becomes salient -> evaluative clarity outruns Σ -> Χ
+      weakens for the exposed role -> local residue under Θ -> judgment drift
+
+critique_threshold_reading:
+  threshold_assessment:
+    CRITIQUE_MIN:
+      status: "ambiguous_or_fragile"
+      reasoning: >
+        A mismatch is clearly named inside a frame, but whether the scene
+        remains genuinely interruptible is uncertain. If the exposed role cannot
+        pause, revise, or re-enter without penalty, even minimal critique
+        becomes structurally fragile.
+    CRITIQUE_PROD:
+      status: "not_reached"
+      reasoning: >
+        Productive critique is not reached because the scene does not reliably
+        translate mismatch into a coordinatable corrective path. Σ remains weak
+        or absent.
+    CRITIQUE_STABLE:
+      status: "not_reached"
+      reasoning: >
+        No durable follow-up binding is established. The scene produces exposure
+        and residue rather than owned trajectory correction.
+  non_equivalence_reading:
+    reaction_check: >
+      This is not primarily a D1 case. The scene is not pure discharge; it is
+      framed and role-organized, which is precisely why judgment drift becomes
+      structurally legible.
+    judgment_check: >
+      This is the core fit. The feedback scene stabilizes evaluative clarity
+      while failing to organize a correction path.
+    narrative_check: >
+      D3 is not the main pattern because endless reframing is not central. The
+      issue is less explanation inflation than evaluative exposure.
+    commentary_check: >
+      D4 is also not primary. The problem is not over-meta-commentary but the
+      replacement of coordination by judgment.
+  threshold_formula_fit:
+    closest_definition: "below_or_at_the_edge_of_CRITIQUE_MIN_with_strong_D2_drift"
+    note: >
+      The scene borrows the appearance of critique from frame and mismatch, but
+      structurally it is better read as judgment masquerading as critique under
+      asymmetry.
+
+reach_and_scale_reading:
+  vertical_reach:
+    assessed_level: "V2_fragile_or_regressing_toward_D2"
+    justification: >
+      The scene has enough frame and mismatch structure to appear critical, but
+      it does not successfully consolidate productive correction. It hovers at
+      or below minimal critique and drifts toward judgment.
+    why_not_V1: >
+      The episode is not mere discharge; it is institutionally framed and role-
+      organized.
+    why_not_V3: >
+      Recontextualization and integration do not sufficiently produce a shared
+      corrective step.
+    why_not_V4: >
+      No stable follow-up binding or protected correction trajectory exists.
+  horizontal_scale:
+    system: "paper_tags"
+    tag: "c"
+    label: "Small Group Critique (Peers / Team / Family)"
+    justification: >
+      Although the scene has b-like features because one role is especially
+      exposed, it is structurally best assigned to c in the packet because the
+      episode is relational, witnessed, and institutionally distributed within
+      a small-group setting.
+    scale_specific_costs:
+      - "belonging and reputation are affected by interruption"
+      - "local witnesses amplify exposure without mass publicness"
+      - "feedback can become status marking rather than developmental support"
+      - "role asymmetry sharpens the cost of speaking back or clarifying"
+  scale_qualification_note:
+    note: >
+      The user formulation “b–c” is structurally apt. The primary packet tag is
+      c for schema consistency, while the scene remains near the boundary with b
+      because exposure is concentrated on one role.
+  deployment_scale_note:
+    system: "deployment_tags"
+    tag: "small_group_team"
+    note: >
+      This optional deployment tag is compatible with the primary paper tag and
+      may assist repository tooling.
+  publicness_overlay:
+    status: "inactive"
+    overlay_id: "P"
+    reading: >
+      No publicness overlay is active. Exposure is local, bounded, and role-
+      amplified rather than mass-mediated.
+
+drift_analysis:
+  main_class_reading:
+    primary:
+      id: "D2"
+      name: "Judgment masquerading as critique"
+      fit: "strong"
+      reasoning: >
+        The scene presents itself as corrective feedback, but evaluation
+        replaces coordination. Clarity increases while actionability and shared
+        correction decrease.
+    secondary:
+      id: "C2"
+      name: "Judgment Drift"
+      fit: "strong"
+      reasoning: >
+        The compact repository label matches the scene closely: □ and Δ are
+        present, Ω is leveraged, and Φ/Σ remain weak.
+    tertiary:
+      id: "C3"
+      name: "Moralization Drift"
+      fit: "possible_if_exposure_intensifies"
+      reasoning: >
+        If asymmetry rises further and distance collapses more strongly, the
+        scene can drift from evaluative feedback into moralized local shaming.
+  drift_catalog_reading:
+    compact_matches:
+      - id: "C2"
+        name: "Judgment Drift"
+        fit: "strong"
+      - id: "C3"
+        name: "Moralization Drift"
+        fit: "possible_secondary"
+      - id: "C7"
+        name: "Diffusion Drift"
+        fit: "low"
+        note: >
+          This may appear if no one later owns repair and the group simply
+          absorbs the evaluative marking.
+  typical_markers_present:
+    - "feedback language is present but no clear correction path is integrated"
+    - "the evaluator’s authority increases the exposure of the recipient"
+    - "the group witnesses the mismatch more than it coordinates repair"
+    - "clarity of evaluation rises while actionability remains weak"
+    - "the evaluated role bears lasting local residue after the exchange"
+  drift_chain_alignment:
+    closest_chain:
+      id: "scene_specific_feedback_to_judgment_chain"
+      reading: >
+        The current YAML does not name this exact chain explicitly, but the case
+        fits a familiar repository pattern: framed mismatch under Ω produces
+        evaluation, Χ weakens for the exposed role, and Θ carries residue
+        forward.
+    scene_specific_chain: >
+      mismatch named in learning frame -> Ω intensifies exposure -> evaluation
+      stabilizes clarity -> Σ remains weak -> residue hardens under Θ
+
+modulator_profile:
+  overview: >
+    The scene is shaped by modulators that make evaluative clarity easy to
+    produce while making protected corrective coordination difficult to sustain.
+  active_modulators:
+    - id: "M1"
+      name: "Frame clarity"
+      level: "high"
+      reading: >
+        The learning or training frame clearly authorizes feedback and makes the
+        mismatch legible, which also strengthens the legitimacy of evaluative
+        speech.
+    - id: "M2"
+      name: "Non-event density"
+      level: "low_to_moderate"
+      reading: >
+        The main issue is not initial absence, but later non-events can appear
+        if no concrete correction path or follow-up is enacted.
+    - id: "M3"
+      name: "Asymmetry visibility"
+      level: "high"
+      reading: >
+        Exposure gradients are salient. The evaluator controls framing and the
+        junior role bears disproportionate reputational risk.
+    - id: "M4"
+      name: "Temporal compression"
+      level: "moderate"
+      reading: >
+        The scene often happens in real time, with limited room for the exposed
+        role to slow down, clarify, or reshape the interaction.
+    - id: "M5"
+      name: "Recontextualization habituation"
+      level: "low_to_moderate"
+      reading: >
+        Φ is not absent in principle, but it is underused. The scene does not
+        reliably translate evaluation into a concrete learning path.
+    - id: "M6"
+      name: "Distance availability"
+      level: "low_to_moderate"
+      reading: >
+        Stop-capability is uneven. The evaluator can usually continue the
+        feedback episode more easily than the exposed role can interrupt it.
+    - id: "M7"
+      name: "Attractor inertia"
+      level: "moderate_to_high"
+      reading: >
+        Institutional habits may normalize evaluative exposure as ordinary
+        feedback, making judgment drift easier to reproduce.
+    - id: "M8"
+      name: "Publicness overlay"
+      level: "inactive"
+      reading: >
+        Public amplification is absent, but local witnessing is still enough to
+        intensify exposure under Ω.
+  modulator_summary: >
+    The strongest drivers are M1, M3, M6, and M7: legitimate evaluative frame,
+    salient role asymmetry, uneven stop-capability, and a reusable institutional
+    script in which feedback becomes local exposure.
+
+cost_distribution:
+  overview: >
+    Costs in this scene concentrate asymmetrically. They are not only about the
+    content of feedback, but about who bears exposure, who controls meaning, and
+    how residue persists afterward.
+  interpretive_costs:
+    - "the recipient must infer whether the scene was developmental or reputational"
+    - "observers may treat evaluative clarity as proof of fair correction"
+  exposure_costs:
+    - "the junior or evaluated role bears most of the local reputational burden"
+    - "the evaluator bears comparatively lower exposure while defining the scene"
+  temporal_costs:
+    - "one brief episode can leave durable hesitation or remembered status"
+    - "later participation may be shaped by the residue of the evaluative moment"
+  coordination_costs:
+    - "shared corrective next steps remain underdeveloped"
+    - "the group learns who was exposed more clearly than how correction should proceed"
+  dignity_stress_costs:
+    - "developmental framing may conceal exposure effects on the recipient"
+    - "local restraint can weaken if evaluative authority substitutes for protected correction"
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must not be collapsed into either defensive counter-blame or
+      evaluator certainty. Χ requires that the scene remain interruptible and
+      revisable for all involved roles.
+    reversibility: >
+      The analysis remains scene-bound and revisable. It does not claim that the
+      evaluator is globally domineering or that the recipient is globally
+      incapable.
+    dignity_in_practice: >
+      The example must not be used to shame trainers, supervisors, or trainees.
+      It maps how asymmetry can transform feedback into exposure-weighted
+      judgment.
+  case_specific_validity_test:
+    valid_if:
+      - "the feedback frame is acknowledged without automatically equating it with productive critique"
+      - "Ω is tracked as structural exposure rather than moral blame"
+      - "weak Σ is identified without reducing the scene to bad faith"
+      - "the analysis stays bounded to role relations, correction path, and residue"
+    formally_invalid_if:
+      - "the example is used to prove personal abusiveness or incompetence"
+      - "the evaluated role is redescribed as objectively deficient beyond the scene"
+      - "drift labels become ranking devices"
+      - "the analysis itself becomes a second-order pillory"
+
+limits_and_boundedness_check:
+  structural_limits_in_this_case:
+    - "The analysis does not establish whether the feedback content was factually right or wrong."
+    - "It does not verify intent, pedagogy quality, or sincerity."
+    - "It does not determine whether stronger correction would have been justified in all circumstances."
+    - "It does not rank the maturity, worth, or dignity of the roles involved."
+  non_capture_check:
+    possible_non_capture: >
+      A critique-structural reading may underrepresent pedagogical method,
+      disciplinary standards, legal constraints, institutional teaching culture,
+      or the possibility that some high-stakes contexts require sharper
+      correction than this model foregrounds.
+    does_not_imply_defect: >
+      Incomplete capture here would not prove the feedback scene defective; it
+      would show that other framings may illuminate dimensions not foregrounded
+      by PMS-CRITIQUE.
+  rival_framing_relevance:
+    - "pedagogical analysis may better capture instructional design"
+    - "organizational learning theory may better capture feedback culture"
+    - "conversation analysis may better capture turn-taking and interactional form"
+    - "supervision theory may better capture evaluative role ethics"
+  anti_absorption_note: >
+    The example should not redescribe all sharp feedback as judgment drift. The
+    fit becomes strong only where evaluative exposure overtakes coordinative
+    correction under asymmetry.
+
+mip_docking_relevance:
+  status: "optional_and_not_required"
+  critique_side_statement: >
+    This example is structurally complete as a PMS-CRITIQUE reading without any
+    downstream evaluative docking.
+  possible_docking_relevance: >
+    If one later wanted to examine regime conditions of evaluation, legitimacy
+    of asymmetry handling, or admissibility of training design, the scene could
+    provide bounded projection inputs without itself deciding legitimacy.
+  separation_reminder:
+    - "This example does not itself decide legitimacy."
+    - "It does not generate evaluative scores."
+    - "No back-projection from later evaluation should be read into this mapping."
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    In this case, a feedback scene appears corrective but functions mainly as
+    evaluative exposure under asymmetry. The mismatch is clearly named inside a
+    legitimate frame, yet the episode does not consolidate a shared corrective
+    path. Instead, authority sharpens local reputational burden for the exposed
+    role while integration remains weak. What is remembered afterward is often
+    less the correction than the exposure.
+
+extended_scene_analysis:
+  frame_anchor_check:
+    operator: "□"
+    reading: >
+      The institutional training or feedback frame is real and legitimate. It
+      authorizes correction, which is precisely why judgment drift can hide
+      inside it.
+  trigger_mismatch_check:
+    operator: "Δ"
+    reading: >
+      The mismatch is visible and significant enough to be addressed. The
+      structural problem is not whether something was off, but how the handling
+      of the mismatch is organized.
+  non_event_integrity_check:
+    operator: "Λ"
+    reading: >
+      Missing next steps, absent repair opportunities, or lack of later
+      follow-up may reveal that feedback did not become coordinated correction.
+  attractor_stabilization_check:
+    operator: "Α"
+    reading: >
+      A stable script can emerge in which “feedback” routinely means exposure of
+      juniors by seniors rather than shared developmental coordination.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "the trainee or junior role receiving feedback"
+      - "roles whose standing depends on institutional approval"
+      - "participants who cannot easily interrupt evaluative framing"
+    lower_cost_positions:
+      - "the evaluator or trainer"
+      - "roles controlling interpretation and closure of the episode"
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "mismatch becomes visible"
+      - "feedback scene begins"
+      - "authority gradient sharpens"
+      - "evaluation becomes locally exposing"
+      - "no strong coordinative next step emerges"
+      - "recipient carries residue into later scenes"
+    reading: >
+      Θ makes the scene consequential beyond the moment itself. A brief
+      evaluative exchange can continue structuring participation after the
+      episode ends.
+  distance_availability_check:
+    operator: "Χ"
+    reading: >
+      Distance is unevenly distributed. The evaluator often retains more control
+      over pacing and meaning than the exposed role, making interruptibility
+      structurally fragile.
+  integration_check:
+    operator: "Σ"
+    reading: >
+      Integration is the missing element. The scene does not sufficiently
+      consolidate correction into a shared, actionable path.
+  self_binding_check:
+    operator: "Ψ"
+    reading: >
+      Durable follow-up binding is weak. The feedback episode marks rather than
+      binds a trajectory of supported correction.
+  critique_displacement_statement:
+    core_claim: >
+      The case is best read not as failed noticing, but as critique displaced
+      into evaluative marking: the frame names what is wrong, but asymmetry
+      turns the scene toward exposure rather than coordination.
+
+assistant_test_vectors:
+  promptables:
+    - "Why is this feedback scene better read as judgment drift than as productive critique?"
+    - "How does Ω alter the meaning of otherwise ordinary feedback?"
+    - "What is missing structurally when evaluation is clear but correction remains weak?"
+    - "Why is P inactive even though exposure is clearly present?"
+    - "How does this case sit between paper tags b and c?"
+    - "Give a boundedness note explaining what this example does not prove."

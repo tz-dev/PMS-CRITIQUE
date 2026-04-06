@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMS–CRITIQUE — Example 4: Policy Without Follow-Up</title>
+    <style type="text/css">
+      :root {
+        --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+        --color-bg: #f5f7fb;
+        --color-surface: #ffffff;
+        --color-surface-soft: #f9fbfd;
+        --color-text: #18202a;
+        --color-muted: #5f6b7a;
+        --color-accent: #1f4b99;
+        --color-accent-soft: #e8f0ff;
+        --color-border: #d9e1ea;
+        --color-border-strong: #bfc9d8;
+        --color-quote: #2f5da8;
+        --color-code-bg: #f3f5f7;
+        --color-table-head: #eef3f8;
+        --color-row-alt: #fbfcfe;
+
+        --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+        --radius-sm: 6px;
+        --radius-md: 10px;
+        --radius-lg: 16px;
+
+        --content-width: 980px;
+        --line-height: 1.7;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px 20px 64px;
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: var(--line-height);
+        color: var(--color-text);
+        background:
+          linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+      }
+
+      .page,
+      body > header,
+      body > section,
+      body > main {
+        width: min(100%, var(--content-width));
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .page {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 40px 42px 56px;
+      }
+
+      /* Header */
+      header {
+        width: min(100%, var(--content-width));
+        margin: 0 auto 28px;
+        padding: 24px 0 18px;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      header h1 {
+        margin: 0 0 10px;
+        font-family: var(--font-heading);
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 500;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: var(--color-text);
+      }
+
+      header h2 {
+        margin: 0 auto 12px;
+        max-width: 48rem;
+        font-size: 1.15rem !important;
+        line-height: 1.45;
+        font-weight: 400;
+        text-align: center;
+        color: var(--color-muted);
+        border: 0;
+        padding: 0;
+      }
+
+      header .subtitle {
+        max-width: 52rem;
+        margin: 0 auto 12px;
+        text-align: center;
+        color: var(--color-muted);
+        font-size: 1rem;
+      }
+
+      header .meta {
+        max-width: 52rem;
+        margin: 14px auto 0;
+        padding: 12px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface-soft);
+        font-size: 0.88rem;
+        line-height: 1.55;
+        color: var(--color-muted);
+      }
+
+      /* Sections */
+      section {
+        margin: 0 0 28px;
+      }
+
+      section#content {
+        width: min(100%, var(--content-width));
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-heading);
+        color: var(--color-text);
+        letter-spacing: -0.01em;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 500;
+      }
+
+      h2,
+      h2 strong {
+        padding-bottom: 8px;
+        font-size: 1.65rem !important;
+        font-weight: 500 !important;
+        line-height: 1.25;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      h3,
+      h3 strong {
+        margin: 22px 0 8px !important;
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      h4,
+      h4 strong {
+        margin: 18px 0 6px !important;
+        font-size: 1.05rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      h5,
+      h5 strong,
+      h6,
+      h6 strong {
+        margin: 16px 0 4px !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      /* Text */
+      p {
+        margin: 0 0 12px;
+      }
+
+      strong {
+        color: #111827;
+      }
+
+      em {
+        color: inherit;
+      }
+
+      .small {
+        font-size: 0.92rem;
+        color: var(--color-muted);
+      }
+
+      /* Links */
+      a {
+        color: var(--color-accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      a:hover,
+      a:focus {
+        border-bottom-color: currentColor;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        margin: 8px 0 14px 1.25rem;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 0 6px;
+        padding-left: 2px;
+      }
+
+      ul ul,
+      ol ol,
+      ul ol,
+      ol ul {
+        margin-top: 6px;
+        margin-bottom: 8px;
+      }
+
+      li > p {
+        margin-bottom: 6px;
+      }
+
+      /* Horizontal rule */
+      hr {
+        display: block;
+        height: 0;
+        border: 0;
+        border-top: 1px solid var(--color-border);
+        margin: 24px 0;
+      }
+
+      /* Quotes */
+      blockquote {
+        margin: 16px 0;
+        padding: 12px 18px;
+        border-left: 4px solid var(--color-quote);
+        background: #f8fbff;
+        color: #324154;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      }
+
+      blockquote p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Code */
+      code,
+      .code-inline {
+        font-family: var(--font-mono);
+        font-size: 0.92em;
+        background: var(--color-code-bg);
+        border: 1px solid #e7ebf0;
+        border-radius: 4px;
+        padding: 0.12em 0.4em;
+        color: #233044;
+      }
+
+      pre {
+        margin: 14px 0 18px;
+        padding: 14px 16px;
+        overflow-x: auto;
+        background: #111827;
+        color: #f3f4f6;
+        border-radius: var(--radius-md);
+        border: 1px solid #0f172a;
+        text-align: left;
+        line-height: 1.55;
+      }
+
+      pre code {
+        background: transparent;
+        border: 0;
+        color: inherit;
+        padding: 0;
+        font-size: 0.92rem;
+      }
+
+      /* Boxes / callouts */
+      .box {
+        margin: 16px 0 18px;
+        padding: 14px 16px;
+        border: 1px solid var(--color-border);
+        border-left: 4px solid var(--color-accent);
+        border-radius: var(--radius-md);
+        background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+        line-height: 1.55;
+      }
+
+      .box-title {
+        margin: 0 0 6px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--color-accent);
+      }
+
+      .box p:last-child,
+      .box ul:last-child,
+      .box ol:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Tables */
+      .table,
+      table {
+        width: 100%;
+        margin: 14px 0 18px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+      }
+
+      .table th,
+      .table td,
+      table th,
+      table td {
+        padding: 10px 12px;
+        vertical-align: top;
+        border: 1px solid var(--color-border);
+        text-align: left;
+      }
+
+      .table th,
+      table th {
+        background: var(--color-table-head);
+        color: #233044;
+        font-weight: 700;
+        font-variant: small-caps;
+        letter-spacing: 0.03em;
+      }
+
+      .table tr:nth-child(even) td,
+      table tr:nth-child(even) td {
+        background: var(--color-row-alt);
+      }
+
+      .table tr:nth-child(odd) td,
+      table tr:nth-child(odd) td {
+        background: #ffffff;
+      }
+
+      /* Tags */
+      .tag {
+        display: inline-block;
+        margin: 0 6px 6px 0;
+        padding: 3px 10px;
+        border: 1px solid var(--color-border-strong);
+        border-radius: 999px;
+        background: #fff;
+        color: var(--color-muted);
+        font-size: 0.78rem;
+        line-height: 1.3;
+      }
+
+      /* Placeholder */
+      .placeholder {
+        color: var(--color-muted);
+        font-style: italic;
+      }
+
+      /* Two-column layouts */
+      .two-column {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 10px 0 16px;
+      }
+
+      .two-column > div {
+        min-width: 0;
+      }
+
+      /* Utility */
+      .pagebreak {
+        page-break-before: always;
+        break-before: page;
+      }
+
+      /* Better spacing for consecutive structural blocks */
+      h2 + p,
+      h3 + p,
+      h4 + p {
+        margin-top: 2px;
+      }
+
+      p + ul,
+      p + ol {
+        margin-top: 6px;
+      }
+
+      ul + p,
+      ol + p {
+        margin-top: 10px;
+      }
+
+      /* Optional content-specific helper classes */
+      .meta-grid {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px 14px;
+        margin: 12px 0 18px;
+      }
+
+      .meta-grid dt {
+        font-weight: 600;
+        color: var(--color-muted);
+      }
+
+      .meta-grid dd {
+        margin: 0;
+      }
+
+      .definition-list {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px 14px;
+      }
+
+      .definition-list dt {
+        font-weight: 600;
+        color: var(--color-accent);
+      }
+
+      .definition-list dd {
+        margin: 0;
+      }
+
+      .callout-warning {
+        border-left-color: #b45309;
+        background: #fffaf2;
+      }
+
+      .callout-success {
+        border-left-color: #0f766e;
+        background: #f4fffd;
+      }
+
+      .callout-danger {
+        border-left-color: #b91c1c;
+        background: #fff8f8;
+      }
+
+      /* Images */
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 14px auto 18px;
+        border-radius: var(--radius-sm);
+      }
+
+      /* Print */
+      @media print {
+        :root {
+          --color-bg: white;
+          --color-surface: white;
+          --color-surface-soft: white;
+          --color-row-alt: #fafafa;
+          --shadow-soft: none;
+        }
+
+        html,
+        body {
+          background: white !important;
+        }
+
+        body {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          font-size: 11pt;
+          line-height: 1.45;
+        }
+
+        .page,
+        body > header,
+        body > section,
+        body > main,
+        section#content {
+          width: 100%;
+          max-width: 100%;
+          margin: 0;
+        }
+
+        .page {
+          border: 0;
+          box-shadow: none;
+          border-radius: 0;
+          padding: 0;
+        }
+
+        header {
+          margin-bottom: 18px;
+          padding: 0 0 12px;
+        }
+
+        h2,
+        h2 strong {
+          page-break-after: avoid;
+        }
+
+        h3,
+        h3 strong,
+        h4,
+        h4 strong {
+          page-break-after: avoid;
+        }
+
+        p,
+        li,
+        blockquote,
+        .box,
+        table,
+        pre {
+          page-break-inside: avoid;
+        }
+
+        a,
+        a:visited {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        a[href]::after {
+          content: "";
+        }
+
+        .box {
+          background: white;
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        body {
+          padding: 20px 14px 44px;
+        }
+
+        .page {
+          padding: 28px 22px 40px;
+        }
+
+        .two-column {
+          grid-template-columns: 1fr;
+        }
+
+        .meta-grid,
+        .definition-list {
+          grid-template-columns: 1fr;
+          gap: 4px 0;
+        }
+
+        header h1 {
+          font-size: 2.2rem;
+        }
+
+        h2,
+        h2 strong {
+          font-size: 1.45rem !important;
+        }
+      }
+
+      @media (max-width: 640px) {
+        body {
+          font-size: 15px;
+        }
+
+        .page {
+          padding: 22px 16px 32px;
+          border-radius: 12px;
+        }
+
+        header .meta {
+          padding: 10px 12px;
+        }
+
+        .table,
+        table {
+          font-size: 0.88rem;
+        }
+
+        .table th,
+        .table td,
+        table th,
+        table td {
+          padding: 8px 9px;
+        }
+
+        pre {
+          padding: 12px 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><strong>PMS–CRITIQUE</strong></h1>
+      <h2><em>Example 4: Policy Without Follow-Up</em></h2>
+      <div class="meta">
+        <strong>Example ID:</strong> <code>PMS-CRITIQUE_EX04</code> &middot;
+        <strong>Example Version:</strong> <code>1.0</code> &middot;
+        <strong>Schema Version:</strong> <code>PMS-CRITIQUE_1.1</code><br />
+        <strong>Status:</strong> draft &middot;
+        <strong>Language:</strong> EN &middot;
+        <strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-CRITIQUE_1.1</code>
+      </div>
+    </header>
+
+    <section id="content">
+
+      <h2>0) Example Identity</h2>
+      <p>
+        <strong>Example label:</strong> <em>Policy Without Follow-Up</em>
+      </p>
+      <p>
+        <strong>Example subtitle:</strong> <em>Integration Present, Self-Binding Missing</em>
+      </p>
+      <hr />
+
+      <h2>1) Case Identity</h2>
+      <h3>1.1 Case label</h3>
+      <p><strong>Formal Synthesis vs. Missing Trajectory Ownership</strong></p>
+
+      <h3>1.2 Scope discipline</h3>
+      <p>
+        Structural mapping only. No evaluation of policy quality, intent, or
+        competence. PMS application validity remains conditional on <strong>Χ</strong> (Distance),
+        reversibility, and <strong>D</strong> (Dignity-in-Practice).
+      </p>
+
+      <h3>1.3 Repository fit</h3>
+      <p>
+        This example is designed as a repository training example for reading how a
+        critique scene can successfully produce an integrated formal output while
+        still failing to bind correction into a durable trajectory of ownership,
+        review, and follow-through.
+      </p>
+
+      <h3>1.4 Example packet alignment</h3>
+      <ul>
+        <li><strong>Scene label:</strong> Formal Synthesis vs. Missing Trajectory Ownership</li>
+        <li><strong>Frame anchor:</strong> Institutional policy or governance frame in which a recognized mismatch is discussed, translated into a formal policy statement or decision, and publicly or internally stabilized as resolved without strong follow-up binding.</li>
+        <li><strong>Trigger mismatch:</strong> A recurring organizational, procedural, or protection-related mismatch is recognized and leads to the production of a policy, guideline, or formal decision that appears coherent but is not durably owned over time.</li>
+        <li><strong>Operator signature:</strong>
+          <ul>
+            <li><strong>Reduced:</strong> <code>Δ, □, Χ, Φ, Σ, Θ</code></li>
+            <li><strong>Note:</strong> This reduced signature is a readability aid only. Canonical PMS dependencies remain fully in force. The decisive structural weakness is not missing <strong>Σ</strong>, but missing or weak <strong>Ψ</strong> after formal integration.</li>
+          </ul>
+        </li>
+        <li><strong>Guardrail gate:</strong> Readings remain scene-bound and revisable. No person labels, no motive attributions, no shaming, and no coercive binding claims are generated.</li>
+        <li><strong>Structural closure:</strong> In this scene, critique does not fail at the point of articulation or synthesis. A coherent policy-level integration is produced, but the trajectory remains weakly bound. What is missing is durable follow-up ownership, review discipline, and non-coercive self-binding over time.</li>
+        <li><strong>Scale:</strong>
+          <ul>
+            <li><strong>System:</strong> <code>paper_tags</code></li>
+            <li><strong>Tag:</strong> <code>c</code></li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>2) Minimal Vignette</h2>
+      <h3>2.1 Title</h3>
+      <p><strong>A policy is drafted and approved, but no one durably owns the follow-up</strong></p>
+
+      <h3>2.2 Scene boundaries</h3>
+      <ul>
+        <li><strong>Domain:</strong> Institutional policy formation / organizational governance / committee coordination</li>
+        <li><strong>Scope:</strong> Structures, role relations, formal synthesis, follow-up weakness, institutional ownership, critique reach, and failure of durable binding in a bounded organizational scene.</li>
+        <li><strong>Out of scope:</strong>
+          <ul>
+            <li>person-level judgment</li>
+            <li>motive attribution</li>
+            <li>competence ranking</li>
+            <li>clinical or psychological interpretation</li>
+            <li>substantive evaluation of whether the policy is normatively correct</li>
+            <li>instruction or action prescription</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>2.3 Short scene</h3>
+      <p>
+        An organization recognizes a recurring issue: unclear reporting pathways,
+        uneven enforcement, missed safeguards, or ambiguous internal standards. A
+        working group discusses the issue, recontextualizes constraints, and
+        finally produces a policy update, guidance memo, or official framework. The
+        document is approved and treated as a meaningful resolution. Yet no durable
+        review cycle, responsibility anchor, or implementation follow-up is strongly
+        bound, so the same issue reappears months later in slightly altered form.
+      </p>
+
+      <h3>2.4 Structural focus</h3>
+      <p>
+        The example examines how critique can reach formal integration while still
+        failing to become stable critique. The central issue is not absence of
+        articulation or synthesis, but absence of durable <strong>Ψ</strong>-level ownership after
+        policy consolidation.
+      </p>
+
+      <h3>2.5 Scenic elements</h3>
+      <ul>
+        <li><strong>Actors:</strong>
+          <ul>
+            <li>policy drafter or working group</li>
+            <li>manager, executive, or committee chair</li>
+            <li>implementing units or team leads</li>
+            <li>affected staff or downstream role holders</li>
+          </ul>
+        </li>
+        <li><strong>Salient objects:</strong>
+          <ul>
+            <li>the recurring organizational issue</li>
+            <li>policy draft or guidance document</li>
+            <li>review or approval meeting</li>
+            <li>implementation responsibilities</li>
+            <li>follow-up checkpoints</li>
+            <li>future audit or revision windows</li>
+          </ul>
+        </li>
+        <li><strong>Trigger event:</strong>
+          <ul>
+            <li><strong>Label:</strong> policy response to recurring mismatch</li>
+            <li><strong>Description:</strong> A recognized mismatch leads to a policy-level synthesis that appears to settle the issue organizationally.</li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>3) Why This Is Repo-Useful</h2>
+      <h3>3.1 Structural focus</h3>
+      <p>
+        This example is useful because it distinguishes productive critique from
+        stable critique. It shows that successful synthesis is not yet sufficient
+        for durable correction if no trajectory of ownership is bound across time.
+      </p>
+
+      <h3>3.2 Repo value</h3>
+      <ul>
+        <li>Demonstrates the structural difference between <strong>Σ</strong> (integration) and <strong>Ψ</strong> (self-binding).</li>
+        <li>Provides a clean case of policy-level V3 approaching V4 but failing to stabilize.</li>
+        <li>Shows how institutions may appear responsive while still remaining weak at follow-up ownership.</li>
+        <li>Clarifies that formal resolution is not identical with durable implementation.</li>
+        <li>Helps repository users distinguish “policy exists” from “correction is structurally bound.”</li>
+      </ul>
+
+      <h3>3.3 Central repo question</h3>
+      <blockquote>
+        <p>
+          How can critique produce a coherent institutional policy and still fail to
+          become stable critique?
+        </p>
+      </blockquote>
+
+      <h3>3.4 Lens relevance</h3>
+      <ul>
+        <li><strong>Critique thresholds:</strong> The example clarifies the difference between <code>CRITIQUE_PROD</code> and <code>CRITIQUE_STABLE</code>: integration can succeed while self-binding remains weak.</li>
+        <li><strong>Drift typology:</strong> The case most strongly fits C10 (Commitment Evasion) and can also border on D4 or D6 downstream if ownership stays suspended and issues recur.</li>
+        <li><strong>Scale relevance:</strong> The example belongs to paper tag <code>c</code> because the scene is institutionally relational, role-distributed, and bounded inside an organizational field.</li>
+        <li><strong>Guardrail relevance:</strong> The example invites cynical readings (“policy is just theater”), but the structural analysis must remain scene-bound and avoid motive or sincerity claims.</li>
+      </ul>
+      <hr />
+
+      <h2>4) Operator Mapping</h2>
+      <h3>4.1 Reduced signature</h3>
+      <p>
+        <strong>Primary signature:</strong>
+        <code>Δ, □, Χ, Φ, Σ, Θ</code>
+      </p>
+      <p>
+        <strong>Secondary possible:</strong>
+        <code>Ψ, Ω, Λ</code>
+      </p>
+      <p>
+        The central signature is mismatch within an institutional frame,
+        reflective handling, recontextualization, and policy-level integration,
+        followed by weak or absent binding across time. <strong>Ψ</strong> is the decisive weak
+        point.
+      </p>
+
+      <h3>4.2 Operator roles in scene</h3>
+      <ul>
+        <li><strong>Δ:</strong> A recurring mismatch is clearly identified: policy ambiguity, implementation inconsistency, or organizational non-alignment becomes nameable and relevant.</li>
+        <li><strong>∇:</strong> There is enough impulse to address the issue and produce a response, but the central structural question is not tempo but durability.</li>
+        <li><strong>□:</strong> The institutional policy frame defines relevance, procedure, authority, and what counts as an acceptable formal response.</li>
+        <li><strong>Λ:</strong> Non-events may later appear in missing review cycles, absent follow-up, or unperformed implementation checks after formal adoption.</li>
+        <li><strong>Α:</strong> A stable script may emerge in which policy production substitutes for durable ownership: “once documented, the issue is treated as handled.”</li>
+        <li><strong>Ω:</strong> Role asymmetries matter because some actors can approve policy without carrying the downstream burden of implementation, while others bear the after-work.</li>
+        <li><strong>Θ:</strong> Time is decisive because the weakness only becomes visible across trajectory: after approval, the issue either stabilizes or returns.</li>
+        <li><strong>Φ:</strong> Recontextualization is active in translating a recurring issue into a formal institutional response that fits constraints, roles, and governance language.</li>
+        <li><strong>Χ:</strong> Distance is present insofar as the issue is processed reflectively rather than reactively, and the organization can pause to formulate a coherent response.</li>
+        <li><strong>Σ:</strong> Integration is genuinely present. A policy, framework, or coherent institutional synthesis is produced.</li>
+        <li><strong>Ψ:</strong> This is the decisive weakness: follow-up responsibility, review timing, and trajectory ownership remain partial, diffuse, or insufficiently bound.</li>
+      </ul>
+
+      <h3>4.3 Derived axes projection</h3>
+      <ul>
+        <li><strong>A:</strong> Awareness is present because the issue is recognized, named, and sustained long enough to generate a formal response.</li>
+        <li><strong>C:</strong> Coherence is comparatively strong at the level of formal synthesis. The institution can state what the issue is and what the policy says.</li>
+        <li><strong>R:</strong> Responsibility remains structurally fragile if no one or no unit is durably bound to implementation and review.</li>
+        <li><strong>E:</strong> Action is present in the limited sense that a policy output exists, but enactable continuity remains weak if ownership is not stabilized.</li>
+        <li><strong>D:</strong> Dignity-in-Practice may remain intact at the level of formal handling, but exposed downstream actors can still bear the costs of weak follow-up.</li>
+      </ul>
+
+      <h3>4.4 Structural mechanism summary</h3>
+      <ol>
+        <li>A recurring mismatch is recognized.</li>
+        <li>The institutional frame organizes discussion.</li>
+        <li>The issue is recontextualized into policy language.</li>
+        <li>A coherent synthesis is produced.</li>
+        <li>Approval creates a sense of closure.</li>
+        <li>Trajectory ownership remains weak.</li>
+        <li>The issue reappears later or remains unevenly implemented.</li>
+      </ol>
+      <p>
+        <strong>Concise formula:</strong><br />
+        <code>recurring Δ in □ → reflective handling through Χ and Φ → policy-level Σ → weak Ψ binding under Θ → later recurrence or implementation drift</code>
+      </p>
+      <hr />
+
+      <h2>5) Critique Threshold Reading</h2>
+      <h3>5.1 Threshold assessment</h3>
+      <ul>
+        <li><strong>CRITIQUE_MIN:</strong>
+          <ul>
+            <li><strong>Status:</strong> reached</li>
+            <li><strong>Reasoning:</strong> The mismatch is framed and interruptible. The issue becomes legible inside an institutional process and can be reflected on non-reactively.</li>
+          </ul>
+        </li>
+        <li><strong>CRITIQUE_PROD:</strong>
+          <ul>
+            <li><strong>Status:</strong> reached</li>
+            <li><strong>Reasoning:</strong> Recontextualization and integration succeed structurally. The scene produces a coherent corrective formulation or policy-level synthesis.</li>
+          </ul>
+        </li>
+        <li><strong>CRITIQUE_STABLE:</strong>
+          <ul>
+            <li><strong>Status:</strong> not_reached_or_only_partially_reached</li>
+            <li><strong>Reasoning:</strong> Durable follow-up ownership is weak. The organization does not strongly bind correction into review, implementation, and trajectory discipline.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>5.2 Non-equivalence reading</h3>
+      <ul>
+        <li><strong>Reaction check:</strong> This is not primarily a D1 case. The problem is not raw discharge but weak durable ownership after synthesis.</li>
+        <li><strong>Judgment check:</strong> This is not primarily a D2 case. The scene does not stop at evaluative labeling; it genuinely reaches policy-level integration.</li>
+        <li><strong>Narrative check:</strong> This is not primarily a D3 case. Recontextualization does not endlessly substitute for synthesis; synthesis is achieved.</li>
+        <li><strong>Commentary check:</strong> D4 may appear downstream if review remains perpetually open, but the core issue is more precisely missing <strong>Ψ</strong> after <strong>Σ</strong>.</li>
+      </ul>
+
+      <h3>5.3 Threshold formula fit</h3>
+      <ul>
+        <li><strong>Closest definition:</strong> CRITIQUE_PROD with unstable transition toward CRITIQUE_STABLE</li>
+        <li><strong>Note:</strong> The scene successfully reaches correction in integrated form, but fails to durably bind that correction into ownership across time.</li>
+      </ul>
+      <hr />
+
+      <h2>6) Reach and Scale Reading</h2>
+      <h3>6.1 Vertical reach</h3>
+      <ul>
+        <li><strong>Assessed level:</strong> <code>V3_with_failed_or_partial_transition_toward_V4</code></li>
+        <li><strong>Justification:</strong> Productive critique is reached because a coherent corrective synthesis is produced. The failure appears at the point of follow-up binding.</li>
+        <li><strong>Why not V2:</strong> The scene does more than interrupt and discuss; it generates an integrated policy output.</li>
+        <li><strong>Why not V4:</strong> Review, implementation, and trajectory ownership are not durably bound enough to stabilize correction across time.</li>
+      </ul>
+
+      <h3>6.2 Horizontal scale</h3>
+      <ul>
+        <li><strong>System:</strong> <code>paper_tags</code></li>
+        <li><strong>Tag:</strong> <code>c</code></li>
+        <li><strong>Label:</strong> Small Group Critique (Peers / Team / Family)</li>
+        <li><strong>Justification:</strong> The scene is institutional but still structurally c-like in the PMS sense: role-distributed, relational, and bounded within an organizational group or committee setting.</li>
+        <li><strong>Scale-specific costs:</strong>
+          <ul>
+            <li>formal consensus can be easier than durable implementation ownership</li>
+            <li>responsibility can diffuse across multiple roles after approval</li>
+            <li>institutional closure signals can obscure weak follow-up</li>
+            <li>implementation burdens may fall unevenly across the group</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>6.3 Deployment scale note</h3>
+      <ul>
+        <li><strong>System:</strong> <code>deployment_tags</code></li>
+        <li><strong>Tag:</strong> <code>org_institution</code></li>
+        <li><strong>Note:</strong> This optional deployment tag is compatible with the primary paper tag and may assist repository tooling.</li>
+      </ul>
+
+      <h3>6.4 Publicness overlay</h3>
+      <ul>
+        <li><strong>Status:</strong> inactive</li>
+        <li><strong>Overlay ID:</strong> <code>P</code></li>
+        <li><strong>Reading:</strong> No publicness overlay is active in this case. The scene is institutionally bounded and does not depend on mass visibility or public amplification.</li>
+      </ul>
+      <hr />
+
+      <h2>7) Drift Analysis</h2>
+      <h3>7.1 Main class reading</h3>
+      <ul>
+        <li><strong>Primary:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>C10</code></li>
+            <li><strong>Name:</strong> Commitment Evasion</li>
+            <li><strong>Fit:</strong> strong</li>
+            <li><strong>Reasoning:</strong> Integration is present, but durable self-binding remains weak. The policy exists without a strongly owned trajectory of follow-up.</li>
+          </ul>
+        </li>
+        <li><strong>Secondary:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>D4</code></li>
+            <li><strong>Name:</strong> Commentary / analysis paralysis</li>
+            <li><strong>Fit:</strong> low_to_moderate</li>
+            <li><strong>Reasoning:</strong> This may appear later if implementation remains suspended in ongoing review talk, but it is not the main structural pattern at the point of policy synthesis.</li>
+          </ul>
+        </li>
+        <li><strong>Tertiary:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>D6</code></li>
+            <li><strong>Name:</strong> Silence attractor</li>
+            <li><strong>Fit:</strong> low_to_moderate_downstream</li>
+            <li><strong>Reasoning:</strong> If policy existence later suppresses renewed raising of the unresolved issue, downstream silence can begin to stabilize.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>7.2 Drift catalogue reading</h3>
+      <ul>
+        <li><strong>C10:</strong> Commitment Evasion — <strong>fit:</strong> strong</li>
+        <li><strong>C5:</strong> Commentary Drift — <strong>fit:</strong> moderate_downstream</li>
+        <li><strong>C6:</strong> Silence-as-Steering — <strong>fit:</strong> possible_downstream
+          <ul>
+            <li><strong>Note:</strong> This appears when the formal existence of policy makes further raising seem unnecessary or illegitimate.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>7.3 Typical markers present</h3>
+      <ul>
+        <li>a coherent policy or framework is produced</li>
+        <li>ownership after approval remains diffuse or under-specified</li>
+        <li>review points are absent, weak, or not enacted</li>
+        <li>implementation burden is displaced rather than durably bound</li>
+        <li>the issue later returns despite prior formal synthesis</li>
+      </ul>
+
+      <h3>7.4 Drift chain alignment</h3>
+      <ul>
+        <li><strong>Closest chain:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>scene_specific_post_policy_chain</code></li>
+            <li><strong>Reading:</strong> The current YAML does not name this exact chain explicitly, but the case fits a stable repository pattern: <strong>Σ</strong> produces formal correction, <strong>Ψ</strong> fails to bind, <strong>Θ</strong> later reveals recurrence or uneven enactment.</li>
+          </ul>
+        </li>
+        <li><strong>Scene-specific chain:</strong> recurring mismatch -> policy synthesis through Σ -> weak Ψ ownership -> absent or thin review under Θ -> later recurrence or implementation drift</li>
+      </ul>
+      <hr />
+
+      <h2>8) Modulator Profile</h2>
+      <h3>8.1 Overview</h3>
+      <p>
+        The scene is shaped by modulators that support synthesis while weakening
+        durable ownership after formal resolution.
+      </p>
+
+      <h3>8.2 Active modulators</h3>
+      <ul>
+        <li><strong>M1 — Frame clarity:</strong>
+          <ul>
+            <li><strong>Level:</strong> high</li>
+            <li><strong>Reading:</strong> The institutional frame is clear enough to produce a legitimate policy output and define acceptable formal responses.</li>
+          </ul>
+        </li>
+        <li><strong>M2 — Non-event density:</strong>
+          <ul>
+            <li><strong>Level:</strong> moderate</li>
+            <li><strong>Reading:</strong> Missing follow-up, absent reviews, and unenacted checkpoints become visible after the policy is adopted.</li>
+          </ul>
+        </li>
+        <li><strong>M3 — Asymmetry visibility:</strong>
+          <ul>
+            <li><strong>Level:</strong> moderate</li>
+            <li><strong>Reading:</strong> The asymmetry between approvers and implementers is structurally relevant, even when not explicitly dramatized.</li>
+          </ul>
+        </li>
+        <li><strong>M4 — Temporal compression:</strong>
+          <ul>
+            <li><strong>Level:</strong> low_to_moderate</li>
+            <li><strong>Reading:</strong> The primary issue is not immediate time pressure but weak temporally-extended ownership after resolution.</li>
+          </ul>
+        </li>
+        <li><strong>M5 — Recontextualization habituation:</strong>
+          <ul>
+            <li><strong>Level:</strong> moderate</li>
+            <li><strong>Reading:</strong> <strong>Φ</strong> is active in policy drafting, but it does not dominate the scene as in D3 cases. It serves synthesis rather than endless reframing.</li>
+          </ul>
+        </li>
+        <li><strong>M6 — Distance availability:</strong>
+          <ul>
+            <li><strong>Level:</strong> moderate_to_high</li>
+            <li><strong>Reading:</strong> Reflective distance is sufficiently available to produce coherent policy, though not enough to guarantee stable follow-up discipline.</li>
+          </ul>
+        </li>
+        <li><strong>M7 — Attractor inertia:</strong>
+          <ul>
+            <li><strong>Level:</strong> high</li>
+            <li><strong>Reading:</strong> A stable institutional script can form in which policy production itself counts as closure, reducing pressure for durable ownership.</li>
+          </ul>
+        </li>
+        <li><strong>M8 — Publicness overlay:</strong>
+          <ul>
+            <li><strong>Level:</strong> inactive</li>
+            <li><strong>Reading:</strong> Public amplification is not materially organizing the scene.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>8.3 Modulator summary</h3>
+      <p>
+        The strongest drivers are M1, M3, and M7: clear policy framing, asymmetry
+        between formal authority and downstream burden, and attractor stabilization
+        around “documented resolution” without strong trajectory ownership.
+      </p>
+      <hr />
+
+      <h2>9) Cost Distribution</h2>
+      <h3>9.1 Overview</h3>
+      <p>
+        Costs in this scene accumulate through implementation drift, weak review,
+        and displaced ownership rather than through overt conflict. These are
+        structural costs, not moral verdicts.
+      </p>
+
+      <h3>9.2 Interpretive costs</h3>
+      <ul>
+        <li>formal resolution can be mistaken for durable correction</li>
+        <li>participants may assume the issue is handled because synthesis exists</li>
+      </ul>
+
+      <h3>9.3 Exposure costs</h3>
+      <ul>
+        <li>downstream implementers may bear the burden of weak policy follow-up</li>
+        <li>affected roles may absorb recurrence costs when ownership remains diffuse</li>
+      </ul>
+
+      <h3>9.4 Temporal costs</h3>
+      <ul>
+        <li>recurrence becomes visible only later, after apparent closure</li>
+        <li>review opportunities may pass without strong accountability anchors</li>
+      </ul>
+
+      <h3>9.5 Coordination costs</h3>
+      <ul>
+        <li>policy language may remain detached from enacted follow-through</li>
+        <li>units may interpret ownership differently in the absence of strong Ψ</li>
+      </ul>
+
+      <h3>9.6 Dignity stress costs</h3>
+      <ul>
+        <li>formal civility may coexist with practical neglect of exposed roles</li>
+        <li>those relying on policy protection may face repeated uncertainty if follow-up remains weak</li>
+      </ul>
+      <hr />
+
+      <h2>10) Validity Gate Reminder</h2>
+      <h3>10.1 PMS entry condition</h3>
+      <ul>
+        <li><strong>Χ (Distance):</strong> Distance must not be collapsed into cynical dismissal or retroactive blame. <strong>Χ</strong> here supports structural reading of the gap between synthesis and binding.</li>
+        <li><strong>Reversibility:</strong> The analysis remains scene-bound and revisable. It does not claim that the policy was meaningless or that actors were globally irresponsible.</li>
+        <li><strong>D (Dignity-in-Practice):</strong> The example must not be used to shame policy drafters, managers, or institutions. It maps a structural gap between formal correction and durable ownership.</li>
+      </ul>
+
+      <h3>10.2 Case-specific validity test</h3>
+      <p><strong>Valid if:</strong></p>
+      <ul>
+        <li><strong>Σ</strong> is acknowledged where genuine synthesis occurred</li>
+        <li>missing <strong>Ψ</strong> is tracked without reducing the case to bad faith</li>
+        <li>drift labels remain descriptive rather than punitive</li>
+        <li>the analysis stays focused on structures, roles, and follow-up patterns</li>
+      </ul>
+
+      <p><strong>Formally invalid if:</strong></p>
+      <ul>
+        <li>the example is used to prove that policy work is mere hypocrisy</li>
+        <li>formal synthesis is dismissed as worthless by default</li>
+        <li>institutions or actors are essentialized as incapable or insincere</li>
+        <li>the analysis becomes covert performance judgment</li>
+      </ul>
+      <hr />
+
+      <h2>11) Limits and Boundedness Check</h2>
+      <h3>11.1 Structural limits in this case</h3>
+      <ul>
+        <li>The analysis does not establish whether the policy itself was substantively good or bad.</li>
+        <li>It does not verify motives, sincerity, or strategic intent.</li>
+        <li>It does not decide whether delayed implementation was justified in every instance.</li>
+        <li>It does not rank the worth, maturity, or dignity of participants or institutions.</li>
+      </ul>
+
+      <h3>11.2 Non-capture check</h3>
+      <p><strong>Possible non-capture:</strong></p>
+      <p>
+        A critique-structural reading may underrepresent legal constraints,
+        staffing limits, budget dependencies, external regulation, or technical
+        implementation barriers that also weaken follow-up.
+      </p>
+      <p><strong>Does not imply defect:</strong></p>
+      <p>
+        Incomplete capture here would not show that the policy scene is
+        defective; it would show that other framings may illuminate constraints
+        not foregrounded by PMS-CRITIQUE.
+      </p>
+
+      <h3>11.3 Rival framing relevance</h3>
+      <ul>
+        <li>public policy analysis may better capture implementation gaps</li>
+        <li>organizational governance analysis may better capture ownership design</li>
+        <li>institutional design analysis may better capture review architecture</li>
+        <li>compliance analysis may better capture audit and enforcement mechanisms</li>
+      </ul>
+
+      <h3>11.4 Anti-absorption note</h3>
+      <p>
+        The example should not redescribe every policy process as commitment
+        evasion. The fit becomes strong only where coherent synthesis exists but
+        durable ownership remains structurally weak.
+      </p>
+      <hr />
+
+      <h2>12) MIP Docking Relevance</h2>
+      <h3>12.1 Status</h3>
+      <p><strong>optional_and_not_required</strong></p>
+
+      <h3>12.2 Critique-side statement</h3>
+      <p>
+        This example is structurally complete as a PMS-CRITIQUE reading without any
+        downstream evaluative docking.
+      </p>
+
+      <h3>12.3 Possible docking relevance</h3>
+      <p>
+        If one later wanted to evaluate institutional responsibility allocation,
+        admissibility of governance design, or regime-quality questions, the scene
+        could provide bounded projection inputs without itself deciding legitimacy.
+      </p>
+
+      <h3>12.4 Separation reminder</h3>
+      <ul>
+        <li>This example does not itself decide legitimacy.</li>
+        <li>It does not generate evaluative scores.</li>
+        <li>No back-projection from later evaluation should be read into this mapping.</li>
+      </ul>
+      <hr />
+
+      <h2>13) Readable Structural Closure</h2>
+      <p>
+        In this case, critique reaches formal correction but not stable ownership.
+        The institution names the mismatch, processes it reflectively, and produces
+        a coherent policy-level synthesis. Yet the trajectory remains weakly bound:
+        follow-up, review, and implementation are not durably owned over time. What
+        appears resolved at the level of policy can therefore remain unresolved at
+        the level of sustained praxis.
+      </p>
+      <hr />
+
+      <h2>14) Extended Scene Analysis</h2>
+
+      <h3>14.1 Frame anchor check — <strong>□</strong></h3>
+      <p>
+        The institutional frame is strong enough to authorize policy discussion,
+        drafting, and approval. The structural gap appears after formal closure.
+      </p>
+
+      <h3>14.2 Trigger mismatch check — <strong>Δ</strong></h3>
+      <p>
+        The mismatch is visible and clearly recognized as significant enough to
+        justify a formal organizational response.
+      </p>
+
+      <h3>14.3 Non-event integrity check — <strong>Λ</strong></h3>
+      <p>
+        Missing review steps, absent ownership uptake, or unenacted follow-up
+        emerge later as meaningful non-events that reveal the weakness of binding.
+      </p>
+
+      <h3>14.4 Attractor stabilization check — <strong>Α</strong></h3>
+      <p>
+        A recurring script can stabilize in which policy issuance functions as the
+        main sign of responsiveness, even when durable follow-up remains weak.
+      </p>
+
+      <h3>14.5 Asymmetry audit — <strong>Ω</strong></h3>
+      <ul>
+        <li><strong>Exposure bearers:</strong>
+          <ul>
+            <li>implementing teams</li>
+            <li>staff depending on the policy for protection or clarity</li>
+            <li>roles carrying downstream operational burden</li>
+          </ul>
+        </li>
+        <li><strong>Lower-cost positions:</strong>
+          <ul>
+            <li>approving authorities</li>
+            <li>actors whose responsibility ends at document completion</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>14.6 Temporality and trajectory — <strong>Θ</strong></h3>
+      <ol>
+        <li>issue recognized</li>
+        <li>policy discussion begins</li>
+        <li>recontextualization into formal language</li>
+        <li>integration through document or decision</li>
+        <li>approval and closure signal</li>
+        <li>weak follow-up binding</li>
+        <li>later recurrence or uneven implementation</li>
+      </ol>
+      <p>
+        <strong>Reading:</strong> <strong>Θ</strong> makes the structural weakness visible only after the apparent success of
+        synthesis. Time reveals whether correction was merely formal or durably
+        owned.
+      </p>
+
+      <h3>14.7 Distance availability check — <strong>Χ</strong></h3>
+      <p>
+        Distance is present in the sense that the issue is handled reflectively
+        and non-reactively. The problem is not absence of <strong>Χ</strong>, but failure to
+        convert integrated response into sustained ownership.
+      </p>
+
+      <h3>14.8 Integration check — <strong>Σ</strong></h3>
+      <p>
+        Integration is genuinely achieved. The institution succeeds in producing a
+        coherent response, which is why this case is not simply stalled at V2.
+      </p>
+
+      <h3>14.9 Self-binding check — <strong>Ψ</strong></h3>
+      <p>
+        This is the decisive weak point. Review cycles, implementation anchors,
+        and ownership commitments are too weak, too diffuse, or too thinly bound
+        to stabilize correction.
+      </p>
+
+      <h3>14.10 Critique displacement statement</h3>
+      <p>
+        <strong>Core claim:</strong> The case is best read not as failed policy formation, but as correction
+        displaced into formal synthesis without durable trajectory ownership:
+        policy exists, but correction remains weakly bound.
+      </p>
+      <hr />
+
+      <h2>15) Assistant Test Vectors</h2>
+      <ul>
+        <li>“Why does this scene fit CRITIQUE_PROD but not CRITIQUE_STABLE?”</li>
+        <li>“What exactly distinguishes Σ from Ψ in this policy example?”</li>
+        <li>“How can a coherent institutional response still fail structurally?”</li>
+        <li>“Which modulators make formal synthesis easier than durable ownership here?”</li>
+        <li>“Why is this better read as commitment evasion than as narrative reset?”</li>
+        <li>“Give a boundedness note explaining what this example does not prove.”</li>
+      </ul>
+
+    </section>
+  </body>
+</html>

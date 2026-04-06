@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMS–CRITIQUE — Example 5: Role Asymmetry Turns “Feedback” Into Exposure</title>
+    <style type="text/css">
+      :root {
+        --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+        --color-bg: #f5f7fb;
+        --color-surface: #ffffff;
+        --color-surface-soft: #f9fbfd;
+        --color-text: #18202a;
+        --color-muted: #5f6b7a;
+        --color-accent: #1f4b99;
+        --color-accent-soft: #e8f0ff;
+        --color-border: #d9e1ea;
+        --color-border-strong: #bfc9d8;
+        --color-quote: #2f5da8;
+        --color-code-bg: #f3f5f7;
+        --color-table-head: #eef3f8;
+        --color-row-alt: #fbfcfe;
+
+        --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+        --radius-sm: 6px;
+        --radius-md: 10px;
+        --radius-lg: 16px;
+
+        --content-width: 980px;
+        --line-height: 1.7;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px 20px 64px;
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: var(--line-height);
+        color: var(--color-text);
+        background:
+          linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+      }
+
+      .page,
+      body > header,
+      body > section,
+      body > main {
+        width: min(100%, var(--content-width));
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .page {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 40px 42px 56px;
+      }
+
+      /* Header */
+      header {
+        width: min(100%, var(--content-width));
+        margin: 0 auto 28px;
+        padding: 24px 0 18px;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      header h1 {
+        margin: 0 0 10px;
+        font-family: var(--font-heading);
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 500;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: var(--color-text);
+      }
+
+      header h2 {
+        margin: 0 auto 12px;
+        max-width: 48rem;
+        font-size: 1.15rem !important;
+        line-height: 1.45;
+        font-weight: 400;
+        text-align: center;
+        color: var(--color-muted);
+        border: 0;
+        padding: 0;
+      }
+
+      header .subtitle {
+        max-width: 52rem;
+        margin: 0 auto 12px;
+        text-align: center;
+        color: var(--color-muted);
+        font-size: 1rem;
+      }
+
+      header .meta {
+        max-width: 52rem;
+        margin: 14px auto 0;
+        padding: 12px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface-soft);
+        font-size: 0.88rem;
+        line-height: 1.55;
+        color: var(--color-muted);
+      }
+
+      /* Sections */
+      section {
+        margin: 0 0 28px;
+      }
+
+      section#content {
+        width: min(100%, var(--content-width));
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-heading);
+        color: var(--color-text);
+        letter-spacing: -0.01em;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 500;
+      }
+
+      h2,
+      h2 strong {
+        padding-bottom: 8px;
+        font-size: 1.65rem !important;
+        font-weight: 500 !important;
+        line-height: 1.25;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      h3,
+      h3 strong {
+        margin: 22px 0 8px !important;
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      h4,
+      h4 strong {
+        margin: 18px 0 6px !important;
+        font-size: 1.05rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      h5,
+      h5 strong,
+      h6,
+      h6 strong {
+        margin: 16px 0 4px !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+      }
+
+      /* Text */
+      p {
+        margin: 0 0 12px;
+      }
+
+      strong {
+        color: #111827;
+      }
+
+      em {
+        color: inherit;
+      }
+
+      .small {
+        font-size: 0.92rem;
+        color: var(--color-muted);
+      }
+
+      /* Links */
+      a {
+        color: var(--color-accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      a:hover,
+      a:focus {
+        border-bottom-color: currentColor;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        margin: 8px 0 14px 1.25rem;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 0 6px;
+        padding-left: 2px;
+      }
+
+      ul ul,
+      ol ol,
+      ul ol,
+      ol ul {
+        margin-top: 6px;
+        margin-bottom: 8px;
+      }
+
+      li > p {
+        margin-bottom: 6px;
+      }
+
+      /* Horizontal rule */
+      hr {
+        display: block;
+        height: 0;
+        border: 0;
+        border-top: 1px solid var(--color-border);
+        margin: 24px 0;
+      }
+
+      /* Quotes */
+      blockquote {
+        margin: 16px 0;
+        padding: 12px 18px;
+        border-left: 4px solid var(--color-quote);
+        background: #f8fbff;
+        color: #324154;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      }
+
+      blockquote p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Code */
+      code,
+      .code-inline {
+        font-family: var(--font-mono);
+        font-size: 0.92em;
+        background: var(--color-code-bg);
+        border: 1px solid #e7ebf0;
+        border-radius: 4px;
+        padding: 0.12em 0.4em;
+        color: #233044;
+      }
+
+      pre {
+        margin: 14px 0 18px;
+        padding: 14px 16px;
+        overflow-x: auto;
+        background: #111827;
+        color: #f3f4f6;
+        border-radius: var(--radius-md);
+        border: 1px solid #0f172a;
+        text-align: left;
+        line-height: 1.55;
+      }
+
+      pre code {
+        background: transparent;
+        border: 0;
+        color: inherit;
+        padding: 0;
+        font-size: 0.92rem;
+      }
+
+      /* Boxes / callouts */
+      .box {
+        margin: 16px 0 18px;
+        padding: 14px 16px;
+        border: 1px solid var(--color-border);
+        border-left: 4px solid var(--color-accent);
+        border-radius: var(--radius-md);
+        background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+        line-height: 1.55;
+      }
+
+      .box-title {
+        margin: 0 0 6px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--color-accent);
+      }
+
+      .box p:last-child,
+      .box ul:last-child,
+      .box ol:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Tables */
+      .table,
+      table {
+        width: 100%;
+        margin: 14px 0 18px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+      }
+
+      .table th,
+      .table td,
+      table th,
+      table td {
+        padding: 10px 12px;
+        vertical-align: top;
+        border: 1px solid var(--color-border);
+        text-align: left;
+      }
+
+      .table th,
+      table th {
+        background: var(--color-table-head);
+        color: #233044;
+        font-weight: 700;
+        font-variant: small-caps;
+        letter-spacing: 0.03em;
+      }
+
+      .table tr:nth-child(even) td,
+      table tr:nth-child(even) td {
+        background: var(--color-row-alt);
+      }
+
+      .table tr:nth-child(odd) td,
+      table tr:nth-child(odd) td {
+        background: #ffffff;
+      }
+
+      /* Tags */
+      .tag {
+        display: inline-block;
+        margin: 0 6px 6px 0;
+        padding: 3px 10px;
+        border: 1px solid var(--color-border-strong);
+        border-radius: 999px;
+        background: #fff;
+        color: var(--color-muted);
+        font-size: 0.78rem;
+        line-height: 1.3;
+      }
+
+      /* Placeholder */
+      .placeholder {
+        color: var(--color-muted);
+        font-style: italic;
+      }
+
+      /* Two-column layouts */
+      .two-column {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 10px 0 16px;
+      }
+
+      .two-column > div {
+        min-width: 0;
+      }
+
+      /* Utility */
+      .pagebreak {
+        page-break-before: always;
+        break-before: page;
+      }
+
+      /* Better spacing for consecutive structural blocks */
+      h2 + p,
+      h3 + p,
+      h4 + p {
+        margin-top: 2px;
+      }
+
+      p + ul,
+      p + ol {
+        margin-top: 6px;
+      }
+
+      ul + p,
+      ol + p {
+        margin-top: 10px;
+      }
+
+      /* Optional content-specific helper classes */
+      .meta-grid {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px 14px;
+        margin: 12px 0 18px;
+      }
+
+      .meta-grid dt {
+        font-weight: 600;
+        color: var(--color-muted);
+      }
+
+      .meta-grid dd {
+        margin: 0;
+      }
+
+      .definition-list {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 8px 14px;
+      }
+
+      .definition-list dt {
+        font-weight: 600;
+        color: var(--color-accent);
+      }
+
+      .definition-list dd {
+        margin: 0;
+      }
+
+      .callout-warning {
+        border-left-color: #b45309;
+        background: #fffaf2;
+      }
+
+      .callout-success {
+        border-left-color: #0f766e;
+        background: #f4fffd;
+      }
+
+      .callout-danger {
+        border-left-color: #b91c1c;
+        background: #fff8f8;
+      }
+
+      /* Images */
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 14px auto 18px;
+        border-radius: var(--radius-sm);
+      }
+
+      /* Print */
+      @media print {
+        :root {
+          --color-bg: white;
+          --color-surface: white;
+          --color-surface-soft: white;
+          --color-row-alt: #fafafa;
+          --shadow-soft: none;
+        }
+
+        html,
+        body {
+          background: white !important;
+        }
+
+        body {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          font-size: 11pt;
+          line-height: 1.45;
+        }
+
+        .page,
+        body > header,
+        body > section,
+        body > main,
+        section#content {
+          width: 100%;
+          max-width: 100%;
+          margin: 0;
+        }
+
+        .page {
+          border: 0;
+          box-shadow: none;
+          border-radius: 0;
+          padding: 0;
+        }
+
+        header {
+          margin-bottom: 18px;
+          padding: 0 0 12px;
+        }
+
+        h2,
+        h2 strong {
+          page-break-after: avoid;
+        }
+
+        h3,
+        h3 strong,
+        h4,
+        h4 strong {
+          page-break-after: avoid;
+        }
+
+        p,
+        li,
+        blockquote,
+        .box,
+        table,
+        pre {
+          page-break-inside: avoid;
+        }
+
+        a,
+        a:visited {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        a[href]::after {
+          content: "";
+        }
+
+        .box {
+          background: white;
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        body {
+          padding: 20px 14px 44px;
+        }
+
+        .page {
+          padding: 28px 22px 40px;
+        }
+
+        .two-column {
+          grid-template-columns: 1fr;
+        }
+
+        .meta-grid,
+        .definition-list {
+          grid-template-columns: 1fr;
+          gap: 4px 0;
+        }
+
+        header h1 {
+          font-size: 2.2rem;
+        }
+
+        h2,
+        h2 strong {
+          font-size: 1.45rem !important;
+        }
+      }
+
+      @media (max-width: 640px) {
+        body {
+          font-size: 15px;
+        }
+
+        .page {
+          padding: 22px 16px 32px;
+          border-radius: 12px;
+        }
+
+        header .meta {
+          padding: 10px 12px;
+        }
+
+        .table,
+        table {
+          font-size: 0.88rem;
+        }
+
+        .table th,
+        .table td,
+        table th,
+        table td {
+          padding: 8px 9px;
+        }
+
+        pre {
+          padding: 12px 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><strong>PMS–CRITIQUE</strong></h1>
+      <h2><em>Example 5: Role Asymmetry Turns &quot;Feedback&quot; Into Exposure</em></h2>
+      <div class="meta">
+        <strong>Example ID:</strong> <code>PMS-CRITIQUE_EX05</code> &middot;
+        <strong>Example Version:</strong> <code>1.0</code> &middot;
+        <strong>Schema Version:</strong> <code>PMS-CRITIQUE_1.1</code><br />
+        <strong>Status:</strong> draft &middot;
+        <strong>Language:</strong> EN &middot;
+        <strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-CRITIQUE_1.1</code>
+      </div>
+    </header>
+
+    <section id="content">
+
+      <h2>0) Example Identity</h2>
+      <p>
+        <strong>Example label:</strong> <em>Role Asymmetry Turns Feedback Into Exposure</em>
+      </p>
+      <p>
+        <strong>Example subtitle:</strong> <em>Judgment Drift Under Asymmetry</em>
+      </p>
+      <hr />
+
+      <h2>1) Case Identity</h2>
+      <h3>1.1 Case label</h3>
+      <p><strong>Evaluative Correction Without Coordination</strong></p>
+
+      <h3>1.2 Scope discipline</h3>
+      <p>
+        Structural mapping only. No claims about intent, competence, or character.
+        PMS application validity remains conditional on <strong>Χ</strong> (Distance),
+        reversibility, and <strong>D</strong> (Dignity-in-Practice).
+      </p>
+
+      <h3>1.3 Repository fit</h3>
+      <p>
+        This example is designed as a repository training example for reading how a
+        scene formally presented as feedback or correction can drift into exposure-
+        weighted judgment when asymmetry is strong and coordinative integration
+        remains weak.
+      </p>
+
+      <h3>1.4 Example packet alignment</h3>
+      <ul>
+        <li><strong>Scene label:</strong> Evaluative Correction Without Coordination</li>
+        <li><strong>Frame anchor:</strong> A bounded training, supervision, onboarding, or institutional learning frame in which one role evaluates another under conditions of unequal authority, visibility, or reputational consequence.</li>
+        <li><strong>Trigger mismatch:</strong> A perceived performance, communication, or procedural mismatch is raised as feedback, but the handling shifts toward evaluative clarity and local exposure rather than toward coordinatable correction.</li>
+        <li><strong>Operator signature:</strong>
+          <ul>
+            <li><strong>Reduced:</strong> <code>Δ, □, Ω, Θ, Χ</code></li>
+            <li><strong>Note:</strong> This reduced signature is a readability aid only. Canonical PMS dependencies remain fully in force. The decisive structural issue is a feedback scene in which asymmetry becomes salient and judgment overtakes integration.</li>
+          </ul>
+        </li>
+        <li><strong>Guardrail gate:</strong> Readings remain scene-bound and revisable. No person labels, no motive attributions, no shaming, and no coercive conclusions are generated.</li>
+        <li><strong>Structural closure:</strong> In this scene, critique appears to occur because mismatch is named inside a legitimate frame. Yet the episode does not consolidate a coordinatable corrective path. Instead, evaluative exposure becomes the dominant function, and feedback drifts toward judgment under asymmetry.</li>
+        <li><strong>Scale:</strong>
+          <ul>
+            <li><strong>System:</strong> <code>paper_tags</code></li>
+            <li><strong>Tag:</strong> <code>c</code></li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>2) Minimal Vignette</h2>
+      <h3>2.1 Title</h3>
+      <p><strong>A training feedback scene becomes reputationally exposing rather than coordinative</strong></p>
+
+      <h3>2.2 Scene boundaries</h3>
+      <ul>
+        <li><strong>Domain:</strong> Institutional training / onboarding / supervision / evaluative learning setting</li>
+        <li><strong>Scope:</strong> Structures, role asymmetries, local exposure, evaluative framing, correction attempts, coordination gaps, critique reach, and judgment drift in a bounded institutional or small-group scene.</li>
+        <li><strong>Out of scope:</strong>
+          <ul>
+            <li>person-level judgment</li>
+            <li>motive attribution</li>
+            <li>competence ranking</li>
+            <li>clinical or psychological interpretation</li>
+            <li>substantive verdict on whether the criticism was objectively correct</li>
+            <li>instruction or action prescription</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>2.3 Short scene</h3>
+      <p>
+        In a training session, onboarding meeting, classroom-like supervision
+        space, or institutional feedback setting, a senior role comments on the
+        conduct, output, or communication style of a junior or evaluated role. The
+        mismatch is named as if it were part of developmental correction. Yet the
+        way it is delivered makes the evaluative status difference more salient than
+        the path toward change. Others witness the exchange, the target role bears
+        disproportionate exposure, and the result is less a coordinated correction
+        than a local reputational marking.
+      </p>
+
+      <h3>2.4 Structural focus</h3>
+      <p>
+        The example examines how critique can drift from framed mismatch into
+        judgment when <strong>Ω</strong> is salient and <strong>Σ</strong> remains weak. The central issue is not
+        whether the mismatch exists, but whether feedback remains interruptible and
+        coordinative rather than becoming exposure-weighted evaluation.
+      </p>
+
+      <h3>2.5 Scenic elements</h3>
+      <ul>
+        <li><strong>Actors:</strong>
+          <ul>
+            <li>trainer, supervisor, or evaluator</li>
+            <li>junior participant, trainee, or supervised role</li>
+            <li>peer group, cohort, or observing team members</li>
+            <li>institutional host or training frame owner</li>
+          </ul>
+        </li>
+        <li><strong>Salient objects:</strong>
+          <ul>
+            <li>the evaluated performance or behavior</li>
+            <li>feedback episode</li>
+            <li>group witnessing context</li>
+            <li>authority gradient</li>
+            <li>possible corrective next step</li>
+            <li>reputational residue inside the local scene</li>
+          </ul>
+        </li>
+        <li><strong>Trigger event:</strong>
+          <ul>
+            <li><strong>Label:</strong> feedback episode under asymmetry</li>
+            <li><strong>Description:</strong> A perceived mismatch is raised in a development or training frame, but the interaction begins to mark the person-position more strongly than it organizes a shared corrective path.</li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>3) Why This Is Repo-Useful</h2>
+      <h3>3.1 Structural focus</h3>
+      <p>
+        This example is useful because it distinguishes productive correction from
+        evaluative exposure. It shows how feedback can remain formally legitimate at
+        the frame level while still drifting toward judgment when asymmetry becomes
+        structurally dominant.
+      </p>
+
+      <h3>3.2 Repo value</h3>
+      <ul>
+        <li>Demonstrates a clean D2-type case in which evaluation replaces coordination.</li>
+        <li>Shows how <strong>Ω</strong> can transform a seemingly ordinary feedback scene into a locally exposing event without any publicness overlay.</li>
+        <li>Clarifies that feedback language alone does not guarantee critique in the strict PMS-CRITIQUE sense.</li>
+        <li>Helps distinguish framed mismatch from actual coordinatable correction.</li>
+        <li>Provides a strong repository example for how <strong>D</strong> can come under stress even in non-public, non-mass scenes.</li>
+      </ul>
+
+      <h3>3.3 Central repo question</h3>
+      <blockquote>
+        <p>
+          When does “feedback” remain critique, and when does it become judgment under
+          asymmetry?
+        </p>
+      </blockquote>
+
+      <h3>3.4 Lens relevance</h3>
+      <ul>
+        <li><strong>Critique thresholds:</strong> The scene clarifies the difference between naming a mismatch inside a frame and actually reaching productive critique. It often remains below <code>CRITIQUE_PROD</code> because <strong>Σ</strong> is weak or absent.</li>
+        <li><strong>Drift typology:</strong> The case most strongly fits D2/C2: judgment masquerading as critique. It can also touch C3 where <strong>Ω</strong> rises and <strong>Χ</strong> collapses further into moralized evaluation.</li>
+        <li><strong>Scale relevance:</strong> The example sits between b and c: it is not fully public, but it is more than purely inward critique because asymmetry and witnessed exposure are relationally distributed in a small institutional setting.</li>
+        <li><strong>Guardrail relevance:</strong> The example invites overreading into personal failure or abusive intent, but the structural analysis must remain bounded to exposure, frame, coordination, and asymmetry.</li>
+      </ul>
+      <hr />
+
+      <h2>4) Operator Mapping</h2>
+      <h3>4.1 Reduced signature</h3>
+      <p>
+        <strong>Primary signature:</strong>
+        <code>Δ, □, Ω, Θ, Χ</code>
+      </p>
+      <p>
+        <strong>Secondary possible:</strong>
+        <code>∇, Σ, Φ</code>
+      </p>
+      <p>
+        The central signature is framed mismatch under strong role asymmetry and
+        temporal residue. The decisive issue is whether the scene stays
+        interruptible and coordinative or slides into exposure-weighted judgment.
+      </p>
+
+      <h3>4.2 Operator roles in scene</h3>
+      <ul>
+        <li><strong>Δ:</strong> A mismatch is clearly named: the trainee or junior role allegedly did something insufficient, off-standard, unclear, or inappropriate within the learning frame.</li>
+        <li><strong>∇:</strong> Impulse may appear as urgency, embarrassment, defensive activation, or the evaluator’s push for immediate clarity and closure.</li>
+        <li><strong>□:</strong> The training or feedback frame authorizes interruption and evaluation, and defines what counts as teachable correction or acceptable response.</li>
+        <li><strong>Λ:</strong> Non-events may appear if no concrete next step, repair path, or later follow-up is given after the evaluative moment.</li>
+        <li><strong>Α:</strong> A recurrent script can stabilize in which “feedback” functions mainly as local role marking: authority speaks, junior role absorbs exposure.</li>
+        <li><strong>Ω:</strong> This is the decisive pressure point. The evaluator controls meaning, visibility, and status consequences more than the recipient does, so the same feedback content carries unequal exposure.</li>
+        <li><strong>Θ:</strong> The episode leaves residue. Even in a local setting, one evaluative moment can harden into remembered status, hesitancy, or reputational trace.</li>
+        <li><strong>Φ:</strong> Recontextualization would be present if the mismatch were translated into a concrete, scene-appropriate learning path. In this drift case, <strong>Φ</strong> is weak, partial, or subordinated to evaluation.</li>
+        <li><strong>Χ:</strong> Distance is structurally at risk. The recipient may have limited stop-capability, and the evaluator may not reopen the scene for revision once the judgmental tone is set.</li>
+        <li><strong>Σ:</strong> Integration is the missing or weak element. The scene often fails to consolidate a coordinatable corrective step that both roles can inhabit.</li>
+        <li><strong>Ψ:</strong> Stable follow-up binding is usually absent or underdeveloped. The scene marks rather than durably supports correction.</li>
+      </ul>
+
+      <h3>4.3 Derived axes projection</h3>
+      <ul>
+        <li><strong>A:</strong> Awareness is present insofar as a difference is noticed and sustained in frame, but awareness alone does not protect against evaluative drift.</li>
+        <li><strong>C:</strong> Coherence may appear superficially strong because the evaluator produces a clear narrative of what was wrong, but that narrative may be more stabilizing than corrective.</li>
+        <li><strong>R:</strong> Responsibility becomes skewed when the junior role bears the full burden of correction while the evaluator bears little of the relational cost of exposure.</li>
+        <li><strong>E:</strong> Action remains weak if no coordinatable next step is integrated and the scene stops at evaluative marking.</li>
+        <li><strong>D:</strong> Dignity-in-Practice is structurally stressed when asymmetry turns feedback into local exposure rather than protected correction.</li>
+      </ul>
+
+      <h3>4.4 Structural mechanism summary</h3>
+      <ol>
+        <li>A mismatch is identified inside a legitimate learning frame.</li>
+        <li>Authority gradient becomes salient during feedback delivery.</li>
+        <li>Exposure concentrates on the evaluated role.</li>
+        <li>Clarity is produced evaluatively rather than coordinatively.</li>
+        <li>Corrective integration remains weak or absent.</li>
+        <li>The scene leaves local residue and role marking.</li>
+      </ol>
+      <p>
+        <strong>Concise formula:</strong><br />
+        <code>framed Δ in □ → Ω becomes salient → evaluative clarity outruns Σ → Χ weakens for the exposed role → local residue under Θ → judgment drift</code>
+      </p>
+      <hr />
+
+      <h2>5) Critique Threshold Reading</h2>
+      <h3>5.1 Threshold assessment</h3>
+      <ul>
+        <li><strong>CRITIQUE_MIN:</strong>
+          <ul>
+            <li><strong>Status:</strong> ambiguous_or_fragile</li>
+            <li><strong>Reasoning:</strong> A mismatch is clearly named inside a frame, but whether the scene remains genuinely interruptible is uncertain. If the exposed role cannot pause, revise, or re-enter without penalty, even minimal critique becomes structurally fragile.</li>
+          </ul>
+        </li>
+        <li><strong>CRITIQUE_PROD:</strong>
+          <ul>
+            <li><strong>Status:</strong> not_reached</li>
+            <li><strong>Reasoning:</strong> Productive critique is not reached because the scene does not reliably translate mismatch into a coordinatable corrective path. <strong>Σ</strong> remains weak or absent.</li>
+          </ul>
+        </li>
+        <li><strong>CRITIQUE_STABLE:</strong>
+          <ul>
+            <li><strong>Status:</strong> not_reached</li>
+            <li><strong>Reasoning:</strong> No durable follow-up binding is established. The scene produces exposure and residue rather than owned trajectory correction.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>5.2 Non-equivalence reading</h3>
+      <ul>
+        <li><strong>Reaction check:</strong> This is not primarily a D1 case. The scene is not pure discharge; it is framed and role-organized, which is precisely why judgment drift becomes structurally legible.</li>
+        <li><strong>Judgment check:</strong> This is the core fit. The feedback scene stabilizes evaluative clarity while failing to organize a correction path.</li>
+        <li><strong>Narrative check:</strong> D3 is not the main pattern because endless reframing is not central. The issue is less explanation inflation than evaluative exposure.</li>
+        <li><strong>Commentary check:</strong> D4 is also not primary. The problem is not over-meta-commentary but the replacement of coordination by judgment.</li>
+      </ul>
+
+      <h3>5.3 Threshold formula fit</h3>
+      <ul>
+        <li><strong>Closest definition:</strong> below_or_at_the_edge_of_CRITIQUE_MIN_with_strong_D2_drift</li>
+        <li><strong>Note:</strong> The scene borrows the appearance of critique from frame and mismatch, but structurally it is better read as judgment masquerading as critique under asymmetry.</li>
+      </ul>
+      <hr />
+
+      <h2>6) Reach and Scale Reading</h2>
+      <h3>6.1 Vertical reach</h3>
+      <ul>
+        <li><strong>Assessed level:</strong> <code>V2_fragile_or_regressing_toward_D2</code></li>
+        <li><strong>Justification:</strong> The scene has enough frame and mismatch structure to appear critical, but it does not successfully consolidate productive correction. It hovers at or below minimal critique and drifts toward judgment.</li>
+        <li><strong>Why not V1:</strong> The episode is not mere discharge; it is institutionally framed and role-organized.</li>
+        <li><strong>Why not V3:</strong> Recontextualization and integration do not sufficiently produce a shared corrective step.</li>
+        <li><strong>Why not V4:</strong> No stable follow-up binding or protected correction trajectory exists.</li>
+      </ul>
+
+      <h3>6.2 Horizontal scale</h3>
+      <ul>
+        <li><strong>System:</strong> <code>paper_tags</code></li>
+        <li><strong>Tag:</strong> <code>c</code></li>
+        <li><strong>Label:</strong> Small Group Critique (Peers / Team / Family)</li>
+        <li><strong>Justification:</strong> Although the scene has b-like features because one role is especially exposed, it is structurally best assigned to c in the packet because the episode is relational, witnessed, and institutionally distributed within a small-group setting.</li>
+        <li><strong>Scale-specific costs:</strong>
+          <ul>
+            <li>belonging and reputation are affected by interruption</li>
+            <li>local witnesses amplify exposure without mass publicness</li>
+            <li>feedback can become status marking rather than developmental support</li>
+            <li>role asymmetry sharpens the cost of speaking back or clarifying</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>6.3 Scale qualification note</h3>
+      <p>
+        The user formulation “b–c” is structurally apt. The primary packet tag is
+        <code>c</code> for schema consistency, while the scene remains near the boundary with b
+        because exposure is concentrated on one role.
+      </p>
+
+      <h3>6.4 Deployment scale note</h3>
+      <ul>
+        <li><strong>System:</strong> <code>deployment_tags</code></li>
+        <li><strong>Tag:</strong> <code>small_group_team</code></li>
+        <li><strong>Note:</strong> This optional deployment tag is compatible with the primary paper tag and may assist repository tooling.</li>
+      </ul>
+
+      <h3>6.5 Publicness overlay</h3>
+      <ul>
+        <li><strong>Status:</strong> inactive</li>
+        <li><strong>Overlay ID:</strong> <code>P</code></li>
+        <li><strong>Reading:</strong> No publicness overlay is active. Exposure is local, bounded, and role-amplified rather than mass-mediated.</li>
+      </ul>
+      <hr />
+
+      <h2>7) Drift Analysis</h2>
+      <h3>7.1 Main class reading</h3>
+      <ul>
+        <li><strong>Primary:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>D2</code></li>
+            <li><strong>Name:</strong> Judgment masquerading as critique</li>
+            <li><strong>Fit:</strong> strong</li>
+            <li><strong>Reasoning:</strong> The scene presents itself as corrective feedback, but evaluation replaces coordination. Clarity increases while actionability and shared correction decrease.</li>
+          </ul>
+        </li>
+        <li><strong>Secondary:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>C2</code></li>
+            <li><strong>Name:</strong> Judgment Drift</li>
+            <li><strong>Fit:</strong> strong</li>
+            <li><strong>Reasoning:</strong> The compact repository label matches the scene closely: <strong>□</strong> and <strong>Δ</strong> are present, <strong>Ω</strong> is leveraged, and <strong>Φ/Σ</strong> remain weak.</li>
+          </ul>
+        </li>
+        <li><strong>Tertiary:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>C3</code></li>
+            <li><strong>Name:</strong> Moralization Drift</li>
+            <li><strong>Fit:</strong> possible_if_exposure_intensifies</li>
+            <li><strong>Reasoning:</strong> If asymmetry rises further and distance collapses more strongly, the scene can drift from evaluative feedback into moralized local shaming.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>7.2 Drift catalogue reading</h3>
+      <ul>
+        <li><strong>C2:</strong> Judgment Drift — <strong>fit:</strong> strong</li>
+        <li><strong>C3:</strong> Moralization Drift — <strong>fit:</strong> possible_secondary</li>
+        <li><strong>C7:</strong> Diffusion Drift — <strong>fit:</strong> low
+          <ul>
+            <li><strong>Note:</strong> This may appear if no one later owns repair and the group simply absorbs the evaluative marking.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>7.3 Typical markers present</h3>
+      <ul>
+        <li>feedback language is present but no clear correction path is integrated</li>
+        <li>the evaluator’s authority increases the exposure of the recipient</li>
+        <li>the group witnesses the mismatch more than it coordinates repair</li>
+        <li>clarity of evaluation rises while actionability remains weak</li>
+        <li>the evaluated role bears lasting local residue after the exchange</li>
+      </ul>
+
+      <h3>7.4 Drift chain alignment</h3>
+      <ul>
+        <li><strong>Closest chain:</strong>
+          <ul>
+            <li><strong>ID:</strong> <code>scene_specific_feedback_to_judgment_chain</code></li>
+            <li><strong>Reading:</strong> The current YAML does not name this exact chain explicitly, but the case fits a familiar repository pattern: framed mismatch under <strong>Ω</strong> produces evaluation, <strong>Χ</strong> weakens for the exposed role, and <strong>Θ</strong> carries residue forward.</li>
+          </ul>
+        </li>
+        <li><strong>Scene-specific chain:</strong> mismatch named in learning frame -> Ω intensifies exposure -> evaluation stabilizes clarity -> Σ remains weak -> residue hardens under Θ</li>
+      </ul>
+      <hr />
+
+      <h2>8) Modulator Profile</h2>
+      <h3>8.1 Overview</h3>
+      <p>
+        The scene is shaped by modulators that make evaluative clarity easy to
+        produce while making protected corrective coordination difficult to sustain.
+      </p>
+
+      <h3>8.2 Active modulators</h3>
+      <ul>
+        <li><strong>M1 — Frame clarity:</strong>
+          <ul>
+            <li><strong>Level:</strong> high</li>
+            <li><strong>Reading:</strong> The learning or training frame clearly authorizes feedback and makes the mismatch legible, which also strengthens the legitimacy of evaluative speech.</li>
+          </ul>
+        </li>
+        <li><strong>M2 — Non-event density:</strong>
+          <ul>
+            <li><strong>Level:</strong> low_to_moderate</li>
+            <li><strong>Reading:</strong> The main issue is not initial absence, but later non-events can appear if no concrete correction path or follow-up is enacted.</li>
+          </ul>
+        </li>
+        <li><strong>M3 — Asymmetry visibility:</strong>
+          <ul>
+            <li><strong>Level:</strong> high</li>
+            <li><strong>Reading:</strong> Exposure gradients are salient. The evaluator controls framing and the junior role bears disproportionate reputational risk.</li>
+          </ul>
+        </li>
+        <li><strong>M4 — Temporal compression:</strong>
+          <ul>
+            <li><strong>Level:</strong> moderate</li>
+            <li><strong>Reading:</strong> The scene often happens in real time, with limited room for the exposed role to slow down, clarify, or reshape the interaction.</li>
+          </ul>
+        </li>
+        <li><strong>M5 — Recontextualization habituation:</strong>
+          <ul>
+            <li><strong>Level:</strong> low_to_moderate</li>
+            <li><strong>Reading:</strong> <strong>Φ</strong> is not absent in principle, but it is underused. The scene does not reliably translate evaluation into a concrete learning path.</li>
+          </ul>
+        </li>
+        <li><strong>M6 — Distance availability:</strong>
+          <ul>
+            <li><strong>Level:</strong> low_to_moderate</li>
+            <li><strong>Reading:</strong> Stop-capability is uneven. The evaluator can usually continue the feedback episode more easily than the exposed role can interrupt it.</li>
+          </ul>
+        </li>
+        <li><strong>M7 — Attractor inertia:</strong>
+          <ul>
+            <li><strong>Level:</strong> moderate_to_high</li>
+            <li><strong>Reading:</strong> Institutional habits may normalize evaluative exposure as ordinary feedback, making judgment drift easier to reproduce.</li>
+          </ul>
+        </li>
+        <li><strong>M8 — Publicness overlay:</strong>
+          <ul>
+            <li><strong>Level:</strong> inactive</li>
+            <li><strong>Reading:</strong> Public amplification is absent, but local witnessing is still enough to intensify exposure under <strong>Ω</strong>.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>8.3 Modulator summary</h3>
+      <p>
+        The strongest drivers are M1, M3, M6, and M7: legitimate evaluative frame,
+        salient role asymmetry, uneven stop-capability, and a reusable institutional
+        script in which feedback becomes local exposure.
+      </p>
+      <hr />
+
+      <h2>9) Cost Distribution</h2>
+      <h3>9.1 Overview</h3>
+      <p>
+        Costs in this scene concentrate asymmetrically. They are not only about the
+        content of feedback, but about who bears exposure, who controls meaning, and
+        how residue persists afterward.
+      </p>
+
+      <h3>9.2 Interpretive costs</h3>
+      <ul>
+        <li>the recipient must infer whether the scene was developmental or reputational</li>
+        <li>observers may treat evaluative clarity as proof of fair correction</li>
+      </ul>
+
+      <h3>9.3 Exposure costs</h3>
+      <ul>
+        <li>the junior or evaluated role bears most of the local reputational burden</li>
+        <li>the evaluator bears comparatively lower exposure while defining the scene</li>
+      </ul>
+
+      <h3>9.4 Temporal costs</h3>
+      <ul>
+        <li>one brief episode can leave durable hesitation or remembered status</li>
+        <li>later participation may be shaped by the residue of the evaluative moment</li>
+      </ul>
+
+      <h3>9.5 Coordination costs</h3>
+      <ul>
+        <li>shared corrective next steps remain underdeveloped</li>
+        <li>the group learns who was exposed more clearly than how correction should proceed</li>
+      </ul>
+
+      <h3>9.6 Dignity stress costs</h3>
+      <ul>
+        <li>developmental framing may conceal exposure effects on the recipient</li>
+        <li>local restraint can weaken if evaluative authority substitutes for protected correction</li>
+      </ul>
+      <hr />
+
+      <h2>10) Validity Gate Reminder</h2>
+      <h3>10.1 PMS entry condition</h3>
+      <ul>
+        <li><strong>Χ (Distance):</strong> Distance must not be collapsed into either defensive counter-blame or evaluator certainty. <strong>Χ</strong> requires that the scene remain interruptible and revisable for all involved roles.</li>
+        <li><strong>Reversibility:</strong> The analysis remains scene-bound and revisable. It does not claim that the evaluator is globally domineering or that the recipient is globally incapable.</li>
+        <li><strong>D (Dignity-in-Practice):</strong> The example must not be used to shame trainers, supervisors, or trainees. It maps how asymmetry can transform feedback into exposure-weighted judgment.</li>
+      </ul>
+
+      <h3>10.2 Case-specific validity test</h3>
+      <p><strong>Valid if:</strong></p>
+      <ul>
+        <li>the feedback frame is acknowledged without automatically equating it with productive critique</li>
+        <li><strong>Ω</strong> is tracked as structural exposure rather than moral blame</li>
+        <li>weak <strong>Σ</strong> is identified without reducing the scene to bad faith</li>
+        <li>the analysis stays bounded to role relations, correction path, and residue</li>
+      </ul>
+
+      <p><strong>Formally invalid if:</strong></p>
+      <ul>
+        <li>the example is used to prove personal abusiveness or incompetence</li>
+        <li>the evaluated role is redescribed as objectively deficient beyond the scene</li>
+        <li>drift labels become ranking devices</li>
+        <li>the analysis itself becomes a second-order pillory</li>
+      </ul>
+      <hr />
+
+      <h2>11) Limits and Boundedness Check</h2>
+      <h3>11.1 Structural limits in this case</h3>
+      <ul>
+        <li>The analysis does not establish whether the feedback content was factually right or wrong.</li>
+        <li>It does not verify intent, pedagogy quality, or sincerity.</li>
+        <li>It does not determine whether stronger correction would have been justified in all circumstances.</li>
+        <li>It does not rank the maturity, worth, or dignity of the roles involved.</li>
+      </ul>
+
+      <h3>11.2 Non-capture check</h3>
+      <p><strong>Possible non-capture:</strong></p>
+      <p>
+        A critique-structural reading may underrepresent pedagogical method,
+        disciplinary standards, legal constraints, institutional teaching culture,
+        or the possibility that some high-stakes contexts require sharper
+        correction than this model foregrounds.
+      </p>
+      <p><strong>Does not imply defect:</strong></p>
+      <p>
+        Incomplete capture here would not prove the feedback scene defective; it
+        would show that other framings may illuminate dimensions not foregrounded
+        by PMS-CRITIQUE.
+      </p>
+
+      <h3>11.3 Rival framing relevance</h3>
+      <ul>
+        <li>pedagogical analysis may better capture instructional design</li>
+        <li>organizational learning theory may better capture feedback culture</li>
+        <li>conversation analysis may better capture turn-taking and interactional form</li>
+        <li>supervision theory may better capture evaluative role ethics</li>
+      </ul>
+
+      <h3>11.4 Anti-absorption note</h3>
+      <p>
+        The example should not redescribe all sharp feedback as judgment drift. The
+        fit becomes strong only where evaluative exposure overtakes coordinative
+        correction under asymmetry.
+      </p>
+      <hr />
+
+      <h2>12) MIP Docking Relevance</h2>
+      <h3>12.1 Status</h3>
+      <p><strong>optional_and_not_required</strong></p>
+
+      <h3>12.2 Critique-side statement</h3>
+      <p>
+        This example is structurally complete as a PMS-CRITIQUE reading without any
+        downstream evaluative docking.
+      </p>
+
+      <h3>12.3 Possible docking relevance</h3>
+      <p>
+        If one later wanted to examine regime conditions of evaluation, legitimacy
+        of asymmetry handling, or admissibility of training design, the scene could
+        provide bounded projection inputs without itself deciding legitimacy.
+      </p>
+
+      <h3>12.4 Separation reminder</h3>
+      <ul>
+        <li>This example does not itself decide legitimacy.</li>
+        <li>It does not generate evaluative scores.</li>
+        <li>No back-projection from later evaluation should be read into this mapping.</li>
+      </ul>
+      <hr />
+
+      <h2>13) Readable Structural Closure</h2>
+      <p>
+        In this case, a feedback scene appears corrective but functions mainly as
+        evaluative exposure under asymmetry. The mismatch is clearly named inside a
+        legitimate frame, yet the episode does not consolidate a shared corrective
+        path. Instead, authority sharpens local reputational burden for the exposed
+        role while integration remains weak. What is remembered afterward is often
+        less the correction than the exposure.
+      </p>
+      <hr />
+
+      <h2>14) Extended Scene Analysis</h2>
+
+      <h3>14.1 Frame anchor check — <strong>□</strong></h3>
+      <p>
+        The institutional training or feedback frame is real and legitimate. It
+        authorizes correction, which is precisely why judgment drift can hide
+        inside it.
+      </p>
+
+      <h3>14.2 Trigger mismatch check — <strong>Δ</strong></h3>
+      <p>
+        The mismatch is visible and significant enough to be addressed. The
+        structural problem is not whether something was off, but how the handling
+        of the mismatch is organized.
+      </p>
+
+      <h3>14.3 Non-event integrity check — <strong>Λ</strong></h3>
+      <p>
+        Missing next steps, absent repair opportunities, or lack of later
+        follow-up may reveal that feedback did not become coordinated correction.
+      </p>
+
+      <h3>14.4 Attractor stabilization check — <strong>Α</strong></h3>
+      <p>
+        A stable script can emerge in which “feedback” routinely means exposure of
+        juniors by seniors rather than shared developmental coordination.
+      </p>
+
+      <h3>14.5 Asymmetry audit — <strong>Ω</strong></h3>
+      <ul>
+        <li><strong>Exposure bearers:</strong>
+          <ul>
+            <li>the trainee or junior role receiving feedback</li>
+            <li>roles whose standing depends on institutional approval</li>
+            <li>participants who cannot easily interrupt evaluative framing</li>
+          </ul>
+        </li>
+        <li><strong>Lower-cost positions:</strong>
+          <ul>
+            <li>the evaluator or trainer</li>
+            <li>roles controlling interpretation and closure of the episode</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>14.6 Temporality and trajectory — <strong>Θ</strong></h3>
+      <ol>
+        <li>mismatch becomes visible</li>
+        <li>feedback scene begins</li>
+        <li>authority gradient sharpens</li>
+        <li>evaluation becomes locally exposing</li>
+        <li>no strong coordinative next step emerges</li>
+        <li>recipient carries residue into later scenes</li>
+      </ol>
+      <p>
+        <strong>Reading:</strong> <strong>Θ</strong> makes the scene consequential beyond the moment itself. A brief
+        evaluative exchange can continue structuring participation after the
+        episode ends.
+      </p>
+
+      <h3>14.7 Distance availability check — <strong>Χ</strong></h3>
+      <p>
+        Distance is unevenly distributed. The evaluator often retains more control
+        over pacing and meaning than the exposed role, making interruptibility
+        structurally fragile.
+      </p>
+
+      <h3>14.8 Integration check — <strong>Σ</strong></h3>
+      <p>
+        Integration is the missing element. The scene does not sufficiently
+        consolidate correction into a shared, actionable path.
+      </p>
+
+      <h3>14.9 Self-binding check — <strong>Ψ</strong></h3>
+      <p>
+        Durable follow-up binding is weak. The feedback episode marks rather than
+        binds a trajectory of supported correction.
+      </p>
+
+      <h3>14.10 Critique displacement statement</h3>
+      <p>
+        <strong>Core claim:</strong> The case is best read not as failed noticing, but as critique displaced
+        into evaluative marking: the frame names what is wrong, but asymmetry
+        turns the scene toward exposure rather than coordination.
+      </p>
+      <hr />
+
+      <h2>15) Assistant Test Vectors</h2>
+      <ul>
+        <li>“Why is this feedback scene better read as judgment drift than as productive critique?”</li>
+        <li>“How does Ω alter the meaning of otherwise ordinary feedback?”</li>
+        <li>“What is missing structurally when evaluation is clear but correction remains weak?”</li>
+        <li>“Why is P inactive even though exposure is clearly present?”</li>
+        <li>“How does this case sit between paper tags b and c?”</li>
+        <li>“Give a boundedness note explaining what this example does not prove.”</li>
+      </ul>
+
+    </section>
+  </body>
+</html>

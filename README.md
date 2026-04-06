@@ -17,10 +17,11 @@ Building explicitly on PMS as its structural foundation, this project does **not
 In this sense, PMS–CRITIQUE should be read as:
 
 * **conceptually dependent on PMS**,
-* **formally consistent with the PMS operator grammar**, and
+* **formally consistent with the PMS operator grammar**,
+* **strictly overlay-level rather than operator-redefining**, and
 * **focused on structural legibility rather than moral or psychological evaluation**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18176263.svg)](https://doi.org/10.5281/zenodo.18176263)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18175456.svg)](https://doi.org/10.5281/zenodo.18175456)
 
 ---
 
@@ -29,16 +30,17 @@ In this sense, PMS–CRITIQUE should be read as:
 PMS–CRITIQUE is:
 
 * A **praxeological grammar of critique** (not a discourse ethics)
-* A **PMS_1.1–conform application** of the operator set (Δ–Ψ)
+* A **PMS_1.3–conform application** of the operator set (Δ–Ψ)
+* A **paper-specific application schema / overlay** that remains subordinate to canonical PMS
 * A framework for analysing:
-
   * critique as **interruptible differentiation** (Δ under □ with Χ)
   * drift forms where critique mutates into substitutes
   * **non-event load (Λ)** and silence as structural outcomes
   * **scale effects** (a–d) and publicness amplification (P)
   * the roles of **Φ / Χ / Σ / Ψ** in turning interruption into correction
+  * critique-facing reuse of **A / C / R / E / D** without redefining PMS derived axes
+  * optional downstream **MIP docking** under strict separation
 * A viability model that evaluates critique by:
-
   * **operator carriage** (what carries coordination vs. what substitutes)
   * **reversibility and restraint** (Χ / D constraints in application)
   * **structural costs** (Ω / Θ accumulation, exposure gradients)
@@ -46,8 +48,8 @@ PMS–CRITIQUE is:
 
 **Guiding formula:**
 
-> **Non-moral in description /
-> Operator-strict in analysis /
+> **Non-moral in description /  
+> Operator-strict in analysis /  
 > Guardrailed in application**
 
 ---
@@ -61,8 +63,10 @@ PMS–CRITIQUE is not:
 * A coaching, mediation, or therapy method
 * A framework for ranking speakers, blaming actors, or enforcing outcomes
 * A justification tool for shaming, pile-ons, or irreversible exposure
+* A legitimacy tribunal, sanctioning device, or evaluative scorecard
+* A replacement for PMS itself, or a rival operator grammar
 
-PMS–CRITIQUE treats critique as a **praxis configuration** —
+PMS–CRITIQUE treats critique as a **praxis configuration** —  
 not as courage, honesty, moral clarity, or tone.
 
 ---
@@ -71,29 +75,36 @@ not as courage, honesty, moral clarity, or tone.
 
 PMS–CRITIQUE argues that:
 
-* Critique in the strict sense requires **distance (Χ)** as interruptability, not politeness.
+* Critique in the strict sense requires **distance (Χ)** as interruptibility, not politeness.
 * Expression, judgment, explanation, or silence are **not weaker critique**, but structurally different outcomes.
 * Drift is **predictable** when critique pressure is handled without integration (Σ) or binding (Ψ).
 * Costs accumulate even under non-events (Λ), especially under asymmetry (Ω) and time (Θ).
 * Publicness (P) does not change critique grammar — it **amplifies drift sensitivity**.
+* Productive critique requires **Φ + Σ**, while durable critique additionally requires **Ψ** without coercive other-binding.
 
-> Critique begins where a mismatch becomes interruptible —
+> Critique begins where a mismatch becomes interruptible —  
 > correction begins where interruption is integrated and bound.
 
 ---
 
 ## Relation to PMS
 
-PMS–CRITIQUE is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in
-[`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml)
-(schema_version: `PMS_1.1`).
+PMS–CRITIQUE is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in  
+[`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml)  
+(schema_version: `PMS_1.3`).
+
+The PMS–CRITIQUE overlay itself is specified in  
+[`model/PMS-CRITIQUE.yaml`](model/PMS-CRITIQUE.yaml)  
+(schema_version: `PMS-CRITIQUE_1.1`).
 
 * No new operators are introduced
 * No operator is redefined
 * All dependency rules are respected
+* Canonical operator order and dependency hygiene remain unchanged
+* Canonical derived axes (**A / C / R / E / D**) are **not redefined**, but only reused in critique-facing interpretation
 * All claims remain **scene-bound, reversible, and non-diagnostic**
 
-Where PMS provides the **grammar of praxis**,
+Where PMS provides the **grammar of praxis**,  
 PMS–CRITIQUE specifies how that grammar behaves when applied to:
 
 * irritation and mismatch (Δ),
@@ -104,128 +115,143 @@ PMS–CRITIQUE specifies how that grammar behaves when applied to:
 
 ---
 
-## What You Can Do With PMS.yaml + PMS-CRITIQUE.yaml (That PMS Alone Does Not Provide)
+## Model Status and Boundedness
 
-PMS.yaml gives you the **canonical operator system** (Δ–Ψ), dependency hygiene, derived axes (where present), and general governance constraints for structural (non-psychological) reading.
+PMS–CRITIQUE is a **strong but bounded** overlay.
 
-PMS-CRITIQUE.yaml adds a **domain-specific application profile** for *critique* that makes several things **explicitly computable / recordable / comparable** across cases and analysts:
+It does **not** claim to be:
 
-### 1) Critique thresholds (strict, operator-readable)
+* final,
+* exhaustive,
+* uniquely sufficient,
+* or superior to all rival grammars of critique.
 
-PMS-CRITIQUE defines three explicit thresholds:
+Instead, it offers a **structurally disciplined overlay representation** of critique that is especially useful where:
 
-* **CRITIQUE_MIN** = Δ + □ + Χ
-* **CRITIQUE_PROD** = Δ + □ + Χ + Φ + Σ
-* **CRITIQUE_STABLE** = Δ + □ + Χ + Φ + Σ + Ψ
+* interruption, correction, and follow-up need to be distinguished precisely,
+* asymmetry and temporality redistribute costs,
+* drift forms need to be rendered operator-legible,
+* and critique must remain analytically readable **without collapsing into diagnosis, moralization, or sanction**.
 
-With PMS alone, you can *describe* these chains; with PMS-CRITIQUE you can **treat them as named structural checkpoints** and use them as stable reference points across tooling, cases, and papers.
+The schema therefore remains open to:
 
-### 2) A vertical reach ladder (V0–V4)
-
-PMS-CRITIQUE introduces a standardized **reach axis** for critique episodes:
-
-* V0 irritation only (Δ)
-* V1 reaction/discharge (Δ + ∇)
-* V2 minimal critique (Δ + □ + Χ)
-* V3 productive critique (… + Φ + Σ)
-* V4 stable critique (… + Ψ)
-
-This lets you record *where a critique chain breaks* without sliding into moral verdicts (“bad discourse”) or person-typing.
-
-### 3) A horizontal scale ladder (paper tags a–d) + optional deployment tags
-
-PMS-CRITIQUE specifies **scale as a formal scene descriptor** that determines where Ω/Θ stabilize:
-
-* a) generic/structural (no actor binding)
-* b) single-subject (self/support/learning)
-* c) small group (peers/team/family)
-* d) public (street/media/online)
-
-It also provides optional **deployment tags** for tooling/repo convenience while keeping the paper tags canonical.
-
-### 4) Drift typology (predictable substitutions under load)
-
-PMS-CRITIQUE formalizes critique failure modes as **operator-readable drift classes** (D1–D6 + compact catalogue), e.g.:
-
-* reaction masquerading as critique (Δ + ∇ / Χ absent)
-* judgment masquerading as critique (□ + Δ / Φ, Σ absent)
-* narrative reset drift (Φ high / Σ absent)
-* public pillory (Ω + Θ + Α under P)
-* silence attractor (Λ → Α under Ω/Θ)
-
-With PMS alone, you can describe these as patterns; PMS-CRITIQUE makes them **named, repeatable descriptors** for consistent annotation and comparison.
-
-### 5) Publicness overlay P (amplification without new structure)
-
-PMS-CRITIQUE introduces **P** as an explicit overlay that amplifies Ω/Θ/Α without changing operator grammar—crucial for separating “bad discourse” explanations from **amplification dynamics**.
-
-### 6) Modulators (operator weightings, not person-typing)
-
-PMS-CRITIQUE adds modulators (M1–M8) as a *non-typing* way to express why a scene is drift-sensitive:
-
-* frame clarity, non-event density, temporal compression, distance availability, attractor inertia, etc.
-
-### 7) Optional example packet schema for uniform case mappings
-
-PMS-CRITIQUE provides an **instance-facing schema** for cases (“scene packets”) that preserves the entry gate (Χ + reversibility + D) and keeps outputs comparable.
-
-In short:
-
-> PMS is the operator grammar.
-> PMS-CRITIQUE is the critique profile: thresholds + axes + drift + overlays + case schema.
+* revision,
+* rival framing,
+* and genuine non-capture.
 
 ---
 
-## PMS-CRITIQUE YAML (Addon Specification)
+## Validity Gate for Application
 
-This repository includes (or is meant to include) **PMS-CRITIQUE.yaml** as an addon specification:
+Any use of PMS–CRITIQUE as a PMS application remains conditional on the **PMS entry condition**:
 
-* It **DEPENDS on PMS_1.1** and references Δ–Ψ strictly.
-* It defines critique thresholds, reach/scale axes, drift typology, modulators, and guardrails.
-* It explicitly separates:
+* **Χ (Distance):** maintained meta-position and stop-capability; no fusion into verdict
+* **Reversibility:** scene-bound, revisable readings; no global person labels
+* **D (Dignity-in-Practice):** no shaming, humiliation, actor-ranking, or exposure-as-sanction
 
-  * **operator grammar** (PMS)
-  * from **application profile** (PMS-CRITIQUE)
+This gate constrains **application**, not whether PMS itself may be criticized, rejected, revised, or ignored.
 
-### Minimal “scene packet” skeleton (for tooling / uniform mappings)
+In practical terms, PMS–CRITIQUE must not be used to:
 
-```yaml
-scene_label: "Example: missing reply in a team thread"
-frame_anchor (□): "team coordination thread"
-trigger_mismatch (Δ): "expected update does not arrive"
-operator_signature: ["□","Δ","Λ","Ω","Θ","Α"]   # reduced signature, not proof
-guardrail_gate: "Χ + reversibility + D"
-structural_closure: >
-  The non-event accumulates load because expectations exist inside the frame.
-  Exposure costs discourage interruption, so silence stabilizes as script.
-  The reading remains scene-bound and reversible; no person-typing is implied.
-scale:
-  system: "paper_tags"
-  tag: "c"
-reach_level: "V2"
-drift_class: "D6"
-modulators: ["M1","M2","M3","M7"]
-publicness_overlay (P) note: "absent"
-```
-
-This packet format is optional, but it is designed to make case mappings **uniform, reversible, and non-moral**.
+* label persons,
+* attribute motives,
+* diagnose psychology,
+* justify coercive binding,
+* convert drift labels into sanctions,
+* or smuggle evaluative verdicts into structural language.
 
 ---
 
-## Model Specification (Human-Readable)
+## Critique Thresholds
 
-Alongside the YAML, this repo also contains (or is meant to contain) a **human-readable model specification** (HTML/PDF) that:
+A central contribution of PMS–CRITIQUE is the distinction between three threshold levels:
 
-* explains the YAML structure in technical prose,
-* makes the axes (reach/scale) and drift catalogue legible to readers,
-* and clarifies guardrails and non-goals.
+* **Minimal Critique**  
+  `Δ + □ + Χ`  
+  A mismatch becomes legible in a frame and remains interruptible.
 
-If you are reading PMS-CRITIQUE for the first time, the intended reading order is:
+* **Productive Critique**  
+  `Δ + □ + Χ + Φ + Σ`  
+  Recontextualization and integration consolidate a coordinatable corrective step.
 
-1. PMS base grammar (PMS.yaml)
-2. PMS-CRITIQUE.yaml (thresholds + axes + drift + overlays)
-3. Paper text (“From Irritation to Correction”)
-4. Example Suite (stress tests)
+* **Stable Critique**  
+  `Δ + □ + Χ + Φ + Σ + Ψ`  
+  Correction becomes durably bound across time without coercive other-binding.
+
+This yields a strict non-equivalence claim:
+
+* **Reaction** (`Δ + ∇` without Χ) is not weaker critique
+* **Judgment** (`□ + Δ` without Φ / Σ) is not stronger critique
+* **Silence / paralysis** under mismatch are not low-grade critique
+
+They are structurally different stabilizations.
+
+---
+
+## Drift Typology
+
+PMS–CRITIQUE includes a compact drift typology for structurally recurrent mutations of critique under load.
+
+Prominent drift forms include:
+
+* **Reaction masquerading as critique**
+* **Judgment masquerading as critique**
+* **Narrative repair masquerading as critique**
+* **Commentary / analysis paralysis**
+* **Public pillory**
+* **Silence attractor**
+
+These drift labels are:
+
+* **descriptive, not punitive**
+* **operator-readable, not psychological**
+* **structurally open, not exhaustive**
+
+The drift typology is therefore best understood as an **open structural index**, not as a total classification of all critique failures.
+
+---
+
+## Scale and Publicness
+
+PMS–CRITIQUE distinguishes:
+
+* a **vertical reach ladder**  
+  from irritation to interruption to correction to binding
+
+and
+
+* a **horizontal scale ladder**  
+  from structural/generic critique to single-subject, small-group, and public critique
+
+Publicness is treated as **P**, an overlay amplifier rather than an operator.  
+It intensifies:
+
+* **Ω** (exposure gradients),
+* **Θ** (irreversibility / residue),
+* **Α** (script stabilization),
+
+but does not itself generate critique or correction.
+
+---
+
+## Derived Axes and MIP Docking
+
+PMS–CRITIQUE reuses the canonical PMS derived axes:
+
+* **A** Awareness
+* **C** Coherence
+* **R** Responsibility
+* **E** Action
+* **D** Dignity-in-Practice
+
+These are used as **critique-facing readability aids** only.  
+They are **not redefined**, **not replaced**, and **not elevated into new primitives**.
+
+The model also includes an **optional MIP docking interface**, but only under strict separation:
+
+* PMS–CRITIQUE explains critique structurally
+* MIP, if used later, may evaluate enactments under its own criteria
+* no back-projection of evaluative verdicts into PMS causal language is permitted
 
 ---
 
@@ -233,7 +259,7 @@ If you are reading PMS-CRITIQUE for the first time, the intended reading order i
 
 The repository includes a dedicated **Example Suite** (`/examples`) consisting of five structurally uniform case mappings.
 
-These examples are **not illustrations, prescriptions, or moral verdicts**.
+These examples are **not illustrations, prescriptions, or moral verdicts**.  
 They function as **operator-legible scene packets** that stress-test critique under load.
 
 Each example:
@@ -241,23 +267,25 @@ Each example:
 * models a **high-misread-risk situation** (where moralization is common),
 * applies a **reduced operator signature** (not a proof chain),
 * separates **roles, frames, costs, and trajectories** from persons,
-* enforces the **PMS application gate**: Χ + reversibility + D.
+* enforces the **PMS application gate**: Χ + reversibility + D,
+* is provided as a **canonical YAML case file** (`.yaml`),
+* and is also rendered as a **readable HTML version** (`.html`).
 
 Included examples:
 
-1. **The Missing Reply Becomes the Story**
+1. **The Missing Reply Becomes the Story**  
    *Non-event load and silence attractors in small groups.*
 
-2. **Fast Outrage, No Stop-Capability**
+2. **Fast Outrage, No Stop-Capability**  
    *Reaction masquerading as critique under public exposure.*
 
-3. **Endless Reframing Meeting**
+3. **Endless Reframing Meeting**  
    *Narrative reset drift: Φ without Σ.*
 
-4. **Policy Without Follow-Up**
-   *Integration without self-binding; symbolic correction.*
+4. **Policy Without Follow-Up**  
+   *Formal synthesis without durable trajectory ownership.*
 
-5. **Role Asymmetry Turns “Feedback” Into Exposure**
+5. **Role Asymmetry Turns “Feedback” Into Exposure**  
    *Judgment drift under evaluative asymmetry.*
 
 The Example Suite trains **structural reading discipline**:
@@ -278,27 +306,25 @@ PMS–CRITIQUE/
 │   └── main.css
 ├── img/
 │   └── cover.png
-├── img/
+├── model/
+│   ├── PMS-CRITIQUE.yaml
 │   ├── Model Specification.html
-│   ├── Model Specification.pdf
-│   └── PMS-CRITIQUE.yaml
+│   └── Model Specification.pdf
 └── examples/
-    ├── Example 1 - The Missing Reply Becomes the Story.md
+    ├── Example 1 - The Missing Reply Becomes the Story.yaml
     ├── Example 1 - The Missing Reply Becomes the Story.html
-    ├── Example 2 - Fast Outrage, No Stop-Capability.md
+    ├── Example 2 - Fast Outrage, No Stop-Capability.yaml
     ├── Example 2 - Fast Outrage, No Stop-Capability.html
-    ├── Example 3 - Endless Reframing Meeting.md
+    ├── Example 3 - Endless Reframing Meeting.yaml
     ├── Example 3 - Endless Reframing Meeting.html
-    ├── Example 4 - Policy Without Follow-Up.md
+    ├── Example 4 - Policy Without Follow-Up.yaml
     ├── Example 4 - Policy Without Follow-Up.html
-    ├── Example 5 - Role Asymmetry Turns “Feedback” Into Exposure.md
+    ├── Example 5 - Role Asymmetry Turns “Feedback” Into Exposure.yaml
     └── Example 5 - Role Asymmetry Turns “Feedback” Into Exposure.html
-```
+````
 
-The **canonical source** of the paper remains the Markdown file.
-
-* <span class="code-inline">PMS-CRITIQUE.yaml</span> is the canonical machine-readable addon/profile.
-* <span class="code-inline">pms-critique-ext.yaml</span> is optional and reserved for future paper-specific macro additions (non-overriding).
+The **canonical source of the paper** remains the Markdown file.
+The **canonical source of the model schema** is `model/PMS-CRITIQUE.yaml`.
 
 ---
 
@@ -310,8 +336,10 @@ PMS–CRITIQUE is intended for:
 * Governance, media, and institutional analysts
 * Researchers working on asymmetry, exposure, and irreversibility
 * Readers seeking a **non-moral, non-clinical** language for critique failure
+* Repository and tooling contexts that require **machine-readable structural mappings**
+* Case analysis where **scene-boundedness, reversibility, and dignity constraints** must remain explicit
 
-It is **not** intended for coercive application, person-ranking, or prescriptive enforcement.
+It is **not** intended for coercive application, person-ranking, sanctioning logic, or prescriptive enforcement.
 
 Any application must respect the **PMS entry condition**:
 **Χ (distance) + reversibility + D (dignity-in-practice)**.
@@ -333,29 +361,26 @@ and why interruption, without integration and binding, mutates into drift.
 ## 🔗 Links & Resources
 
 PMS–CRITIQUE is part of a broader **praxeological ecosystem** spanning formal operator theory, applied anthropology, drift analysis, and executable specifications.
-PMS–AXIOM is part of a broader **praxeological ecosystem** spanning formal operator theory, applied anthropology, governance analysis, and executable specifications.
 
-| Category        | Resource | Description |
-| --------------- | -------- | ----------- |
-| Model website   | [PMS Theory Site](https://pms-theory.netlify.app) | Canonical PMS theory reference |
-| Book websites   | [Maturity in Practice (EN)](https://maturity-in-practice.netlify.app) | *Maturity in Practice* — English edition (praxeological anthropology) |
-|                 | [Reife im Vollzug (DE)](https://reife-im-vollzug.netlify.app) | *Reife im Vollzug* — Deutsche Ausgabe |
-|                 | [PMS Stack](https://pms-stack.netlify.app) | PMS-STACK reference architecture |
-| Amazon          | [Maturity in Practice (EN)](https://www.amazon.com/dp/B0G4XBKNNR) | *Maturity in Practice: A Praxeological Anthropology* — English edition |
-|                 | [Reife im Vollzug (DE)](https://www.amazon.de/dp/B0G4SPBDQD) | *Reife im Vollzug: Eine praxeologische Anthropologie* — Deutsche Ausgabe |
-|                 | [PMS-STACK](https://www.amazon.com/dp/B0G6G7V38P) | *PMS-STACK — A Praxeological Operating System Architecture* |
-| GitHub (papers) | [PMS Theory / Repo](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory) | Canonical PMS grammar, theory & YAML definitions |
-|                 | [Maturity-in-Practice](https://github.com/tz-dev/Maturity-in-Practice) | Book sources & applied praxeological anthropology |
-|                 | [PMS-QC](https://github.com/tz-dev/PMS-QC) | PMS-QC — Praxeological Meta-Structure for Quantum Computing |
-|                 | [PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC) | PMS-LOGIC — Structural Responsibility, Logical Limits, and Post-Moral Effects |
-|                 | [PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION) | PMS-ANTICIPATION — Structural Conditions, Risks, and Viability of Anticipatory Praxis |
-|                 | [PMS-CRITIQUE](https://github.com/tz-dev/PMS-CRITIQUE) | PMS-CRITIQUE — From Irritation to Correction: A Praxeological Grammar of Critique |
-|                 | [PMS-EDEN](https://github.com/tz-dev/PMS-EDEN) | PMS-EDEN — Structural Drift from Praxis to Comparison and Reciprocity Loss |
-|                 | [PMS-SEX](https://github.com/tz-dev/PMS-SEX) | PMS-SEX — From Impulse to Self-Binding: A Praxeological Grammar of Sexuality |
-|                 | [PMS-CONFLICT](https://github.com/tz-dev/PMS-CONFLICT) | PMS-CONFLICT — Conflict as Stabilized Incompatibility: Cost, Binding, and Tragic Non-Integration |
-|                 | **[PMS-AXIOM](https://github.com/tz-dev/PMS-AXIOM)** | PMS-AXIOM — Cartography of Classical Closure-Demands Across the PMS Stack |
-| Custom GPTs     | [PMS Model Assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant) | Interactive PMS.yaml exploration & validation |
-|                 | [Maturity in Action](https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant |
+| Category        | Resource                                                                                                                                                                                                                     |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Model website   | [https://pms-theory.netlify.app](https://pms-theory.netlify.app)                                                                                                                                                             |
+| Book websites   | [https://maturity-in-practice.netlify.app](https://maturity-in-practice.netlify.app)                                                                                                                                         |
+|                 | [https://reife-im-vollzug.netlify.app](https://reife-im-vollzug.netlify.app)                                                                                                                                                 |
+|                 | [https://pms-stack.netlify.app](https://pms-stack.netlify.app)                                                                                                                                                               |
+| Amazon          | [https://www.amazon.com/dp/B0G4XBKNNR](https://www.amazon.com/dp/B0G4XBKNNR)                                                                                                                                                 |
+|                 | [https://www.amazon.de/dp/B0G4SPBDQD](https://www.amazon.de/dp/B0G4SPBDQD)                                                                                                                                                   |
+|                 | [https://www.amazon.com/dp/B0G6G7V38P](https://www.amazon.com/dp/B0G6G7V38P)                                                                                                                                                 |
+| GitHub (papers) | [https://github.com/tz-dev/Praxeological-Meta-Structure-Theory](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)                                                                                               |
+|                 | [https://github.com/tz-dev/Maturity-in-Practice](https://github.com/tz-dev/Maturity-in-Practice)                                                                                                                             |
+|                 | [https://github.com/tz-dev/PMS-QC](https://github.com/tz-dev/PMS-QC)                                                                                                                                                         |
+|                 | [https://github.com/tz-dev/PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC)                                                                                                                                                   |
+|                 | [https://github.com/tz-dev/PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION)                                                                                                                                     |
+|                 | [https://github.com/tz-dev/PMS-EDEN](https://github.com/tz-dev/PMS-EDEN)                                                                                                                                                     |
+|                 | **[https://github.com/tz-dev/PMS-CRITIQUE](https://github.com/tz-dev/PMS-CRITIQUE)**                                                                                                                                         |
+|                 | [https://github.com/tz-dev/PMS-SEX](https://github.com/tz-dev/PMS-SEX)                                                                                                                                                       |
+| Custom GPTs     | [https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)                                                                 |
+|                 | [https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology](https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) |
 
 ---
 
@@ -364,32 +389,11 @@ PMS–AXIOM is part of a broader **praxeological ecosystem** spanning formal ope
 Contributions, critiques, and structural questions are welcome.
 Please open an issue or submit a pull request.
 
-### Contribution scope (structural only)
-
-Contributions are especially welcome for:
-
-* additional example packets that follow the schema and guardrails,
-* clarifications to drift typology signatures (operator-readable, non-moral),
-* improvements to interoperability notes (scale tag systems, legacy fields),
-* documentation improvements that strengthen reversibility and dignity-in-practice,
-* tooling adapters that consume PMS.yaml + PMS-CRITIQUE.yaml without reimplementing operators.
-
-Contributions are *out of scope* if they:
-
-* introduce new operators,
-* redefine PMS operator dependencies,
-* add person-typing, motive attribution, or diagnostic language,
-* turn drift labels into enforcement or sanction mechanisms.
-
 ---
 
 ## 📜 License
 
 * The **paper** is released under **CC BY 4.0**.
-
-### Specification artifacts
-
-If the repository contains additional artifacts (YAML, HTML/PDF model specs, examples), their licensing follows the repository’s LICENSE file unless explicitly stated otherwise per artifact.
 
 ---
 
@@ -397,8 +401,3 @@ If the repository contains additional artifacts (YAML, HTML/PDF model specs, exa
 
 Maintained by **tz-dev**.
 For discussions or questions, please use GitHub issues.
-
-
-
-
-

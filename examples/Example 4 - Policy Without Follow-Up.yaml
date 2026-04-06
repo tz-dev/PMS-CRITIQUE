@@ -1,0 +1,585 @@
+example_id: "PMS-CRITIQUE_EX04"
+example_version: "1.0"
+schema_version: "PMS-CRITIQUE_1.1"
+example_label: "Policy Without Follow-Up"
+example_subtitle: "Integration Present, Self-Binding Missing"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-CRITIQUE_1.1"
+
+case_identity:
+  case_label: "Formal Synthesis vs. Missing Trajectory Ownership"
+  scope_discipline: >
+    Structural mapping only. No evaluation of policy quality, intent, or
+    competence. PMS application validity remains conditional on Χ (Distance),
+    reversibility, and D (Dignity-in-Practice).
+  repository_fit: >
+    This example is designed as a repository training example for reading how a
+    critique scene can successfully produce an integrated formal output while
+    still failing to bind correction into a durable trajectory of ownership,
+    review, and follow-through.
+  example_packet_alignment:
+    scene_label: "Formal Synthesis vs. Missing Trajectory Ownership"
+    frame_anchor: >
+      Institutional policy or governance frame in which a recognized mismatch is
+      discussed, translated into a formal policy statement or decision, and
+      publicly or internally stabilized as resolved without strong follow-up
+      binding.
+    trigger_mismatch: >
+      A recurring organizational, procedural, or protection-related mismatch is
+      recognized and leads to the production of a policy, guideline, or formal
+      decision that appears coherent but is not durably owned over time.
+    operator_signature:
+      reduced: ["Δ", "□", "Χ", "Φ", "Σ", "Θ"]
+      note: >
+        This reduced signature is a readability aid only. Canonical PMS
+        dependencies remain fully in force. The decisive structural weakness is
+        not missing Σ, but missing or weak Ψ after formal integration.
+    guardrail_gate: >
+      Readings remain scene-bound and revisable. No person labels, no motive
+      attributions, no shaming, and no coercive binding claims are generated.
+    structural_closure: >
+      In this scene, critique does not fail at the point of articulation or
+      synthesis. A coherent policy-level integration is produced, but the
+      trajectory remains weakly bound. What is missing is durable follow-up
+      ownership, review discipline, and non-coercive self-binding over time.
+    scale:
+      system: "paper_tags"
+      tag: "c"
+
+minimal_vignette:
+  title: "A policy is drafted and approved, but no one durably owns the follow-up"
+  scene_boundaries:
+    domain: "Institutional policy formation / organizational governance / committee coordination"
+    scope: >
+      Structures, role relations, formal synthesis, follow-up weakness,
+      institutional ownership, critique reach, and failure of durable binding
+      in a bounded organizational scene.
+    out_of_scope:
+      - "person-level judgment"
+      - "motive attribution"
+      - "competence ranking"
+      - "clinical or psychological interpretation"
+      - "substantive evaluation of whether the policy is normatively correct"
+      - "instruction or action prescription"
+  short_scene: >
+    An organization recognizes a recurring issue: unclear reporting pathways,
+    uneven enforcement, missed safeguards, or ambiguous internal standards. A
+    working group discusses the issue, recontextualizes constraints, and
+    finally produces a policy update, guidance memo, or official framework. The
+    document is approved and treated as a meaningful resolution. Yet no durable
+    review cycle, responsibility anchor, or implementation follow-up is strongly
+    bound, so the same issue reappears months later in slightly altered form.
+  structural_focus: >
+    The example examines how critique can reach formal integration while still
+    failing to become stable critique. The central issue is not absence of
+    articulation or synthesis, but absence of durable Ψ-level ownership after
+    policy consolidation.
+  scenic_elements:
+    actors:
+      - "policy drafter or working group"
+      - "manager, executive, or committee chair"
+      - "implementing units or team leads"
+      - "affected staff or downstream role holders"
+    salient_objects:
+      - "the recurring organizational issue"
+      - "policy draft or guidance document"
+      - "review or approval meeting"
+      - "implementation responsibilities"
+      - "follow-up checkpoints"
+      - "future audit or revision windows"
+    trigger_event:
+      label: "policy response to recurring mismatch"
+      description: >
+        A recognized mismatch leads to a policy-level synthesis that appears to
+        settle the issue organizationally.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example is useful because it distinguishes productive critique from
+    stable critique. It shows that successful synthesis is not yet sufficient
+    for durable correction if no trajectory of ownership is bound across time.
+  repo_value:
+    - >
+      Demonstrates the structural difference between Σ (integration) and Ψ
+      (self-binding).
+    - >
+      Provides a clean case of policy-level V3 approaching V4 but failing to
+      stabilize.
+    - >
+      Shows how institutions may appear responsive while still remaining weak at
+      follow-up ownership.
+    - >
+      Clarifies that formal resolution is not identical with durable
+      implementation.
+    - >
+      Helps repository users distinguish “policy exists” from “correction is
+      structurally bound.”
+  central_repo_question: >
+    How can critique produce a coherent institutional policy and still fail to
+    become stable critique?
+  lens_relevance:
+    critique_thresholds: >
+      The example clarifies the difference between CRITIQUE_PROD and
+      CRITIQUE_STABLE: integration can succeed while self-binding remains weak.
+    drift_typology: >
+      The case most strongly fits C10 (Commitment Evasion) and can also border
+      on D4 or D6 downstream if ownership stays suspended and issues recur.
+    scale_relevance: >
+      The example belongs to paper tag c because the scene is institutionally
+      relational, role-distributed, and bounded inside an organizational field.
+    guardrail_relevance: >
+      The example invites cynical readings (“policy is just theater”), but the
+      structural analysis must remain scene-bound and avoid motive or sincerity
+      claims.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Δ", "□", "Χ", "Φ", "Σ", "Θ"]
+    secondary_possible: ["Ψ", "Ω", "Λ"]
+    note: >
+      The central signature is mismatch within an institutional frame,
+      reflective handling, recontextualization, and policy-level integration,
+      followed by weak or absent binding across time. Ψ is the decisive weak
+      point.
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A recurring mismatch is clearly identified: policy ambiguity,
+        implementation inconsistency, or organizational non-alignment becomes
+        nameable and relevant.
+    "∇":
+      scene_role: >
+        There is enough impulse to address the issue and produce a response, but
+        the central structural question is not tempo but durability.
+    "□":
+      scene_role: >
+        The institutional policy frame defines relevance, procedure, authority,
+        and what counts as an acceptable formal response.
+    "Λ":
+      scene_role: >
+        Non-events may later appear in missing review cycles, absent follow-up,
+        or unperformed implementation checks after formal adoption.
+    "Α":
+      scene_role: >
+        A stable script may emerge in which policy production substitutes for
+        durable ownership: “once documented, the issue is treated as handled.”
+    "Ω":
+      scene_role: >
+        Role asymmetries matter because some actors can approve policy without
+        carrying the downstream burden of implementation, while others bear the
+        after-work.
+    "Θ":
+      scene_role: >
+        Time is decisive because the weakness only becomes visible across
+        trajectory: after approval, the issue either stabilizes or returns.
+    "Φ":
+      scene_role: >
+        Recontextualization is active in translating a recurring issue into a
+        formal institutional response that fits constraints, roles, and
+        governance language.
+    "Χ":
+      scene_role: >
+        Distance is present insofar as the issue is processed reflectively
+        rather than reactively, and the organization can pause to formulate a
+        coherent response.
+    "Σ":
+      scene_role: >
+        Integration is genuinely present. A policy, framework, or coherent
+        institutional synthesis is produced.
+    "Ψ":
+      scene_role: >
+        This is the decisive weakness: follow-up responsibility, review timing,
+        and trajectory ownership remain partial, diffuse, or insufficiently
+        bound.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness is present because the issue is recognized, named, and
+        sustained long enough to generate a formal response.
+    C:
+      reading: >
+        Coherence is comparatively strong at the level of formal synthesis. The
+        institution can state what the issue is and what the policy says.
+    R:
+      reading: >
+        Responsibility remains structurally fragile if no one or no unit is
+        durably bound to implementation and review.
+    E:
+      reading: >
+        Action is present in the limited sense that a policy output exists, but
+        enactable continuity remains weak if ownership is not stabilized.
+    D:
+      reading: >
+        Dignity-in-Practice may remain intact at the level of formal handling,
+        but exposed downstream actors can still bear the costs of weak follow-up.
+  structural_mechanism_summary:
+    sequence:
+      - "A recurring mismatch is recognized."
+      - "The institutional frame organizes discussion."
+      - "The issue is recontextualized into policy language."
+      - "A coherent synthesis is produced."
+      - "Approval creates a sense of closure."
+      - "Trajectory ownership remains weak."
+      - "The issue reappears later or remains unevenly implemented."
+    concise_formula: >
+      recurring Δ in □ -> reflective handling through Χ and Φ -> policy-level Σ
+      -> weak Ψ binding under Θ -> later recurrence or implementation drift
+
+critique_threshold_reading:
+  threshold_assessment:
+    CRITIQUE_MIN:
+      status: "reached"
+      reasoning: >
+        The mismatch is framed and interruptible. The issue becomes legible
+        inside an institutional process and can be reflected on non-reactively.
+    CRITIQUE_PROD:
+      status: "reached"
+      reasoning: >
+        Recontextualization and integration succeed structurally. The scene
+        produces a coherent corrective formulation or policy-level synthesis.
+    CRITIQUE_STABLE:
+      status: "not_reached_or_only_partially_reached"
+      reasoning: >
+        Durable follow-up ownership is weak. The organization does not strongly
+        bind correction into review, implementation, and trajectory discipline.
+  non_equivalence_reading:
+    reaction_check: >
+      This is not primarily a D1 case. The problem is not raw discharge but weak
+      durable ownership after synthesis.
+    judgment_check: >
+      This is not primarily a D2 case. The scene does not stop at evaluative
+      labeling; it genuinely reaches policy-level integration.
+    narrative_check: >
+      This is not primarily a D3 case. Recontextualization does not endlessly
+      substitute for synthesis; synthesis is achieved.
+    commentary_check: >
+      D4 may appear downstream if review remains perpetually open, but the core
+      issue is more precisely missing Ψ after Σ.
+  threshold_formula_fit:
+    closest_definition: "CRITIQUE_PROD with unstable transition toward CRITIQUE_STABLE"
+    note: >
+      The scene successfully reaches correction in integrated form, but fails to
+      durably bind that correction into ownership across time.
+
+reach_and_scale_reading:
+  vertical_reach:
+    assessed_level: "V3_with_failed_or_partial_transition_toward_V4"
+    justification: >
+      Productive critique is reached because a coherent corrective synthesis is
+      produced. The failure appears at the point of follow-up binding.
+    why_not_V2: >
+      The scene does more than interrupt and discuss; it generates an integrated
+      policy output.
+    why_not_V4: >
+      Review, implementation, and trajectory ownership are not durably bound
+      enough to stabilize correction across time.
+  horizontal_scale:
+    system: "paper_tags"
+    tag: "c"
+    label: "Small Group Critique (Peers / Team / Family)"
+    justification: >
+      The scene is institutional but still structurally c-like in the PMS sense:
+      role-distributed, relational, and bounded within an organizational group
+      or committee setting.
+    scale_specific_costs:
+      - "formal consensus can be easier than durable implementation ownership"
+      - "responsibility can diffuse across multiple roles after approval"
+      - "institutional closure signals can obscure weak follow-up"
+      - "implementation burdens may fall unevenly across the group"
+  deployment_scale_note:
+    system: "deployment_tags"
+    tag: "org_institution"
+    note: >
+      This optional deployment tag is compatible with the primary paper tag and
+      may assist repository tooling.
+  publicness_overlay:
+    status: "inactive"
+    overlay_id: "P"
+    reading: >
+      No publicness overlay is active in this case. The scene is institutionally
+      bounded and does not depend on mass visibility or public amplification.
+
+drift_analysis:
+  main_class_reading:
+    primary:
+      id: "C10"
+      name: "Commitment Evasion"
+      fit: "strong"
+      reasoning: >
+        Integration is present, but durable self-binding remains weak. The
+        policy exists without a strongly owned trajectory of follow-up.
+    secondary:
+      id: "D4"
+      name: "Commentary / analysis paralysis"
+      fit: "low_to_moderate"
+      reasoning: >
+        This may appear later if implementation remains suspended in ongoing
+        review talk, but it is not the main structural pattern at the point of
+        policy synthesis.
+    tertiary:
+      id: "D6"
+      name: "Silence attractor"
+      fit: "low_to_moderate_downstream"
+      reasoning: >
+        If policy existence later suppresses renewed raising of the unresolved
+        issue, downstream silence can begin to stabilize.
+  drift_catalog_reading:
+    compact_matches:
+      - id: "C10"
+        name: "Commitment Evasion"
+        fit: "strong"
+      - id: "C5"
+        name: "Commentary Drift"
+        fit: "moderate_downstream"
+      - id: "C6"
+        name: "Silence-as-Steering"
+        fit: "possible_downstream"
+        note: >
+          This appears when the formal existence of policy makes further raising
+          seem unnecessary or illegitimate.
+  typical_markers_present:
+    - "a coherent policy or framework is produced"
+    - "ownership after approval remains diffuse or under-specified"
+    - "review points are absent, weak, or not enacted"
+    - "implementation burden is displaced rather than durably bound"
+    - "the issue later returns despite prior formal synthesis"
+  drift_chain_alignment:
+    closest_chain:
+      id: "scene_specific_post_policy_chain"
+      reading: >
+        The current YAML does not name this exact chain explicitly, but the case
+        fits a stable repository pattern: Σ produces formal correction, Ψ fails
+        to bind, Θ later reveals recurrence or uneven enactment.
+    scene_specific_chain: >
+      recurring mismatch -> policy synthesis through Σ -> weak Ψ ownership ->
+      absent or thin review under Θ -> later recurrence or implementation drift
+
+modulator_profile:
+  overview: >
+    The scene is shaped by modulators that support synthesis while weakening
+    durable ownership after formal resolution.
+  active_modulators:
+    - id: "M1"
+      name: "Frame clarity"
+      level: "high"
+      reading: >
+        The institutional frame is clear enough to produce a legitimate policy
+        output and define acceptable formal responses.
+    - id: "M2"
+      name: "Non-event density"
+      level: "moderate"
+      reading: >
+        Missing follow-up, absent reviews, and unenacted checkpoints become
+        visible after the policy is adopted.
+    - id: "M3"
+      name: "Asymmetry visibility"
+      level: "moderate"
+      reading: >
+        The asymmetry between approvers and implementers is structurally
+        relevant, even when not explicitly dramatized.
+    - id: "M4"
+      name: "Temporal compression"
+      level: "low_to_moderate"
+      reading: >
+        The primary issue is not immediate time pressure but weak
+        temporally-extended ownership after resolution.
+    - id: "M5"
+      name: "Recontextualization habituation"
+      level: "moderate"
+      reading: >
+        Φ is active in policy drafting, but it does not dominate the scene as in
+        D3 cases. It serves synthesis rather than endless reframing.
+    - id: "M6"
+      name: "Distance availability"
+      level: "moderate_to_high"
+      reading: >
+        Reflective distance is sufficiently available to produce coherent policy,
+        though not enough to guarantee stable follow-up discipline.
+    - id: "M7"
+      name: "Attractor inertia"
+      level: "high"
+      reading: >
+        A stable institutional script can form in which policy production itself
+        counts as closure, reducing pressure for durable ownership.
+    - id: "M8"
+      name: "Publicness overlay"
+      level: "inactive"
+      reading: >
+        Public amplification is not materially organizing the scene.
+  modulator_summary: >
+    The strongest drivers are M1, M3, and M7: clear policy framing, asymmetry
+    between formal authority and downstream burden, and attractor stabilization
+    around “documented resolution” without strong trajectory ownership.
+
+cost_distribution:
+  overview: >
+    Costs in this scene accumulate through implementation drift, weak review,
+    and displaced ownership rather than through overt conflict. These are
+    structural costs, not moral verdicts.
+  interpretive_costs:
+    - "formal resolution can be mistaken for durable correction"
+    - "participants may assume the issue is handled because synthesis exists"
+  exposure_costs:
+    - "downstream implementers may bear the burden of weak policy follow-up"
+    - "affected roles may absorb recurrence costs when ownership remains diffuse"
+  temporal_costs:
+    - "recurrence becomes visible only later, after apparent closure"
+    - "review opportunities may pass without strong accountability anchors"
+  coordination_costs:
+    - "policy language may remain detached from enacted follow-through"
+    - "units may interpret ownership differently in the absence of strong Ψ"
+  dignity_stress_costs:
+    - "formal civility may coexist with practical neglect of exposed roles"
+    - "those relying on policy protection may face repeated uncertainty if follow-up remains weak"
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must not be collapsed into cynical dismissal or retroactive blame.
+      Χ here supports structural reading of the gap between synthesis and
+      binding.
+    reversibility: >
+      The analysis remains scene-bound and revisable. It does not claim that the
+      policy was meaningless or that actors were globally irresponsible.
+    dignity_in_practice: >
+      The example must not be used to shame policy drafters, managers, or
+      institutions. It maps a structural gap between formal correction and
+      durable ownership.
+  case_specific_validity_test:
+    valid_if:
+      - "Σ is acknowledged where genuine synthesis occurred"
+      - "missing Ψ is tracked without reducing the case to bad faith"
+      - "drift labels remain descriptive rather than punitive"
+      - "the analysis stays focused on structures, roles, and follow-up patterns"
+    formally_invalid_if:
+      - "the example is used to prove that policy work is mere hypocrisy"
+      - "formal synthesis is dismissed as worthless by default"
+      - "institutions or actors are essentialized as incapable or insincere"
+      - "the analysis becomes covert performance judgment"
+
+limits_and_boundedness_check:
+  structural_limits_in_this_case:
+    - "The analysis does not establish whether the policy itself was substantively good or bad."
+    - "It does not verify motives, sincerity, or strategic intent."
+    - "It does not decide whether delayed implementation was justified in every instance."
+    - "It does not rank the worth, maturity, or dignity of participants or institutions."
+  non_capture_check:
+    possible_non_capture: >
+      A critique-structural reading may underrepresent legal constraints,
+      staffing limits, budget dependencies, external regulation, or technical
+      implementation barriers that also weaken follow-up.
+    does_not_imply_defect: >
+      Incomplete capture here would not show that the policy scene is
+      defective; it would show that other framings may illuminate constraints
+      not foregrounded by PMS-CRITIQUE.
+  rival_framing_relevance:
+    - "public policy analysis may better capture implementation gaps"
+    - "organizational governance analysis may better capture ownership design"
+    - "institutional design analysis may better capture review architecture"
+    - "compliance analysis may better capture audit and enforcement mechanisms"
+  anti_absorption_note: >
+    The example should not redescribe every policy process as commitment
+    evasion. The fit becomes strong only where coherent synthesis exists but
+    durable ownership remains structurally weak.
+
+mip_docking_relevance:
+  status: "optional_and_not_required"
+  critique_side_statement: >
+    This example is structurally complete as a PMS-CRITIQUE reading without any
+    downstream evaluative docking.
+  possible_docking_relevance: >
+    If one later wanted to evaluate institutional responsibility allocation,
+    admissibility of governance design, or regime-quality questions, the scene
+    could provide bounded projection inputs without itself deciding legitimacy.
+  separation_reminder:
+    - "This example does not itself decide legitimacy."
+    - "It does not generate evaluative scores."
+    - "No back-projection from later evaluation should be read into this mapping."
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    In this case, critique reaches formal correction but not stable ownership.
+    The institution names the mismatch, processes it reflectively, and produces
+    a coherent policy-level synthesis. Yet the trajectory remains weakly bound:
+    follow-up, review, and implementation are not durably owned over time. What
+    appears resolved at the level of policy can therefore remain unresolved at
+    the level of sustained praxis.
+
+extended_scene_analysis:
+  frame_anchor_check:
+    operator: "□"
+    reading: >
+      The institutional frame is strong enough to authorize policy discussion,
+      drafting, and approval. The structural gap appears after formal closure.
+  trigger_mismatch_check:
+    operator: "Δ"
+    reading: >
+      The mismatch is visible and clearly recognized as significant enough to
+      justify a formal organizational response.
+  non_event_integrity_check:
+    operator: "Λ"
+    reading: >
+      Missing review steps, absent ownership uptake, or unenacted follow-up
+      emerge later as meaningful non-events that reveal the weakness of binding.
+  attractor_stabilization_check:
+    operator: "Α"
+    reading: >
+      A recurring script can stabilize in which policy issuance functions as the
+      main sign of responsiveness, even when durable follow-up remains weak.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "implementing teams"
+      - "staff depending on the policy for protection or clarity"
+      - "roles carrying downstream operational burden"
+    lower_cost_positions:
+      - "approving authorities"
+      - "actors whose responsibility ends at document completion"
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "issue recognized"
+      - "policy discussion begins"
+      - "recontextualization into formal language"
+      - "integration through document or decision"
+      - "approval and closure signal"
+      - "weak follow-up binding"
+      - "later recurrence or uneven implementation"
+    reading: >
+      Θ makes the structural weakness visible only after the apparent success of
+      synthesis. Time reveals whether correction was merely formal or durably
+      owned.
+  distance_availability_check:
+    operator: "Χ"
+    reading: >
+      Distance is present in the sense that the issue is handled reflectively
+      and non-reactively. The problem is not absence of Χ, but failure to
+      convert integrated response into sustained ownership.
+  integration_check:
+    operator: "Σ"
+    reading: >
+      Integration is genuinely achieved. The institution succeeds in producing a
+      coherent response, which is why this case is not simply stalled at V2.
+  self_binding_check:
+    operator: "Ψ"
+    reading: >
+      This is the decisive weak point. Review cycles, implementation anchors,
+      and ownership commitments are too weak, too diffuse, or too thinly bound
+      to stabilize correction.
+  critique_displacement_statement:
+    core_claim: >
+      The case is best read not as failed policy formation, but as correction
+      displaced into formal synthesis without durable trajectory ownership:
+      policy exists, but correction remains weakly bound.
+
+assistant_test_vectors:
+  promptables:
+    - "Why does this scene fit CRITIQUE_PROD but not CRITIQUE_STABLE?"
+    - "What exactly distinguishes Σ from Ψ in this policy example?"
+    - "How can a coherent institutional response still fail structurally?"
+    - "Which modulators make formal synthesis easier than durable ownership here?"
+    - "Why is this better read as commitment evasion than as narrative reset?"
+    - "Give a boundedness note explaining what this example does not prove."
